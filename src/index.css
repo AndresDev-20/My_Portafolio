@@ -1,0 +1,17 @@
+
+:root {
+  --black: rgb(53, 53, 53);
+  --placeholder: rgba(101, 101, 101, 0.632);
+  --background: rgb(24, 22, 105);
+  --strong-white: white;
+  --white: rgb(239, 239, 239);
+  --light-white: rgba(255, 255, 255, 0.557);
+  --grey: rgb(121, 121, 121);
+  --light-gold: #efc551;
+  --gold: #dea60b;
+
+  --zposition-first: 1000;
+  --zposition-second: 2000;
+  --zposition-third: 3000;
+  --zposition-fourth: 4000;
+}

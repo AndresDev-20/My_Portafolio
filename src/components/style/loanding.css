@@ -1,0 +1,48 @@
+.isLoading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--zposition-fourth);
+
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-isLoading {
+    display: flex;
+}
+
+.isLoading h1 {
+    font-size: 3rem;
+    color: var(--white);
+    padding-left: 40px;
+
+    position: relative;
+}
+
+.isLoading h1::after {
+    content: "";
+    background: var(--background);
+    border-left: 2px solid var(--white);
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+
+    animation: effectWrite 1.5s infinite alternate steps(9);
+}
+
+@keyframes effectWrite {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
