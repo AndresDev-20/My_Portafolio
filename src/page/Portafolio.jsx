@@ -16,13 +16,27 @@ const Portafolio = () => {
       </header>
 
       <section>
-        <div>
+        <nav>
           <img src="./image/yeison.jpg" alt="Yeison" />
-        </div>
-        <div>
-          <h1>My name is Yeison Andres Marroquin Bernal</h1>
-          <h1>My age is eighteen</h1>
-        </div>
+        </nav>
+        <nav>
+          <h2>My name is Yeison Andres Marroquin Bernal</h2>
+          <span>My age is eighteen year</span>
+          <span>i am from colombia</span>
+          <span>Live in the city of ibague</span>
+        </nav>
+      </section>
+          <nav>
+            <p>jhsvcaoisd</p>
+          </nav>
+          <nav>
+            <img src="./image/trabajo.jpg" alt="trabajo" />
+          </nav>
+          <nav>
+            <p>dvbauvgsgvc</p>
+          </nav>
+      <section>
+
       </section>
 
       <footer>
