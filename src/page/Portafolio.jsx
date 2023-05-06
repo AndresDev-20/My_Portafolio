@@ -17,7 +17,7 @@ const Portafolio = () => {
 
       <section>
         <div>
-          <img src="" alt="" />
+          <img src="./image/yeison.jpg" alt="Yeison" />
         </div>
         <div>
           <h1>My name is Yeison Andres Marroquin Bernal</h1>
