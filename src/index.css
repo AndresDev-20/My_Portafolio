@@ -1,6 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
 :root {
-  --black: rgb(53, 53, 53);
+  --zposition-first: 1000;
+  --zposition-second: 2000;
+  --zposition-third: 3000;
+  --zposition-fourth: 4000;
+    --black: rgb(53, 53, 53);
   --placeholder: rgba(101, 101, 101, 0.632);
   --background: rgb(24, 22, 105);
   --strong-white: white;
@@ -9,16 +13,12 @@
   --grey: rgb(121, 121, 121);
   --light-gold: #efc551;
   --gold: #dea60b;
-
-  --zposition-first: 1000;
-  --zposition-second: 2000;
-  --zposition-third: 3000;
-  --zposition-fourth: 4000;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Merienda', cursive;
 }
 img{
   width: 100%;
