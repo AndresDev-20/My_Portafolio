@@ -32,8 +32,8 @@
   position: fixed;
 }
 .Portafolio_click{
-  border: 1px solid white;
-  border-radius: 8px;
+  border: 1px solid rgb(51, 31, 139);
+  border-radius: 6px;
   color: white;
   display: flex;
   justify-content: end;
@@ -42,6 +42,10 @@
   align-items: end;
   background-color: rgb(9, 8, 41);
   cursor: pointer;
+}
+.img_menu{
+  height: 1.5em;
+  width: 1.7em;
 }
 .Portafolio_menu {
   background-color: rgb(25, 14, 100);

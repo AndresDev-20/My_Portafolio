@@ -21,8 +21,8 @@ const handelclose = () => {
           <h1 className="Portafolio_">Programmer</h1>
         </nav>
       
-        <nav className="Portafolio_click">
-          <span onClick={handelclick} class="material-symbols-outlined">menu_open</span>
+        <nav onClick={handelclick} className="Portafolio_click">
+        <img className="img_menu" src="./image/menu.jpg" alt="" />
         </nav>
         <section className={`container ${close && 'close'}`}>
           <section className="Portafolio_menu">
