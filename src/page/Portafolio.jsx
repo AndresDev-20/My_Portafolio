@@ -31,7 +31,7 @@ const handelclose = () => {
             <span className="Portafolio_select">Knowledge</span>
             <span className="Portafolio_select">Proyects</span>
             <span className="Portafolio_select">Contact me</span>
-            <span onClick={handelclose} className="Portafolio_select return">x</span>
+            <span onClick={handelclose} className="Portafolio_select return">return</span>
           </section>
         </section>
       </header>
