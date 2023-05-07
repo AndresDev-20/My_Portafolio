@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./page.style/portafolio.css";
+import About from "../components/About";
 
 
 
@@ -15,7 +16,7 @@ const handelclose = () => {
 }
 
   return (
-    <div className="Portafolio">
+    <div id="home" className="Portafolio">
       <header className="Portafolio_header">
         <nav className="Portafolio_programmer">
           <h1 className="Portafolio_">Programmer</h1>
@@ -26,8 +27,8 @@ const handelclose = () => {
         </nav>
         <section className={`container ${close && 'close'}`}>
           <section className="Portafolio_menu">
-            <span className="Portafolio_select">Home</span>
-            <span className="Portafolio_select">About me</span>
+           <a href="#"><span className="Portafolio_select">Home</span></a>
+           <a href=""><span  className="Portafolio_select">About me</span></a> 
             <span className="Portafolio_select">Knowledge</span>
             <span className="Portafolio_select">Proyects</span>
             <span className="Portafolio_select">Contact me</span>
@@ -49,39 +50,9 @@ const handelclose = () => {
           <span className="Portafolio_">Live in the city of ibague</span>
         </nav>
       </section>
+       <About/>
 
-      <section className="Portafolio_">
-        <nav className="Portafolio_">
-          <h1 className="Portafolio_">
-            Hello, here I leave you a little of my history as a programmer...
-          </h1>
-          <p className="Portafolio_">
-            Throughout my career as a programmer I have been through many things
-            good, I have learned a lot from this profession and I feel very
-            comfortable To do it every day, I am a very young boy I am only 18
-            years old but Every day I study I give everything of myself and my
-            goal is to program Any project to be carried out in the world of
-            programming.
-          </p>
-        </nav>
-        <nav className="Portafolio_">
-          <img
-            className="Portafolio_"
-            src="./image/trabajo.jpg"
-            alt="trabajo"
-          />
-        </nav>
-        <nav className="Portafolio_">
-          <p className="Portafolio_">
-            Some time ago I did not know anything about programming and today my
-            Progress has been impressive and in a very short time, I am now a
-            Frot-end programmer and I feel ready to learn as much as I can From
-            now on as I have been doing so far.
-          </p>
-        </nav>
-      </section>
-
-      <section className="Portafolio_">
+      <section id="Knowledge" className="Portafolio_">
         <h1 className="Portafolio_">Knowledge</h1>
         <section className="Portafolio_">
           <nav className="Portafolio_">
@@ -111,7 +82,7 @@ const handelclose = () => {
         </section>
       </section>
 
-      <section>
+      <section id="Proyects">
         <h1>Proyects</h1>
         <section>
           <nav>
@@ -173,6 +144,10 @@ const handelclose = () => {
             </nav>
           </nav>
         </section>
+      </section>
+
+      <section id="concatc">
+        contatme
       </section>
 
       <footer></footer>

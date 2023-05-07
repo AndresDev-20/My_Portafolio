@@ -1,3 +1,4 @@
+/*Css para 📱*/
 .Portafolio_header {
   background-color: rgb(11, 11, 116);
   color: rgb(235, 6, 6);
@@ -43,6 +44,7 @@
   background-color: rgb(9, 8, 41);
   cursor: pointer;
 }
+
 .img_menu{
   height: 1.5em;
   width: 1.7em;
@@ -73,4 +75,87 @@
 .return{
   color: white;
 
+}
+
+
+
+
+
+
+/*Css para 💻*/
+@media (min-width: 700px ) {
+  .Portafolio_header {
+    background-color: rgb(11, 11, 116);
+    color: rgb(235, 6, 6);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    gap: 30%;
+    height: 10vh;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(235, 6, 6);
+  }
+  .Portafolio_programmer{
+    width:90em;
+    text-align: start;
+    padding-left: 5em;
+  }
+  .container {
+    position: fixed;
+      width: 100%;
+      height: 10vh;
+      background-color: #1829c200;
+      z-index: 1;
+    backdrop-filter: blur(0px);
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 200ms ease;
+      margin-right:90em ;
+  }
+  .close{
+    transform: none;
+}
+  .Portafolio_click{
+  transform: scale(0);
+}
+  
+  .img_menu{
+    height: 1.5em;
+    width: 1.7em;
+  }
+  .Portafolio_menu {
+    background-color: rgba(10, 7, 31, 0.027);
+    text-align: center;
+      width: 100%;
+      max-width: 100%;
+      padding: 0em 1em 0em;
+      display: flex;
+      flex-direction: initial;
+      justify-content: end;
+      gap: 1em;
+      position: fixed;
+      border-radius: 1em;
+      border: none; 
+  }
+  .Portafolio_select{
+    transition:  transform 250ms ease;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+  }
+  .Portafolio_select:hover{
+    transform: scale(1.10);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.247);
+    cursor: pointer;
+    filter: brightness(1.9);
+  }
+  .return{
+  transform: scale(0);
+  }
 }

@@ -17,7 +17,7 @@ function App() {
       {
         Isloanding 
         ?<Loading Isloanding={Isloanding}/>
-        :(
+        :( 
           <Routes>
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyects/>}/>
