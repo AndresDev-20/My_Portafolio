@@ -1,0 +1,35 @@
+.About{
+    background-color: rgb(34, 19, 121);
+    max-width: 320px;
+    margin: auto;
+    padding-top: 1em;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+}
+.About_history{
+    max-width: 280px;
+    background-color: rgb(31, 17, 85);
+    margin: auto;
+    border-radius: 1em;
+    border: 3px solid rgb(6, 3, 24);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+.About_tittle{
+    color: red;
+    font-size: 1em;
+    text-align: center;
+}
+.About_his{
+    color: azure;
+    font-size: 12.5px;
+    text-align: center;
+    text-shadow: 1px 1px red;
+}
+
+.About_img{
+    border-radius: 1em;
+    border: 2px solid rgb(116, 25, 25);
+}
