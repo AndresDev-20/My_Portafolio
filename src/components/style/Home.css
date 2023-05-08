@@ -1,0 +1,48 @@
+.Home{
+    background-color: rgb(34, 19, 121);
+    max-width: 310px;
+    margin: auto;
+    padding-top: 4em;
+    border-radius: 1em;
+    padding-bottom: 1em;
+}
+.Home_center{
+    background-color: rgb(23, 13, 59);
+    max-width: 280px;
+    margin: auto;
+    border-radius: 1em;
+    border: 3px solid rgb(6, 3, 24);
+}
+.Home_image{
+    border-radius: 1em 1em 0em 0em;
+    background-color: rgb(5, 2, 17);
+    max-width: 280px;
+    margin: auto;
+}
+.Home_img{
+    border-radius: 1em;
+    border-radius: 1em 1em 0em 0em;
+}
+hr{
+    background-color: red;
+    max-width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    height: 1px;
+}
+.Home_info{
+    padding: .3em;
+    background-color: rgb(24, 24, 78);
+    max-width: 280px;
+    margin: auto;
+    border-radius: 0em 0em 1em 1em;
+}
+.Home_name{
+    color: aliceblue; 
+    font-size: 1em;
+    padding-left: 1em;
+}
+.Home_item{
+   color: rgb(250, 11, 11);
+    padding-left: 1em;
+}
