@@ -50,3 +50,63 @@ hr{
    color: rgb(250, 11, 11);
     padding-left: 1em;
 }
+
+
+
+
+
+@media (min-width: 700px) {
+    
+.Home{
+    background-color: rgb(34, 19, 121);
+    max-width: 850px;
+    margin: auto;
+    padding-top: 4em;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    margin-top: 6em;
+}
+.Home_center{
+    background-color: rgb(23, 13, 59);
+    max-width: 780px;
+    margin: auto;
+    border-radius: 1em;
+    border: 3px solid rgb(6, 3, 24);
+    margin-top: -2em;
+    margin-bottom: 1em;
+    display: flex;
+    height: 20em;
+}
+.Home_image{
+    border-radius: 1em 1em 1em 1em;
+    background-color: rgb(5, 2, 17);
+    max-width: 350px;
+    margin: auto;
+}
+.Home_img{
+    border-radius: 1em;
+    border-radius: 1em 1em 1em 1em;
+}
+hr{
+   transform: scale(0);
+}
+.Home_info{
+    padding: -3em;
+    background-color: rgba(24, 24, 78, 0);
+    max-width: 280px;
+    margin: auto;
+    border-radius: 0em 0em 1em 1em;
+    text-align: center;
+    margin-right: 5em;
+    padding-right: 3em;
+}
+.Home_name{
+    color: aliceblue; 
+    font-size: 1em;
+    padding-left: 1em;
+}
+.Home_item{
+   color: rgb(250, 11, 11);
+    padding-left: 1em;
+}
+}

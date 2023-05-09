@@ -9,7 +9,8 @@ const About = () => {
           <h1 className="About_tittle">
             Hello, here I leave you a little of my history as a programmer...
           </h1>
-      <p className="About_his">
+          <section className='About_historyy'>
+          <p className="About_his">
             Throughout my career as a programmer I have been through many things
             good, I have learned a lot from this profession and I feel very
             comfortable To do it every day, I am a very young boy I am only 18
@@ -33,7 +34,9 @@ const About = () => {
             now on as I have been doing so far.
           </p>
           
-          </nav>
+        
+          </section>
+       </nav>
       </section>
     </div>
   )

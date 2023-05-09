@@ -29,7 +29,7 @@ const Portafolio = () => {
         </nav>
         <section className={`container ${close && 'close'}`}>
           <section className="Portafolio_menu">
-           <a href="#"><span className="Portafolio_select">Home</span></a>
+           <a href="#"><span onClick={handelclose} className="Portafolio_select">Home</span></a>
            <a href="#"><span  className="Portafolio_select">About me</span></a> 
             <span className="Portafolio_select">Knowledge</span>
             <span className="Portafolio_select">Proyects</span>

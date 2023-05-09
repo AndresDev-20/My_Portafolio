@@ -17,7 +17,10 @@ const Proyects = () => {
             entertain you with all the pokemon that will show you
           </p>
           <div  className='Proyects_click'>
-            <h1  className='Proyects_ingresar'>More information</h1>
+            <a href="">
+               <h1  className='Proyects_ingresar'>More information</h1>
+            </a>
+           
           </div>
         </nav>
       </nav>
@@ -32,7 +35,9 @@ const Proyects = () => {
             entertaining saga, because here you can find all its characters.
           </p>
           <div  className='Proyects_click'>
-            <h1  className='Proyects_ingresar'>More information</h1>
+          <a href="">
+               <h1  className='Proyects_ingresar'>More information</h1>
+            </a>
           </div>
         </nav>
       </nav>
@@ -47,7 +52,9 @@ const Proyects = () => {
             will like it
           </p>
           <div  className='Proyects_click'>
-            <h1  className='Proyects_ingresar'>More information</h1>
+          <a href="">
+               <h1  className='Proyects_ingresar'>More information</h1>
+            </a>
           </div>
         </nav>
       </nav>
@@ -62,7 +69,9 @@ const Proyects = () => {
             places
           </p>
           <div  className='Proyects_click'>
-            <h1  className='Proyects_ingresar'>More information</h1>
+          <a href="">
+               <h1  className='Proyects_ingresar'>More information</h1>
+            </a>
           </div>
         </nav>
       </nav>

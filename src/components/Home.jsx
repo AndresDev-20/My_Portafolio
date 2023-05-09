@@ -11,9 +11,8 @@ const Home = () => {
     </nav>
     
     <nav className="Home_info">
-    <br />
+  
     <hr />
-    <br />
     <span className='Home_item'> My name is.</span> <br />
       <h2 className="Home_name">
       Yeison Andres Marroquin Bernal...
