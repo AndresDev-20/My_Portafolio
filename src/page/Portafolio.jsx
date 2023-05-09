@@ -4,6 +4,7 @@ import About from "../components/About";
 import Knowledge from "../components/Knowledge";
 import Home from "../components/Home";
 import Contactame from "../components/Contactame";
+import Proyects from "../components/Proyects";
 
 
 
@@ -41,6 +42,7 @@ const Portafolio = () => {
        <Home/>
        <About/>
        <Knowledge/>
+       <Proyects/>
        <Contactame/>
 
       <footer>
