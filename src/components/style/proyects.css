@@ -1,22 +1,65 @@
 .Proyects{
-    background-color: rgb(34, 19, 121);
-    max-width: 320px;
-    margin: auto;
+   background-color: rgb(34, 19, 121);
+   max-width: 320px;
+   margin: auto;
    display: flex;
    flex-direction: column;
    gap: 1em;
+   margin-top: 3em;
+   border-radius: 1em;
+   -webkit-border-radius: 1em;
+   -moz-border-radius: 1em;
+   -ms-border-radius: 1em;
+   -o-border-radius: 1em;
+}
+.Proyects_tittle{
+    color: red;
+    text-align: center;
+    margin-top: 1em;
 }
 .Proyects_proyects{
    max-width: 250px;
    margin: auto;
-   background-color: blue;
+   background-color: rgb(21, 21, 77);
    display: grid;
    gap: 1em;
    padding: 1em;
+   border-radius: 1em;
 }
 .Proyects_proyect{
     background-color: rgb(17, 17, 73);
- }
- .proyect_img{
-    
- }
+    border-radius: 1em;
+    border: 4px solid rgb(7, 1, 17);
+}
+ .Proyects_img{
+    height: 28vh;
+    border-radius: 1em 1em 0em 0em;
+}
+.Proyects_name{
+    color: red;
+    text-align: center;
+}
+.Proyects_info{
+    color: beige;
+    text-align: center;
+    font-size: 14px;
+    padding: 1em;
+ 
+}
+.proyects_todos{
+    color: red;
+    text-align: center;
+    font-size: 9px;
+    cursor: pointer;
+    background-color: rgb(26, 26, 131);
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 5px;
+    border-radius: 2em;
+    transition: border 300ms ease, color 350ms ease;
+}
+.proyects_todos:hover{
+    border: 1px solid rgba(7, 3, 27, 0.534);
+    color: rgb(113, 173, 252);
+}
