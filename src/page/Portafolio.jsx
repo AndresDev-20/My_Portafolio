@@ -45,8 +45,8 @@ const Portafolio = () => {
        <Proyects/>
        <Contactame/>
 
-      <footer>
-        pie de pagina
+      <footer className="footer">
+        
       </footer>
     </div>
   );

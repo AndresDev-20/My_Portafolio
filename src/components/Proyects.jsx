@@ -1,5 +1,7 @@
 import React from 'react'
 import './style/proyects.css'
+import { Link } from 'react-router-dom'
+import Loading from './Loading'
 const Proyects = () => {
   return (
     
@@ -65,9 +67,14 @@ const Proyects = () => {
         </nav>
       </nav>
     </section>
-    <div className='proyects_todos'>
+    
+         <Link to="proyects">
+         <div className='proyects_todos'>
       <h1>enter here for <br /> more information</h1>
     </div>
+    </Link>
+    
+ 
   </section>
   )
 }

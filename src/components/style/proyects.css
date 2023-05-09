@@ -7,15 +7,19 @@
    gap: 1em;
    margin-top: 3em;
    border-radius: 1em;
-   -webkit-border-radius: 1em;
-   -moz-border-radius: 1em;
-   -ms-border-radius: 1em;
-   -o-border-radius: 1em;
 }
 .Proyects_tittle{
     color: red;
+    max-width: 450px;
+    margin: auto;
     text-align: center;
     margin-top: 1em;
+    background-color: rgb(17, 17, 70);
+    padding: 3px;
+    border-radius: 1em;
+    width: 13em;
+    font-size: 19px;
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
 }
 .Proyects_proyects{
    max-width: 250px;
