@@ -1,6 +1,6 @@
 .Proyects{
    background-color: rgb(34, 19, 121);
-   max-width: 320px;
+   max-width: 330px;
    margin: auto;
    display: flex;
    flex-direction: column;
@@ -20,6 +20,7 @@
     width: 13em;
     font-size: 19px;
     text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
+    margin-top: 1.2em;
 }
 .Proyects_proyects{
    max-width: 250px;
