@@ -3,7 +3,7 @@ import './style/Home.css'
 
 const Home = () => {
   return (
-    <section className="Home">
+    <section className="Home" id='Home'>
       <div className='Home_center'>
             <nav className="Home_image">
       <img className="Home_img" src="./image/yeison.jpg" alt="Yeison" />
@@ -11,7 +11,6 @@ const Home = () => {
     </nav>
     
     <nav className="Home_info">
-  
     <hr />
     <span className='Home_item'> My name is.</span> <br />
       <h2 className="Home_name">

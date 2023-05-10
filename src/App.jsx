@@ -3,7 +3,7 @@ import './App.css'
 import Loading from './components/Loading'
 import Portafolio from './page/Portafolio';
 import { Route, Routes } from 'react-router-dom';
-import Proyects from './page/Proyects';
+import Proyectss from './page/Proyectss';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -20,11 +20,12 @@ function App() {
         :( 
           <Routes>
             <Route path='/' element={<Portafolio/>}/>
-            <Route path='/proyects' element={<Proyects/>}/>
+            <Route path='/proyects' element={<Proyectss/>}/>
           </Routes>
+          
         )
       }
-    </div>
+</div>
   )
 }
 

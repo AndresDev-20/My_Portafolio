@@ -5,6 +5,9 @@ import Knowledge from "../components/Knowledge";
 import Home from "../components/Home";
 import Contactame from "../components/Contactame";
 import Proyects from "../components/Proyects";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+
 
 
 
@@ -17,24 +20,28 @@ const Portafolio = () => {
   const handelclose = () => {
     setclose(true)
   }
+
   return (
     <div id="home" className="Portafolio">
                  <header className="Portafolio_header">
         <nav className="Portafolio_programmer">
-          <h1 className="Portafolio_">Programmer</h1>
+          <h1 className="Portafolio_"> Programming...</h1>
         </nav>
       
         <nav onClick={handelclick} className="Portafolio_click">
         <img className="img_menu" src="./image/menu.jpg" alt="" />
         </nav>
         <section className={`container ${close && 'close'}`}>
-          <section className="Portafolio_menu">
-           <a href="#"><span onClick={handelclose} className="Portafolio_select">Home</span></a>
-           <a href="#"><span  className="Portafolio_select">About me</span></a> 
-            <span className="Portafolio_select">Knowledge</span>
-            <span className="Portafolio_select">Proyects</span>
-            <span className="Portafolio_select">Contact me</span>
+          <section className= 'Portafolio_menu'>
+          
+          <a href="#"><span onClick={handelclose}  className="Portafolio_select">beginning</span></a> 
+           <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">About me</span></Link> 
+           <Link to="/#Knowledge"onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Knowledge</span></Link>
+           <Link to="/#Proyects"onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Proyects</span></Link>
+           <Link to="/#contact"onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Contact me</span></Link>
             <span onClick={handelclose} className="Portafolio_select return">return</span>
+        
+  
           </section>
         </section>
       </header>
@@ -44,10 +51,7 @@ const Portafolio = () => {
        <Knowledge/>
        <Proyects/>
        <Contactame/>
-
-      <footer className="footer">
-        
-      </footer>
+       <Footer/>
     </div>
   );
 };

@@ -24,6 +24,11 @@ img{
   width: 100%;
   display: block;
 }
+video{
+  width: 100%;
+  display: block;
+ 
+}
 html{
   background-color: rgb(16, 18, 155);
 }

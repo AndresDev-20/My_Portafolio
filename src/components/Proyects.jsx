@@ -5,8 +5,11 @@ import Loading from './Loading'
 const Proyects = () => {
   return (
     
-    <section  className='Proyects'>
+    <section  className='Proyect' id='Proyects'>
     <h1  className='Proyects_tittle'>Proyects</h1>
+    <p  className='Proyect_text'>
+    Here are some of the jobs I have created
+          </p>
     <section  className='Proyects_proyects'>
       <nav  className='Proyects_proyect'>
         <img  className='Proyects_img' src="./image/Pokedex.jpg" alt="" />
@@ -17,9 +20,9 @@ const Proyects = () => {
             entertain you with all the pokemon that will show you
           </p>
           <div  className='Proyects_click'>
-            <a href="">
+          <Link to="proyects">
                <h1  className='Proyects_ingresar'>More information</h1>
-            </a>
+            </Link>
            
           </div>
         </nav>
@@ -35,9 +38,9 @@ const Proyects = () => {
             entertaining saga, because here you can find all its characters.
           </p>
           <div  className='Proyects_click'>
-          <a href="">
+          <Link to="proyects">
                <h1  className='Proyects_ingresar'>More information</h1>
-            </a>
+            </Link>
           </div>
         </nav>
       </nav>
@@ -52,9 +55,9 @@ const Proyects = () => {
             will like it
           </p>
           <div  className='Proyects_click'>
-          <a href="">
+          <Link to="proyects">
                <h1  className='Proyects_ingresar'>More information</h1>
-            </a>
+            </Link>
           </div>
         </nav>
       </nav>
@@ -69,9 +72,9 @@ const Proyects = () => {
             places
           </p>
           <div  className='Proyects_click'>
-          <a href="">
+          <Link to="proyects">
                <h1  className='Proyects_ingresar'>More information</h1>
-            </a>
+            </Link>
           </div>
         </nav>
       </nav>
@@ -79,7 +82,7 @@ const Proyects = () => {
     
          <Link to="proyects">
          <div className='proyects_todos'>
-      <h1>enter here for <br /> more information</h1>
+    <h1>enter here for <br /> more information</h1>
     </div>
     </Link>
     

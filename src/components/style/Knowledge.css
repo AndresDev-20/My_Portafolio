@@ -10,6 +10,11 @@
     border-radius: 1em;
     font-size: 1.3em;
 }
+.Knowledge_text{
+    color: aliceblue;
+    text-align: center;
+    padding: 0em 4em 0em 4em;
+ }
 .Knowledge{
     background-color: rgb(34, 19, 121);
     max-width: 330px;

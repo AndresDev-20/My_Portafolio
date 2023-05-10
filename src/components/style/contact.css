@@ -1,0 +1,131 @@
+.contact {
+    padding: 2rem 0;
+    max-width: 330px;
+    margin: auto;
+    margin-top: 2em;
+    background-color: rgb(21, 21, 107);
+    border-radius: 1em;
+}
+
+.content_contact {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.content_contact span {
+    color: red;
+}
+
+.content_contact h3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+form {
+    width: 100%;
+    display: grid;
+    gap: .5rem;
+}
+
+form input {
+    height: 50px;
+    padding: 0 1rem;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+    background-color: rgb(11, 11, 63);
+    color: red;
+}
+
+form textarea {
+    padding: 1rem;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+    background-color: rgb(11, 11, 63);
+    color: aliceblue;
+}
+
+.btn{
+   background-color: rgb(12, 14, 87);
+   border-radius: 1em;
+   color: beige;
+   cursor: pointer;
+   border: none;
+   height: 2em;
+   transition: color 300ms ease, tranform 300ms ease;
+}
+.btn:hover{
+    color: red;
+    transform: scale(1.04);
+}
+@media (min-width: 700px) {
+    .contact {
+        padding: 2rem 0;
+        max-width: 850px;
+        margin: auto;
+        margin-top: 2em;
+        background-color: rgb(21, 21, 107);
+        border-radius: 1em;
+    }
+    
+    .content_contact {
+        width: 80%;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .content_contact span {
+        color: red;
+        font-size: 1.5em;
+    }
+    
+    .content_contact h3 {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+        color: var(--white);
+    }
+    
+    form {
+        width: 100%;
+        display: grid;
+        gap: .5rem;
+    }
+    
+    form input {
+        height: 50px;
+        padding: 0 1rem;
+        border-radius: 1em;
+        text-align: center;
+        border: none;
+        background-color: rgb(11, 11, 63);
+        color: red;
+    }
+    
+    form textarea {
+        padding: 1rem;
+        border-radius: 1em;
+        text-align: center;
+        border: none;
+        background-color: rgb(11, 11, 63);
+        color: aliceblue;
+    }
+    
+    .btn{
+       background-color: rgb(12, 14, 87);
+       border-radius: 1em;
+       color: beige;
+       cursor: pointer;
+       border: none;
+       height: 2em;
+       transition: color 300ms ease, tranform 300ms ease;
+    }
+    .btn:hover{
+        color: red;
+        transform: scale(1.04);
+    }
+}

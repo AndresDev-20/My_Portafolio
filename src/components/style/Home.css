@@ -33,6 +33,8 @@ hr{
     margin: auto;
     border-radius: 50%;
     height: 1px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .Home_info{
     padding: .3em;
