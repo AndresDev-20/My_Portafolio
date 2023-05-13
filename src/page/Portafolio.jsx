@@ -29,7 +29,7 @@ const Portafolio = () => {
         </nav>
       
         <nav onClick={handelclick} className="Portafolio_click">
-        <img className="img_menu" src="./image/menu.jpg" alt="" />
+        <i class='bx bx-menu'></i>
         </nav>
         <section className={`container ${close && 'close'}`}>
           <section className= 'Portafolio_menu'>

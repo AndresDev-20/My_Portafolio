@@ -1,5 +1,5 @@
 .Proyect{
-   background-color: rgb(34, 19, 121);
+    background-color: var(--bg-300);
    max-width: 330px;
    margin: auto;
    display: flex;

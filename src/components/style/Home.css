@@ -1,6 +1,6 @@
 
 .Home{
-    background-color: rgb(34, 19, 121);
+    background-color: var(--bg-300);
     max-width: 330px;
     margin: auto;
     padding-top: 4em;
@@ -9,17 +9,17 @@
     margin-top: 6em;
 }
 .Home_center{
-    background-color: rgb(23, 13, 59);
+    background-color: var(--bg-200);
     max-width: 280px;
     margin: auto;
     border-radius: 1em;
-    border: 3px solid rgb(6, 3, 24);
+    border: 3px solid rgba(134, 118, 27, 0.123);
     margin-top: -2em;
     margin-bottom: 1em;
 }
 .Home_image{
     border-radius: 1em 1em 0em 0em;
-    background-color: rgb(5, 2, 17);
+    background-color: var(--bg-100);
     max-width: 280px;
     margin: auto;
 }
@@ -28,7 +28,7 @@
     border-radius: 1em 1em 0em 0em;
 }
 hr{
-    background-color: red;
+    background-color: rgb(251, 255, 0);
     max-width: 250px;
     margin: auto;
     border-radius: 50%;
@@ -38,18 +38,17 @@ hr{
 }
 .Home_info{
     padding: .3em;
-    background-color: rgb(24, 24, 78);
     max-width: 280px;
     margin: auto;
     border-radius: 0em 0em 1em 1em;
 }
 .Home_name{
-    color: aliceblue; 
+    color: var(--text-100); 
     font-size: 1em;
     padding-left: 1em;
 }
 .Home_item{
-   color: rgb(250, 11, 11);
+   color: var(--text-200);
     padding-left: 1em;
 }
 
