@@ -14,14 +14,14 @@
 }
 
 .content_contact span {
-    color: red;
+    color: var(--text-200);
 }
 
 .content_contact h3 {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
-    color: var(--white);
+    color: var(--text-100);
 }
 
 form {
@@ -36,8 +36,8 @@ form input {
     border-radius: 1em;
     text-align: center;
     border: none;
-    background-color: rgb(11, 11, 63);
-    color: red;
+    background-color: var(--bg-200);
+    color: var(--text-200);
 }
 
 form textarea {
@@ -45,21 +45,21 @@ form textarea {
     border-radius: 1em;
     text-align: center;
     border: none;
-    background-color: rgb(11, 11, 63);
-    color: aliceblue;
+    background-color: var(--bg-200);
+    color: var(--text-100);
 }
 
 .btn{
-   background-color: rgb(12, 14, 87);
+   background-color: var(--bg-200);
    border-radius: 1em;
-   color: beige;
+   color: var(--text-200);
    cursor: pointer;
    border: none;
    height: 2em;
-   transition: color 300ms ease, tranform 300ms ease;
+   transition: color 300ms ease, transform 300ms ease;
 }
 .btn:hover{
-    color: red;
+    color: var(--bg-300);
     transform: scale(1.04);
 }
 @media (min-width: 700px) {
@@ -68,7 +68,7 @@ form textarea {
         max-width: 850px;
         margin: auto;
         margin-top: 2em;
-        background-color: rgb(21, 21, 107);
+        background-color: var(--bg-300);
         border-radius: 1em;
     }
     
@@ -79,7 +79,6 @@ form textarea {
     }
     
     .content_contact span {
-        color: red;
         font-size: 1.5em;
     }
     
@@ -87,7 +86,6 @@ form textarea {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 2rem;
-        color: var(--white);
     }
     
     form {
@@ -102,8 +100,6 @@ form textarea {
         border-radius: 1em;
         text-align: center;
         border: none;
-        background-color: rgb(11, 11, 63);
-        color: red;
     }
     
     form textarea {
@@ -111,21 +107,16 @@ form textarea {
         border-radius: 1em;
         text-align: center;
         border: none;
-        background-color: rgb(11, 11, 63);
-        color: aliceblue;
     }
     
     .btn{
-       background-color: rgb(12, 14, 87);
        border-radius: 1em;
-       color: beige;
        cursor: pointer;
        border: none;
        height: 2em;
-       transition: color 300ms ease, tranform 300ms ease;
-    }
+       transition: color 300ms ease, transform 300ms ease;
+}
     .btn:hover{
-        color: red;
         transform: scale(1.04);
     }
 }

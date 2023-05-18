@@ -1,19 +1,20 @@
 .Knowledge_tittle{
-    color: rgb(206, 18, 18);
+    color: var(--text-200);
     text-shadow: 1px 1px rgb(139, 109, 109);
     text-align: center;
     background-color: var(--bg-200);
-    border: 3px solid rgb(2, 1, 10);
+    border: 3px solid var(--bg-200);
     max-width: 260px;
     margin: auto;
     margin-bottom: 0.5em;
     border-radius: 1em;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .Knowledge_text{
-    color: aliceblue;
+    color: var(--text-100);
     text-align: center;
-    padding: 0em 4em 0em 4em;
+    padding: 0em 2em 0em 2em;
+    font-size: 1.1em;
  }
 .Knowledge{
     background-color: var(--bg-300);
@@ -21,18 +22,18 @@
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     margin-top: 2em;
 }
 .Knowledge_knowledge{
     max-width: 280px;
     margin: auto;
     background-color: var(--bg-200);
-    height: 45vh;
+    height: 57vh;
     display: flex;
     justify-content: center;
     border-radius: 1em;
-    border: 3px solid rgb(3, 2, 15);
+    border: 3px solid var(--bg-200);
 }
 .languaje{
    display: flex;
@@ -40,38 +41,40 @@
    width: 100%;
    gap: 1.1em;     
    align-items: center;    
-   justify-content: center;                            
+   justify-content: center;   
+   padding-bottom: 4em;    
+   padding-top: 1em;                 
 }
 .Knowledge_languaje{
     border-radius: 7px;
     background-color: var(--bg-300);
     text-align: center;
     width: 5em;
-    height: 19vh;
-    color: beige;
-    font-size: 13px;
+    height: 15vh;
+    font-size: 1.1em;
     border: 1.8px solid rgb(255, 252, 252);
-    color: red;
+    color: var(--text-100);
     text-shadow: 0.2px 0.2px rgba(7, 1, 1, 0.945);
-    transition: transform 300ms ease;
+    transition: transform 300ms ease; 
 }
 .Knowledge_languaje:hover{
-    transform: scale(1.08);
+    transform: scale(1.03);
     color: beige;
-    border: 2px solid rgb(177, 5, 5);
+    border: 2px solid var(--text-200);
 }
 .Knowledge_img{
     padding: 5px;
     height: 11vh;
-    border-radius: 12px;
+    border-radius: 1.1em;
+    object-fit: contain;
 }
 @media (min-width: 700px) {
     .Knowledge_tittle{
         color: rgb(206, 18, 18);
         text-shadow: 1px 1px rgb(139, 109, 109);
         text-align: center;
-        background-color: rgb(8, 8, 54);
-        border: 3px solid rgb(2, 1, 10);
+        background-color: var(--bg-200);
+        border: 3px solid var(--bg-200);
         max-width: 260px;
         margin: auto;
         margin-bottom: 0.5em;
@@ -79,7 +82,7 @@
         font-size: 1.3em;
     }
     .Knowledge{
-        background-color: rgb(34, 19, 121);
+        background-color: var(--bg-300);;
         max-width: 850px;
         margin: auto;
         padding-top: 1em;
@@ -90,12 +93,13 @@
     .Knowledge_knowledge{
         max-width: 780px;
         margin: auto;
-        background-color: rgb(11, 11, 65);
+        background-color: var(--bg-200);
         height: 45vh;
         display: flex;
         justify-content: center;
         border-radius: 1em;
-        border: 3px solid rgb(3, 2, 15);
+        border: 3px solid var(--bg-200);
+        margin-bottom: 1em;
     }
     .languaje{
        display: flex;
@@ -107,22 +111,17 @@
     }
     .Knowledge_languaje{
         border-radius: 7px;
-        background-color: rgb(17, 8, 68);
         text-align: center;
         width: 5em;
-        height: 19vh;
-        color: beige;
-        font-size: 13px;
-        border: 1.8px solid rgb(255, 252, 252);
-        color: red;
+        height: 16vh;
         text-shadow: 0.2px 0.2px rgba(7, 1, 1, 0.945);
         transition: transform 300ms ease;
     }
     .Knowledge_languaje:hover{
-        transform: scale(1.08);
+        transform: scale(1.03);
         color: beige;
-        border: 2px solid rgb(177, 5, 5);
-    }
+        border: 2px solid var(--text-200);
+}
     .Knowledge_img{
         padding: 5px;
         height: 11vh;

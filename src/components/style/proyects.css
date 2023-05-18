@@ -8,13 +8,13 @@
    margin-top: 3em;
    border-radius: 1em;
 }
-.Proyects_tittle{
-    color: red;
-    max-width: 450px;
+.Proyects_Tittle{
+    color: var(--text-200);
+    max-width: 280px;
     margin: auto;
     text-align: center;
     margin-top: 1em;
-    background-color: rgb(17, 17, 70);
+    background-color: var(--bg-200);
     padding: 3px;
     border-radius: 1em;
     width: 13em;
@@ -22,38 +22,48 @@
     text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
     margin-top: 1.2em;
 }
-.Proyects_proyects{
-   max-width: 250px;
+.Pro_text{
+   font-size: 1.2em;
+   text-align: center;
+   padding: 1em;
+}
+
+.Proyects_Proyects{
+   max-width: 310px;
    margin: auto;
-   background-color: rgb(21, 21, 77);
+   background-color: var(--bg-300);
    display: grid;
    gap: 1em;
    padding: 1em;
    border-radius: 1em;
 }
 .Proyects_proyect{
-    background-color: rgb(17, 17, 73);
+    background-color: var(--bg-200);
     border-radius: 1em;
-    border: 4px solid rgb(7, 1, 17);
+    border: 3px solid var(--bg-200);
     transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
+    max-width: 290px;
+    margin: auto;
 }
 .Proyects_proyect:hover{
-    background-color: rgba(10, 8, 22, 0.151);
-    border: 4px solid rgb(47, 36, 65);
+    border: 3px solid var(--text-200);
 }
- .Proyects_img{
+ .Proyects_Img{
     height: 28vh;
     border-radius: 1em 1em 0em 0em;
+    
 }
-.Proyects_name{
-    color: red;
+.Proyects_Name{
+    color: var(--text-200);
     text-align: center;
+    font-size: 1.2em;
 }
-.Proyects_info{
-    color: beige;
+.Proyects_Info{
+    color: var(--text-100);
     text-align: center;
     font-size: 14px;
     padding: 1em;
+    font-size: 1em;
  
 }
 .Proyects_ingresar{
@@ -65,12 +75,12 @@
    color: beige;
    transform: scale(1.03);
 }
-.proyects_todos{
-    color: red;
+.proyects_Todos{
+    color: var(--text-200);
     text-align: center;
     font-size: 9px;
     cursor: pointer;
-    background-color: rgb(26, 26, 131);
+    background-color: var(--bg-200);
     max-width: 200px;
     margin: auto;
     margin-bottom: 2em;
@@ -78,91 +88,104 @@
     border-radius: 2em;
     transition: border 300ms ease, color 350ms ease;
 }
-.proyects_todos:hover{
-    border: 1px solid rgba(7, 3, 27, 0.534);
-    color: rgb(113, 173, 252);
+.proyects_Todos:hover{
+    border: 1px solid var(--text-200);
+    color: var(--text-100);
 }
 @media (min-width: 700px) {
     .Proyect{
-        background-color: rgb(34, 19, 121);
-        max-width: 850px;
+        background-color: var(--bg-300);
+       max-width: 850px;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       gap: 1em;
+       margin-top: 3em;
+       border-radius: 1em;
+    }
+    .Proyects_Tittle{
+        color: var(--text-200);
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+        margin-top: 1em;
+        background-color: var(--bg-200);
+        padding: 3px;
+        border-radius: 1em;
+        width: 13em;
+        font-size: 19px;
+        text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
+        margin-top: 1.2em;
+    }
+    .Proyects_Proyects{
+       max-width: 810px;
+       margin: auto;
+       background-color: var(--bg-300);
+       display: grid;
+       gap: 1em;
+       padding: 1em;
+       border-radius: 1em;
+    }
+    .Proyects_proyect{
+        background-color: var(--bg-200);
+        border-radius: 1em;
+        border: 3px solid var(--bg-200);
+        transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
+        max-width: 890px;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        gap: 1em;
-        margin-top: 3em;
-        border-radius: 1em;
-     }
-     .Proyects_tittle{
-         color: red;
-         max-width: 350px;
-         margin: auto;
-         text-align: center;
-         margin-top: 1em;
-         background-color: rgb(17, 17, 70);
-         padding: 3px;
-         border-radius: 1em;
-         width: 13em;
-         font-size: 19px;
-         text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
-         margin-top: 1.2em;
-     }
-     .Proyects_proyects{
-        max-width: 750px;
-        margin: auto;
-        background-color: rgb(21, 21, 77);
-        display: grid;
-        gap: 1em;
+        height: 20em;
+        align-items: center;
         padding: 1em;
-        border-radius: 1em;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-     }
-     .Proyects_proyect{
-         background-color: rgb(17, 17, 73);
-         border-radius: 1em;
-         border: 4px solid rgb(7, 1, 17);
-         display: flex;
-         flex-direction: row;
-         height: 60vh;
-         align-items: center;
-     }
-     .Proyects_proyect:nth-child(even) {
+        flex-direction: row;
+    }
+    .Proyects_proyect:nth-child(even){
         flex-direction: row-reverse;
     }
-      .Proyects_img{
-         height: 60vh;
-         border-radius: 2em;
-         width: 25em;
-         padding: 1em;
+    .Proyects_proyect:hover{
+        border: 3px solid var(--text-200);
+    }
+     .Proyects_Img{
+        height: 40vh;
+        width: 20em;
+        border-radius: 1em;
 }
-     .Proyects_name{
-         color: red;
-         text-align: center;
-     }
-     .Proyects_info{
-         color: beige;
-         text-align: center;
-         font-size: 14px;
-         padding: 1em;
-      
-     }
-     .proyects_todos{
-         color: red;
-         text-align: center;
-         font-size: 9px;
-         cursor: pointer;
-         background-color: rgb(26, 26, 131);
-         max-width: 200px;
-         margin: auto;
-         margin-bottom: 2em;
-         padding: 5px;
-         border-radius: 2em;
-         transition: border 300ms ease, color 350ms ease;
-     }
-     .proyects_todos:hover{
-         border: 1px solid rgba(7, 3, 27, 0.534);
-         color: rgb(113, 173, 252);
-     }
+    .Proyects_Name{
+        color: var(--text-200);
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .Proyects_Info{
+        color: var(--text-100);
+        text-align: center;
+        font-size: 14px;
+        padding: 2em;
+        font-size: 1em;
+        
+    }
+    .Proyects_ingresar{
+        margin-top: 2em;
+        font-size: 1em;
+        transition: color 300ms ease, transform 300ms ease;
+    }
+    .Proyects_ingresar:hover{
+       color: beige;
+       transform: scale(1.03);
+    }
+    .proyects_Todos{
+        color: var(--text-200);
+        text-align: center;
+        font-size: 9px;
+        cursor: pointer;
+        background-color: var(--bg-200);
+        max-width: 200px;
+        margin: auto;
+        margin-bottom: 2em;
+        padding: 5px;
+        border-radius: 2em;
+        transition: border 300ms ease, color 350ms ease;
+    }
+    .proyects_Todos:hover{
+        border: 1px solid var(--text-200);
+    }
 }

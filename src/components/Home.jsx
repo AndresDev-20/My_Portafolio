@@ -12,16 +12,19 @@ const Home = () => {
     
     <nav className="Home_info">
     <hr />
-    <span className='Home_item'> My name is.</span> <br />
+    <span className='Home_item'> Mi nombre es:</span> <br />
       <h2 className="Home_name">
       Yeison Andres Marroquin Bernal...
       </h2>
-      <span className="Home_item">My age is .</span><br />
+      <br />
+      <span className="Home_item">Mi edad es de:</span><br />
       <h2 className='Home_name'>eighteen year.</h2>
-      <span className="Home_item">i am from.</span><br />
+      <br />
+      <span className="Home_item">soy de:</span><br />
       <h2 className='Home_name'> colombia.</h2>
-      <span className="Home_item">Live in the city of.</span>
-      <h2 className='Home_name'> ibague.</h2>
+      <br />
+      <span className="Home_item">Mi ciudad es de:</span>
+      <h2 className='Home_name'> ibague Tolima.</h2>
     </nav>
       </div>
 

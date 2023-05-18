@@ -4,9 +4,9 @@ const Knowledge = () => {
   return (
    
     <section className="Knowledge" id='Knowledge'>
-    <h1 className="Knowledge_tittle">Knowledge</h1>
+    <h1 className="Knowledge_tittle">Conocimiento</h1>
     <p  className='Knowledge_text'>
-    These are some of the languages I've learned
+    Estas son algunas tecnologias que he aprendido hasta el momento
           </p>
           <br />
     <section className="Knowledge_knowledge">

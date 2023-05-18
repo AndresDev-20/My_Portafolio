@@ -13,7 +13,7 @@
     max-width: 280px;
     margin: auto;
     border-radius: 1em;
-    border: 3px solid rgba(134, 118, 27, 0.123);
+    border: 3px solid var(--bg-200);
     margin-top: -2em;
     margin-bottom: 1em;
 }
@@ -22,6 +22,7 @@
     background-color: var(--bg-100);
     max-width: 280px;
     margin: auto;
+    object-fit: contain;
 }
 .Home_img{
     border-radius: 1em;
@@ -41,6 +42,7 @@ hr{
     max-width: 280px;
     margin: auto;
     border-radius: 0em 0em 1em 1em;
+    margin-bottom: 1em;
 }
 .Home_name{
     color: var(--text-100); 
@@ -59,7 +61,6 @@ hr{
 @media (min-width: 700px) {
     
 .Home{
-    background-color: rgb(34, 19, 121);
     max-width: 850px;
     margin: auto;
     padding-top: 4em;
@@ -68,11 +69,9 @@ hr{
     margin-top: 6em;
 }
 .Home_center{
-    background-color: rgb(23, 13, 59);
     max-width: 780px;
     margin: auto;
     border-radius: 1em;
-    border: 3px solid rgb(6, 3, 24);
     margin-top: -2em;
     margin-bottom: 1em;
     display: flex;
@@ -80,7 +79,6 @@ hr{
 }
 .Home_image{
     border-radius: 1em 1em 1em 1em;
-    background-color: rgb(5, 2, 17);
     max-width: 350px;
     margin: auto;
 }
@@ -93,21 +91,18 @@ hr{
 }
 .Home_info{
     padding: -3em;
-    background-color: rgba(24, 24, 78, 0);
     max-width: 280px;
     margin: auto;
     border-radius: 0em 0em 1em 1em;
-    text-align: center;
     margin-right: 5em;
     padding-right: 3em;
+    margin-top: -1em;
 }
 .Home_name{
-    color: aliceblue; 
     font-size: 1em;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 .Home_item{
-   color: rgb(250, 11, 11);
-    padding-left: 1em;
+    padding-left: -9em;
 }
 }

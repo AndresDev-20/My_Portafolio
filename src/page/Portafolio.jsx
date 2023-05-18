@@ -34,12 +34,12 @@ const Portafolio = () => {
         <section className={`container ${close && 'close'}`}>
           <section className= 'Portafolio_menu'>
           
-          <a href="#"><span onClick={handelclose}  className="Portafolio_select">beginning</span></a> 
-           <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">About me</span></Link> 
-           <Link to="/#Knowledge"onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Knowledge</span></Link>
-           <Link to="/#Proyects"onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Proyects</span></Link>
-           <Link to="/#contact"onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Contact me</span></Link>
-            <span onClick={handelclose} className="Portafolio_select return">return</span>
+          <a href="#"><span onClick={handelclose}  className="Portafolio_select">inicio</span></a> 
+           <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">Acerca de mi</span></Link> 
+           <Link to="/#Knowledge"onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Conocimientos</span></Link>
+           <Link to="/#Proyects"onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Proyectos</span></Link>
+           <Link to="/#contact"onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Contactame</span></Link>
+            <span onClick={handelclose} className="Portafolio_select return">Volver al inicio</span>
         
   
           </section>

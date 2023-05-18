@@ -1,138 +1,241 @@
-import React, { useState } from 'react'
-import './page.style/proyects.css'
-import Loading from '../components/Loading'
-const Proyectss = ({handelclose}) => {
-  const [Isloanding, setIsloanding] = useState(true)
-  
+import React, { useState } from "react";
+import "./page.style/proyects.css";
+import Loading from "../components/Loading";
+import Footer from "../components/Footer";
+const Proyectss = ({ handelclose }) => {
+  const [Isloanding, setIsloanding] = useState(true);
+
   setTimeout(() => {
     setIsloanding(false);
-  }, 3050);
+  }, 2000);
   return (
     <>
-    {
-      Isloanding
-      ? <Loading Isloanding={Isloanding}/>
-      : <div>
-         <header className='proyects_header'>
-        <a href="#"><h1 onClick={handelclose} className='h1'>return</h1></a>  
-        </header>
-        <section  className='Proyects'>
-      <h1  className='Proyects_tittle'>Proyects</h1>
-      <p className='Proyect_text'>"These are my projects that I have done in my career, to see any of them you just have to click on one."</p>
-      <section  className='Proyects_proyects'>
-        <nav  className='Proyects_proyect'>
-        <video className='Proyects_vid' src="./image/Pokedex.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>the pokeApy</h1>
-            <p  className='Proyects_text'>
-              As once here we have the pokeApy an excellent project which will
-              entertain you with all the pokemon that will show you
+      {Isloanding ? (
+        <Loading Isloanding={Isloanding} />
+      ) : (
+        <div>
+          <header className="proyects_header">
+            <a href="#">
+              <h1 onClick={handelclose} className="h1">
+                Return
+              </h1>
+            </a>
+          </header>
+          <section className="Proyects">
+            <h1 className="Proyects_tittle">Proyectos</h1>
+            <p className="Proyect_text">
+              "Estos son mis proyectos que he hecho en mi carrera, para ver
+              alguno de ellos solo tienes que hacer clic en uno".
             </p>
-          
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/riky.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>Project riky and morti</h1>
-            <p  className='Proyects_text'>
-              As in the previous project here in this we can see the famous
-              characters of the saga of Riky and Morti, which is a very
-              entertaining saga, because here you can find all its characters.
-            </p>
-            
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/Crud.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>Crud</h1>
-            <p  className='Proyects_text'>
-              This project is a database in which you can make a record of a
-              person and also edit or delete it, it is a great app try it you
-              will like it
-            </p>
-      
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/weather.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>Weather App</h1>
-            <p  className='Proyects_text'>
-              Here I have this app, which tells us the weather we have in the
-              place where we are and we can also look for the weather of other
-              places
-            </p>
-           
-          </nav>
-        </nav>
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/e-comerce.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>e-comerce</h1>
-            <p  className='Proyects_text'>
-              As once here we have the pokeApy an excellent project which will
-              entertain you with all the pokemon that will show you
-            </p>
-          
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/fortuna.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>fortune cookies</h1>
-            <p  className='Proyects_text'>
-              As in the previous project here in this we can see the famous
-              characters of the saga of Riky and Morti, which is a very
-              entertaining saga, because here you can find all its characters.
-            </p>
-           
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/guarderia.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>Canine and feline nursery</h1>
-            <p  className='Proyects_text'>
-              This project is a database in which you can make a record of a
-              person and also edit or delete it, it is a great app try it you
-              will like it
-            </p>
-       
-          </nav>
-        </nav>
-  
-        <nav  className='Proyects_proyectO'>
-        <video className='Proyects_vid' src="./image/people.mp4" autoPlay muted preload loop></video>
-          <nav  className='Proyects_info'>
-            <h1  className='Proyects_name'>peoples</h1>
-            <p  className='Proyects_text'>
-              Here I have this app, which tells us the weather we have in the
-              place where we are and we can also look for the weather of other
-              places
-            </p>
-      
-          </nav>
-        </nav>
-  
-      </section>
-   
-    </section>
-         </div>
-}
-        
-        
-      
-    
-    </>
-  
-  )
-}
 
-export default Proyectss
+            <section className="Proyets_proyects">
+              <a
+                href="https://zesty-belekoy-18b378.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/e-comerce_react.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">E-comerce_react</h1>
+                  <p className="Proyects_text">
+                    Como vez aquí tenemos un e-comerce el cual fue realizado con
+                    react, consumimos una api la cual tiene los productos y los
+                    desplegamos a todos, pero para hacer la compra deberas
+                    realizar un loguin
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://capable-zabaione-ea68ab.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/Pokedex.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">La pokeapi</h1>
+                  <p className="Proyects_text">
+                    Como vez aquí tenemos la pokeApy un excelente proyecto que
+                    hara entretenerte con todos los pokemones que te mostrarán
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://calm-kulfi-7e2e7e.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/riky.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Riky and Morti</h1>
+                  <p className="Proyects_text">
+                    Al igual que en el proyecto anterior aquí en este podemos
+                    ver los famosos personajes de la saga de Riky y Morti, que
+                    es una Entretenida saga, aquí podrás encontrar a todos sus
+                    personajes.
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://majestic-dodol-6ac862.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/Crud.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Crud</h1>
+                  <p className="Proyects_text">
+                    Este proyecto es una base de datos en la que se puede hacer
+                    un registro de una persona y también editarlo o eliminarlo,
+                    es una gran aplicación pruébala te gustará
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://zingy-gecko-5df221.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/weather.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Weather App</h1>
+                  <p className="Proyects_text">
+                    Aquí tengo esta aplicación, que nos dice el clima que
+                    tenemos en el lugar donde estamos y también podemos buscar
+                    el clima de otros Lugares facilmente
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://thunderous-kitten-8deaca.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/e-comerce.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">e-comerce</h1>
+                  <p className="Proyects_text">
+                    Aqui tenemos un e-comerce creado con javascript vanilla,
+                    basado en una tienda online, podras hacer la compra de una
+                    de sus prendas a distancia, agregandola a el carrito.
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://storied-stroopwafel-f2f6e0.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/fortuna.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Galleta de la fortuna</h1>
+                  <p className="Proyects_text">
+                    este proyecto como vemos es una aplicacion de hermosas
+                    frases, cada vez que demos un click en una de ellas tenemos
+                    una nueva frase para leer y esto viene de la galleta de la
+                    fortuna
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://jazzy-baklava-d95ad7.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/guarderia.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Guarderia animal </h1>
+                  <p className="Proyects_text">
+                    Aqui te traigo una app de una guarderia animal en la cual
+                    podras hacer una adopcion de uno de estos animalitos
+                    domesticos
+                  </p>
+                </nav>
+              </a>
+
+              <a
+                href="https://neon-zabaione-9d82a6.netlify.app"
+                className="Proyec_proyectO"
+              >
+                <video
+                  className="Proyects_vid"
+                  src="./image/people.mp4"
+                  autoPlay
+                  muted
+                  preload
+                  loop
+                ></video>
+                <nav className="Proyects_info">
+                  <h1 className="Proyects_name">Apipeoples</h1>
+                  <p className="Proyects_text">
+                    esta es una de mis primeras aplicaciones en la cual he
+                    desplegado la informacion de una Api y la he diseñado con
+                    react y css
+                  </p>
+                </nav>
+              </a>
+            </section>
+          </section>
+        </div>
+      )}
+
+      <Footer />
+    </>
+  );
+};
+
+export default Proyectss;

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
 :root {
-  --zposition-first: 1000;
-  --zposition-second: 2000;
-  --zposition-third: 3000;
-  --zposition-fourth: 4000;
+
   --primary-100:#FF9A76;
   --primary-200:#E4EFE7;
   --primary-300:#E4EFE7;
@@ -14,10 +11,14 @@
   --bg-100:#FFEADB;
   --bg-200:#DFD3C3;
   --bg-300:#C7B198;
-    
-    
-    
+
+  --zposition-first: 1000;
+  --zposition-second: 2000;
+  --zposition-third: 3000;
+  --zposition-fourth: 4000;
 }
+
+
 *{
   margin: 0;
   padding: 0;

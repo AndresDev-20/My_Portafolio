@@ -6,7 +6,7 @@
 
     width: 100%;
     min-height: 100vh;
-    background: var(--background);
+    background: var(--bg-300);
 
     display: none;
     justify-content: center;
@@ -19,7 +19,7 @@
 
 .isLoading h1 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--primary-200);
     padding-left: 40px;
 
     position: relative;
@@ -27,8 +27,8 @@
 
 .isLoading h1::after {
     content: "";
-    background: var(--background);
-    border-left: 2px solid var(--white);
+    background: var(--bg-300);
+    border-left: 2px solid var(--primary-200);
     height: 100%;
 
     position: absolute;

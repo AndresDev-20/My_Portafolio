@@ -6,83 +6,76 @@ const Proyects = () => {
   return (
     
     <section  className='Proyect' id='Proyects'>
-    <h1  className='Proyects_tittle'>Proyects</h1>
-    <p  className='Proyect_text'>
-    Here are some of the jobs I have created
+    <h1  className='Proyects_Tittle'>Proyectos</h1>
+    <p  className='Pro_text'>
+    Estos son algunos de los trabajos que he realizado
           </p>
-    <section  className='Proyects_proyects'>
-      <nav  className='Proyects_proyect'>
-        <img  className='Proyects_img' src="./image/Pokedex.jpg" alt="" />
-        <nav  className='Proyects_info'>
-          <h1  className='Proyects_name'>the pokeApy</h1>
+    <section  className='Proyects_Proyects'>
+    <Link to="proyects"  className='Proyects_proyect'>
+        <img  className='Proyects_Img' src="./image/e-comerce-img.jpg" alt="" />
+        <nav  className='Proyects_Info'>
+          <h1  className='Proyects_Name'>e-comerce con react</h1>
           <p  className='Proyects_text'>
-            As once here we have the pokeApy an excellent project which will
-            entertain you with all the pokemon that will show you
+          Como vez aquí tenemos un e-comerce el cual fue realizado con
+                    react, consumimos una api la cual tiene los productos y los
+                    desplegamos a todos, pero para hacer la compra deberas
+                    realizar un loguin
           </p>
-          <div  className='Proyects_click'>
-          <Link to="proyects">
-               <h1  className='Proyects_ingresar'>More information</h1>
-            </Link>
-           
-          </div>
         </nav>
-      </nav>
+      </Link>
+      <Link to="proyects"  className='Proyects_proyect'>
+        <img  className='Proyects_Img' src="./image/Pokedex.jpg" alt="" />
+        <nav  className='Proyects_Info'>
+          <h1  className='Proyects_Name'>La pokeApi</h1>
+          <p  className='Proyects_text'>
+                       Como vez aquí tenemos la pokeApy un excelente proyecto que hara
+                       entretenerte con todos los pokemones que te mostrará
+          </p>
+        </nav>
+      </Link>
 
-      <nav  className='Proyects_proyect'>
-        <img  className='Proyects_img' src="./image/Riky.jpg" alt="" />
-        <nav  className='Proyects_info'>
-          <h1  className='Proyects_name'>Project riky and morti</h1>
+      <Link to="proyects"  className='Proyects_proyect'>
+        <img  className='Proyects_Img' src="./image/Riky.jpg" alt="" />
+        <nav  className='Proyects_Info'>
+          <h1  className='Proyects_Name'> riky and morti</h1>
           <p  className='Proyects_text'>
-            As in the previous project here in this we can see the famous
-            characters of the saga of Riky and Morti, which is a very
-            entertaining saga, because here you can find all its characters.
+          Al igual que en el proyecto anterior aquí en este podemos ver los famosos
+            personajes de la saga de Riky y Morti, que es una
+            Entretenida saga, aquí podrás encontrar a todos sus personajes.
           </p>
-          <div  className='Proyects_click'>
-          <Link to="proyects">
-               <h1  className='Proyects_ingresar'>More information</h1>
-            </Link>
-          </div>
         </nav>
-      </nav>
+      </Link>
 
-      <nav  className='Proyects_proyect'>
-        <img  className='Proyects_img' src="./image/crud.jpg" alt="" />
-        <nav  className='Proyects_info'>
-          <h1  className='Proyects_name'>Crud</h1>
+      <Link to="proyects"  className='Proyects_proyect'>
+        <img  className='Proyects_Img' src="./image/crud.jpg" alt="" />
+        <nav  className='Proyects_Info'>
+          <h1  className='Proyects_Name'>Crud</h1>
           <p  className='Proyects_text'>
-            This project is a database in which you can make a record of a
-            person and also edit or delete it, it is a great app try it you
-            will like it
+          Este proyecto es una base de datos en la que se puede hacer un registro de un
+            persona y también editarlo o eliminarlo, es una gran aplicación pruébalo tú
+            te gustará
           </p>
-          <div  className='Proyects_click'>
-          <Link to="proyects">
-               <h1  className='Proyects_ingresar'>More information</h1>
-            </Link>
-          </div>
         </nav>
-      </nav>
+      </Link>
 
-      <nav  className='Proyects_proyect'>
-        <img  className='Proyects_img' src="./image/wheather.jpg" alt="" />
-        <nav  className='Proyects_info'>
-          <h1  className='Proyects_name'>Weather App</h1>
+      <Link to="proyects"  className='Proyects_proyect'>
+        <img  className='Proyects_Img' src="./image/wheather.jpg" alt="" />
+        <nav  className='Proyects_Info'>
+          <h1  className='Proyects_Name'>Weather App</h1>
           <p  className='Proyects_text'>
-            Here I have this app, which tells us the weather we have in the
-            place where we are and we can also look for the weather of other
-            places
+          Aquí te tengo esta aplicación, que nos dice el clima que tenemos en el
+            lugar donde estamos y también podemos buscar el clima de otros
+            Lugares facilmente
           </p>
           <div  className='Proyects_click'>
-          <Link to="proyects">
-               <h1  className='Proyects_ingresar'>More information</h1>
-            </Link>
           </div>
         </nav>
-      </nav>
+      </Link>
     </section>
     
          <Link to="proyects">
-         <div className='proyects_todos'>
-    <h1>enter here for <br /> more information</h1>
+         <div className='proyects_Todos'>
+    <h1>ingresa aqui, donde podras ver  todos mis proyectos</h1>
     </div>
     </Link>
     

@@ -5,8 +5,8 @@ const Contactame = () => {
     <div className='contact' id='contact'>
       <br />
     <div className="content_contact hiddenLeft">
-        <span>Do you want to contact me?</span>
-        <h3 className='contact_title'>Here you can do it</h3>
+        <span>¿Quieres contactar conmigo?</span>
+        <h3 className='contact_title'>Aquí puedes hacerlo</h3>
 
         <form action="https://formsubmit.co/andresmarroquin887@gmail.com" method="POST">
             <input type="text" name='Nombre' placeholder='Enter your name' required />
@@ -16,7 +16,7 @@ const Contactame = () => {
             <input type="hidden" name="_captcha" value="false"></input>
             <input type="hidden" name="_next" value="https://andresmarroquin887@gmail.com"></input>
 
-            <button className='btn'>Send</button>
+            <button className='btn'>Enviar</button>
         </form>
     </div>
 
