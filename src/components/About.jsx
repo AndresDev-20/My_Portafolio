@@ -6,22 +6,22 @@ const About = () => {
       <section className="About" id="About">
         <nav className="About_history">
           <h1 className="About_tittle">
-          Hola, aquí te dejo un poco de mi historia como programador...
+            Hola, aquí te dejo un poco de mi historia como programador...
           </h1>
           <section className="About_historyy">
             <p className="About_his">
-              A lo largo de mi carrera como programador he pasado por muchas
-              cosas buenas, he aprendido mucho de esta profesión y me siento muy
-              cómodo para hacerlo todos los días, soy un chico muy joven solo
-              tengo 18 años pero cada día que estudio lo doy todo de mí y mi
-              objetivo es programar cualquier proyecto a realizar en el mundo de
-              la programación.
+              Soy desarrollador front-end me especializo en HTML, CSS,
+              JAVASCRIPT, REACT Y REDUX. Inicie mi carrera con una gran
+              motivacion, tengo 18 años de edad y siempre me ha gustado el tema de
+              programar y aprender todo acerca de esta profesion, cuando inicie
+              a aprender a programar me gusto mas esta profesion, doy todo de mi
+              cada dia y mi proposito es programar todo proyecto a realizar y
+              aprender muchos mas temas.
             </p>
             <br />
-        
+
             <br />
-            <p className="About_his">
-            </p>
+            <p className="About_his"></p>
           </section>
         </nav>
       </section>
