@@ -24,7 +24,7 @@ const Home = () => {
       <h2 className='Home_name'> Colombia.</h2>
       <br />
       <span className="Home_item">Mi ciudad es de:</span>
-      <h2 className='Home_name'> Ibague Tolima.</h2>
+      <h2 className='Home_name'> Ibague,Tolima.</h2>
     </nav>
       </div>
 
