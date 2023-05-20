@@ -13,10 +13,7 @@ const About = () => {
               Soy desarrollador front-end me especializo en HTML, CSS,
               JAVASCRIPT, REACT Y REDUX. Inicie mi carrera con una gran
               motivacion, tengo 18 años de edad y siempre me ha gustado el tema de
-              programar y aprender todo acerca de esta profesion, cuando inicie
-              a aprender a programar me gusto mas esta profesion, doy todo de mi
-              cada dia y mi proposito es programar todo proyecto a realizar y
-              aprender muchos mas temas.
+              programar y aprender todo acerca de esta profesion.
             </p>
             <br />
 
