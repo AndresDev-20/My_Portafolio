@@ -9,16 +9,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    0.3em 0.1em 3em var(--bg-300);
+      
 }
 .footer_tittle{
-    color: var(--text-200);
-    text-shadow: 1px 1px white;
+    color: var(--accent-200);
+    text-shadow: 1px 1px rgba(17, 187, 230, 0.795);
     font-size: 1.5em;
     margin-top: 2em;
 }
 .footer_name{
     color: var(--text-100);
     font-size: 1em;
+    font-weight: 590;
+    margin-bottom: 1em;
 }
 .footer_perfiles{
     display: flex;
@@ -61,6 +66,7 @@
 .fin{
     color: var(--text-100);
     font-size: .8em;
+    margin-top: 1em;
 }
 .f{
   transform: scale(0);
@@ -73,12 +79,13 @@
     gap: 20em;
     }
     .footer_tittle{
-        text-shadow: 1px 1px white;
         font-size: 1.5em;
         margin-top: -3em;
+        margin-bottom: .2em;
     }
     .footer_name{
         font-size: 1em;
+        margin-bottom: 0em;
     }
     .footer_perfiles{
         display: flex;
@@ -123,5 +130,6 @@
         margin-top: 7em;
         font-size: .9em;
         transform: scale(1);
+        color: var(--text-100);
 }
 }

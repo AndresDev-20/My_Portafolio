@@ -18,13 +18,13 @@ const Home = () => {
       </h2>
       <br />
       <span className="Home_item">Mi edad es de:</span><br />
-      <h2 className='Home_name'>eighteen year.</h2>
+      <h2 className='Home_name'>Dieciocho años.</h2>
       <br />
-      <span className="Home_item">soy de:</span><br />
-      <h2 className='Home_name'> colombia.</h2>
+      <span className="Home_item">Soy de:</span><br />
+      <h2 className='Home_name'> Colombia.</h2>
       <br />
       <span className="Home_item">Mi ciudad es de:</span>
-      <h2 className='Home_name'> ibague Tolima.</h2>
+      <h2 className='Home_name'> Ibague Tolima.</h2>
     </nav>
       </div>
 

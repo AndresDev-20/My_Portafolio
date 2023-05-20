@@ -2,15 +2,15 @@
 :root {
 
   --primary-100:#FF9A76;
-  --primary-200:#E4EFE7;
+  --primary-200:#f5fbfc;
   --primary-300:#E4EFE7;
-  --accent-100:#679B9B;
+  --accent-100:#37526def;;
   --accent-200:#e1e4e6;
-  --text-100:#37526d;
-  --text-200:#a3883d;
-  --bg-100:#FFEADB;
-  --bg-200:#DFD3C3;
-  --bg-300:#C7B198;
+  --text-100:#02050f;
+  --text-200:#3e6080;
+  --bg-100:#fdfdfd;
+  --bg-200:#fdfdfd;
+  --bg-300:#4c6f8f;
 
   --zposition-first: 1000;
   --zposition-second: 2000;
