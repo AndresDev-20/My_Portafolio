@@ -14,13 +14,7 @@ import Header from "../components/Header";
 
 
 const Portafolio = () => {
-  const [close, setclose] = useState(true)
-    const handelclick = () => {
-       setclose(false)
-    }
-  const handelclose = () => {
-    setclose(true)
-  }
+
 
   return (
     <div id="home" className="Portafolio">
