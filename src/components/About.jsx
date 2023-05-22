@@ -2,8 +2,8 @@ import React from "react";
 import "./style/About.css";
 const About = () => {
   return (
-    <div>
-      <section className="About" id="About">
+    <div  id="About">
+      <section className="About">
         <nav className="About_history">
           <h1 className="About_tittle">
             Hola, aquí te dejo un poco de mi historia como programador...

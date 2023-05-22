@@ -4,6 +4,7 @@ import Loading from './components/Loading'
 import Portafolio from './page/Portafolio';
 import { Route, Routes } from 'react-router-dom';
 import Proyectss from './page/Proyectss';
+import Perfil from './page/Perfil';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyectss/>}/>
+            <Route path='/perfil' element={<Perfil/>}/>
           </Routes>
           
         )

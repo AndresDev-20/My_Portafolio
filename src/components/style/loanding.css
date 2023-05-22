@@ -3,11 +3,10 @@
     top: 0;
     left: 0;
     z-index: var(--zposition-fourth);
-
+    background-color: var(--bg-300);
     width: 100%;
     min-height: 100vh;
-    background: var(--bg-300);
-
+  
     display: none;
     justify-content: center;
     align-items: center;

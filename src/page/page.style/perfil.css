@@ -1,0 +1,227 @@
+.perfil {
+    max-width: 410px;
+    margin: auto;
+    padding: 2em;
+    background-color: var(--bg-300);
+    margin-top: 6em;
+    border-radius: 1em;
+    
+}
+.diploma{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #8da3c0be;
+    backdrop-filter: blur(1.9px);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease;
+    padding: 1em;
+    gap: 3em;
+}
+.diploma img{
+    border-radius: .4em;
+    object-fit: contain;
+}
+.perfil_btn{
+    width: 10em;
+    height: 2.4em;
+    border-radius: 1em;
+    border: none;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-300);
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 200ms ease;
+}
+.perfil_btn:hover{
+    transform: scale(1.05);
+}
+.clos{
+    transform: scale(0);
+}
+.perfil_center {
+  
+    border-radius: 1em;
+    background-color: rgb(220, 228, 255);
+    
+}
+
+
+.perfil_image {
+    padding: .3em;
+}
+
+.perfil_img {
+    border-radius: 1em 1em 0em 0em;
+}
+
+.line{
+    max-width: 300px;
+    background-color: var(--bg-300);
+}
+.perfil_info {
+    font-size: 12px;
+    text-align: center;
+    color: var(--text-200);
+}
+
+.certificados {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.perfil_certificados {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    transition: transform 300ms ease, background-color 400ms ease;
+    color: var(--text-200);
+    font-size: 1.2em;
+    background-color: rgba(146, 151, 194, 0.288);
+}
+
+
+
+.perfil_certificados:hover {
+    background-image: url("./image/graduacion.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--bg-300);
+    color: rgba(21, 44, 44, 0.021);
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(136, 143, 207, 0.521),    0.3em 0.1em 3em var(--bg-300); 
+}
+@media (min-width: 700px) {
+    .perfil {
+        max-width: 1110px;
+        margin: auto;
+        padding: 3em;
+        background-color: var(--bg-300);
+        margin-top: 6em;
+        border-radius: 1em;
+    }
+    .diploma{
+        width: 100%;
+        height: 100vh;
+        background-color: #8da3c0be;
+        backdrop-filter: blur(1.9px);
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 200ms ease;
+        padding: 19em;
+        gap: 3em;
+    }
+    .diploma img{
+        border-radius: .4em;
+        object-fit: contain;
+    }
+    .perfil_btn{
+        width: 10em;
+        height: 7em;
+        border-radius: 1em;
+        border: none;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        background-color: var(--bg-300);
+        color: aliceblue;
+        cursor: pointer;
+        font-size: 2.2em;
+        transition: transform 200ms ease;
+    }
+    
+    
+    .perfil_image {
+        padding: 2.5em 15em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .perfil_img {
+        border-radius: 1em;
+        height: 18em;
+        width: 24em;
+        object-fit: contain;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(248, 248, 252), 0.5em 0.5em 3em var(--bg-300);
+}
+    .line{
+        max-width: 300px;
+        background-color: var(--bg-300);
+        transform: scale(0);
+    }
+    .perfil_info {
+        font-size: 15px;
+        text-align: center;
+        max-width: 850px;
+        margin: auto;
+        color: var(--text-200);
+        margin-top: -2em;
+}
+.perfil_info h2{
+    font-size: 25px;
+}
+    
+    .certificados {
+        margin-top: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3em;
+    }
+    
+    .perfil_certificados {
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        width: 12em;
+        height: 12em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+        border-radius: 1em;
+        transition: transform 300ms ease, background-color 400ms ease;
+        color: var(--text-200);
+        font-size: 1.2em;
+        background-color: rgba(146, 151, 194, 0.288);
+    }
+    
+    
+    
+    .perfil_certificados:hover {
+        background-image: url("./image/graduacion.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--bg-300);
+        color: rgba(21, 44, 44, 0.021);
+        cursor: pointer;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(136, 143, 207, 0.521),    0.3em 0.1em 3em var(--bg-300); 
+    }
+}

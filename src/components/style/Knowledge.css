@@ -64,6 +64,7 @@
     transform: scale(1.03);
     color: beige;
     border: 2px solid var(--text-200);
+    
 }
 .Knowledge_img{
     padding: 5px;

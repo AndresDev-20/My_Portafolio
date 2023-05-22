@@ -57,7 +57,22 @@ hr{
     padding-left: 1em;
 }
 
-
+.home_btn{
+    margin-top: 2em;
+    margin-left: 2.5em;
+    height: 5em;
+    padding: 0em 1em;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--text-200);
+    transition: background-color 250ms ease;
+}
+.home_btn:hover{
+    background-color: rgb(181, 211, 238);
+    color: rgb(10, 21, 31);
+}
 
 
 
@@ -70,7 +85,12 @@ hr{
     border-radius: 1em;
     padding-bottom: 1em;
     margin-top: 6em;
+    padding-bottom: 6em;
 }
+
+
+
+
 .Home_center{
     max-width: 780px;
     margin: auto;
@@ -107,5 +127,17 @@ hr{
 }
 .Home_item{
     padding-left: -9em;
+}
+.home_btn{
+    margin-top: 4.4em;
+    margin-left: -7em;
+    height: 5em;
+    padding: 0em 1em;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--text-200);
+    -webkit-border-radius: 1em;
 }
 }

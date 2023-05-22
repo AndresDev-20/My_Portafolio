@@ -2,25 +2,26 @@ import React, { useState } from "react";
 import "./page.style/proyects.css";
 import Loading from "../components/Loading";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Loading2 from "../components/Loading2";
 const Proyectss = ({ handelclose }) => {
   const [Isloanding, setIsloanding] = useState(true);
 
   setTimeout(() => {
     setIsloanding(false);
   }, 2000);
+
+
+
   return (
     <>
+
       {Isloanding ? (
         <Loading Isloanding={Isloanding} />
       ) : (
         <div>
-          <header className="proyects_header">
-            <a href="#">
-              <h1 onClick={handelclose} className="h1">
-                Return
-              </h1>
-            </a>
-          </header>
+           <Header/>
           <section className="Proyects">
             <h1 className="Proyects_tittle">Proyectos</h1>
             <p className="Proyect_text">

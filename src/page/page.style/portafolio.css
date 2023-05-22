@@ -96,7 +96,7 @@ a{
 
 
 /*Css para 💻*/
-@media (min-width: 750px ) {
+@media (min-width: 850px ) {
   .Portafolio_header {
     display: flex;
     align-items: center;
@@ -115,7 +115,7 @@ a{
     padding-left: 5em;
   }
   .container {
-    position: fixed;
+    position: absolute;
       width: 100%;
       height: 10vh;
       z-index: 1;
@@ -123,11 +123,12 @@ a{
       top: 0;
       left: 0;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       transition: transform 200ms ease;
       margin-right:90em ;
-      background-color: #f7f3f602;
+      background-color: #5d6c9b02;
+      margin-left: 16em;
   }
 
   .close{
@@ -142,9 +143,9 @@ a{
     width: 1.7em;
   }
   .Portafolio_menu {
-    background-color: rgba(177, 136, 131, 0.021);
+    background-color: rgba(131, 147, 177, 0);
     text-align: center;
-      width: 100%;
+      width: 85%;
       max-width: 100%;
       padding: 0em 1em 0em;
       display: flex;
@@ -154,6 +155,7 @@ a{
       position: fixed;
       border-radius: 1em;
       border: none; 
+      padding-left: -50em;
   }
   .Portafolio_select{
     transition:  transform 250ms ease;

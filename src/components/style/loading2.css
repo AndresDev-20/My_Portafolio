@@ -1,0 +1,17 @@
+.loading2{
+    background-image: url("./image/programmer.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+   
+}
+.loading2 img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--zposition-fourth);
+    background-color: var(--bg-300);
+    width: 100%;
+    min-height: 100vh;
+}

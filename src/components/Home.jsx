@@ -1,8 +1,11 @@
 import React from 'react'
 import './style/Home.css'
+import Perfil from '../page/Perfil'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
+    
     <section className="Home" id='Home'>
       <div className='Home_center'>
             <nav className="Home_image">
@@ -25,10 +28,11 @@ const Home = () => {
       <br />
       <span className="Home_item">Mi ciudad es de:</span>
       <h2 className='Home_name'> Ibague, Tolima.</h2>
-    </nav>
+      <Link to="/perfil"><button className='home_btn'>Ingresa aqui para ver <br /> mis certificados</button></Link>
+    </nav> 
       </div>
-
   </section>
+  
   )
 }
 
