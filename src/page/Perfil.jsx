@@ -106,6 +106,7 @@ const Perfil = () => {
   <nav className="perfil_info">
     <h2>A continuación te dejo los certificados de mis estudios: </h2>
      <nav className='certificados'>
+      
          <nav onClick={handelclick} className='perfil_certificados'>
             <h1>  CERTIFICADO DE: Fundamentos html, css, javascript.</h1>
         </nav> 

@@ -41,10 +41,22 @@ const Knowledge = () => {
         <h1 className='Knowledge_name'>GitHub</h1>
       </nav>
         </a>
-         <a href="https://redux.js.org/">
+             <a href="https://redux.js.org/">
            <nav className='Knowledge_languaje'>
         <img className='Knowledge_img' src="./image/redux.jpg" alt="" />
         <h1 className='Knowledge_name'>Redux</h1>
+      </nav>
+         </a>
+         <a href="https://wiki.postgresql.org/wiki/Main_Page/es">
+           <nav className='Knowledge_languaje'>
+        <img className='Knowledge_img' src="./image/SQL.png" alt="" />
+        <h1 className='Knowledge_name'>SQL</h1>
+      </nav>
+         </a>
+         <a href="https://nodejs.org/es/docs">
+           <nav className='Knowledge_languaje'>
+        <img className='Knowledge_img' src="./image/node.png" alt="" />
+        <h1 className='Knowledge_name'>Node.Js</h1>
       </nav>
          </a>
     </section>

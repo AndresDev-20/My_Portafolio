@@ -102,7 +102,6 @@
 
 
 .perfil_certificados:hover {
-    background-image: url("./image/graduacion.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,18 +202,29 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 1em;
+        padding: 0em;
         border-radius: 1em;
         transition: transform 300ms ease, background-color 400ms ease;
-        color: var(--text-200);
+        color: rgba(240, 240, 247, 0.969);
         font-size: 1.2em;
-        background-color: rgba(146, 151, 194, 0.288);
+        background-color: rgba(116, 127, 227, 0.288);
+        background-image: url("./image/graduacion.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .perfil_certificados > h1 {
+        background-color: rgba(29, 10, 87, 0.524);
+        height: 100%;
+        border-radius: 1em;
+        text-align: center;
+        display: flex;
+        align-items: center;
     }
     
     
     
     .perfil_certificados:hover {
-        background-image: url("./image/graduacion.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
