@@ -12,18 +12,16 @@ const Proyectss = ({ handelclose }) => {
     setIsloanding(false);
   }, 2000);
 
-
-
   return (
     <>
-
       {Isloanding ? (
         <Loading Isloanding={Isloanding} />
       ) : (
         <div>
-           <Header/>
+          <Header />
           <section className="Proyects">
             <h1 className="Proyects_tittle">Proyectos</h1>
+            <img className="trabajo" src="./image/trabajo.jpg" alt="" />
             <p className="Proyect_text">
               "Estos son mis proyectos que he hecho en mi carrera, para ver
               alguno de ellos solo tienes que hacer clic en uno".

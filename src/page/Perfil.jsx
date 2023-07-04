@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './page.style/perfil.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+
 const Perfil = () => {
     const [close, setclose] = useState(true)
     const handelclick = () => {
@@ -99,7 +100,7 @@ const Perfil = () => {
     <div className='perfil_center'>
 
           <nav className="perfil_image">
-    <img className="perfil_img" src="./image/trabajo.jpg" alt="Yeison" />
+    <img className="perfil_img" src="./image/present.jpg" alt="Yeison" />
      
   </nav>
    <hr className='line' />

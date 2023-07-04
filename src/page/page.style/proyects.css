@@ -25,6 +25,17 @@
     justify-content: center;
     align-items: center;
  }
+ .trabajo{
+    background-color: var(--bg-200);
+    max-width: 450px;
+    margin: auto;
+    border-radius: 1em;
+    padding: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(248, 248, 252), 0.5em 0.5em 3em var(--bg-300);
+    margin-bottom: 2em;
+    margin-top: 1em;
+ }
+ 
  .h1{
     cursor: pointer;
     color: var(--accent-200);
