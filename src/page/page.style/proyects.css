@@ -27,10 +27,10 @@
  }
  .trabajo{
     background-color: var(--bg-200);
-    max-width: 450px;
+    max-width: 290px;
     margin: auto;
     border-radius: 1em;
-    padding: 10px;
+    padding: 5px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(248, 248, 252), 0.5em 0.5em 3em var(--bg-300);
     margin-bottom: 2em;
     margin-top: 1em;
@@ -142,6 +142,16 @@
         margin-bottom: 3em;
         padding-bottom: 3em;
         
+     }
+     .trabajo{
+        background-color: var(--bg-200);
+        max-width: 450px;
+        margin: auto;
+        border-radius: 1em;
+        padding: 10px;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(248, 248, 252), 0.5em 0.5em 3em var(--bg-300);
+        margin-bottom: 2em;
+        margin-top: 1em;
      }
      .proyects_header{
         background-color: var(--bg-300);
