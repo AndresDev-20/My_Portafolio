@@ -28,7 +28,7 @@ const Proyectss = ({ handelclose }) => {
             </p>
 
             <section className="Proyets_proyects">
-              <a
+             {/*} <a
                 href="https://zesty-belekoy-18b378.netlify.app"
                 className="Proyec_proyectO"
               >
@@ -40,6 +40,7 @@ const Proyectss = ({ handelclose }) => {
                   preload
                   loop
                 ></video>
+              
                 <nav className="Proyects_info">
                   <h1 className="Proyects_name">E-comerce_react</h1>
                   <p className="Proyects_text">
@@ -49,7 +50,7 @@ const Proyectss = ({ handelclose }) => {
                     realizar un loguin
                   </p>
                 </nav>
-              </a>
+      </a>*/}
 
               <a
                 href="https://capable-zabaione-ea68ab.netlify.app"
