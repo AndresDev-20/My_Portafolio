@@ -11,9 +11,9 @@ const Proyects = () => {
     Estos son algunos de los trabajos que he realizado
           </p>
     <section  className='Proyects_Proyects'>
-      {/*
+      
     <Link to="proyects"  className='Proyects_proyect'>
-        <img  className='Proyects_Img' src="./image/e-comerce-img.jpg" alt="" />
+        <img  className='Proyects_Img' src="./image/mejor.png" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>e-comerce con react</h1>
           <p  className='Proyects_text'>
@@ -23,7 +23,7 @@ const Proyects = () => {
                     realizar un loguin
           </p>
         </nav>
-  </Link>*/}
+  </Link>
       <Link to="proyects"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/Pokedex.jpg" alt="" />
         <nav  className='Proyects_Info'>

@@ -28,13 +28,13 @@ const Proyectss = ({ handelclose }) => {
             </p>
 
             <section className="Proyets_proyects">
-             {/*} <a
-                href="https://zesty-belekoy-18b378.netlify.app"
+              <a
+                href="https://keen-fudge-5ae06d.netlify.app"
                 className="Proyec_proyectO"
               >
                 <video
                   className="Proyects_vid"
-                  src="./image/e-comerce_react.mp4"
+                  src="./image/e-comereceSSS.mp4"
                   autoPlay
                   muted
                   preload
@@ -50,7 +50,7 @@ const Proyectss = ({ handelclose }) => {
                     realizar un loguin
                   </p>
                 </nav>
-      </a>*/}
+      </a>
 
               <a
                 href="https://capable-zabaione-ea68ab.netlify.app"
