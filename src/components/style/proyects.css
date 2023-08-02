@@ -47,6 +47,7 @@
     transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
     max-width: 290px;
     margin: auto;
+    cursor: pointer;
 }
 .Proyects_proyect:hover{
     border: 3px solid var(--text-200);
@@ -94,6 +95,22 @@
 .proyects_Todos:hover{
     border: 1px solid var(--text-200);
     color: var(--text-100);
+}
+.ProductInfo{
+    background-color: var(--bg-300);
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    padding: 2em;
+    margin-top: 4em;
+    transition: transform 400ms ease;
+}
+.productClose{
+    transition: transform 500ms ease, height 500ms ease; 
+    transform: scale(0);
+    height: 0;
 }
 @media (min-width: 700px) {
     .Proyect{

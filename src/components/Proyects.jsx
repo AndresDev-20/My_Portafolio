@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/proyects.css'
 import { Link } from 'react-router-dom'
 import Loading from './Loading'
+import ProyectOne from './proyectInfo/ProyectOne'
 const Proyects = () => {
+
+  const [close, setclose] = useState(true)
+  const handelclosh = () => {
+    setclose(false)
+  }
+  const handelvol = () => {
+    setclose(true)
+  }
+
   return (
     
     <section  className='Proyect' id='Proyects'>
@@ -12,18 +22,21 @@ const Proyects = () => {
           </p>
     <section  className='Proyects_Proyects'>
       
-    <Link to="proyects"  className='Proyects_proyect'>
+    <div onClick={handelclosh}  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/mejor.png" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>e-comerce con react</h1>
           <p  className='Proyects_text'>
           Como vez aquí tenemos un e-comerce el cual fue realizado con
-                    react, consumimos una api la cual tiene los productos y los
-                    desplegamos a todos, pero para hacer la compra deberas
-                    realizar un loguin
+                    react, consumimos un Back-End, el cual fue realizado por mi para hacer este proyecto Full-Stack.
           </p>
         </nav>
-  </Link>
+    
+  </div>
+  <nav className={close ? 'productClose' : 'ProductInfo'}>
+          <ProyectOne handel={handelvol}/>
+        </nav>
+  
       <Link to="proyects"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/Pokedex.jpg" alt="" />
         <nav  className='Proyects_Info'>

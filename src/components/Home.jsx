@@ -1,12 +1,13 @@
-import React from 'react'
 import './style/Home.css'
-import Perfil from '../page/Perfil'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
+
   return (
     
     <section className="Home" id='Home'>
+       
       <div className='Home_center'>
             <nav className="Home_image">
       <img className="Home_img" src="./image/yeison.jpg" alt="Yeison" />
