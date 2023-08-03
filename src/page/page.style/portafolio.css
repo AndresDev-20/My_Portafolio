@@ -10,6 +10,7 @@
   height: 10vh;
   width: 100%;
   margin-top: -6em;
+  z-index: var(  --zposition-fourth);
 }
 .Portafolio_programmer{
   width: 60%;

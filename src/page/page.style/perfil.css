@@ -136,6 +136,10 @@
     .diploma img{
         border-radius: .4em;
         object-fit: contain;
+        margin-top: 5em;
+        margin-bottom: -2em;
+        width: 100%;
+        max-width: 40em;
     }
     .perfil_btn{
         width: 10em;

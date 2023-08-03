@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Loading from './components/Loading'
 import Portafolio from './page/Portafolio';
 import { Route, Routes } from 'react-router-dom';
 import Proyectss from './page/Proyectss';
 import Perfil from './page/Perfil';
+import ProductOnee from './page/ProductOnee';
+import ProyectTwoo from './page/ProyectTwoo';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -19,12 +21,16 @@ function App() {
         Isloanding 
         ?<Loading Isloanding={Isloanding}/>
         :( 
-          <Routes>
+   <Routes>
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyectss/>}/>
             <Route path='/perfil' element={<Perfil/>}/>
+                <Route path='/proyectone' element={<ProductOnee/>}/>
+                <Route path='/proyecttwo' element={<ProyectTwoo/>}/>
           </Routes>
           
+          
+       
         )
       }
 </div>

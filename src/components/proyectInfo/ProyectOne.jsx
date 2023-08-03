@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./style/productOne.css";
+import { Link } from "react-router-dom";
 
-const ProyectOne = ({handel}) => {
+const ProyectOne = () => {
 
     const [close, setclose] = useState(true)
     const handelclos = () => {
@@ -10,6 +11,9 @@ const ProyectOne = ({handel}) => {
     const handelCompu = () => {
         setclose(true)
     }
+  const handelclose = () => {
+    setclose(true)
+  }
 
   return (
     <div className="productOne">
@@ -46,9 +50,13 @@ const ProyectOne = ({handel}) => {
       </div>
       
       <div className="productOn">
-        <div onClick={handel} className="exit">
-        <i class='bx bx-log-out'><span className="vol">volver</span></i>
-        </div>
+ 
+        <Link to="/#Proyects"onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose}>
+
+          <i className='exit bx bx-log-out'><span className="vol">volver</span></i>
+         
+          </span></Link>
+   
 
       <p  className="productOne_v">
         <span className="productOne_descripcion"> <b>Descripción</b> </span>

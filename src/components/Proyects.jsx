@@ -1,17 +1,11 @@
-import React, { useState } from 'react'
+
 import './style/proyects.css'
-import { Link } from 'react-router-dom'
-import Loading from './Loading'
-import ProyectOne from './proyectInfo/ProyectOne'
+import { Link} from 'react-router-dom'
 const Proyects = () => {
 
-  const [close, setclose] = useState(true)
-  const handelclosh = () => {
-    setclose(false)
-  }
-  const handelvol = () => {
-    setclose(true)
-  }
+
+  
+ 
 
   return (
     
@@ -22,7 +16,7 @@ const Proyects = () => {
           </p>
     <section  className='Proyects_Proyects'>
       
-    <div onClick={handelclosh}  className='Proyects_proyect'>
+    <Link to='proyectone' className='page fadeIn Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/mejor.png" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>e-comerce con react</h1>
@@ -31,13 +25,11 @@ const Proyects = () => {
                     react, consumimos un Back-End, el cual fue realizado por mi para hacer este proyecto Full-Stack.
           </p>
         </nav>
-    
-  </div>
-  <nav className={close ? 'productClose' : 'ProductInfo'}>
-          <ProyectOne handel={handelvol}/>
-        </nav>
+      
+  </Link>
   
-      <Link to="proyects"  className='Proyects_proyect'>
+  
+      <Link to="proyecttwo"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/Pokedex.jpg" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>La pokeApi</h1>
