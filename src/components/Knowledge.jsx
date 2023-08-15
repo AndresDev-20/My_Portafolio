@@ -1,5 +1,6 @@
 import React from 'react'
 import './style/Knowledge.css'
+import Skills from './Skills'
 const Knowledge = () => {
   return (
    
@@ -63,6 +64,8 @@ const Knowledge = () => {
     
   
     </section>
+    
+    <Skills/>
   </section>
   )
 }

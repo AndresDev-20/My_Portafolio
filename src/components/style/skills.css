@@ -1,0 +1,113 @@
+.skills {
+    background-color: var(--bg-200);
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 3em;
+    border-radius: 1em;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    0.3em 0.1em 3em var(--bg-300);
+    margin: 2em;
+    padding: 1em;
+}
+
+.div-bg {
+    background-image: url(../../../image/programmer.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+    position: relative;
+}
+
+.div-bg div {
+    width: 100%;
+    height: 100%;
+    background: rgba(238, 232, 232, 0);
+    border-radius: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--zposition-second);
+}
+
+.content-skills>h3 {
+    padding-top: 3rem;
+}
+
+.content-skills h3,
+.content-skills h4,
+.box-skills .box span {
+    color: var(--white);
+}
+
+.box-skills {
+    margin-top: 2rem;
+    display: grid;
+    gap: 01rem;
+}
+
+.box-skills .box .skill-padre {
+    width: 100%;
+    height: 20px;
+    background: rgb(235, 230, 230);
+    border-radius: 2em;
+    border: 1px solid rgb(8, 8, 73);
+}
+
+.box-skills .box .skill-padre .skill-hijo {
+    background: var(--bg-300);
+    border-radius: 2em;
+}
+
+.box-skills .box:nth-child(1) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 96%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(1) .skill-padre .show-skill-hijo {
+    width: 1em;
+}
+
+.box-skills .box:nth-child(2) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 90%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(2) .skill-padre .show-skill-hijo {
+    width: 88%;
+}
+
+.box-skills .box:nth-child(3) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 60%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(3) .skill-padre .show-skill-hijo {
+    width: 70%;
+}
+
+.box-skills .box:nth-child(4) .skill-padre .skill-hijo {
+    height: 100%;
+    width: 88%;
+
+    transition: width 1500ms;
+}
+
+.box-skills .box:nth-child(4) .skill-padre .show-skill-hijo {
+    width: 85%;
+}
+
+@media (min-width:900px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
