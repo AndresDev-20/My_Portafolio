@@ -14,7 +14,7 @@
 }
 
 .div-bg {
-    background-image: url(../../../image/programmer.jpeg);
+    background-image: url(./image/programmer.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1em;
