@@ -7,6 +7,9 @@ import Proyectss from './page/Proyectss';
 import Perfil from './page/Perfil';
 import ProductOnee from './page/ProductOnee';
 import ProyectTwoo from './page/ProyectTwoo';
+import ProyectThreee from './page/ProyectThreee';
+import ProyectFor from './page/ProyectFor';
+import ProyectFive from './page/ProyectFive';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -27,6 +30,9 @@ function App() {
             <Route path='/perfil' element={<Perfil/>}/>
                 <Route path='/proyectone' element={<ProductOnee/>}/>
                 <Route path='/proyecttwo' element={<ProyectTwoo/>}/>
+                <Route path='/proyectthre' element={<ProyectThreee/>}/>
+                <Route path='/proyectfour' element={<ProyectFor/>}/>
+                <Route path='/proyectfive' element={<ProyectFive/>}/>
           </Routes>
           
           

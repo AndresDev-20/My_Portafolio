@@ -40,7 +40,7 @@ const Proyects = () => {
         </nav>
       </Link>
 
-      <Link to="proyects"  className='Proyects_proyect'>
+      <Link to="proyectthre"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/Riky.jpg" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'> riky and morti</h1>
@@ -52,7 +52,7 @@ const Proyects = () => {
         </nav>
       </Link>
 
-      <Link to="proyects"  className='Proyects_proyect'>
+      <Link to="proyectfour"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/crud.jpg" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>Crud</h1>
@@ -64,7 +64,7 @@ const Proyects = () => {
         </nav>
       </Link>
 
-      <Link to="proyects"  className='Proyects_proyect'>
+      <Link to="proyectfive"  className='Proyects_proyect'>
         <img  className='Proyects_Img' src="./image/wheather.jpg" alt="" />
         <nav  className='Proyects_Info'>
           <h1  className='Proyects_Name'>Weather App</h1>
