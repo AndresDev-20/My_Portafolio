@@ -10,6 +10,8 @@ import ProyectTwoo from './page/ProyectTwoo';
 import ProyectThreee from './page/ProyectThreee';
 import ProyectFor from './page/ProyectFor';
 import ProyectFive from './page/ProyectFive';
+import Cv from './page/Cv';
+import Header from './components/Header';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -25,6 +27,7 @@ function App() {
         ?<Loading Isloanding={Isloanding}/>
         :( 
    <Routes>
+  
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyectss/>}/>
             <Route path='/perfil' element={<Perfil/>}/>
@@ -33,6 +36,7 @@ function App() {
                 <Route path='/proyectthre' element={<ProyectThreee/>}/>
                 <Route path='/proyectfour' element={<ProyectFor/>}/>
                 <Route path='/proyectfive' element={<ProyectFive/>}/>
+                <Route path='/curriculum' element={<Cv/>}/>
           </Routes>
           
           

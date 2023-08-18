@@ -34,9 +34,20 @@ video{
   display: block;
  
 }
-html{
-  background-color: var(--bg-100);
-}
+
 ul{
   list-style: none;
+}
+html{
+  background: linear-gradient(90deg, #fafbfc 0%, #a6b1f7 16%, #f8f8f8 50%, #a6b1f7 83%, #fafbfc 100%);
+  background-size: 300% 300%;
+  animation: toggle 5s infinite;
+}
+@keyframes toggle {
+  from {
+       background-position: 0% 50%;
+  }
+  to{
+    background-position: 150%;
+  }
 }

@@ -12,6 +12,22 @@
   margin-top: -6em;
   z-index: var(  --zposition-fourth);
 }
+.Portafolio_title{
+  background: conic-gradient(
+    #ece9e9 0 25%,
+    #82c0cc 25% 50%,
+    #86e0a4 50% 75%,
+    #d3ced0 75%
+  );
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 300ms ease;
+}
+.Portafolio_title:hover{
+  color: #c3d1f0;
+}
 .Portafolio_programmer{
   width: 60%;
   text-align: start;

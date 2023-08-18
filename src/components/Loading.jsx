@@ -4,8 +4,13 @@ const Loading = ({Isloanding}) => {
   return (
     
           <div className={`isLoading ${Isloanding && 'show-isLoading'}`}>
-
-            <h1>{`<Yeison/> ...`}</h1>
+           <div className='isLoading_padre-img'>
+        <div className='isLodiadig_img-container'>
+          <img className='isLodiadig_img' src="./image/carga.jpg" alt="" />
+        </div>
+      </div>
+           
+            <h1>{`<Yeison/>`}</h1>
         </div>
     
   )

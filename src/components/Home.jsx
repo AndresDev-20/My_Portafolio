@@ -1,8 +1,17 @@
 import './style/Home.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
+  const navigate = useNavigate()
+
+  const handlePerfil = () => {
+    navigate('perfil')
+  }
+
+  const handelCv = () => {
+       navigate('curriculum')
+  }
 
   return (
     
@@ -29,8 +38,11 @@ const Home = () => {
       <br />
       <span className="Home_item">Mi ciudad es de:</span>
       <h2 className='Home_name'> Ibague, Tolima.</h2>
-      <Link to="/perfil"><button className='home_btn'>Ingresa aqui para ver <br /> mis certificados</button></Link>
     </nav> 
+      </div>
+      <div className='cvandcer'>
+        <button onClick={handelCv} className='home_btn'>Mi Cv</button>
+        <button onClick={handlePerfil} className='home_btn'>Mis certificados</button>
       </div>
   </section>
   

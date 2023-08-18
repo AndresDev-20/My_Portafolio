@@ -19,7 +19,7 @@ const ProyectOne = () => {
     <div className="productOne">
       <div className="productOne_part1">
         <div className={close ? 'productOne_v1' : 'productOne_v1-close'}>
-        <h1 className="h2">Visualizacion en Coputadora</h1>
+        <h1 className="h2">Visualizacion en Computadora</h1>
               <video className="productOne_compu"
          
           src="./image/e-comereceSSS.mp4"

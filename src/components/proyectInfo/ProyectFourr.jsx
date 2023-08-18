@@ -16,7 +16,7 @@ const ProyectFourr = () => {
     <div className="productOne">
       <div className="productOne_part1">
         <div className={close ? "productOne_v1" : "productOne_v1-close"}>
-          <h1 className="h2">Visualizacion en Coputadora</h1>
+          <h1 className="h2">Visualizacion en Computadora</h1>
           <video
             className="productOne_compu"
             src="./image/Crud.mp4"
@@ -35,7 +35,7 @@ const ProyectFourr = () => {
           <h3 className="h3">Visualizacion para Movil</h3>
           <video
             className="productOne_movil"
-            src="./image/.mp4"
+            src="./image/Base_movil.mp4"
             autoPlay
             muted
             preload
