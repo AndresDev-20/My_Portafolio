@@ -1,6 +1,6 @@
 .Proyect{
     background-color: var(--bg-300);
-   max-width: 330px;
+    max-width: 82%;
    margin: auto;
    display: flex;
    flex-direction: column;
@@ -33,7 +33,8 @@
 }
 
 .Proyects_Proyects{
-   max-width: 310px;
+ 
+    max-width: 90%;
    margin: auto;
    background-color: var(--bg-300);
    display: grid;
@@ -46,7 +47,7 @@
     border-radius: 1em;
     border: 3px solid var(--bg-200);
     transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
-    max-width: 290px;
+    max-width: 70%;
     margin: auto;
     cursor: pointer;
 }
@@ -98,10 +99,9 @@
     color: var(--text-100);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 860px) {
     .Proyect{
         background-color: var(--bg-300);
-       max-width: 850px;
        margin: auto;
        display: flex;
        flex-direction: column;
@@ -129,7 +129,7 @@
         padding: 0em;
      }
     .Proyects_Proyects{
-       max-width: 810px;
+        max-width: 95%;
        margin: auto;
        background-color: var(--bg-300);
        display: grid;

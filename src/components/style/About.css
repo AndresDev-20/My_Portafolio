@@ -1,6 +1,6 @@
 .About{
     background-color: var(--bg-300);
-    max-width: 330px;
+    max-width: 82%;
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
@@ -11,7 +11,7 @@
       
 }
 .About_history{
-    max-width: 280px;
+    max-width: 90%;
     background-color: var(--bg-200);
     margin: auto;
     border-radius: 1em;
@@ -39,7 +39,8 @@
 @media (min-width: 700px) {
     .About{
         background-color: var(--bg-300);
-        max-width: 850px;
+        max-width: 82%;
+        height: 80vh;
         margin: auto;
         padding-top: 1em;
         border-radius: 1em;
@@ -52,12 +53,13 @@
      gap: .5em;
     }
     .About_history{
-        max-width: 780px;
+        max-width: 90%;
+        height: 65vh;
         background-color: var(--bg-200);
         margin: auto;
         border-radius: 1em;
         border: 3px solid var(--bg-200);
-        margin-top: 1em;
+        margin-top: 2em;
         margin-bottom: 1em;
         padding: 1em;
         padding-bottom: 3em;

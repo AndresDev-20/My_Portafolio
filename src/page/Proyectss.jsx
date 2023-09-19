@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "./page.style/proyects.css";
 import Loading from "../components/Loading";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import Loading2 from "../components/Loading2";
-const Proyectss = ({ handelclose }) => {
+const Proyectss = () => {
   const [Isloanding, setIsloanding] = useState(true);
 
   setTimeout(() => {

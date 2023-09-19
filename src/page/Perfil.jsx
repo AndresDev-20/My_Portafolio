@@ -58,16 +58,38 @@ const Perfil = () => {
   const handelges = () => {
     setges(true)
   }
+
+  const [Full, setfull] = useState(true)
+  const handelclifull = () => {
+     setfull(false)
+  }
+  const handelfull = () => {
+    setfull(true)
+  }
+  const [Back, setBack] = useState(true)
+  const handelcliback = () => {
+     setBack(false)
+  }
+  const handelback = () => {
+    setBack(true)
+  }
   return (
     <>  
     <Header/>
 
         <section className="perfil">
+           <nav className={`diploma ${Full && 'clos'}`}>
+            <img src='./image/FULL-STAK.png' alt=''/>
+            <button className='perfil_btn' onClick={handelfull}>volver</button>
+           </nav>
         <nav className={`diploma ${close && 'clos'}`}>
             <img  src="./image/fundamentos.jpg" alt="" />
             <button className='perfil_btn' onClick={handelclose}>volver</button>
             </nav>
-        
+            <nav className={`diploma ${Back && 'clos'}`}>
+            <img src='./image/Back-end.png' alt=''/>
+            <button className='perfil_btn' onClick={handelback}>volver</button>
+           </nav>
             <nav className={`diploma ${cloe && 'clos'}`}>
             <img  src="./image/ReactNative.jpg" alt="" />
             <button className='perfil_btn' onClick={handelclos}>volver</button>
@@ -107,13 +129,21 @@ const Perfil = () => {
   <nav className="perfil_info">
     <h2>A continuación te dejo los certificados de mis estudios: </h2>
      <nav className='certificados'>
+     <nav onClick={handelclifull} className='perfil_certificados'>
+            <h1>CERTIFICADO DE: FULL-STACK</h1>
+        </nav>
       
+     <nav onClick={handelclickfront} className='perfil_certificados'>
+            <h1>CERTIFICADO DE: Front-end developer con react native.</h1>
+        </nav>
+
+        <nav onClick={handelcliback} className='perfil_certificados'>
+            <h1>CERTIFICADO DE: Back-end con Node.js.</h1>
+        </nav>
+
          <nav onClick={handelclick} className='perfil_certificados'>
             <h1>  CERTIFICADO DE: Fundamentos html, css, javascript.</h1>
         </nav> 
-        <nav onClick={handelclickfront} className='perfil_certificados'>
-            <h1>CERTIFICADO DE: Front-end developer con react native.</h1>
-        </nav>
         <nav onClick={handelclicklevel} className='perfil_certificados'>
             <h1>CERTIFICADO DE: English does work - level 1.</h1>
         </nav>

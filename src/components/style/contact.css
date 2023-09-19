@@ -1,6 +1,6 @@
 .contact {
     padding: 2rem 0;
-    max-width: 330px;
+    max-width: 82%;
     margin: auto;
     margin-top: 2em;
     background-color: var(--bg-300);
@@ -68,7 +68,6 @@ form textarea {
 @media (min-width: 700px) {
     .contact {
         padding: 2rem 0;
-        max-width: 850px;
         margin: auto;
         margin-top: 2em;
         background-color: var(--bg-300);

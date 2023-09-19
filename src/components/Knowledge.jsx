@@ -65,7 +65,7 @@ const Knowledge = () => {
   
     </section>
     
-    <Skills/>
+ 
   </section>
   )
 }

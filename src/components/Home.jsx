@@ -19,30 +19,26 @@ const Home = () => {
        
       <div className='Home_center'>
             <nav className="Home_image">
-      <img className="Home_img" src="./image/yeison.jpg" alt="Yeison" />
+      <img className="Home_img" src="./image/i.jpg" alt="Yeison" />
       
     </nav>
     
     <nav className="Home_info">
     <hr />
-    <span className='Home_item'> Mi nombre es:</span> <br />
-      <h2 className="Home_name">
-      Yeison Andres Marroquin Bernal...
-      </h2>
-      <br />
-      <span className="Home_item">Mi edad es de:</span><br />
-      <h2 className='Home_name'>Dieciocho años.</h2>
-      <br />
-      <span className="Home_item">Soy de:</span><br />
-      <h2 className='Home_name'> Colombia.</h2>
-      <br />
-      <span className="Home_item">Mi ciudad es de:</span>
-      <h2 className='Home_name'> Ibague, Tolima.</h2>
-    </nav> 
-      </div>
-      <div className='cvandcer'>
+    <h1 className='titlePerfil'>Bienvenido a mi Portafolio</h1>
+   <p className='parrafo'>
+
+   Soy desarrollador front-end me especializo en HTML, CSS,
+              JAVASCRIPT, REACT Y REDUX. Inicie mi carrera con una gran
+              motivacion, tengo 18 años de edad y siempre me ha gustado el tema de
+              programar y aprender todo acerca de esta profesion.
+   </p>
+   <div className='cvandcer'>
         <button onClick={handelCv} className='home_btn'>Mi Cv</button>
         <button onClick={handlePerfil} className='home_btn'>Mis certificados</button>
+      </div>
+    </nav> 
+    
       </div>
   </section>
   

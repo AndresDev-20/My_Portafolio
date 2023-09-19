@@ -18,7 +18,7 @@
  }
 .Knowledge{
     background-color: var(--bg-300);
-    max-width: 330px;
+    max-width: 82%;
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
@@ -29,7 +29,7 @@
     transition: all 0.3s ease-in-out;
 }
 .Knowledge_knowledge{
-    max-width: 280px;
+    max-width: 90%;
     margin: auto;
     background-color: var(--bg-200);
     height: 100%;
@@ -94,7 +94,7 @@
      }
     .Knowledge{
         background-color: var(--bg-300);;
-        max-width: 850px;
+        max-width: 82%;
         margin: auto;
         padding-top: 1em;
         border-radius: 1em;
@@ -102,7 +102,7 @@
         margin-top: 2em;
     }
     .Knowledge_knowledge{
-        max-width: 780px;
+        max-width: 90%;
         margin: auto;
         background-color: var(--bg-200);
         height: 45vh;
@@ -111,7 +111,7 @@
         border-radius: 1em;
         border: 3px solid var(--bg-200);
         margin-bottom: 1em;
-        padding: 1em 2em;
+        padding: 1em 5em;
     }
     .languaje{
        display: flex;

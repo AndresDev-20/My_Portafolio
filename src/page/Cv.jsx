@@ -16,7 +16,7 @@ const Cv = () => {
         ></iframe>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Cv;

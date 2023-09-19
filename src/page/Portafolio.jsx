@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Skills from "../components/Skills";
+import './page.style/portafolio.css'
 
 
 
@@ -18,13 +19,16 @@ const Portafolio = () => {
 
 
   return (
-    <div id="home" className="Portafolio">
+    <div id="home" >
+  
        <Header/>       
-       <Home/>
+                  <div className="Portafolio">
+                  <Home/>
        <About/>
        <Knowledge/>
        <Proyects/>
        <Contactame/>
+                  </div>
        <Footer/>
     </div>
   );
