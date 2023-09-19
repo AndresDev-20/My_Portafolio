@@ -18,7 +18,7 @@
  }
 .Knowledge{
     background-color: var(--bg-300);
-    max-width: 82%;
+    max-width: 75%;
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
@@ -94,7 +94,7 @@
      }
     .Knowledge{
         background-color: var(--bg-300);;
-        max-width: 82%;
+        max-width: 75%;
         margin: auto;
         padding-top: 1em;
         border-radius: 1em;
@@ -111,7 +111,7 @@
         border-radius: 1em;
         border: 3px solid var(--bg-200);
         margin-bottom: 1em;
-        padding: 1em 5em;
+        padding: em 5em;
     }
     .languaje{
        display: flex;

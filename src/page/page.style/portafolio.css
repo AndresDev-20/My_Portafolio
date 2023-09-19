@@ -12,6 +12,7 @@
   width: 100%;
   margin-top: -6em;
   z-index: var(  --zposition-fourth);
+  border-bottom: 2px solid rgb(245, 240, 240);
 }
 
 .Portafolio_title{

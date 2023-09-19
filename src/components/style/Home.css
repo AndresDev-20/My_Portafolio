@@ -8,6 +8,7 @@
     margin-top: 6em;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244), 0.3em 0.1em 3em var(--bg-300);
     transition: all 1s ease-in-out;
+    position: relative
 }
 
 .Home_center {
@@ -19,6 +20,7 @@
     margin-top: -2em;
     margin-bottom: 1em;
     transition: all 0.3s ease-in-out;
+    padding: 1em;
 }
 
 .Home_image {
@@ -63,7 +65,7 @@ hr {
 }
 
 .parrafo {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .Home_name {
@@ -101,10 +103,10 @@ hr {
     gap: 1em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 898px) {
 
     .Home {
-        max-width: 82%;
+        max-width: 75%;
         height: 80vh;
         margin: auto;
         padding-top: 4em;
@@ -113,6 +115,7 @@ hr {
         margin-top: 6em;
         padding-bottom: 2.1em;
         transition: all 0.3s ease-in-out;
+        position: relative;
     }
 
     .Home_center {
@@ -123,10 +126,14 @@ hr {
         margin-bottom: 1em;
         display: flex;
         align-items: center;
+        gap: 1em;
         justify-content: center;
         height: 65vh;
         transition: all 0.3s ease-in-out;
+        padding: 2em;
     }
+
+
 
     .Home_image {
         border-radius: 10px;
@@ -148,22 +155,27 @@ hr {
         max-width: 450px;
         margin: auto;
         border-radius: 0em 0em 1em 1em;
-        /* margin-right: 4em; */
-        /* padding-right: 0em; */
+         margin-right: 4em;
+         padding-right: 0em; 
         display: flex;
         flex-direction: column;
         gap: 1em;
-        margin-top: 1em;
+        margin-top: 0em;
+        animation: none; /* Eliminar la animación en dispositivos móviles */
+        max-width: 100%; /* Asegurar que el contenido no se desborde en dispositivos móviles */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0em;
     }
 
     .titlePerfil {
         color: var(--bg-300);
-        font-size: 2em;
+        font-size: 1.9em;
         margin-bottom: 0.5em;
     }
 
     .parrafo {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .Home_name {

@@ -1,6 +1,6 @@
 .Proyect{
     background-color: var(--bg-300);
-    max-width: 82%;
+    max-width: 75%;
    margin: auto;
    display: flex;
    flex-direction: column;
@@ -47,7 +47,7 @@
     border-radius: 1em;
     border: 3px solid var(--bg-200);
     transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
-    max-width: 70%;
+    max-width: 17em;
     margin: auto;
     cursor: pointer;
 }

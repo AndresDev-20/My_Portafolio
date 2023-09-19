@@ -36,10 +36,10 @@
     border-radius: 1em;
     border: 2px solid rgb(116, 25, 25);
 }
-@media (min-width: 700px) {
+@media (min-width: 890px) {
     .About{
         background-color: var(--bg-300);
-        max-width: 82%;
+        max-width: 75%;
         height: 80vh;
         margin: auto;
         padding-top: 1em;
@@ -59,7 +59,7 @@
         margin: auto;
         border-radius: 1em;
         border: 3px solid var(--bg-200);
-        margin-top: 2em;
+        margin-top: 1.5em;
         margin-bottom: 1em;
         padding: 1em;
         padding-bottom: 3em;
@@ -71,7 +71,7 @@
         text-align: center;
         max-width: 500px;
         margin: auto;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     .About_his{
         color: var(--text-100);
