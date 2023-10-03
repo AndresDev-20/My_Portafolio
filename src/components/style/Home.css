@@ -88,11 +88,11 @@ hr {
     width: 100%;
     max-width: 8.4em;
     border-radius: 0.6em;
-    height: 2em;
     border: none;
     background-color: var(--bg-300);
     color: white;
     cursor: pointer;
+    padding: .5em;
 }
 
 .cvandcer {
