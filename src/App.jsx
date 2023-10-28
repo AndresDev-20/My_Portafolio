@@ -21,7 +21,7 @@ function App() {
     }, 3050);
  
   return (
-    <div className='App'>
+    <div className='App' >
       {
         Isloanding 
         ?<Loading Isloanding={Isloanding}/>

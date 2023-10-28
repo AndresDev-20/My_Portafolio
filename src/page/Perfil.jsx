@@ -77,7 +77,7 @@ const Perfil = () => {
     <>  
     <Header/>
 
-        <section className="perfil">
+        <section className="perfil ">
            <nav className={`diploma ${Full && 'clos'}`}>
             <img src='./image/FULL-STAK.png' alt=''/>
             <button className='perfil_btn' onClick={handelfull}>volver</button>

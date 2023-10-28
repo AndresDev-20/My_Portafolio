@@ -40,8 +40,23 @@ video{
 ul{
   list-style: none;
 }
-html{
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca las partículas detrás de otros elementos */
   background: linear-gradient(90deg, #fafbfc 0%, #a6b1f7 16%, #f8f8f8 50%, #a6b1f7 83%, #fafbfc 100%);
   background-size: 300% 300%;
   animation: toggle 5s infinite;
+}
+
+/* Establece un fondo de color o imagen detrás de las partículas */
+body {
+  background: linear-gradient(90deg, #fafbfc 0%, #a6b1f7 16%, #f8f8f8 50%, #a6b1f7 83%, #fafbfc 100%);
+  background-size: 300% 300%;
+  animation: toggle 5s infinite;
+  color: rgb(18, 18, 146);
 }
