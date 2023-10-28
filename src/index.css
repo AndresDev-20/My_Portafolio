@@ -58,5 +58,4 @@ body {
   background: linear-gradient(90deg, #fafbfc 0%, #a6b1f7 16%, #f8f8f8 50%, #a6b1f7 83%, #fafbfc 100%);
   background-size: 300% 300%;
   animation: toggle 5s infinite;
-  color: rgb(18, 18, 146);
 }
