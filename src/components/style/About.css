@@ -1,5 +1,4 @@
 .About{
-    background-color: var(--bg-300);
     max-width: 82%;
     margin: auto;
     padding-top: 1em;
@@ -8,82 +7,27 @@
     margin-top: 2em;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
-      
+    padding: 2em;
+    padding-bottom: 10em;
 }
-.About_history{
-    max-width: 90%;
-    background-color: var(--bg-200);
-    margin: auto;
-    border-radius: 1em;
-    border: 3px solid var(--bg-200);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 1em;
-}
-.About_tittle{
-    color: var(--text-200);
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 1em;
-}
-.About_his{
-    color: var(--text-100);
-    font-size: 14.5px;
-    text-align: center;
-}
-
-.About_img{
-    border-radius: 1em;
-    border: 2px solid rgb(116, 25, 25);
-}
-@media (min-width: 890px) {
+@media (min-width: 700px) {
     .About{
-        background-color: var(--bg-300);
-        max-width: 75%;
-        height: 80vh;
+        max-width: 82%;
         margin: auto;
         padding-top: 1em;
         border-radius: 1em;
         padding-bottom: 1em;
         margin-top: 2em;
+        box-shadow: none;
+        padding: 2em;
     }
-    .About_historyy{
-     display: flex;
-     align-items: center;
-     gap: .5em;
+    .About > h1 {
+        font-size: 2.6em;
+        border-bottom: 5px solid var(--bg-300);
+        width: 8em;
+        margin-bottom: 1.5em;
     }
-    .About_history{
-        max-width: 90%;
-        height: 65vh;
-        background-color: var(--bg-200);
-        margin: auto;
-        border-radius: 1em;
-        border: 3px solid var(--bg-200);
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-        padding: 1em;
-        padding-bottom: 3em;
-        text-align: center;
-    }
-    .About_tittle{
-        color: var(--text-200);
-        font-size: 1.5em;
-        text-align: center;
-        max-width: 500px;
-        margin: auto;
-        margin-bottom: 1em;
-    }
-    .About_his{
-        color: var(--text-100);
-        font-size: 1.2em;
-        text-align: center;
-        text-shadow: 1px 1px rgb(189, 177, 177);
-        
-    }
-    
-    .About_img{
-        border-radius: 1em;
-        border: 2px solid rgb(116, 25, 25);
-        max-width: 10000px;
+    .About > p {
+        font-size: 1.4em;
     }
 }

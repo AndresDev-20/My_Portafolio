@@ -1,179 +1,114 @@
-.Knowledge_tittle{
-    color: var(--text-200);
-    text-shadow: 1px 1px rgb(139, 109, 109);
-    text-align: center;
-    background-color: var(--bg-200);
-    border: 3px solid var(--bg-200);
-    max-width: 260px;
-    margin: auto;
-    margin-bottom: 0.5em;
-    border-radius: 1em;
-    font-size: 1.5em;
-}
-.Knowledge_text{
-    color: var(--bg-200);
-    text-align: center;
-    padding: 0em 2em 0em 2em;
-    font-size: 1.1em;
- }
-.Knowledge{
-    background-color: var(--bg-300);
-    max-width: 75%;
+#Knowledge {
+    max-width: 82%;
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     margin-top: 2em;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
-    transition: all 0.3s ease-in-out;
+    padding: 2em;
+    padding-bottom: 10em;
+    display: grid;
 }
-.Knowledge_knowledge{
-    max-width: 90%;
-    margin: auto;
-    background-color: var(--bg-200);
-    height: 100%;
+#Knowledge > h1 {
+    font-size: 2.3em;
+    width: 8em;
+    margin-bottom: 1.5em;
+}
+#Knowledge > p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    margin-top: -2em;
+}
+.Knowledge {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    border-radius: 1em;
-    border: 3px solid var(--bg-200);
+    gap: 2em;
 }
-.languaje{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   gap: 1.1em;     
-   align-items: center;    
-   justify-content: center;   
-   padding-bottom: 4em;    
-   padding-top: 1em;                 
-}
-
-.Knowledge_languaje{
-    border-radius: 7px;
-    background-color: rgba(237, 237, 247, 0.884);
-    text-align: center;
-    width: 5em;
-    height: 15vh;
-    font-size: 1.1em;
-    border: 1.8px solid rgb(255, 252, 252);
-    color: var(--text-100);
-    text-shadow: 0.2px 0.2px rgba(7, 1, 1, 0.945);
-    transition: transform 300ms ease; 
+.Knowledge_languaje {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    0.3em 0.1em 3em var(--bg-300);
+    width: 9em;
+    height: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 9px solid var(--bg-300);
-    padding: 2.3em;
-    color: var(--bg-300);
+    font-size: 1em;
+    border-radius: 1em;
 }
-.html{
-    color: rgb(255, 94, 0);
-    font-size: 3.3em;
+.bxl-html5 {
+    font-size: 7em;
+    color: brown;
 }
-.Css {
-    color: rgb(7, 150, 245);
-    font-size: 3.3em;
+.bxl-css3 {
+    font-size: 7em;
+    color: blue;
 }
-.js {
-    color: rgb(189, 189, 20);
-    font-size: 3.3em;
+.bxl-javascript {
+    font-size: 7em;
+    color: yellow;
 }
-.react {
-    color: rgb(7, 150, 245);
-    font-size: 3.3em;
+.bxl-react {
+    font-size: 7em;
+    color: blue;
 }
-.git {
+#githubb {
+    font-size: 7em;
     color: black;
-    font-size: 3.3em;
 }
-.redux {
+.bxl-redux {
+    font-size: 7em;
     color: blueviolet;
-    font-size: 3.3em;
 }
-.post {
-    color: rgb(18, 18, 131);
-    font-size: 3.3em;
+.bxl-postgresql {
+    font-size: 7em;
+    color: blue;
 }
-.node {
-    color: rgb(1, 170, 1);
-    font-size: 3.3em;
+.bxl-nodejs {
+    font-size: 7em;
+    color: green;
 }
-.python-icon {
-     color: blue;
-     color: rgb(196, 196, 33);
-    font-size: 3.3em;
-  }
-.type {
-    color: rgb(9, 113, 250);
-    font-size: 3.3em;
+.bxl-python {
+    font-size: 7em;
+    color: yellowgreen;
 }
-  
+.bxl-typescript {
+    font-size: 7em;
+    color: blue;
+}
 @media (min-width: 700px) {
-    .Knowledge_tittle{
-        text-shadow: 1px 1px rgb(139, 109, 109);
-        text-align: center;
-        background-color: var(--bg-200);
-        border: 3px solid var(--bg-200);
-        max-width: 260px;
-        margin: auto;
-        margin-bottom: 0.5em;
-        border-radius: 1em;
-        font-size: 1.3em;
-    }
-    .Knowledge_text{
-        color: var(--bg-200);
-        text-align: center;
-        padding: 0em 2em 0em 2em;
-        font-size: 1.1em;
-        margin-bottom: 1em;
-        margin-top: 1em;
-     }
-    .Knowledge{
-        background-color: var(--bg-300);;
-        max-width: 75%;
+    #Knowledge {
+        max-width: 82%;
         margin: auto;
         padding-top: 1em;
         border-radius: 1em;
         padding-bottom: 1em;
         margin-top: 2em;
-    }
-    .Knowledge_knowledge{
-        max-width: 90%;
-        margin: auto;
-        background-color: var(--bg-200);
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        border-radius: 1em;
-        border: 3px solid var(--bg-200);
-        margin-bottom: 1em;
+        box-shadow: none;
         padding: 2em;
+        padding-bottom: 10em;
+        display: grid;
     }
-    .languaje{
-       display: flex;
-       flex-wrap: wrap;
-       width: 100%;
-       gap: 1.1em;     
-       align-items: center;    
-       justify-content: center;   
-       gap: 2em;
-                                
+    #Knowledge > h1 {
+        font-size: 2.3em;
+        width: 8em;
+        margin-bottom: 1.5em;
     }
-    .Knowledge_languaje{
-        border-radius: 7px;
-        text-align: center;
-        width: 5em;
-        height: 16vh;
-        text-shadow: 0.2px 0.2px rgba(7, 1, 1, 0.945);
-        transition: transform 300ms ease;
+    #Knowledge > p {
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        margin-top: -2em;
+    }
+    .Knowledge {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
     }
 
-    .Knowledge_img{
-        padding: 5px;
-        height: 11vh;
-        border-radius: 12px;
-        margin-top: 5px;
-}
 }
