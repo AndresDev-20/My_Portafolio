@@ -1,48 +1,100 @@
-import './style/Home.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import "./style/Home.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  const [Barra, setBarra] = useState(false);
 
   const handlePerfil = () => {
-    navigate('perfil')
-  }
+    navigate("perfil");
+  };
 
   const handelCv = () => {
-       navigate('curriculum')
-  }
+    navigate("curriculum");
+  };
+
+  const cerra = () => {
+    setBarra(true);
+  };
+  const cerr = () => {
+    setBarra(false);
+  };
 
   return (
-    
-    <section className="Home" id='Home'>
-       
-      <div className='Home_center'>
-            <nav className="Home_image">
-      <img className="Home_img" src="./image/i.jpg" alt="Yeison" />
-      
-    </nav>
-    
-    <nav className="Home_info">
-    <hr />
-    <h1 className='titlePerfil'>Bienvenido a mi Portafolio</h1>
-   <p className='parrafo'>
+    <section className="Home">
+      <nav className="Home__images">
+        <nav className="Home__image">
+          <img className="Home__image-img" src="../../image/imgy.png" alt="" />
+        </nav>
+        <nav className="Home__image1">
+          <img
+            className="Home__image-img1"
+            src="../../image/fotoPresent.png"
+            alt=""
+          />
+        </nav>
+      </nav>
 
-   Soy desarrollador front-end me especializo en HTML, CSS,
-              JAVASCRIPT, REACT Y REDUX. Inicie mi carrera con una gran
-              motivacion, tengo 18 años de edad y siempre me ha gustado el tema de
-              programar y aprender todo acerca de esta profesion.
-   </p>
-   <div className='cvandcer'>
-        <button onClick={handelCv} className='home_btn'>Mi Cv</button>
-        <button onClick={handlePerfil} className='home_btn'>Mis certificados</button>
-      </div>
-    </nav> 
-    
-      </div>
-  </section>
-  
-  )
-}
+      <nav className="Home__info">
+        <h1 className="Home__info-title">Soy Yeison Marroquin </h1>
+        <span className="Home__span">Desarrollador Full Stack</span>
+        <p className="Home__info-text">
+          Inicié mi carrera con una gran motivación a la temprana edad de 17
+          años y desde entonces, mi entusiasmo por la programación y mi deseo
+          constante de aprender todo acerca de esta profesión han continuado
+          creciendo. Actualmente, con 18 años de edad, he invertido tiempo y
+          esfuerzo en estudiar y dominar una amplia gama de habilidades que
+          encontrarás reflejadas aquí.        <Link className="ver" to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span >Ver mas</span></Link> 
+        </p>
+        <nav className="Home__footer">
+          <button className="Home__button" onClick={handelCv}>
+            Mi Cv
+          </button>
+          <button className="Home__buttonA" onClick={handlePerfil}>
+            Mis Certificados
+          </button>
+        </nav>
+      </nav>
+      <nav className="barra">
+        <a href="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/">
+          {" "}
+          <button className="Home__button0">
+            LinkedIn<i className="bx bxl-linkedin-square"></i>{" "}
+          </button>
+        </a>
 
-export default Home
+        <Link
+          to="/#contact"
+          onClick={() =>
+            document
+              .querySelector("#contact")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          {" "}
+          <span>
+            <button className="Home__button1">
+              Email<i class="bx bx-envelope"></i>
+            </button>
+          </span>
+        </Link>
+
+        <a href="https://wa.me/573227222010?Hola%20quiero%20hablar%20de%20un%20empleo%20contigo">
+          {" "}
+          <button className="Home__button2">
+            whatsapp<i class="bx bxl-whatsapp"></i>{" "}
+          </button>
+        </a>
+        <a href="https://github.com/yeisonmarroquin887?tab=repositories">
+          <button className="Home__button3">
+            GitHub<i class="bx bxl-github"></i>{" "}
+          </button>
+        </a>
+      </nav>
+    </section>
+  );
+};
+
+export default Home;

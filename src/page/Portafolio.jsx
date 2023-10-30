@@ -20,7 +20,6 @@ const Portafolio = () => {
 
   return (
     <div id="home" >
-  
        <Header/>       
                   <div className="Portafolio">
                   <Home/>
