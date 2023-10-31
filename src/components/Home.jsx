@@ -26,7 +26,7 @@ const Home = () => {
     <section className="Home">
       <nav className="Home__images">
         <nav className="Home__image">
-          <img className="Home__image-img" src="../../image/imgy.png" alt="" />
+          <img className="Home__image-img" src="../../image/fotoPresent.png" alt="" />
         </nav>
         <nav className="Home__image1">
           <img

@@ -20,6 +20,11 @@
     max-width: 25em;
     margin: auto;
     padding: 0em 1.4em 0em 1.4em;
+   margin-top: 3em;
+}
+.Home__image-img{
+  width: 100%;
+  max-width: 300em;
 }
 
 .Home__info {
@@ -34,6 +39,7 @@
 
 .Home__info-text {
     margin-bottom: 1em;
+    font-size: 14px;
 }
 
 .Home__footer {
