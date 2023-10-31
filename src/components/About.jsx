@@ -1,6 +1,17 @@
 import React from "react";
 import "./style/About.css";
+import { Link, useNavigate } from "react-router-dom";
 const About = () => {
+  const navigate = useNavigate();
+
+
+  const handlePerfil = () => {
+    navigate("perfil/#inicio");
+  };
+  
+  const handelCv = () => {
+    navigate("curriculum");
+  };
   return (
     <div id="About" className="About">
       <br /><br /><br /><br /><br /><br />
@@ -20,6 +31,13 @@ const About = () => {
         continuo. Habilidad para liderar equipos y solucionar problemas de
         manera rápida y efectiva.
       </p>
+      <nav className="about__footer">
+             <button className="About__button" onClick={handlePerfil}>
+            Mis Certificados <i class='bx bxs-award'></i>
+          </button>
+
+     
+        </nav>
     </div>
   );
 };

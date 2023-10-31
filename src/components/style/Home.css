@@ -41,25 +41,23 @@
     gap: .15em;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 .Home__button {
     padding: 7px;
     border: none;
-    border-radius: .5em 0em 0em 0em;
+    border-radius: .5em .5em 0em 0em;
     background-color: var(--bg-300);
     color: var(--bg-200);
     font-size: 12px;
     cursor: pointer;
+    height: 3.2em;
+    width: 10em;
 }
-.Home__buttonA {
-    padding: 7px;
-    border: none;
-    border-radius: 0em 1em 0em 0em;
-    background-color: var(--bg-300);
-    color: var(--bg-200);
-    font-size: 12px;
-    cursor: pointer;
+.Home__button:hover {
+  filter: contrast(1.5);
 }
+
 
 .Home__image-img1 {
    transform: scale(0);
@@ -73,7 +71,9 @@ border: none;
 display: flex;
 align-items: center;
 color: aliceblue;
-border-radius: 0em 0em 0em .5em;
+border-radius: .5em 0em 0em .5em;
+padding: .5em;
+font-size: 10px;
   }
   
 
@@ -86,6 +86,7 @@ border-radius: 0em 0em 0em .5em;
     width: 100%;
     gap: 2px;
     margin-top: -1.4em;
+    justify-content: center;
   }
   
 .Home__button1 {
@@ -94,7 +95,9 @@ border-radius: 0em 0em 0em .5em;
     display: flex;
     align-items: center;
     color: aliceblue;
-    height: 2.5em;
+    height: 3.5em;
+    padding: .5em;
+font-size: 10px;
   }
 
   .Home__button2 {
@@ -103,7 +106,9 @@ border-radius: 0em 0em 0em .5em;
     display: flex;
     align-items: center;
     color: aliceblue;
-    height: 2.5em;
+    height: 3.5em;
+    padding: .5em;
+font-size: 10px;
   }
 
   .Home__button3 {
@@ -112,7 +117,9 @@ border-radius: 0em 0em 0em .5em;
     display: flex;
     align-items: center;
     color: aliceblue;
-    height: 2.5em;
+    height: 3.5em;
+    padding: .5em;
+font-size: 10px;
     border-radius: 0em .5em .5em 0em;
   }
   .ver {
@@ -176,6 +183,9 @@ border-radius: 0em 0em 0em .5em;
 .Home__info-text {
     font-size: 1.3em; 
 }
+.Home__footer{
+  justify-content: start;
+}
 
 .Home__button0 {
     display: flex;
@@ -191,6 +201,7 @@ border-radius: 0em 0em 0em .5em;
     transition: margin-left 0.3s ease;
     width: 8.3em;
     border-radius: 0em .5em 0em 0em;
+    height: 2.8em;
   }
 
   .barra {
@@ -200,6 +211,7 @@ border-radius: 0em 0em 0em .5em;
     width: 100%;
     max-width: 13em;
     gap: 0px;
+    justify-content: start;
   }
   
   .Home__button0:hover {
@@ -207,6 +219,7 @@ border-radius: 0em 0em 0em .5em;
     padding: .2em .2em .2em 1em;
     width: 8.5em;
     cursor: pointer;
+    border-radius: 0em .4em .4em 0em;
   }
   
 
@@ -236,12 +249,14 @@ border-radius: 0em 0em 0em .5em;
     color: white;
     transition: margin-left 0.3s ease;
     width: 8.3em;
+    height: 2.8em;
   }
   .Home__button1:hover {
     margin-left: 0em;
     padding: .2em .2em .2em 1em;
     width: 8.5em;
     cursor: pointer;
+    border-radius: 0em .4em .4em 0em;
   }
   .Home__button2 {
     display: flex;
@@ -256,12 +271,14 @@ border-radius: 0em 0em 0em .5em;
     color: white;
     transition: margin-left 0.3s ease;
     width: 8.3em;
+    height: 2.8em;
   }
   .Home__button2:hover {
     margin-left: 0em;
     padding: .2em .2em .2em 1em;
     width: 8.5em;
     cursor: pointer;
+    border-radius: 0em .4em .4em 0em;
   }
   .Home__button3 {
     display: flex;
@@ -277,12 +294,14 @@ border-radius: 0em 0em 0em .5em;
     transition: margin-left 0.3s ease;
     width: 8.3em;
         border-radius: 0em 0em .5em 0em;
+        height: 2.8em;
   }
   .Home__button3:hover {
     margin-left: 0em;
     padding: .2em .2em .2em 1em;
     width: 8.5em;
     cursor: pointer;
+    border-radius: 0em .4em .4em 0em;
   }
 
   .Home__footer {

@@ -52,9 +52,6 @@ const Home = () => {
           <button className="Home__button" onClick={handelCv}>
             Mi Cv
           </button>
-          <button className="Home__buttonA" onClick={handlePerfil}>
-            Mis Certificados
-          </button>
         </nav>
       </nav>
       <nav className="barra">
