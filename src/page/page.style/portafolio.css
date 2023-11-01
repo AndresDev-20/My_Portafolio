@@ -27,6 +27,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   transition: color 300ms ease;
+  font-size: 2em;
 }
 .Portafolio_title:hover{
   color: #c3d1f0;

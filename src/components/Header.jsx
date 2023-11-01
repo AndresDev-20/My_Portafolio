@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="Portafolio_header">
     <nav className="Portafolio_programmer">
-  <h1 className="Portafolio_title"><a href='#'> Programming...</a> </h1> 
+  <h1 className="Portafolio_title"><a href='#'>{'<Yeison/>'}</a> </h1> 
     </nav>
   
     <nav onClick={handelclick} className="Portafolio_click">

@@ -1,211 +1,114 @@
-.Proyect{
-    background-color: var(--bg-300);
-    max-width: 75%;
-   margin: auto;
-   display: flex;
-   flex-direction: column;
-   gap: 1em;
-   margin-top: 3em;
-   border-radius: 1em;
-   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
-   0.3em 0.1em 3em var(--bg-300);
+.Proyectos{
+        max-width: 82%;
+        margin: auto;
+        padding-top: 1em;
+        border-radius: 1em;
+        padding-bottom: 1em;
+        margin-top: 2em;
+        padding: 2em 1em 2em 1em;
+        padding-bottom: 10em;
+        display: grid;
+        gap: 2em;
      
 }
-.Proyects_Tittle{
-    color: var(--text-200);
-    max-width: 280px;
-    margin: auto;
-    text-align: center;
-    margin-top: 1em;
-    background-color: var(--bg-200);
-    padding: 3px;
-    border-radius: 1em;
-    width: 13em;
-    font-size: 19px;
-    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
-    margin-top: 1.2em;
+
+.Proyectos > section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
 }
-.Pro_text{
-   font-size: 1.2em;
-   text-align: center;
-   padding: 1em;
-   color: var(--bg-200);
+.Proyectos > nav > h1 {
+    font-size: 2em;
+    margin-bottom: .5em;
 }
 
-.Proyects_Proyects{
- 
-    max-width: 90%;
-   margin: auto;
-   background-color: var(--bg-300);
-   display: grid;
-   gap: 1em;
-   padding: 1em;
-   border-radius: 1em;
-}
-.Proyects_proyect{
-    background-color: var(--bg-200);
+.proyecto {
+    width: 100%;
+    max-width: 28em;
+    padding: 1.6em;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    0.3em 0.1em 3em var(--bg-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     border-radius: 1em;
-    border: 3px solid var(--bg-200);
-    transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
-    max-width: 17em;
-    margin: auto;
+    background-color: rgba(3, 1, 17, 0.336);
+    position: relative;
     cursor: pointer;
-}
-.Proyects_proyect:hover{
-    border: 3px solid var(--text-200);
-}
- .Proyects_Img{
-    height: 28vh;
-    border-radius: 1em 1em 0em 0em;
-    
-}
-.Proyects_Name{
-    color: var(--text-200);
     text-align: center;
-    font-size: 1.2em;
 }
-.Proyects_Info{
-    color: var(--text-100);
-    text-align: center;
-    font-size: 14px;
-    padding: 1em;
-    font-size: 1em;
- 
-}
-.Proyects_ingresar{
-    margin-top: 2em;
-    font-size: 1em;
-    transition: color 300ms ease, transform 300ms ease;
-}
-.Proyects_ingresar:hover{
-   color: beige;
-   transform: scale(1.03);
-}
-.proyects_Todos{
-    color: var(--text-200);
-    text-align: center;
-    font-size: 9px;
+.proyectofinal{
+    width: 100%;
+    max-width: 28em;
+    padding: 1.6em;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    0.3em 0.1em 3em var(--bg-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: rgba(3, 1, 17, 0.336);
+    position: relative;
     cursor: pointer;
-    background-color: var(--bg-200);
-    max-width: 200px;
-    margin: auto;
-    margin-bottom: 2em;
-    padding: 5px;
-    border-radius: 2em;
-    transition: border 300ms ease, color 350ms ease;
+    text-align: center;
 }
-.proyects_Todos:hover{
-    border: 1px solid var(--text-200);
-    color: var(--text-100);
+.proyecto > h1 {
+    color: var(--primary-200);
+    border-bottom: 2px solid var(--primary-200);
+    width: 8em;
+    text-align: center;
 }
-
-@media (min-width: 860px) {
-    .Proyect{
-        background-color: var(--bg-300);
-       margin: auto;
-       display: flex;
-       flex-direction: column;
-       gap: 1em;
-       margin-top: 3em;
-       border-radius: 1em;
-    }
-    .Proyects_Tittle{
-        color: var(--text-200);
-        max-width: 280px;
-        margin: auto;
-        text-align: center;
-        margin-top: 1em;
-        background-color: var(--bg-200);
-        padding: 3px;
-        border-radius: 1em;
-        width: 13em;
-        font-size: 19px;
-        text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.582);
-        margin-top: 1.2em;
-    }
-    .Pro_text{
-        font-size: 1.2em;
-        text-align: center;
-        padding: 0em;
-     }
-    .Proyects_Proyects{
-        max-width: 95%;
-       margin: auto;
-       background-color: var(--bg-300);
-       display: grid;
-       gap: 1em;
-       padding: 1em;
-       border-radius: 1em;
-    }
-    .Proyects_proyect{
-        background-color: var(--bg-200);
-        border-radius: 1em;
-        border: 3px solid var(--bg-200);
-        transition: transform 300ms ease, background-color 300ms ease, border 300ms ease;
-        max-width: 890px;
-        margin: auto;
-        display: flex;
-        height: 20em;
-        align-items: center;
-        padding: 1em;
-        flex-direction: row;
-    }
-    .Proyects_proyect:nth-child(even){
-        flex-direction: row-reverse;
-    }
-    .Proyects_proyect:hover{
-        border: 3px solid var(--text-200);
-    }
-     .Proyects_Img{
-        height: 40vh;
-        width: 20em;
-        border-radius: 1em;
+.proyecto > img {
+    border-radius: 1em;
 }
-    .Proyects_Name{
-        color: var(--text-200);
-        text-align: center;
-        font-size: 1.2em;
-    }
-    .Proyects_Info{
-        color: var(--text-100);
-        text-align: center;
-        font-size: 14px;
-        padding: 2em;
-        font-size: 1em;
-        
-    }
-    .Proyects_ingresar{
-        margin-top: 2em;
-        font-size: 1em;
-        transition: color 300ms ease, transform 300ms ease;
-    }
-    .Proyects_ingresar:hover{
-       color: beige;
-       transform: scale(1.03);
-    }
-    .proyects_Todos{
-        color: var(--text-200);
-        text-align: center;
-        font-size: 9px;
-        cursor: pointer;
-        background-color: var(--bg-200);
-        max-width: 200px;
-        margin: auto;
-        margin-bottom: 2em;
-        padding: 5px;
-        border-radius: 2em;
-        transition: border 300ms ease, color 350ms ease;
-    }
-    .proyects_Todos:hover{
-        border: 1px solid var(--text-200);
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      
-      @keyframes fadeOut {
-        from { opacity: 1; }
-        to { opacity: 0; }
-      }  
+.Proyecto__text {
+    position: absolute;
+    padding: 2em;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0);
+    border-radius: .7em;
+    transition: background-color 700ms ease, color 800ms ease, border 500ms ease;
+    gap: 1em;
+    border: 3px solid white;
+}
+.Proyecto__textfinal {
+    position: absolute;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(46, 46, 104, 0.788);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    color: white;
+    border-radius: .7em;
+    border: 3px solid white;
+}
+.Proyecto__text:hover {
+    position: absolute;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(46, 46, 104, 0.788);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    color: white;
+    border-radius: .7em;
+    border: 3px solid white;
 }
