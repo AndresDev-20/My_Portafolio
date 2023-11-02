@@ -14,7 +14,7 @@ const About = () => {
   };
   return (
     <div id="About" className="About">
-      <br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br />
       
       <h1>Algo sobre mi...</h1>
       <p>
