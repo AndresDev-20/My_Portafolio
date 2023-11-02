@@ -342,10 +342,9 @@ font-size: 10px;
 }
 
 .bx_H {
-  font-size: 2.1em;
+  font-size: 2em;
   position: absolute;
   bottom: 0;
-  margin-bottom: -.5em;
   left: 50%;
   cursor: pointer;
   animation: bou 2s infinite;
