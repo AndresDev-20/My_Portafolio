@@ -14,7 +14,7 @@ const About = () => {
   };
   return (
     <div id="About" className="About">
-      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br />
       
       <h1>Algo sobre mi...</h1>
       <p>
@@ -38,6 +38,7 @@ const About = () => {
 
      
         </nav>
+        <h3><i onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_A'></i></h3>
     </div>
   );
 };

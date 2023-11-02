@@ -74,6 +74,7 @@ const Knowledge = () => {
           </nav>
         </a>
       </section>
+      <h1><i onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })} className='bx bx-chevrons-down bx_K'></i></h1>
     </section>
   );
 };

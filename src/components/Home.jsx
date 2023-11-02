@@ -90,6 +90,7 @@ const Home = () => {
           </button>
         </a>
       </nav>
+      <h1><i onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_H'></i></h1>
     </section>
   );
 };

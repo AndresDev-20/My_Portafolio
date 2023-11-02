@@ -23,6 +23,10 @@
     font-size: 2em;
     margin-bottom: .5em;
 }
+.Proyectos > nav > p {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
 
 .proyecto {
     width: 100%;
@@ -57,6 +61,11 @@
     position: relative;
     cursor: pointer;
     text-align: center;
+    transition: transform 400ms ease;
+}
+
+.proyectofinal:hover{
+    transform: scale(.9);
 }
 .proyecto > h1 {
     color: var(--primary-200);
@@ -92,12 +101,39 @@
     top: 0;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-size: 1.4em;
     color: white;
     border-radius: .7em;
     border: 3px solid white;
 }
+
+
+/* Estilo para el icono o pestaña */
+.Proyecto__textfinal::before {
+    content: ">>>"; /* Puedes cambiar esto por el icono que desees */
+    font-size: 1.5em;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    animation: bounce 2s infinite linear; /* Cambia la animación a 'linear' para mover hacia los lados */
+    order: 2;
+    font-size: 2em;
+}
+.Proyecto__textfinal:hover{
+    color: rgb(183, 183, 207);
+    border: 5px solid var(--bg-300);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Cambia el valor para ajustar la distancia de desplazamiento */
+    }
+}
+
 .Proyecto__text:hover {
     position: absolute;
     padding: 2em;
@@ -111,4 +147,35 @@
     color: white;
     border-radius: .7em;
     border: 3px solid white;
+}
+.bx_P{
+    transform: scale(0);
+  }
+
+@media (min-width:700px) {
+    .bx_P {
+        font-size: 1.7em;
+        position: absolute;
+        margin-top: 1em;
+        left: 50%;
+        cursor: pointer;
+        animation: bouA 2s infinite;
+        color: var(--bg-300);
+      }
+      
+      .bx_P:hover {
+        color: rgb(24, 170, 170);
+      }
+      
+      @keyframes bouA {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* No se mueve en estos momentos */
+      }
+      40% {
+          transform: translateY(-10px); /* Salta hacia arriba en este punto */
+      }
+      60% {
+          transform: translateY(-10px); /* Y vuelve a su posición original aquí */
+      }
+    }
 }

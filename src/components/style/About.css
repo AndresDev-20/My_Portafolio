@@ -9,6 +9,7 @@
     0.3em 0.1em 3em var(--bg-300);
     padding: 2em;
     padding-bottom: 10em;
+    position: relative;
 }
  .about__footer {
         padding: 1em;
@@ -40,6 +41,9 @@
     .bxs-award{
         font-size: 2em;
     }
+    .bx_A{
+        transform: scale(0);
+      }
 @media (min-width: 700px) {
     .About{
         max-width: 82%;
@@ -90,4 +94,30 @@
     .bxs-award{
         font-size: 2em;
     }
+    .bx_A {
+        font-size: 2.1em;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -2.5em;
+        left: 50%;
+        cursor: pointer;
+        animation: bouA 2s infinite;
+        color: var(--bg-300);
+      }
+      
+      .bx_A:hover {
+        color: rgb(24, 170, 170);
+      }
+      
+      @keyframes bouA {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* No se mueve en estos momentos */
+      }
+      40% {
+          transform: translateY(-10px); /* Salta hacia arriba en este punto */
+      }
+      60% {
+          transform: translateY(-10px); /* Y vuelve a su posición original aquí */
+      }
+      }
 }

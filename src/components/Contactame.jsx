@@ -2,7 +2,9 @@ import React from 'react'
 import './style/contact.css'
 const Contactame = () => {
   return (
-    <div className='contact' id='contact'>
+    <div id='contact'>
+      <br /><br /><br /><br /><br />
+    <div className='contact' >
       <br />
     <div className="content_contact hiddenLeft">
         <span>¿Quieres contactar conmigo?</span>
@@ -20,7 +22,9 @@ const Contactame = () => {
         </form>
     </div>
 
-</div>
+</div>      
+    </div>
+
   )
 }
 

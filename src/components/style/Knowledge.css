@@ -29,7 +29,7 @@
     gap: 2em;
 }
 .Knowledge_languaje {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -2em 3em rgba(165, 42, 42, 0.644), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -41,11 +41,10 @@
     border-radius: 1em;
     padding: 3em;
     color: brown;
-    background-color: rgba(165, 42, 42, 0.185);
     border: .2em solid brown;
 }
 .Knowledge_languaje1 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(41, 140, 165, 0.767), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -57,11 +56,10 @@
     border-radius: 1em;
     padding: 3em;
     color: rgb(54, 42, 165);
-    background-color: rgba(42, 140, 165, 0.185);
     border: .2em solid rgb(42, 110, 165);
 }
 .Knowledge_languaje2 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(160, 151, 33, 0.644), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -73,11 +71,10 @@
     border-radius: 1em;
     padding: 3em;
     color: rgb(122, 122, 76);
-    background-color: rgba(165, 157, 42, 0.185);
     border: .2em solid rgb(197, 189, 81);
 }
 .Knowledge_languaje3 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 2em rgba(34, 161, 170, 0.37), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -90,10 +87,10 @@
     padding: 3em;
     color: rgba(11, 109, 126, 0.89);
     background-color: rgba(42, 140, 165, 0.185);
-    border: .2em solid rgba(10, 184, 214, 0.89);
+    border: .2em solid rgb(0, 217, 255);
 }
 .Knowledge_languaje4 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.39), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -109,7 +106,7 @@
     border: .2em solid rgb(0, 8, 14);
 }
 .Knowledge_languaje5 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(153, 39, 182, 0.527), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -125,7 +122,7 @@
     border: .2em solid blueviolet;
 }
 .Knowledge_languaje6 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(30, 28, 131, 0.534), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -141,7 +138,7 @@
     border: .2em solid rgb(42, 110, 165);
 }
 .Knowledge_languaje7 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(41, 138, 29, 0.678), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -157,7 +154,7 @@
     border: .2em solid rgb(42, 165, 58);
 }
 .Knowledge_languaje8 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(151, 153, 36, 0.651), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -173,7 +170,7 @@
     border: .2em solid rgb(223, 238, 11);
 }
 .Knowledge_languaje9 {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
+    box-shadow: inset 0 -3em 3em rgba(28, 53, 136, 0.603), 0 0 0 .1px rgb(247, 244, 244),
     0.3em 0.1em 3em var(--bg-300);
     width: 4em;
     height: 5em;
@@ -194,7 +191,7 @@
 }
 .bxl-css3 {
     font-size: 4em;
-    color: rgb(44, 109, 207);
+    color: rgba(41, 140, 165, 0.767);
 }
 .bxl-javascript {
     font-size: 4em;
@@ -228,6 +225,9 @@
     font-size: 4em;
     color: blue;
 }
+.bx_K{
+    transform: scale(0);
+  }
 @media (min-width: 700px) {
     #Knowledge {
         max-width: 82%;
@@ -257,6 +257,233 @@
         align-items: center;
         justify-content: center;
         gap: 2em;
+        position: relative;
+    }
+
+    .Knowledge_languaje {
+        box-shadow: inset 0 -2em 3em rgba(165, 42, 42, 0.644), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: brown;
+        border: .2em solid brown;
+    }
+    .Knowledge_languaje1 {
+        box-shadow: inset 0 -3em 3em rgba(41, 140, 165, 0.767), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(54, 42, 165);
+        border: .2em solid rgb(42, 110, 165);
+    }
+    .Knowledge_languaje2 {
+        box-shadow: inset 0 -3em 3em rgba(160, 151, 33, 0.644), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(122, 122, 76);
+        border: .2em solid rgb(197, 189, 81);
+    }
+    .Knowledge_languaje3 {
+        box-shadow: inset 0 -3em 2em rgba(34, 161, 170, 0.37), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgba(11, 109, 126, 0.89);
+        background-color: rgba(42, 140, 165, 0.185);
+        border: .2em solid rgb(0, 217, 255);
+    }
+    .Knowledge_languaje4 {
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.39), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(2, 2, 2);
+        background-color: rgba(0, 7, 8, 0.185);
+        border: .2em solid rgb(0, 8, 14);
+    }
+    .Knowledge_languaje5 {
+        box-shadow: inset 0 -3em 3em rgba(153, 39, 182, 0.527), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: blueviolet;
+        background-color: rgba(137, 43, 226, 0.151);
+        border: .2em solid blueviolet;
+    }
+    .Knowledge_languaje6 {
+        box-shadow: inset 0 -3em 3em rgba(30, 28, 131, 0.534), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(54, 42, 165);
+        background-color: rgba(42, 140, 165, 0.185);
+        border: .2em solid rgb(42, 110, 165);
+    }
+    .Knowledge_languaje7 {
+        box-shadow: inset 0 -3em 3em rgba(41, 138, 29, 0.678), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(18, 70, 13);
+        background-color: rgba(92, 235, 25, 0.185);
+        border: .2em solid rgb(42, 165, 58);
+    }
+    .Knowledge_languaje8 {
+        box-shadow: inset 0 -3em 3em rgba(151, 153, 36, 0.651), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(148, 134, 10);
+        background-color: rgba(165, 157, 42, 0.185);
+        border: .2em solid rgb(223, 238, 11);
+    }
+    .Knowledge_languaje9 {
+        box-shadow: inset 0 -3em 3em rgba(28, 53, 136, 0.603), 0 0 0 .1px rgb(247, 244, 244),
+        0.3em 0.1em 3em var(--bg-300);
+        width: 10em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: 3em;
+        color: rgb(54, 42, 165);
+        background-color: rgba(42, 140, 165, 0.185);
+        border: .2em solid rgb(57, 23, 211);
+    }
+
+    .bxl-html5 {
+        font-size: 7em;
+        color: brown;
+    }
+    .bxl-css3 {
+        font-size: 7em;
+        color: rgba(41, 140, 165, 0.767);
+    }
+    .bxl-javascript {
+        font-size: 7em;
+        color: yellow;
+    }
+    .bxl-react {
+        font-size: 7em;
+        color: rgba(10, 184, 214, 0.89);
+    }
+    #githubb {
+        font-size: 7em;
+        color: black;
+    }
+    .bxl-redux {
+        font-size: 7em;
+        color: blueviolet;
+    }
+    .bxl-postgresql {
+        font-size: 7em;
+        color: blue;
+    }
+    .bxl-nodejs {
+        font-size: 7em;
+        color: green;
+    }
+    .bxl-python {
+        font-size: 7em;
+        color: rgb(50, 143, 205);
+    }
+    .bxl-typescript {
+        font-size: 7em;
+        color: blue;
+    }
+
+    .bx_K {
+        font-size: 1.19em;
+        position: absolute;
+        left: 50%;
+        cursor: pointer;
+        animation: bouA 2s infinite;
+        color: var(--bg-300);
+        margin-top: 1em;
+      }
+      
+      .bx_K:hover {
+        color: rgb(24, 170, 170);
+      }
+      
+      @keyframes bouK {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* No se mueve en estos momentos */
+      }
+      40% {
+          transform: translateY(-10px); /* Salta hacia arriba en este punto */
+      }
+      60% {
+          transform: translateY(-10px); /* Y vuelve a su posición original aquí */
+      }
+
     }
 
 }

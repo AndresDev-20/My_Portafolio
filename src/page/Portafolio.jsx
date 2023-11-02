@@ -20,8 +20,9 @@ const Portafolio = () => {
 
   return (
     <div id="home" >
+      
        <Header/>       
-                  <div className="Portafolio">
+                  <div className="Portafolio" id="Home">
                   <Home/>
        <About/>
        <Knowledge/>

@@ -47,7 +47,7 @@ const Proyects = () => {
         </nav>
         <nav onClick={TwoProject} className="proyecto">
           <h1>Pokemones</h1>
-          <img src="../../image/Pokedex.jpg" alt="" />
+          <img src="../../image/Pokedex.png" alt="" />
           <nav className="Proyecto__text">
             <p>
               Como vez aquí tenemos la pokeApy un excelente proyecto que hara
@@ -59,7 +59,7 @@ const Proyects = () => {
 
         <nav onClick={ThreeProject} className="proyecto">
           <h1>Riky and mortid</h1>
-          <img src="../../image/Riky.jpg" alt="" />
+          <img src="../../image/Riky.png" alt="" />
           <nav className="Proyecto__text">
             <p>
              Al igual que en el proyecto anterior aquí en este podemos ver los famosos personajes de la saga de Riky y Morti, que es una Entretenida saga, aquí podrás encontrar a todos sus personajes.
@@ -69,7 +69,7 @@ const Proyects = () => {
 
         <nav onClick={FourProject} className="proyecto">
           <h1>Crud</h1>
-          <img src="../../image/crud.jpg" alt="" />
+          <img src="../../image/Crud.png" alt="" />
           <nav className="Proyecto__text">
             <p>
             Este proyecto es una base de datos en la que se puede hacer un registro de un persona y también editarlo o eliminarlo, es una gran aplicación pruébalo tú te gustará
@@ -78,7 +78,7 @@ const Proyects = () => {
         </nav>       
          <nav onClick={FiveProject} className="proyecto">
           <h1>Weather App</h1>
-          <img src="../../image/wheather.jpg" alt="" />
+          <img src="../../image/Weather.png" alt="" />
           <nav className="Proyecto__text">
             <p>
             Aquí te tengo esta aplicación, que nos dice el clima que tenemos en el lugar donde estamos y también podemos buscar el clima de otros Lugares facilmente
@@ -87,8 +87,7 @@ const Proyects = () => {
         </nav>
 
         <nav onClick={FinalProject} className="proyectofinal">
-          <h1>Weather App</h1>
-          <img src="../../image/wheather.jpg" alt="" />
+          <img src="../../image/proyects.png" alt="" />
           <nav className="Proyecto__textfinal">
             <p>
            Ingresa aqui para ver los demas proyectos que he realizado.
@@ -96,6 +95,7 @@ const Proyects = () => {
           </nav>
         </nav>
       </section>
+      <h1><i onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_P'></i></h1>
     </article>
   );
 };

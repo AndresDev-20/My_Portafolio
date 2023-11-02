@@ -18,12 +18,14 @@ const Proyectss = () => {
         <div>
           <Header />
           <section className="Proyects">
-            <h1 className="Proyects_tittle">Proyectos</h1>
+            <div className="Proyectss_image">
             <img className="trabajo" src="./image/trabajo.jpg" alt="" />
             <p className="Proyect_text">
               "Estos son mis proyectos que he hecho en mi carrera, para ver
               alguno de ellos solo tienes que hacer clic en uno".
-            </p>
+            </p>              
+            </div>
+
 
             <section className="Proyets_proyects">
 

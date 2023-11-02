@@ -14,7 +14,7 @@
       
 }
 .footer_tittle{
-    color: var(--accent-200);
+    color: var(--primary-200);
     text-shadow: 1px 1px rgba(17, 187, 230, 0.795);
     font-size: 1.5em;
     margin-top: 2em;
