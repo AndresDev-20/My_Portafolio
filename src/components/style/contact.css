@@ -1,6 +1,6 @@
 .contact {
     padding: 2rem 0;
-    max-width: 50%;
+    max-width: 20em;
     margin: auto;
     margin-top: 2em;
     border-radius: 1em;
@@ -73,6 +73,7 @@ form textarea {
         box-shadow: inset 0 -3em 3em var(--bg-300), 0 0 0 .1px rgb(247, 244, 244),
         0.3em 0.1em 3em var(--bg-300);
         background-color: rgba(13, 13, 102, 0.185);
+        max-width: 50em;
     }
     
     .content_contact {
