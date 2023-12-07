@@ -26,7 +26,7 @@ const Proyects = () => {
 
   return (
     <article className="Proyectos" id="Proyects">
-      <br /><br /><br /><br />
+      <br /><br />
       <nav>
         <h1>Proyectos...</h1>
         <p>
