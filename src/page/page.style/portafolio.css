@@ -12,7 +12,7 @@
   width: 100%;
   margin-top: -6em;
   z-index: var(  --zposition-fourth);
-  border-bottom: 2px solid rgb(245, 240, 240);
+  border-bottom: 2px solid var(--title);
 }
 
 .Portafolio_title{
@@ -57,7 +57,7 @@
 }
 .Portafolio_click{
   border-radius: 6px;
-  color: var(--text-100);
+  color: var(--title);
   display: flex;
   justify-content: center;
   margin-right: 2em;
@@ -81,7 +81,7 @@
   width: 1.7em;
 }
 .Portafolio_menu {
-  background-color: var(--accent-100);
+  background-color: var(--bg-30);
   text-align: center;
     width: 100%;
     max-width: 250px;
@@ -99,7 +99,7 @@
 }
 a{
   text-decoration: none;
-  color: var(--text-300);
+  color: var(--title);
 }
 .Portafolio_select:hover{
   transform: scale(1.10);

@@ -21,7 +21,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--bg-200);
+        color: var(--title);
         font-size: 10px;
         cursor: pointer;
         height: 2.4em;
@@ -42,6 +42,12 @@
     .bx_A{
         transform: scale(0);
       }
+      .About > h1 {
+        color: var(--textTitle);
+    }
+    .About > p {
+        color: var(--text);
+    }
 @media (min-width: 700px) {
     .About{
         max-width: 82%;
@@ -55,9 +61,10 @@
     }
     .About > h1 {
         font-size: 2.6em;
-        border-bottom: 5px solid var(--bg-300);
+        border-bottom: 5px solid var(--textTitle);
         width: 8em;
         margin-bottom: 1.5em;
+        color: var(--textTitle);
     }
     .About > p {
         font-size: 1.2em;
@@ -74,7 +81,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--bg-200);
+        color: var(--title);
         font-size: 10px;
         cursor: pointer;
         height: 2.6em;

@@ -16,14 +16,14 @@
 }
 
 .content_contact span {
-    color: var(--accent-200);
+    color: var(--textTitle);
 }
 
 .content_contact h3 {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
-    color: var(--text-100);
+    color: var(--subtitle);
 }
 
 form {
@@ -38,8 +38,8 @@ form input {
     border-radius: 1em;
     text-align: center;
     border: none;
-    background-color: var(--bg-200);
-    color: var(--text-200);
+    background-color: var(--title);
+    color: var(--text);
 }
 
 form textarea {
@@ -47,16 +47,16 @@ form textarea {
     border-radius: 1em;
     text-align: center;
     border: none;
-    background-color: var(--bg-200);
-    color: var(--text-100);
+    background-color: var(--title);
+    color: var(--text);
     width: 100%;
     max-width: 19.2em;
 }
 
 .btn{
-   background-color: var(--bg-200);
+   background-color: var(--title);
    border-radius: 1em;
-   color: var(--text-200);
+   color: var(--text);
    cursor: pointer;
    border: none;
    height: 2em;
@@ -74,7 +74,6 @@ form textarea {
         border-radius: 1em;
         box-shadow: inset 0 -3em 3em var(--bg-300), 0 0 0 .1px rgb(247, 244, 244),
         0.3em 0.1em 3em var(--bg-300);
-        background-color: rgba(13, 13, 102, 0.185);
         max-width: 50em;
         margin-bottom: 4em;
     }

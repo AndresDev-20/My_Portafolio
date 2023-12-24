@@ -18,6 +18,7 @@ const Header = () => {
     <nav onClick={handelclick} className="Portafolio_click">
     <i className='bx bx-menu'></i>
     </nav>
+    
     <section className={`container ${close && 'close'}`}>
       <section className= 'Portafolio_menu'>
       

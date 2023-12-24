@@ -14,13 +14,13 @@
       
 }
 .footer_tittle{
-    color: var(--primary-200);
+    color: var(--title);
     text-shadow: 1px 1px rgba(17, 187, 230, 0.795);
     font-size: 1.5em;
     margin-top: 2em;
 }
 .footer_name{
-    color: var(--text-100);
+    color: var(--text);
     font-size: 1em;
     font-weight: 590;
     margin-bottom: 1em;
@@ -32,7 +32,7 @@
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: rgb(58, 56, 85);
+    background-color: var(--bg-30);
     width: 90%;
     height: .1px;
     border-radius: 50%;
@@ -44,7 +44,7 @@
    flex-direction: column;
    align-items: center;
    font-size: 12px;
-   background-color: var(--bg-200);
+   background-color: var(--title);
    border-radius: 0.5em;
    width: 2em;
    padding: 2px;
@@ -56,15 +56,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--text-100);
+    color: var(--text);
     font-size: 12px;
-    background-color: var(--bg-200);
+    background-color: var(--title);
     border-radius: 0.5em;
     padding: 2px;
     object-fit: contain;
 }
 .fin{
-    color: var(--text-100);
+    color: var(--text);
     font-size: .8em;
     margin-top: 1em;
 }
@@ -130,6 +130,6 @@
         margin-top: 7em;
         font-size: .9em;
         transform: scale(1);
-        color: var(--text-100);
+        color: var(--title);
 }
 }

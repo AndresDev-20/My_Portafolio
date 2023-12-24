@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root {
-
-  --primary-200:#fcf5fc;
-  --primary-300:#E4EFE7;
-  --accent-100:#37526def;;
-  --accent-200:#21085c;
-  --text-100:#02050f;
-  --text-200:#3e6080;
-  --bg-100:#fdfdfd;
-  --bg-200:#e0e7f0;
-  --bg-300:#4c678f; /* este se usa ´para el header y el marco de los cuadros de la informacion*/
-
-    --bg-100: #f0f0f0;
-    --border-color: #fff; /* Color del borde blanco */
-
+  --bg-300:#4c678f;
+  --bg-30: rgba(46, 46, 104, 0.788);
+  --title:  #f7f8fa;
+  --textTitle: #1a0e5fa1;
+  --subtitle: #201dbd;
+  --text: #010116;
   --zposition-first: 1000;
   --zposition-second: 2000;
   --zposition-third: 3000;

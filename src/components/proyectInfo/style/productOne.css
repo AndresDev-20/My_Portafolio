@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
     gap: 3em;
-    background-color: var(--bg-200);
+    background-color: var(--title);
     height: 90%;
     width: 100%;
     max-width: 23em;
@@ -111,7 +111,7 @@
 .exit {
     font-size: 1.5em;
     position: fixed;
-    color: white;
+    color: var(--title);
     cursor: pointer;
     left: 0.5em;
     top: 4.3em;
@@ -122,7 +122,7 @@
     text-align: center;
     border-radius: .4em;
     padding: .1em;
-    border: 2px solid white;
+    border: 2px solid var(--title);
     transition: border 500ms ease, color 500ms ease;
 }
 .vol{
@@ -132,7 +132,7 @@
 }
 .exit:hover{
     filter: brightness(1.2);
-    border: 2px solid rgb(14, 4, 48);
+    border: 2px solid var(--bg-30);
     color: rgb(14, 4, 48);
 }
 .productOne_descripcion{
@@ -146,7 +146,7 @@
     border-radius: 10em;
     border: none;
     background-color: var(--bg-300);
-    color: white;
+    color: var(--title);
     cursor: pointer;
     margin-bottom: 8em;
 }
@@ -165,14 +165,13 @@
     border-radius: .2em;
 }
 .enlace:hover{
-    border-bottom: 1px solid rgb(26, 12, 92);
+    border-bottom: 1px solid var(--bg-30);
 }
 @media (min-width:910px) {
     .productOne {
         display: flex;
         justify-content: center;
         gap: 1em;
-        background-color: var(--bg-200);
         height: 80vh;
         border-radius:  2em;
         padding: 0em 0em 0em 1em;
@@ -266,7 +265,6 @@
     .exit {
         font-size: 1.5em;
         position: fixed;
-        color: white;
         cursor: pointer;
         left: 1.3em;
         top: 1.3em;
@@ -277,7 +275,6 @@
         text-align: center;
         border-radius: .4em;
         padding: .1em;
-        border: 2px solid white;
         transition: border 500ms ease, color 500ms ease;
     }
     .vol{
@@ -287,8 +284,6 @@
     }
     .exit:hover{
         filter: brightness(1.2);
-        border: 2px solid rgb(14, 4, 48);
-        color: rgb(14, 4, 48);
     }
     .productOne_descripcion{
         color: var(--bg-300);
@@ -301,7 +296,6 @@
         border-radius: 10em;
         border: none;
         background-color: var(--bg-300);
-        color: white;
         cursor: pointer;
         margin-bottom: 3em;
     }
@@ -318,8 +312,5 @@
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
         padding: .2em;
         border-radius: .2em;
-    }
-    .enlace:hover{
-        border-bottom: 1px solid rgb(26, 12, 92);
     }
 }

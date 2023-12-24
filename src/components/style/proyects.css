@@ -22,10 +22,12 @@
 .Proyectos > nav > h1 {
     font-size: 2em;
     margin-bottom: .5em;
+    color: var(--textTitle);
 }
 .Proyectos > nav > p {
     font-size: 1.2em;
     margin-bottom: .5em;
+    color: var(--text);
 }
 
 .proyecto {
@@ -69,8 +71,8 @@
     transform: scale(.9);
 }
 .proyecto > h1 {
-    color: var(--primary-200);
-    border-bottom: 2px solid var(--primary-200);
+    color: var(--title);
+    border-bottom: 2px solid var(--title);
     width: 8em;
     text-align: center;
 }
@@ -92,13 +94,13 @@
     border-radius: .7em;
     transition: background-color 700ms ease, color 800ms ease, border 500ms ease;
     gap: 1em;
-    border: 3px solid white;
+    border: 3px solid var(--title);
 }
 .Proyecto__textfinal {
     position: absolute;
     padding: 2em;
     text-align: center;
-    background-color: rgba(46, 46, 104, 0.788);
+    background-color: var(--bg-30);
     top: 0;
     bottom: 0;
     display: flex;
@@ -106,9 +108,9 @@
     align-items: center;
     justify-content: center;
     font-size: .7em;
-    color: white;
+    color: var(--title);
     border-radius: .7em;
-    border: 3px solid white;
+    border: 3px solid var(--title);
     width: 100%;
 }
 
@@ -123,7 +125,6 @@
     font-size: 2em;
 }
 .Proyecto__textfinal:hover{
-    color: rgb(183, 183, 207);
     border: 5px solid var(--bg-300);
 }
 
@@ -140,15 +141,15 @@
     position: absolute;
     padding: 2em;
     text-align: center;
-    background-color: rgba(46, 46, 104, 0.788);
+    background-color: var(--bg-30);
     top: 0;
     bottom: 0;
     display: flex;
     align-items: center;
     font-size: 1.4em;
-    color: white;
+    color: var(--title);
     border-radius: .7em;
-    border: 3px solid white;
+    border: 3px solid var(--title);
 }
 .bx_P{
     transform: scale(0);
@@ -167,7 +168,6 @@
         justify-content: center;
         gap: 1em;
         border-radius: 1em;
-        background-color: rgba(3, 1, 17, 0.336);
         position: relative;
         cursor: pointer;
         text-align: center;
@@ -191,7 +191,6 @@
         position: absolute;
         padding: 2em;
         text-align: center;
-        background-color: rgba(46, 46, 104, 0.788);
         top: 0;
         bottom: 0;
         display: flex;
@@ -199,9 +198,7 @@
         align-items: center;
         justify-content: center;
         font-size: 1.1em;
-        color: white;
         border-radius: .7em;
-        border: 3px solid white;
     
     }
     .Proyecto__text {
@@ -215,25 +212,21 @@
         align-items: center;
         justify-content: center;
         font-size: 1.1em;
-        color: rgba(255, 255, 255, 0);
         border-radius: .7em;
         transition: background-color 700ms ease, color 800ms ease, border 500ms ease;
         gap: 1em;
-        border: 3px solid white;
     }
     .Proyecto__text:hover {
         position: absolute;
         padding: 2em;
         text-align: center;
-        background-color: rgba(46, 46, 104, 0.788);
         top: 0;
         bottom: 0;
         display: flex;
         align-items: center;
         font-size: 1.1em;
-        color: white;
         border-radius: .7em;
-        border: 3px solid white;
+        border: 3px solid var(--title);
     }
       
       @keyframes bouA {
