@@ -78,16 +78,15 @@
 .bxl-linkedin-square {
     font-size: 2.5em;
 }
-.barra {
+.barr1 {
     display: flex;
     width: 100%;
     gap: 4px;
     justify-content: center;
     position: fixed;
-    color: var( --primary-200);
     position: fixed;
-    margin-top: -2.3em;
     z-index: var(  --zposition-fourth);
+    margin-top: 6.6em;
   }
   
 .Home__button0 {
@@ -138,10 +137,15 @@ font-size: 10px;
 .bx_H{
   transform: scale(0);
 }
-
+.barra{
+  display: none;
+}
 
 
 @media (min-width: 1000px) {
+  .barr1 {
+  display: none;
+  }
    .Home {
     display: flex;
     width: 100%;

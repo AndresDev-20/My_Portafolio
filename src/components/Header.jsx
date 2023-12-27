@@ -32,7 +32,8 @@ const Header = () => {
 
 
   return (
-    <header className="Portafolio_header">
+    <>
+       <header className="Portafolio_header">
     <nav className="Portafolio_programmer">
         <h1 className="Portafolio_title"><a href='#'>{'<Yeison/>'}</a> </h1>  
     </nav>
@@ -64,7 +65,46 @@ const Header = () => {
 
       </section>
     </section>
+    <nav className="barr1">
+        <a href="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/">
+          {" "}
+          <button className="Home__button0">
+            LinkedIn<i className="bx bxl-linkedin-square"></i>{" "}
+          </button>
+        </a>
+
+        <Link
+          to="/#contact"
+          onClick={() =>
+            document
+              .querySelector("#contact")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          {" "}
+          <span>
+            <button className="Home__button1">
+              Email<i class="bx bx-envelope"></i>
+            </button>
+          </span>
+        </Link>
+
+        <a href="https://wa.me/573227222010?Hola%20quiero%20hablar%20de%20un%20empleo%20contigo">
+          {" "}
+          <button className="Home__button2">
+            whatsapp<i class="bx bxl-whatsapp"></i>{" "}
+          </button>
+        </a>
+        <a href="https://github.com/yeisonmarroquin887?tab=repositories">
+          <button className="Home__button3">
+            GitHub<i class="bx bxl-github"></i>{" "}
+          </button>
+        </a>
+      </nav>
   </header>
+
+    </>
+ 
   )
 }
 
