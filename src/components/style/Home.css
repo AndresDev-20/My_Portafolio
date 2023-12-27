@@ -82,10 +82,12 @@
     display: flex;
     width: 100%;
     gap: 4px;
-    left: 0;
-    top: 4.5em;
     justify-content: center;
     position: fixed;
+    color: var( --primary-200);
+    position: fixed;
+    margin-top: -2.3em;
+    z-index: var(  --zposition-fourth);
   }
   
 .Home__button0 {
