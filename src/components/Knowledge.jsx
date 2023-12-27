@@ -4,7 +4,7 @@ import Skills from "./Skills";
 const Knowledge = () => {
   return (
     <section id="Knowledge">
-      <br /><br /><br /><br />
+      <br /><br /><br />
       <h1>Tecnologias</h1>
       <p>
         Estas son las tecnologías con las que trabajo actualmente. Aunque la

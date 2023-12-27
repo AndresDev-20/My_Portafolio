@@ -24,7 +24,7 @@
 .Proyectss_image > p {
     font-size: 1.3em;
     text-align: center;
-    color: rgb(117, 117, 117);
+    color: var(--text);
      text-shadow: 2px 2px 4px rgb(245, 240, 240);
 }
 
@@ -57,7 +57,7 @@
 
 .Proyects_info {
     text-align: center;
-    color: rgb(117, 117, 117);
+    color: var(--text);
 }
 
 .Proyects_info > p {

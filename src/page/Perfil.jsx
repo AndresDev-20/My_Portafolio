@@ -122,10 +122,10 @@ const Perfil = () => {
     <div className='perfil_center'>
 
           <nav className="perfil_image">
-    <img className="perfil_img" src="./image/present.jpg" alt="Yeison" />
+    <img className="perfil_img" src="./image/fotopresent0.png" alt="Yeison" />
      
   </nav>
-   <hr className='line' />
+  <br />
   <nav className="perfil_info">
     <h2>A continuación te dejo los certificados de mis estudios: </h2>
      <nav className='certificados'>

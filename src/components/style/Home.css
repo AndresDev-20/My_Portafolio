@@ -1,9 +1,8 @@
 .Home {
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     padding-top: 4em;
-    padding-bottom: 1em;
     margin-top: 6.8em;
     transition: all 1s ease-in-out;
     position: relative;
@@ -34,6 +33,10 @@
 .Home__info-title{
     color: var(--textTitle);
     font-size: 24px;
+}
+
+.Home__span {
+  color: var(--subtitle);
 }
 
 .Home__info-text {
@@ -71,59 +74,56 @@
 }
 
 
-.Home__button0 {
-background-color: var(--bg-300);
-border: none;
-display: flex;
-align-items: center;
-color: var(--title);
-border-radius: .5em 0em 0em .5em;
-padding: .2em;
-height: 3em;
-font-size: 10px;
-  }
-  
 
 .bxl-linkedin-square {
     font-size: 2.5em;
 }
 .barra {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    gap: 2px;
-    margin-top: -1.4em;
+    gap: 4px;
+    left: 0;
+    top: 4.5em;
     justify-content: center;
+    position: fixed;
   }
   
+.Home__button0 {
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--subtitle);
+  border-radius: .5em 0em 0em .5em;
+  padding: .2em;
+  height: 3em;
+  font-size: 10px;
+    }
+    
 .Home__button1 {
-    background-color: var(--bg-300);
     border: none;
     display: flex;
     align-items: center;
-    color: var(--title);
+    color: var(--subtitle);
     height: 3em;
     padding: .5em;
 font-size: 10px;
   }
 
   .Home__button2 {
-    background-color: var(--bg-300);
     border: none;
     display: flex;
     align-items: center;
-    color: var(--title);
+    color: var(--subtitle);
     height: 3em;
     padding: .5em;
 font-size: 10px;
   }
 
   .Home__button3 {
-    background-color: var(--bg-300);
     border: none;
     display: flex;
     align-items: center;
-    color: var(--title);
+    color: var(--subtitle);
     height: 3em;
     padding: .5em;
 font-size: 10px;
@@ -185,9 +185,32 @@ font-size: 10px;
     font-size: 2.7em; 
 }
 .Home__span {
-    color: var(--subtitle);
-    font-size: 26px;
-    margin-top: -7px; 
+  color: var(--subtitle);
+  font-size: 26px;
+  margin-top: -7px; 
+  width: 50%;
+  position: relative;
+}
+
+.Home__span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Inicialmente establecer el ancho a cero */
+  height: 3px;
+  background-color: var(--textTitle);
+  animation: animacionBorde 1s infinite alternate;
+  transform-origin: right; /* Cambia el punto de transformación al lado derecho */
+}
+
+@keyframes animacionBorde {
+  from {
+      width: 50%; /* Comienza sin ancho */
+  }
+  to {
+      width: 100%; /* Termina con ancho completo */
+  }
 }
 
 .Home__info-text {
@@ -211,6 +234,7 @@ font-size: 10px;
     transition: margin-left 0.3s ease;
     width: 8.3em;
     border-radius: 0em .5em 0em 0em;
+    color: var(--title);
     height: 2.8em;
   }
 
@@ -218,10 +242,12 @@ font-size: 10px;
     display: grid;
     position: fixed;
     left: 0;
+    top: 30%;
     width: 100%;
     max-width: 13em;
     gap: 0px;
     justify-content: start;
+    color: var(--title);
   }
   
   .Home__button0:hover {
@@ -230,6 +256,8 @@ font-size: 10px;
     width: 8.5em;
     cursor: pointer;
     border-radius: 0em .4em .4em 0em;
+    
+    color: var(--title);
   }
   
 
@@ -257,6 +285,7 @@ font-size: 10px;
     padding: .2em .2em .2em 2em;
     border: none;
     transition: margin-left 0.3s ease;
+    color: var(--title);
     width: 8.3em;
     height: 2.8em;
   }
@@ -273,6 +302,7 @@ font-size: 10px;
     align-items: center;
     font-size: 1.4em;
     background-color: var(--bg-300);
+    color: var(--title);
     left: 0;
     margin-left: -5em;
     padding: .2em;
@@ -303,6 +333,7 @@ font-size: 10px;
     width: 8.3em;
         border-radius: 0em 0em .5em 0em;
         height: 2.8em;
+        color: var(--title);
   }
   .Home__button3:hover {
     margin-left: 0em;

@@ -1,5 +1,5 @@
 .About{
-    max-width: 82%;
+    max-width: 97%;
     margin: auto;
     padding-top: 1em;
     border-radius: 1em;
@@ -60,10 +60,9 @@
         padding: 2em;
     }
     .About > h1 {
-        font-size: 2.6em;
-        border-bottom: 5px solid var(--textTitle);
+        font-size: 2.3em;
         width: 8em;
-        margin-bottom: 1.5em;
+        margin-bottom: .5em;
         color: var(--textTitle);
     }
     .About > p {

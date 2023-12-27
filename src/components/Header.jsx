@@ -1,27 +1,59 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [close, setclose] = useState(true)
+    const [lun, setlun] = useState(false)
     const handelclick = () => {
        setclose(false)
     }
   const handelclose = () => {
     setclose(true)
   }
+
+  useEffect(() => {
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
+
+  // Manejar el cambio del modo oscuro
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    if(isDarkMode){
+      setlun(true)
+     }else{
+      setlun(false)
+     }
+  };
+
+
   return (
     <header className="Portafolio_header">
     <nav className="Portafolio_programmer">
-  <h1 className="Portafolio_title"><a href='#'>{'<Yeison/>'}</a> </h1> 
+        <h1 className="Portafolio_title"><a href='#'>{'<Yeison/>'}</a> </h1>  
     </nav>
-  
+    {
+        lun
+        ?<i i onClick={toggleDarkMode} class='C bx bx-sun'></i>
+        :<i onClick={toggleDarkMode} className='D bx bx-moon'></i>
+      } 
     <nav onClick={handelclick} className="Portafolio_click">
+      
     <i className='bx bx-menu'></i>
     </nav>
-    
+   
     <section className={`container ${close && 'close'}`}>
       <section className= 'Portafolio_menu'>
-      
+      {
+        lun
+        ?<i i onClick={toggleDarkMode} class='A bx bx-sun'></i>
+        :<i onClick={toggleDarkMode} className='B bx bx-moon'></i>
+      }
+        
       <a href="#"><span onClick={handelclose}  className="Portafolio_select">inicio</span></a> 
        <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">Acerca de mi</span></Link> 
        <Link to="/#Knowledge"onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Conocimientos</span></Link>
