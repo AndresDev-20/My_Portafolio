@@ -37,11 +37,12 @@
 
 .Home__span {
   color: var(--subtitle);
+  font-size: 18px;
 }
 
 .Home__info-text {
     margin-bottom: 1em;
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text);
 }
 
@@ -84,9 +85,8 @@
     gap: 4px;
     justify-content: center;
     position: fixed;
-    position: fixed;
     z-index: var(  --zposition-fourth);
-    margin-top: 7em;
+    top: 80px;
   }
   
 .Home__button0 {
