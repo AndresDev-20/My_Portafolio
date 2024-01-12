@@ -1,8 +1,6 @@
 /*Css para 📱*/
 
 .Portafolio_header {
-  background-color: var(--bg-300);
-  color: var( --primary-200);
   display: flex;
   align-items: center;
   position: fixed;
@@ -12,7 +10,8 @@
   width: 100%;
   margin-top: -6em;
   z-index: var(  --zposition-fourth);
-  border-bottom: 2px solid var(--title);
+  
+  background-color: var(--header);
 }
 
 .Portafolio_title{
@@ -30,7 +29,7 @@
   font-size: 1.5em;
 }
 .Portafolio_title:hover{
-  color: #c3d1f0;
+  color: #eeeff1;
 }
 .Portafolio_programmer{
   width: 25%;
@@ -184,7 +183,6 @@ a{
     justify-content: center;
     gap: 30%;
     height: 12vh;
-    background-color: var(--bg-300);
   }
   a{
     text-decoration: none;

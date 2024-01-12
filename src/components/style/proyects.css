@@ -22,7 +22,7 @@
 .Proyectos > nav > h1 {
     font-size: 2em;
     margin-bottom: .5em;
-    color: var(--textTitle);
+    color: var(--subtitle);
 }
 .Proyectos > nav > p {
     font-size: 1.2em;
@@ -34,8 +34,7 @@
     width: 100%;
     max-width: 28em;
     padding: 1.6em;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
-    0.3em 0.1em 3em var(--bg-300);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +93,7 @@
     border-radius: .7em;
     transition: background-color 700ms ease, color 800ms ease, border 500ms ease;
     gap: 1em;
-    border: 3px solid var(--title);
+    border: 3px solid var(--text);
 }
 .Proyecto__textfinal {
     position: absolute;
@@ -108,7 +107,7 @@
     align-items: center;
     justify-content: center;
     font-size: .7em;
-    color: var(--title);
+    color: var(--text);
     border-radius: .7em;
     border: 3px solid var(--title);
     width: 100%;
@@ -147,7 +146,7 @@
     display: flex;
     align-items: center;
     font-size: 1.4em;
-    color: var(--title);
+    color: var(--text);
     border-radius: .7em;
     border: 3px solid var(--title);
 }
@@ -160,8 +159,7 @@
         width: 100%;
         max-width: 21em;
         padding: 1.6em;
-        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         align-items: center;

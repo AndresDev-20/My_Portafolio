@@ -12,7 +12,7 @@
     font-size: 2.3em;
     width: 8em;
     margin-bottom: 1.5em;
-    color: var(--textTitle);
+    color: var(--subtitle);
    
 }
 #Knowledge > p {
@@ -211,7 +211,7 @@
 }
 .bxl-postgresql {
     font-size: 4em;
-    color: blue;
+    color: rgb(12, 12, 143);
 }
 .bxl-nodejs {
     font-size: 4em;
@@ -262,8 +262,7 @@
     }
 
     .Knowledge_languaje {
-        box-shadow: inset 0 -2em 3em rgba(165, 42, 42, 0.644), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -2em 3em rgba(165, 42, 42, 0.644);
         width: 9em;
         height: 9em;
         display: flex;
@@ -277,8 +276,7 @@
         border: .4em solid brown;
     }
     .Knowledge_languaje1 {
-        box-shadow: inset 0 -3em 3em rgba(41, 140, 165, 0.767), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(41, 140, 165, 0.767);
         width: 9em;
         height: 9em;
         display: flex;
@@ -292,8 +290,7 @@
         border: .4em solid rgb(42, 110, 165);
     }
     .Knowledge_languaje2 {
-        box-shadow: inset 0 -3em 3em rgba(160, 151, 33, 0.644), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(160, 151, 33, 0.644);
         width: 9em;
         height: 9em;
         display: flex;
@@ -307,8 +304,7 @@
         border: .4em solid rgb(197, 189, 81);
     }
     .Knowledge_languaje3 {
-        box-shadow: inset 0 -3em 2em rgba(34, 161, 170, 0.37), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 2em rgba(34, 161, 170, 0.37);
         width: 9em;
         height: 9em;
         display: flex;
@@ -323,8 +319,7 @@
         border: .4em solid rgb(0, 217, 255);
     }
     .Knowledge_languaje4 {
-        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.39), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(252, 250, 250, 0.39);
         width: 9em;
         height: 9em;
         display: flex;
@@ -339,8 +334,7 @@
         border: .4em solid rgb(0, 8, 14);
     }
     .Knowledge_languaje5 {
-        box-shadow: inset 0 -3em 3em rgba(153, 39, 182, 0.527), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(153, 39, 182, 0.527);
         width: 9em;
         height: 9em;
         display: flex;
@@ -355,8 +349,7 @@
         border: .4em solid blueviolet;
     }
     .Knowledge_languaje6 {
-        box-shadow: inset 0 -3em 3em rgba(30, 28, 131, 0.534), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(30, 28, 131, 0.534);
         width: 9em;
         height: 9em;
         display: flex;
@@ -371,8 +364,7 @@
         border: .4em solid rgb(42, 110, 165);
     }
     .Knowledge_languaje7 {
-        box-shadow: inset 0 -3em 3em rgba(41, 138, 29, 0.678), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(41, 138, 29, 0.678);
         width: 9em;
         height: 9em;
         display: flex;
@@ -387,8 +379,7 @@
         border: .4em solid rgb(42, 165, 58);
     }
     .Knowledge_languaje8 {
-        box-shadow: inset 0 -3em 3em rgba(151, 153, 36, 0.651), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(151, 153, 36, 0.651);
         width: 9em;
         height: 9em;
         display: flex;
@@ -403,8 +394,7 @@
         border: .4em solid rgb(223, 238, 11);
     }
     .Knowledge_languaje9 {
-        box-shadow: inset 0 -3em 3em rgba(28, 53, 136, 0.603), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em rgba(28, 53, 136, 0.603);
         width: 9em;
         height: 9em;
         display: flex;
@@ -445,7 +435,7 @@
     }
     .bxl-postgresql {
         font-size: 7em;
-        color: blue;
+        color: rgb(56, 56, 221);
     }
     .bxl-nodejs {
         font-size: 7em;
@@ -457,7 +447,7 @@
     }
     .bxl-typescript {
         font-size: 7em;
-        color: blue;
+        color: rgb(45, 45, 185);
     }
 
     .bx_K {

@@ -44,7 +44,7 @@ const Home = () => {
           Inicié mi carrera con una gran motivación a la temprana edad de 17
           años y desde entonces, mi entusiasmo por la programación y mi deseo
           constante de aprender todo acerca de esta profesión han continuado
-          creciendo. Actualmente, con 18 años de edad, he invertido tiempo y
+          creciendo. Actualmente, con 19 años de edad, he invertido tiempo y
           esfuerzo en estudiar y dominar una amplia gama de habilidades que
           encontrarás reflejadas aquí.        <Link className="ver" to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span >Ver mas</span></Link> 
         </p>

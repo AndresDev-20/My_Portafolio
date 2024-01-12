@@ -4,8 +4,7 @@
     margin: auto;
     margin-top: 2em;
     border-radius: 1em;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
-    0.3em 0.1em 3em var(--bg-300);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1);
       
 }
 
@@ -16,14 +15,14 @@
 }
 
 .content_contact span {
-    color: var(--textTitle);
+    color: var(--subtitle);
 }
 
 .content_contact h3 {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
-    color: var(--subtitle);
+    color: var(--text);
 }
 
 form {
@@ -72,10 +71,10 @@ form textarea {
         margin: auto;
         margin-top: 1em;
         border-radius: 1em;
-        box-shadow: inset 0 -3em 3em var(--bg-300), 0 0 0 .1px rgb(247, 244, 244),
-        0.3em 0.1em 3em var(--bg-300);
+        box-shadow: inset 0 -3em 3em var(--bg-30);
         max-width: 50em;
         margin-bottom: 4em;
+        border: 1px solid var(--text);
     }
     
     .content_contact {

@@ -21,7 +21,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--title);
+        color: var(--text);
         font-size: 10px;
         cursor: pointer;
         height: 2.4em;
@@ -43,7 +43,7 @@
         transform: scale(0);
       }
       .About > h1 {
-        color: var(--textTitle);
+        color: var(--subtitle);
     }
     .About > p {
         color: var(--text);
@@ -63,7 +63,7 @@
         font-size: 2.3em;
         width: 8em;
         margin-bottom: .5em;
-        color: var(--textTitle);
+        color: var(--subtitle);
     }
     .About > p {
         font-size: 1.2em;
@@ -80,7 +80,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--title);
+        color: var(--text);
         font-size: 10px;
         cursor: pointer;
         height: 2.6em;

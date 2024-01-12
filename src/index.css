@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root {
-  --bg-300:#4c678f;
-  --bg-30: rgba(46, 46, 104, 0.788);
-  --title:  #f7f8fa;
-  --textTitle: #1a0e5fa1;
-  --subtitle: #201dbd;
-  --text: #010116;
+  --bg-300: #23d1f08f;
+  --bg-30: rgba(21, 37, 61, 0.897);
+  --title: #11c6e6;
+  --textTitle: #f4f4f8;
+  --subtitle: #9790d3;
+  --text: #fff;
+  --tw-bg-opacity: 1;
+  --fondo: rgb(15 23 42/var(--tw-bg-opacity));
+  --footer: rgb(15 23 42/var(--tw-bg-opacity));
+  --header: rgb(15 23 42/var(--tw-bg-opacity));
   --zposition-first: 1000;
-  --zposition-second: 2000;
-  --zposition-third: 3000;
-  --zposition-fourth: 4000;
-  --fondo: linear-gradient(90deg, #fafbfc 0%, #a6b1f7 16%, #f8f8f8 50%, #a6b1f7 83%, #fafbfc 100%);
+    --zposition-second: 2000;
+    --zposition-third: 3000;
+    --zposition-fourth: 4000;
 }
 body {
   background-size: 300% 300%;
@@ -18,13 +21,20 @@ body {
   transition: background-color 0.5s;
 }
 body.dark-mode {
-  --bg-300: #0d16979a;
-  --bg-30: rgba(72, 80, 155, 0.788);
-  --title: #edecf1;
-  --textTitle: #2635db;
-  --subtitle: #9790d3;
-  --text: #fff;
-  --fondo: linear-gradient(90deg, #1c2351 0%, #0a0e28 16%, #040716 50%, #0a0e28 83%, #1c2351 100%);
+  --bg-300: #5686a7;
+  --bg-30: rgba(237, 237, 245, 0.671);
+  --title: #eef3fd;
+  --textTitle: #1a0e5fa1;
+  --subtitle: #7b7b99;
+  --text: #080808;
+  --header: #5686a7;
+  --zposition-first: 1000;
+  --zposition-second: 2000;
+  --zposition-third: 3000;
+  --zposition-fourth: 4000;
+  --fondo: linear-gradient(90deg, #fafbfc 0%, #a6d3f7 16%, #f8f8f8 50%, #a6ddf7 83%, #fafbfc 100%);
+  --barra: #5686a7;
+  --footer: #5686a7;
 }
 
 *{
