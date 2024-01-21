@@ -107,7 +107,7 @@
     align-items: center;
     justify-content: center;
     font-size: .7em;
-    color: var(--text);
+    color: var(--textBotom);
     border-radius: .7em;
     border: 3px solid var(--title);
     width: 100%;
@@ -146,9 +146,9 @@
     display: flex;
     align-items: center;
     font-size: 1.4em;
-    color: var(--text);
+    color: var(--textBotom);
     border-radius: .7em;
-    border: 3px solid var(--title);
+    border: 3px solid var(--textBotom);
 }
 .bx_P{
     transform: scale(0);

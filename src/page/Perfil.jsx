@@ -163,6 +163,7 @@ const Perfil = () => {
   </nav> 
     </div>
 </section>
+<br /><br /><br /><b></b>
     <Footer/>
     </>
 

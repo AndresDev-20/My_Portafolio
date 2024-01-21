@@ -21,7 +21,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--text);
+        color: var(--textBotom);
         font-size: 10px;
         cursor: pointer;
         height: 2.4em;
@@ -34,7 +34,7 @@
         font-weight: 100;
     }
     .About__button:hover {
-        transform: scale(1.07);
+        filter: contrast(1.5)
     }
     .bxs-award{
         font-size: 2em;
@@ -80,7 +80,7 @@
         border: none;
         border-radius: .5em;
         background-color: var(--bg-300);
-        color: var(--text);
+        color: var(--textBotom);
         font-size: 10px;
         cursor: pointer;
         height: 2.6em;
@@ -91,9 +91,6 @@
         justify-content: center;
         transition: transform 200ms ease;
         font-weight: 100;
-    }
-    .About__button:hover {
-        transform: scale(1.07);
     }
     .bxs-award{
         font-size: 2em;

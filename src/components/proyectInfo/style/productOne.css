@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
     gap: 3em;
-    background-color: var(--title);
+    background-color: var(--InfoProduct);
     height: 90%;
     width: 100%;
     max-width: 23em;
@@ -101,7 +101,6 @@
 
 .productOne_movil {
     border-radius: 1em;
-    border: 4px solid;
     height: 21em;
     width: 100%;
     max-width: 9.7em;
@@ -111,18 +110,17 @@
 .exit {
     font-size: 1.5em;
     position: fixed;
-    color: var(--title);
+    color: var(--bg-300);
     cursor: pointer;
     left: 0.5em;
     top: 4.3em;
-    background-color: var(--bg-300);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: .4em;
     padding: .1em;
-    border: 2px solid var(--title);
+    border: 2px solid var(--bg-300);
     transition: border 500ms ease, color 500ms ease;
 }
 .vol{
@@ -146,7 +144,7 @@
     border-radius: 10em;
     border: none;
     background-color: var(--bg-300);
-    color: var(--title);
+    color: var(--textBotom);
     cursor: pointer;
     margin-bottom: 8em;
 }
@@ -259,7 +257,7 @@
         height: 19.9em;
         width: 100%;
         max-width: 19em;
-        background-color: black;
+        background-color: rgb(2, 2, 2);
     }
     
     .exit {
@@ -268,7 +266,6 @@
         cursor: pointer;
         left: 1.3em;
         top: 1.3em;
-        background-color: var(--bg-300);
         display: flex;
         align-items: center;
         justify-content: center;

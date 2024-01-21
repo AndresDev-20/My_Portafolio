@@ -6,12 +6,12 @@
 .ProductInfo{
   width: 100%;
   max-width: 30em;
-  background-color: var(--bg-300);
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 1em;
+  color: var(--text);
 }
 .productClose{
     background-color: var(--bg-300);
@@ -30,7 +30,6 @@
         background-color: aqua;
     }
     .ProductInfo{
-        background-color: var(--bg-300);
         height: 90vh;
         width: 100%;
         right: 0;

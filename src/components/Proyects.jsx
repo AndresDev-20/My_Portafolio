@@ -45,6 +45,15 @@ const Proyects = () => {
             </p>
           </nav>
         </nav>
+        <a href="https://zippy-pavlova-3da0ad.netlify.app/" className="proyecto">
+          <h1>E-Comerce</h1>
+          <img src="../../image/Trabajocss.png" alt="" />
+          <nav className="Proyecto__text">
+            <p>
+            Como vez aquí tenemos un e-comerce el cual fue realizado con react, consumimos un Back-End, el cual fue realizado por mi para hacer este proyecto Full-Stack.
+            </p>
+          </nav>
+        </a>
         <nav onClick={TwoProject} className="proyecto">
           <h1>Pokemones</h1>
           <img src="../../image/Pokedex.png" alt="" />

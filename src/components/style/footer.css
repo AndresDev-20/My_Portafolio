@@ -30,7 +30,7 @@
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: var(--bg-30);
+    background-color: var(--textBotom);
     width: 90%;
     height: .1px;
     border-radius: 50%;
@@ -42,7 +42,7 @@
    flex-direction: column;
    align-items: center;
    font-size: 12px;
-   background-color: var(--subtitle);
+   background-color: var(--textBotom);
    border-radius: 0.5em;
    width: 2em;
    padding: 2px;
@@ -56,7 +56,7 @@
     align-items: center;
     color: var(--text);
     font-size: 12px;
-    background-color: var(--subtitle);
+    background-color: var(--textBotom);
     border-radius: 0.5em;
     padding: 2px;
     object-fit: contain;
