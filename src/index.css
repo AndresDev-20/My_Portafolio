@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root {
   --bg-300: #23d1f08f;
-  --bg-30:  #085563ce;
+  --bg-30:  #52669196;
   --title: #11c6e6;
   --textTitle: #f4f4f8;
   --subtitle: #9790d3;
   --text: #fff;
   --textBotom: white;
   --InfoProduct: rgba(72, 62, 117, 0);
+  --bg-3: #091633bc;
   --tw-bg-opacity: 1;
   --fondo: rgb(15 23 42/var(--tw-bg-opacity));
   --footer: rgb(15 23 42/var(--tw-bg-opacity));
@@ -17,6 +18,7 @@
     --zposition-third: 3000;
     --zposition-fourth: 4000;
     --menu: rgba(43, 43, 70, 0.979);
+
 }
 body {
   background-size: 300% 300%;
@@ -25,7 +27,7 @@ body {
 }
 body.dark-mode {
   --bg-300: #5686a7;
-  --bg-30: #5687a7b6;
+  --bg-30: #52669196;
   --title: #eef3fd;
   --textTitle: #1a0e5fa1;
   --subtitle: #7b7b99;
@@ -41,6 +43,8 @@ body.dark-mode {
   --barra: #5686a7;
   --footer: #5686a7;
   --menu: rgba(4, 0, 44, 0.74);
+  
+  --bg-3: #52669196;
 }
 
 *{

@@ -104,7 +104,7 @@ const Proyects = () => {
           </nav>
         </nav>
       </section>
-      <h1><i onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_P'></i></h1>
+      <h1><i onClick={() => document.querySelector('#certificados').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_P'></i></h1>
     </article>
   );
 };

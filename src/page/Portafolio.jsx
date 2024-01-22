@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Skills from "../components/Skills";
 import './page.style/portafolio.css'
+import Perfil from "../components/Perfil";
 
 
 
@@ -22,11 +23,12 @@ const Portafolio = () => {
     <div id="home" >
       
        <Header/>       
-                  <div className="Portafolio" id="Home">
+                  <div className="Portafolio" id="Home">  
                   <Home/>
        <About/>
        <Knowledge/>
        <Proyects/>
+       <Perfil/>
        <Contactame/>
                   </div>
        <Footer/>

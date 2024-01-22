@@ -4,7 +4,6 @@ import Loading from './components/Loading'
 import Portafolio from './page/Portafolio';
 import { Route, Routes } from 'react-router-dom';
 import Proyectss from './page/Proyectss';
-import Perfil from './page/Perfil';
 import ProductOnee from './page/ProductOnee';
 import ProyectTwoo from './page/ProyectTwoo';
 import ProyectThreee from './page/ProyectThreee';
@@ -30,7 +29,6 @@ function App() {
   
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyectss/>}/>
-            <Route path='/perfil' element={<Perfil/>}/>
                 <Route path='/proyectone' element={<ProductOnee/>}/>
                 <Route path='/proyecttwo' element={<ProyectTwoo/>}/>
                 <Route path='/proyectthre' element={<ProyectThreee/>}/>

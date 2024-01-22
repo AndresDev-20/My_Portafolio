@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './page.style/perfil.css'
+import './style/perfil.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -74,63 +74,61 @@ const Perfil = () => {
     setBack(true)
   }
   return (
-    <>  
+    <div id='certificados'>  
+    <br />
     <Header/>
 
         <section className="perfil " id='inicio'>
            <nav className={`diploma ${Full && 'clos'}`}>
+            <i onClick={handelfull} class='bx bx-x'></i>
             <img src='./image/FULL-STAK.png' alt=''/>
-            <button className='perfil_btn' onClick={handelfull}>volver</button>
            </nav>
         <nav className={`diploma ${close && 'clos'}`}>
+        <i onClick={handelclose} class='bx bx-x'></i>
             <img  src="./image/fundamentos.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelclose}>volver</button>
             </nav>
             <nav className={`diploma ${Back && 'clos'}`}>
+            <i onClick={handelback} class='bx bx-x'></i>
             <img src='./image/Back-end.png' alt=''/>
-            <button className='perfil_btn' onClick={handelback}>volver</button>
            </nav>
             <nav className={`diploma ${cloe && 'clos'}`}>
+            <i onClick={handelclos} class='bx bx-x'></i>
             <img  src="./image/ReactNative.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelclos}>volver</button>
             </nav>
             <nav className={`diploma ${clo && 'clos'}`}>
+            <i onClick={handelclo} class='bx bx-x'></i>
             <img  src="./image/level.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelclo}>volver</button>
             </nav>
             <nav className={`diploma ${cl && 'clos'}`}>
+            <i onClick={handelcl} class='bx bx-x'></i>
             <img  src="./image/colaboracion.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelcl}>volver</button>
             </nav>
 
             <nav className={`diploma ${conte && 'clos'}`}>
+            <i onClick={handelconte} class='bx bx-x'></i>
             <img  src="./image/contenido.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelconte}>volver</button>
             </nav>
 
             <nav className={`diploma ${segu && 'clos'}`}>
+            <i onClick={handelsegu} class='bx bx-x'></i>
             <img  src="./image/seguridad.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelsegu}>volver</button>
             </nav>
 
                 <nav className={`diploma ${ges && 'clos'}`}>
+            <i onClick={handelges} class='bx bx-x'></i>
             <img  src="./image/gestion.jpg" alt="" />
-            <button className='perfil_btn' onClick={handelges}>volver</button>
             </nav>        
            
  
     <div className='perfil_center'>
-
-          <nav className="perfil_image">
-    <img className="perfil_img" src="./image/fotopresent0.png" alt="Yeison" />
-     
-  </nav>
   <br />
+  
+  <h1 className='titles'>Diplomados</h1>
+  <p className='text'>Puedes ver aqui mis certificados...</p>
   <nav className="perfil_info">
-    <h2>A continuación te dejo los certificados de mis estudios: </h2>
      <nav className='certificados'>
      <nav onClick={handelclifull} className='perfil_certificados'>
-            <h1>CERTIFICADO DE: FULL-STACK</h1>
+            <h1> CERTIFICADO DE: FULL-STACK</h1>
         </nav>
       
      <nav onClick={handelclickfront} className='perfil_certificados'>
@@ -162,10 +160,11 @@ const Perfil = () => {
      </nav>
   </nav> 
     </div>
+<h1><i onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_P'></i></h1>
 </section>
 <br /><br /><br /><b></b>
-    <Footer/>
-    </>
+
+    </div>
 
   )
 }

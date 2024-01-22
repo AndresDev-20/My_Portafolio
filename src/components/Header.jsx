@@ -59,6 +59,7 @@ const Header = () => {
        <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">Acerca de mi</span></Link> 
        <Link to="/#Knowledge"onClick={() => document.querySelector('#Knowledge').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Conocimientos</span></Link>
        <Link to="/#Proyects"onClick={() => document.querySelector('#Proyects').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Proyectos</span></Link>
+       <Link to="/#Proyects"onClick={() => document.querySelector('#certificados').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Diplomados</span></Link>
        <Link to="/#contact"onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}> <span onClick={handelclose} className="Portafolio_select">Contactame</span></Link>
         <span onClick={handelclose} className="Portafolio_select return">Volver al inicio</span>
     

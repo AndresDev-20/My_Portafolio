@@ -48,6 +48,16 @@
     .About > p {
         color: var(--text);
     }
+    .titl{
+        color: var(--subtitle);
+        font-size: 18px;
+    }
+    .About_li{
+        color: var(--text);
+    }
+    .About_li > b {
+        color: var(--subtitle);
+    }
 @media (min-width: 700px) {
     .About{
         max-width: 82%;
@@ -61,7 +71,6 @@
     }
     .About > h1 {
         font-size: 2.3em;
-        width: 8em;
         margin-bottom: .5em;
         color: var(--subtitle);
     }
