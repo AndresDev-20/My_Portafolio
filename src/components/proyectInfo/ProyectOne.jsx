@@ -72,10 +72,10 @@ const ProyectOne = () => {
         </p>
 
         <ul className="productOne_ul">
-            <li> <b>Tipo de proyecto:</b> Practica</li>
-            <li><b>Nombre:</b>  Ecommerce</li>
-            <li><b>Tecnologias:</b>  react / redux / node.js / postgreSQL</li>
-            <li><b>Librerias:</b> axios / react-router-dom / react-hook-form / react-redux </li>
+            <li> <b>Tipo de proyecto:</b> Empresarial.</li>
+            <li><b>Nombre:</b>  Ecommerce.</li>
+            <li><b>Tecnologias:</b>  react / redux / node.js / postgreSQL.</li>
+            <li><b>Librerias:</b> axios / react-router-dom / react-hook-form / react-redux.</li>
             <li><b>Consumo de API:</b> Si</li>
             <a className="enlace" href="https://keen-fudge-5ae06d.netlify.app">Visita el sitio aquí</a>
         </ul>

@@ -49,26 +49,22 @@
 }
 .proyectofinal{
     width: 100%;
-    max-width: 19em;
-    padding: 1.6em;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .1px rgb(247, 244, 244),
-    0.3em 0.1em 3em var(--bg-300);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    border-radius: 1em;
-    background-color: rgba(3, 1, 17, 0.336);
-    position: relative;
+    justify-content: end;
+    font-size: 10px;
+}
+.proyectofinal > h1 {
+    color: red;
+    font-weight: 400;
+    border-bottom: 1px solid var(--subtitle);
     cursor: pointer;
-    text-align: center;
-    transition: transform 400ms ease;
+    transition: color 500ms ease,  border-bottom-color 500ms ease;
+}
+.proyectofinal > h1:hover {
+    border-bottom-color: var(--title);
+   color: var(--title);
 }
 
-.proyectofinal:hover{
-    transform: scale(.9);
-}
 .proyecto > h1 {
     color: var(--title);
     border-bottom: 2px solid var(--title);

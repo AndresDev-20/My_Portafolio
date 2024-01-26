@@ -50,7 +50,7 @@ const Proyects = () => {
           <img src="../../image/Trabajocss.png" alt="" />
           <nav className="Proyecto__text">
             <p>
-            Como vez aquí tenemos un e-comerce el cual fue realizado con react, consumimos un Back-End, el cual fue realizado por mi para hacer este proyecto Full-Stack.
+            Este es un proyecto de practica, donde puse a prueba mis habilidades con css y html, realizando una pagina responsiva.
             </p>
           </nav>
         </a>
@@ -95,15 +95,11 @@ const Proyects = () => {
           </nav>
         </nav>
 
-        <nav onClick={FinalProject} className="proyectofinal">
-          <img src="../../image/proyects.png" alt="" />
-          <nav className="Proyecto__textfinal">
-            <p>
-           Ingresa aqui para ver los demas proyectos que he realizado.
-            </p>
-          </nav>
-        </nav>
+    
       </section>
+      <nav  className="proyectofinal">
+      <h1 onClick={FinalProject}>Ver mas proyectos </h1>
+</nav>
       <h1><i onClick={() => document.querySelector('#certificados').scrollIntoView({ behavior: 'smooth' })} class='bx bx-chevrons-down bx_P'></i></h1>
     </article>
   );
