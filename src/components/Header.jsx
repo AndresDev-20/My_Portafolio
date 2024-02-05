@@ -45,7 +45,7 @@ const Header = () => {
     </nav>
     {
         lun
-        ?<i i onClick={toggleDarkMode} class='C bx bx-sun'></i>
+        ?<i  onClick={toggleDarkMode} className='C bx bx-sun'></i>
         :<i onClick={toggleDarkMode} className='D bx bx-moon'></i>
       } 
     <nav onClick={handelclick} className="Portafolio_click">
@@ -56,7 +56,7 @@ const Header = () => {
     <section className={`container ${close && 'close'}`}>
       <section className= 'Portafolio_menu'>
       
-        <i i onClick={toggleDarkMode} class='A bx bx-sun'></i>
+        <i i onClick={toggleDarkMode} className='A bx bx-sun'></i>
         
       <a href="#"><span onClick={handelclose}  className="Portafolio_select">inicio</span></a> 
        <Link to="/#About"onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}><span onClick={handelclose}  className="Portafolio_select">Acerca de mi</span></Link> 
@@ -88,7 +88,7 @@ const Header = () => {
           {" "}
           <span>
             <button className="Home__button1">
-              Email<i class="bx bx-envelope"></i>
+              Email<i className="bx bx-envelope"></i>
             </button>
           </span>
         </Link>
@@ -96,12 +96,12 @@ const Header = () => {
         <a href="https://wa.me/573227222010?Hola%20quiero%20hablar%20de%20un%20empleo%20contigo">
           {" "}
           <button className="Home__button2">
-            whatsapp<i class="bx bxl-whatsapp"></i>{" "}
+            whatsapp<i className="bx bxl-whatsapp"></i>{" "}
           </button>
         </a>
         <a href="https://github.com/yeisonmarroquin887?tab=repositories">
           <button className="Home__button3">
-            GitHub<i class="bx bxl-github"></i>{" "}
+            GitHub<i className="bx bxl-github"></i>{" "}
           </button>
         </a>
       </nav>

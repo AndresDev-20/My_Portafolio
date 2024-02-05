@@ -11,7 +11,12 @@
         gap: 2em;
      
 }
-
+.Proyects {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .Proyectos > section {
     display: flex;
     flex-wrap: wrap;
@@ -235,3 +240,29 @@
       }
     }
 }
+/* ... (otros estilos) */
+
+.navigation-arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navigation-arrows button {
+    background-color: var(--bg-300);
+    border: 1px solid var(--bg-300);
+    color: var(--text);
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navigation-arrows button:hover {
+    background-color: rgb(24, 170, 170);
+    color: #fff;
+  }
+  
+  /* ... (otros estilos) */
+  

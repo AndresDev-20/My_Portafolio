@@ -4,13 +4,9 @@ import Loading from './components/Loading'
 import Portafolio from './page/Portafolio';
 import { Route, Routes } from 'react-router-dom';
 import Proyectss from './page/Proyectss';
-import ProductOnee from './page/ProductOnee';
-import ProyectTwoo from './page/ProyectTwoo';
-import ProyectThreee from './page/ProyectThreee';
-import ProyectFor from './page/ProyectFor';
-import ProyectFive from './page/ProyectFive';
+import ProductInfo from './page/ProjectInfo';
+import ProductInfor from './page/ProyectInfor';
 import Cv from './page/Cv';
-import Header from './components/Header';
 
 function App() {
   const [Isloanding, setIsloanding] = useState(true)
@@ -29,11 +25,8 @@ function App() {
   
             <Route path='/' element={<Portafolio/>}/>
             <Route path='/proyects' element={<Proyectss/>}/>
-                <Route path='/proyectone' element={<ProductOnee/>}/>
-                <Route path='/proyecttwo' element={<ProyectTwoo/>}/>
-                <Route path='/proyectthre' element={<ProyectThreee/>}/>
-                <Route path='/proyectfour' element={<ProyectFor/>}/>
-                <Route path='/proyectfive' element={<ProyectFive/>}/>
+                <Route path='/proyects/:id' element={<ProductInfo/>}/>
+                <Route path='/proyectss/:id' element={<ProductInfor/>}/>
                 <Route path='/curriculum' element={<Cv/>}/>
           </Routes>
           

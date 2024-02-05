@@ -1,26 +1,23 @@
 .productOne {
     display: grid;
+    margin-top: 6em;
+    align-items: center;
     justify-content: center;
-    gap: 3em;
-    background-color: var(--InfoProduct);
-    height: 90%;
-    width: 100%;
-    max-width: 23em;
-    border-radius:  2em;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    
 }
 
 .productOne_part1 {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin-bottom: 2em;
+    margin-top: 3em;
    
 }
 
 .productOne_v1 {
     width: 100%;
-    max-width: 45em;
+    max-width: 36em;
     border-radius: 1em;
     text-align: center;
     margin-top: 1em;
@@ -38,8 +35,12 @@
     border-radius: 1em;
     text-align: center;
     border: 6px solid;
-    margin-top: 1em;
     
+}
+.video{
+    background-color: rgb(1, 1, 8);
+    padding: .5em;
+    border-radius: 1em;
 }
 
 .productOne_v1-close {
@@ -86,6 +87,7 @@
     padding: 3em;
     gap: 1.3em;
     margin-top: -2em;
+    color: var(--text);
 }
 
 .productOne_ul {
@@ -165,54 +167,66 @@
 .enlace:hover{
     border-bottom: 1px solid var(--bg-30);
 }
-@media (min-width:910px) {
+@media (min-width:920px) {
     .productOne {
         display: flex;
+        gap: 3em;
+        margin-top: 6em;
+        align-items: center;
         justify-content: center;
-        gap: 1em;
-        height: 80vh;
-        border-radius:  2em;
-        padding: 0em 0em 0em 1em;
-        max-width: 100%;
+        
     }
     
     .productOne_part1 {
         display: flex;
         flex-direction: column;
         gap: 2em;
+    margin-top: -2em;
        
     }
     
     .productOne_v1 {
         width: 100%;
-        max-width: 40em;
+        max-width: 36em;
         border-radius: 1em;
         text-align: center;
         margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -45em;
+        font-size: .9em;
+        transition: transform 500ms ease;
     }
     
     .productOne_compu {
         width: 100%;
-        max-width: 45em;
+        max-width: 20em;
         border-radius: 1em;
         text-align: center;
         border: 6px solid;
         margin-top: 1em;
+        
     }
     
     .productOne_v1-close {
         transform: scale(0);
+        transition: transform 500ms ease;
     }
     
     .productOne_v2 {
         position: absolute;
         width: 100%;
-        max-width: 9em;
+        max-width: 10.7em;
         border-radius: 1em;
         text-align: center;
         margin-top: 2.5em;
-        margin-left: 17%;
-    
+        margin-left: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 500ms ease;
     }
     .h2{
         color: var(--bg-300);
@@ -225,11 +239,12 @@
     
     .productOne_v2-close {
         transform: scale(0);
+        transition: transform 500ms ease;
     }
     
     .productOn {
         width: 100%;
-        max-width: 33em;
+        max-width: 30em;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -237,7 +252,8 @@
         border-radius: 1em;
         padding: 3em;
         gap: 1.3em;
-        margin-top: -4em;
+        margin-top: -2em;
+        color: var(--text);
     }
     
     .productOne_ul {
@@ -253,25 +269,26 @@
     
     .productOne_movil {
         border-radius: 1em;
-        border: 4px solid;
-        height: 19.9em;
+        height: 21em;
         width: 100%;
-        max-width: 19em;
-        background-color: rgb(2, 2, 2);
+        max-width: 9.7em;
+        background-color: black;
     }
     
     .exit {
         font-size: 1.5em;
         position: fixed;
+        color: var(--bg-300);
         cursor: pointer;
-        left: 1.3em;
-        top: 1.3em;
+        left: 0.5em;
+        top: 4.3em;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         border-radius: .4em;
         padding: .1em;
+        border: 2px solid var(--bg-300);
         transition: border 500ms ease, color 500ms ease;
     }
     .vol{
@@ -281,6 +298,8 @@
     }
     .exit:hover{
         filter: brightness(1.2);
+        border: 2px solid var(--bg-30);
+        color: rgb(14, 4, 48);
     }
     .productOne_descripcion{
         color: var(--bg-300);
@@ -293,8 +312,9 @@
         border-radius: 10em;
         border: none;
         background-color: var(--bg-300);
+        color: var(--textBotom);
         cursor: pointer;
-        margin-bottom: 3em;
+        margin-bottom: 8em;
     }
     .productOne_btn:hover{
         filter: brightness(1.15);
@@ -309,5 +329,8 @@
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
         padding: .2em;
         border-radius: .2em;
+    }
+    .enlace:hover{
+        border-bottom: 1px solid var(--bg-30);
     }
 }
