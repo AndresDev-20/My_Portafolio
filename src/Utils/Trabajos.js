@@ -2,9 +2,9 @@ const Projects = [
   {
 	id: 0,
     name: "Klickylisto",
-    image: "../../public/image/mejor.png",
-    videoMovil: "../../public/image/e-comerceMovil.mp4",
-    VideoPc: "../../public/image/e-comereceSSS.mp4",
+    image: "../../image/mejor.png",
+    videoMovil: "../../image/e-comerceMovil.mp4",
+    VideoPc: "../../image/e-comereceSSS.mp4",
     descriptionOne:
       " Como vez aquí tenemos un e-comerce el cual fue realizado con react, consumimos un Back-End, el cual fue realizado por mi para hacer este proyecto Full-Stack.",
     descriptionTwo:
@@ -16,9 +16,9 @@ const Projects = [
   {
 	id: 1,
     name: "E-comerce Responsive",
-    image: "../../public/image/Trabajocss.png",
-    videoMovil: "../../public/image",
-    VideoPc: "../../public/image",
+    image: "../../image/Trabajocss.png",
+    videoMovil: "../../image",
+    VideoPc: "../../image",
     descriptionOne:
       "Este es un proyecto de practica, donde puse a prueba mis habilidades con css y html, realizando una pagina responsiva.",
     descriptionTwo:
@@ -30,9 +30,9 @@ const Projects = [
   {
 	id: 2,
     name: "Pokemones",
-    image: "../../public/image/Pokedex.png",
-    videoMovil: "../../public/image/Pokedex_movil.mp4",
-    VideoPc: "../../public/image/Pokedex.mp4",
+    image: "../../image/Pokedex.png",
+    videoMovil: "../../image/Pokedex_movil.mp4",
+    VideoPc: "../../image/Pokedex.mp4",
     descriptionOne:
       " Como vez aquí tenemos la pokeApy un excelente proyecto que hara entretenerte con todos los pokemones que te mostrará, da click para verlo.",
     descriptionTwo:
@@ -44,11 +44,9 @@ const Projects = [
   {
 	id: 3,
     name: "Riky and mortid",
-    image: "../../public/image/Riky.png",
-    videoMovil: "../../public/image/rick_movil.mp4",
-    VideoPc: "../../public/image/riky.mp4",
-    videoMovil: "../../public/image",
-    VideoPc: "../../public/image",
+    image: "../../image/Riky.png",
+    videoMovil: "../../image/rick_movil.mp4",
+    VideoPc: "../../image/riky.mp4",
     descriptionOne:
       " Al igual que en el proyecto de los pokemones, aquí en este podemos ver los famosos personajes de la saga de Riky y Morti, que es una Entretenida saga, aquí podrás encontrar a todos sus personajes.",
     descriptionTwo:
@@ -60,9 +58,9 @@ const Projects = [
   {
 	id: 4,
     name: "Crud",
-    image: "../../public/image/Crud.png",
-    videoMovil: "../../public/image/Base_movil.mp4",
-    VideoPc: "../../public/image/Crud.mp4",
+    image: "../../image/Crud.png",
+    videoMovil: "../../image/Base_movil.mp4",
+    VideoPc: "../../image/Crud.mp4",
     descriptionOne:
       "Este proyecto es una base de datos en la que se puede hacer un registro de un persona y también editarlo o eliminarlo, es una gran aplicación pruébalo tú te gustará.",
     descriptionTwo:
@@ -74,9 +72,9 @@ const Projects = [
   {
 	id:5,
     name: "Weather App",
-    image: "../../public/image/Weather.png",
-    videoMovil: "../../public/image/weather_movil.mp4",
-    VideoPc: "../../public/image/weather.mp4",
+    image: "../../image/Weather.png",
+    videoMovil: "../../image/weather_movil.mp4",
+    VideoPc: "../../image/weather.mp4",
     descriptionOne:
       " Aquí te tengo esta aplicación, que nos dice el clima que tenemos en el lugar donde estamos y también podemos buscar el clima de otros Lugares facilmente.",
     descriptionTwo:
@@ -88,9 +86,9 @@ const Projects = [
   {
 	id: 6,
     name: "E-comerce Academlo",
-    image: "../../public/image/e-comerce.jpg",
-	videoMovil: "../../public/image/e-comerce.mp4",
-    VideoPc: "../../public/image/e-comerce.mp4",
+    image: "../../image/e-comerce.jpg",
+	videoMovil: "../../image/e-comerce.mp4",
+    VideoPc: "../../image/e-comerce.mp4",
     descriptionOne:
       "Aqui tenemos un e-comerce creado con javascript vanilla, basado en una tienda online, podras hacer la compra de una de sus prendas a distancia, agregandola a el carrito.",
     descriptionTwo: "Aqui tenemos un e-comerce creado con javascript vanilla, basado en una tienda online, podras hacer la compra de una de sus prendas a distancia, agregandola a el carrito.",
@@ -101,9 +99,9 @@ const Projects = [
   {
 	id: 7,
     name: "Galleta de la fortuna",
-    image: "../../public/image/Captura de pantalla 2024-02-05 165152.png",
-	videoMovil: "../../public/image/fortuna.mp4",
-    VideoPc: "../../public/image/fortuna.mp4",
+    image: "../../image/Captura de pantalla 2024-02-05 165152.png",
+	videoMovil: "../../image/fortuna.mp4",
+    VideoPc: "../../image/fortuna.mp4",
     descriptionOne:
       "Este proyecto como vemos es una aplicacion de hermosas frases, cada vez que demos un click en una de ellas tenemos una nueva frase para leer y esto viene de la galleta de la fortuna",
     descriptionTwo: "Este proyecto como vemos es una aplicacion de hermosas frases, cada vez que demos un click en una de ellas tenemos una nueva frase para leer y esto viene de la galleta de la fortuna",
@@ -114,9 +112,9 @@ const Projects = [
   {
 	id: 8,
     name: "Guarderia animal",
-    image: "../../public/image/Captura de pantalla 2024-02-05 165356.png",
-	videoMovil: "../../public/image/guarderia.mp4",
-    VideoPc: "../../public/image/guarderia.mp4",
+    image: "../../image/Captura de pantalla 2024-02-05 165356.png",
+	videoMovil: "../../image/guarderia.mp4",
+    VideoPc: "../../image/guarderia.mp4",
     descriptionOne:
       "Aqui te traigo una app de una guarderia animal en la cual podras hacer una adopcion de uno de estos animalitos domesticos",
     descriptionTwo: "Aqui te traigo una app de una guarderia animal en la cual podras hacer una adopcion de uno de estos animalitos domesticos",
@@ -127,9 +125,9 @@ const Projects = [
   {
 	id: 9,
     name: "Api Peoples",
-    image: "../../public/image/Captura de pantalla 2024-02-05 165543.png",
-	videoMovil: "../../public/image/people.mp4",
-    VideoPc: "../../public/image/people.mp4",
+    image: "../../image/Captura de pantalla 2024-02-05 165543.png",
+	videoMovil: "../../image/people.mp4",
+    VideoPc: "../../image/people.mp4",
     descriptionOne:
       "Esta es una de mis primeras aplicaciones en la cual he desplegado la informacion de una Api y la he diseñado con react y css.",
     descriptionTwo: "Esta es una de mis primeras aplicaciones en la cual he desplegado la informacion de una Api y la he diseñado con react y css.",

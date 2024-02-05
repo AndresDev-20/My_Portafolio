@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Projects from "../Utils/Trabajos";
 import "./style/proyects.css";
-import Proyectssss from './proyectssss';
+import Proyectssss from './Proyectssesse';
 
 const Proyects = () => {
 
