@@ -22,7 +22,7 @@ const Proyectss = () => {
           <Header />
           <section className="Proyects">
             <figure className="Proyectss_image">
-              <img src="../../public/image/trabajo.jpg" alt="" />
+              <img src="../../image/trabajo.jpg" alt="" />
               <p>"Estos son mis proyectos que he hecho en mi carrera, para ver alguno de ellos solo tienes que hacer clic en uno".</p>
             </figure>
           <div className="Projects">
