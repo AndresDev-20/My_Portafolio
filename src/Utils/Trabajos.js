@@ -65,7 +65,7 @@ const Projects = [
       "Este proyecto es una base de datos en la que se puede hacer un registro de un persona y también editarlo o eliminarlo, es una gran aplicación pruébalo tú te gustará.",
     descriptionTwo:
       "¡Bienvenido a esta base de datos única! Aquí, interactué con un backend para gestionar información utilizando React y react-form. Ingresa datos, edita registros si es necesario y si cometes un error, ¡simplemente elimina la entrada! Simplificando la gestión de datos de manera eficiente.",
-    titpo: "Practica",
+    tipo: "Practica",
     tecnologias: ["React", "Axios", "JavaScript"],
     enlace: "https://majestic-dodol-6ac862.netlify.app/",
   },
