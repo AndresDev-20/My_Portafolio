@@ -1,83 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-  --bg-300: #23d1f08f;
-  --bg-30:  #52669196;
-  --title: #11c6e6;
-  --textTitle: #f4f4f8;
-  --subtitle: #9790d3;
-  --text: #fff;
-  --textBotom: white;
-  --InfoProduct: rgba(72, 62, 117, 0);
-  --bg-3: #091633bc;
-  --tw-bg-opacity: 1;
-  --fondo: rgb(15 23 42/var(--tw-bg-opacity));
-  --footer: rgb(15 23 42/var(--tw-bg-opacity));
-  --header: rgb(15 23 42/var(--tw-bg-opacity));
-  --zposition-first: 1000;
-    --zposition-second: 2000;
-    --zposition-third: 3000;
-    --zposition-fourth: 4000;
-    --menu: rgba(43, 43, 70, 0.979);
-
+--Bg-Header: white;
 }
-body {
-  background-size: 300% 300%;
-  animation: toggle 5s infinite;
-  transition: background-color 0.5s;
-}
-body.dark-mode {
-  --bg-300: #5686a7;
-  --bg-30: #52669196;
-  --title: #eef3fd;
-  --textTitle: #1a0e5fa1;
-  --subtitle: #7b7b99;
-  --text: #080808;
-  --header: #5686a7;
-  --textBotom: white;
-  --InfoProduct: white;
-  --zposition-first: 1000;
-  --zposition-second: 2000;
-  --zposition-third: 3000;
-  --zposition-fourth: 4000;
-  --fondo: linear-gradient(90deg, #fafbfc 0%, #a6d3f7 16%, #f8f8f8 50%, #a6ddf7 83%, #fafbfc 100%);
-  --barra: #5686a7;
-  --footer: #5686a7;
-  --menu: rgba(4, 0, 44, 0.74);
-  
-  --bg-3: #52669196;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto';
+  font-weight: 700;
 }
-img{
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-video{
-  width: 100%;
-  display: block;
- 
-}
-
-ul{
+li {
   list-style: none;
 }
-
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
+img {
   width: 100%;
-  height: 110%;
-  z-index: -1; /* Coloca las partículas detrás de otros elementos */
-  background: var(--fondo);
-  background-size: 300% 300%;
-  animation: toggle 5s infinite;
+  display: block;
+  object-fit: contain;
 }
-
-/* Establece un fondo de color o imagen detrás de las partículas */
+a {
+  text-decoration: none;
+}

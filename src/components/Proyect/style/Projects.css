@@ -1,0 +1,64 @@
+.Projects {
+	width: 100%;
+	background-color: rgba(232, 232, 236, 0.61);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 3em;
+}
+.Projects_title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .2em;
+	margin-bottom: 1.3em;
+	font-size: 1.6em;
+}
+.folder {
+	font-size: 1.5em;
+}
+.pro{
+	color: blueviolet;
+}
+.Projects_todos{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	gap: 2em;
+}
+.Projects_Project {
+    width: 100%;
+	max-width: 20em;
+	background-color: rgb(255, 255, 255);
+	border-radius: 1em;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	box-shadow: 2px -2px 10px 2px rgba(164, 173, 201, 0.836);
+}
+.Projects_Project > h1  {
+	color: rgb(16, 16, 148);;
+}
+.Projects_Project > figure  {
+	padding: .6em;
+}
+.Projects_Project > figure > img {
+	border-radius: .5em .5em 0em 0em;
+	border: 1px solid rgba(8, 10, 122, 0.61);
+}
+.Projects_Project > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Projects_Project > div > span > a {
+	border-bottom: 2px solid rgb(50, 50, 51);
+	cursor: pointer;
+}
+.Projects_Project > div > span > a:hover {
+	border-bottom: 2px solid blueviolet;
+	color: blueviolet;
+}

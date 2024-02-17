@@ -1,0 +1,6 @@
+.Cv{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding-top: 4em;
+}

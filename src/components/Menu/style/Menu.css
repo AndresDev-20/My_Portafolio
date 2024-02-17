@@ -1,0 +1,67 @@
+.Menu {
+	position: fixed;
+	background: linear-gradient(0deg, rgb(23, 6, 66) 0%, rgba(52, 10, 110, 0.978) 59%);
+	right: 0;
+	width: 100%;
+	max-width: 15em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 1000;
+	color: white;
+	transition: width 800ms ease;
+}
+.Clear{
+	transition: width 800ms ease;
+	background: linear-gradient(0deg, rgb(23, 6, 66) 0%, rgba(52, 10, 110, 0.978) 59%);
+	position: fixed;
+	right: 0;
+	width: 0em;
+	max-width: 15em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 1000;
+	color: white;
+ }
+.Menu1 {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	align-items: center;
+	transition: margin-left 700ms ease;
+}
+.Menu1  > a > li {
+	cursor: pointer;
+	color: white;
+}
+.Menu1  > a > li:hover {
+	cursor: pointer;
+	color: rgb(236, 166, 15);
+	border-bottom: 4px solid rgb(236, 166, 15);
+}
+.Clears {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	align-items: center;
+	transition: margin-left 2000ms ease;
+	margin-left: 20em;
+	color: white;
+}
+.Clears  > a > li:hover {
+	cursor: pointer;
+	color: rgb(236, 166, 15);
+	border-bottom: 4px solid rgb(236, 166, 15);
+}
+@media (min-width: 900px) {
+	.Menu {
+    display: none;
+	}
+}
+
+

@@ -1,0 +1,118 @@
+.About {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 3em;
+
+}
+
+.About_title {
+	font-size: 2.2em;
+	padding: .5em 0em 1em 0em;
+	display: flex;
+}
+.Mo {
+	color: blueviolet;
+}
+.About_div {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+.About_div1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.About_image {
+	width: 100%;
+	background-color: rgb(231, 228, 233);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 23em;
+	border-radius: 1em;
+	box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
+}
+.About_image > img {
+	width: 100%;
+	max-width: 20em;
+}
+.About_div2 {
+	width: 100%;
+	max-width: 30em;
+	padding: 2em;
+}
+.About_name {
+	font-size: 2em;
+}
+.About_Profetional {
+     font-size: .9em;
+	 color: rgb(8, 8, 104);
+}
+.one{
+      display: none;
+}
+.About_text {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.About_datos {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+.About_datos > li {
+	font-weight: 500;
+}
+.About_email {
+	color: rgb(4, 111, 252);
+}
+.About_dire {
+	color: rgb(4, 111, 252);
+}
+.About_cv {
+	margin-top: 2em;
+	font-size: 1.2em;
+	padding: .7em;
+	border: none;
+	background-color: rgb(8, 8, 167);
+	color: white;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 9em;
+	cursor: pointer;
+}
+@media (min-width: 1000px) {
+	.About_div {
+		flex-direction: row;
+		gap: 6em;
+		justify-content: space-around;
+	}
+	.About_image {
+		width: 100%;
+		background-color: rgb(231, 228, 233);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 30em;
+		border-radius: 1em;
+		box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
+	}
+	.About_image > img {
+		width: 100%;
+		max-width: 25em;
+	}
+	.one {
+		display: block;
+	}
+	.two {
+		display: none;
+	}
+}

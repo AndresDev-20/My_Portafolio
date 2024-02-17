@@ -1,0 +1,105 @@
+.Inicio {
+	width: 100%;
+	padding: 6em 2em 1em 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+	background-color: rgb(246, 248, 248);
+}
+.Inicio_div1 {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.Inicio_name {
+	font-size: 3em;
+	color: rgb(19, 19, 95);
+	font-weight: 700;
+}
+.Inicio_name > span {
+	color: rgb(253, 124, 3);
+}
+  
+  .Inicio_Profesion > span {
+	color: brown;
+  }
+  
+
+ 
+.Inicio_sobremi {
+	background-color: rgb(35, 35, 189);
+	color: white;
+	padding: .6em;
+	border: none;
+	border-radius: 3em;
+	width: 100%;
+	max-width: 200px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Inicio_redes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+.lik {
+	width: 100%;
+	max-width: 3em;
+}
+.Inicio_redes > a > li {
+	background-color: black;
+	color: aqua;
+	width: 100%;
+	max-width: 1.9em;
+	height: 1.9em;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-top: 1em;
+}
+.Inicio_div2 > figure {
+	width: 100%;
+	max-width: 25em;
+	box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
+	border-radius: 50%;
+}
+.bx-chevron-down {
+	font-size: 2.5em;
+}
+@media (min-width: 790px) {
+	.Inicio {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+		margin: auto;
+	     padding: 8em 4em 4em 4em;
+	}
+	.Inicio_div1 {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+	.Inicio_sobremi {
+		background-color: rgb(35, 35, 189);
+		color: white;
+		padding: .6em;
+		border: none;
+		border-radius: 3em;
+		width: 100%;
+		max-width: 200px;
+		cursor: pointer;
+	}
+	.Inicio_div2 > figure {
+		width: 100%;
+		max-width: 25em;
+	}
+}

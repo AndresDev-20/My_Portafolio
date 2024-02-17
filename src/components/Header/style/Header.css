@@ -1,0 +1,58 @@
+.Header {
+	position: fixed;
+	background-color: var(--Bg-Header);
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em 2.5em 1em 2.5em;
+	border-bottom: 1px solid rgb(226, 225, 225);
+	z-index: 10000;
+}
+.Header_nav > h1 {
+	color: rgb(42, 11, 71);
+	transition: color 800ms ease;
+}
+.Header_nav > h1:hover {
+	color: rgb(192, 144, 13);
+	cursor: pointer;
+}
+.Header_nav1 > i {
+    font-size: 3em;
+	font-weight: 500;
+	cursor: pointer;
+}
+.Header_nav2 {
+	display: flex;
+	gap: 2em;
+	display: none;
+}
+.Header_nav2 li {
+	cursor: pointer;
+	color: rgb(42, 11, 71);
+	transition: color 500ms ease;
+}
+.Header_nav2 li:hover {
+	color: rgb(32, 8, 243);
+	border-bottom: 3px solid  rgb(32, 8, 243);
+}
+.Header_nav2 li:target {
+	color: rgb(32, 8, 243);
+	border-bottom: 3px solid  rgb(32, 8, 243);
+}
+@media (min-width: 900px) {
+	.Header {
+		justify-content: space-around;
+		padding: 1.2em 1.2em 1.2em 1.2em;
+	}
+	.Header_nav1 > i {
+		font-size: 2em;
+		cursor: pointer;
+		display: none;
+	}
+	.Header_nav2 {
+		display: flex;
+		gap: 2em;
+		display: flex;
+	}
+}
