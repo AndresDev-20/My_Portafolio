@@ -1,12 +1,29 @@
 import './style/Contact.css'
-import { useForm } from 'react-hook-form';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const Contact = () => {
-  const { register, handleSubmit, reset } = useForm();
+export const Contact = () => {
+  const form = useRef();
 
-  const submit = (data) => {
-	console.log(data);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_vz2us7f', 'template_i3pobus', form.current, {
+        publicKey: 'Q9IesQb1m7BE5RKEA',
+      })
+      .then(
+        () => {
+          alert("Tu mensaje ha sido enviado");
+          // Limpiar el formulario
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
+
 
 	return (
 		<section className='Contactame' id='Contact'>
@@ -18,13 +35,13 @@ const Contact = () => {
 				<figure className='Contactame_image'>
 					<img src="../../../images/Image8.png" alt="" />
 				</figure>
-				<form className='Contactame_form'  >
-                    <input  data-aos="fade-right" type="text" placeholder="Nombre"/>
-					<input  data-aos="fade-right" type="email" placeholder='Correo Electronico' />
-					<input data-aos="fade-right" type="number" placeholder='Telefono' />
-					<textarea data-aos="fade-right" name="" id="" cols="30" rows="10" placeholder='Mensaje'></textarea>
+				<form  ref={form} onSubmit={sendEmail}className='Contactame_form'  >
+                    <input name='name' data-aos="fade-right" type="text" placeholder="Nombre" required/>
+					<input name='email' data-aos="fade-right" type="email" placeholder='Correo Electronico' required />
+					<input name='phone' data-aos="fade-right" type="number" placeholder='Telefono'  required/>
+					<textarea name='message' data-aos="fade-right"  id="" cols="30" rows="10" placeholder='Mensaje' required></textarea>
 					<div className='Contactame_btn'>
-						<button >enviar</button>
+						<button type="submit"  >enviar  <i className='bx bx-navigation'></i></button>
 					</div>
 				</form>
 			</div>

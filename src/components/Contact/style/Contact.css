@@ -46,6 +46,8 @@
 	border-radius: .6em;
 	border: none;
 	border: 1px solid rgb(192, 191, 191);
+	width: 100%;
+	max-width: 15em;
 }
 .Contactame_btn {
 	width: 100%;
@@ -96,5 +98,14 @@
 		padding: 1.5em;
 		border-radius: 0em;
 		box-shadow: none;
+	}
+	.Contactame_form > textarea {
+		padding: .5em;
+		background-color: aliceblue;
+		border-radius: .6em;
+		border: none;
+		border: 1px solid rgb(192, 191, 191);
+		width: 100%;
+		max-width: 23em;
 	}
 }
