@@ -58,6 +58,11 @@ const Skills = () => {
 				</div>
 
 				<div>
+					<i className='bx bxl-vuejs' ></i>
+					<h1>Vue.js</h1>
+				</div>
+
+				<div>
 					<i className='bx bxl-nodejs' ></i>
 					<h1>Node.js</h1>
 				</div>
