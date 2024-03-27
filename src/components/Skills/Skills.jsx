@@ -73,6 +73,11 @@ const Skills = () => {
 				</div>
 
 				<div>
+				<i className='bx bxl-mongodb'></i>
+					<h1>MongoDB</h1>
+				</div>
+
+				<div>
 					<i className='bx bxl-github bxl-git'></i>
 					<h1>GitHub</h1>
 				</div>

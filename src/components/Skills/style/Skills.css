@@ -95,6 +95,10 @@
 	font-size: 66px;
 	color: rgb(3, 45, 233);
 }
+.bxl-mongodb{
+	font-size: 66px;
+	color: rgb(11, 185, 78);
+}
 .bxl-git {
 	font-size: 66px;
 }
@@ -160,6 +164,10 @@
 	.bxl-postgresql {
 		font-size: 70px;
 		color: rgb(3, 45, 233);
+	}
+	.bxl-mongodb{
+		font-size: 70px;
+		color: rgb(11, 185, 78);
 	}
 	.bxl-git {
 		font-size: 70px;
