@@ -37,6 +37,14 @@ const Sena = ({ Academlos, setAcademlos }) => {
 	const CerrarImage3 = () => {
 		setBack(true)
 	}
+
+	const [Four, setFour] = useState(true)
+	const VerImage4 = () => {
+		setFour(false)
+	}
+	const CerrarImage4 = () => {
+		setFour(true)
+	}
 	return (
 		<div>
 			<div className='Academlo_exit'>
@@ -59,20 +67,26 @@ const Sena = ({ Academlos, setAcademlos }) => {
 			<div className='Diplomas-two'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena1'}>
 					<div>
-						<h1>English Leven 1</h1>
+						<h1>English Level 1</h1>
 						<button onClick={VerImage1}>Ver</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena2'}>
 					<div>
-						<h1>English Leven 2</h1>
+						<h1>English Level 2</h1>
 						<button onClick={VerImage2}>Ver</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena3'}>
 					<div>
-						<h1>English Leven 3</h1>
+						<h1>English Level 3</h1>
 						<button onClick={VerImage3}>Ver</button>
+					</div>
+				</div>
+				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena4'}>
+					<div>
+						<h1>English Level 4</h1>
+						<button onClick={VerImage4}>Ver</button>
 					</div>
 				</div>
 
@@ -106,6 +120,15 @@ const Sena = ({ Academlos, setAcademlos }) => {
 				</div>
 				<img src="../../../../images/Leven3.png" alt="" />
 			</div>
+
+			<div className={Four ? "Image_Clear" : 'Diploma_ImageSena'}>
+				<div className='exitSena'>
+					<i onClick={CerrarImage4} className='bx bx-x'></i>
+				</div>
+				<img src="../../../../images/level 4.png" alt="" />
+			</div>
+
+			
 		</div>
 	)
 }
