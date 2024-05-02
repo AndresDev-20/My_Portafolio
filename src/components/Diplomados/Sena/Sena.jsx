@@ -125,7 +125,7 @@ const Sena = ({ Academlos, setAcademlos }) => {
 				<div className='exitSena'>
 					<i onClick={CerrarImage4} className='bx bx-x'></i>
 				</div>
-				<img src="../../../../images/level 4.png" alt="" />
+				<img src="../../../../images/Leven4.png" alt="" />
 			</div>
 
 			
