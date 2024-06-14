@@ -1,0 +1,110 @@
+{
+	"Header": {
+	  "home": "Inicio",
+	  "about": "Acerca De",
+	  "skills": "Habilidades",
+	  "education": "Educación",
+	  "experience": "Experiencia",
+	  "projects": "Proyectos",
+	  "contact": "Contáctame"
+	},
+	"welcome": {
+		"hello": "Hola,",
+		"text": "Soy Yeison",
+		"surname": "Marroquin."
+	},
+	"introduction": "Desarrollo en |",
+	"phrases": [
+		"Desarrollador Full-Stack",
+		"Desarrollador Front-End",
+		"Ingeniero de Software",
+		"Desarrollador Back-End"
+	  ],
+	"about_me": "Acerca De ",
+	"me": "Mi",
+	"I": "Soy Yeison",
+	"profession": "Desarrollador Full Stack",
+	"about_me_text1": "Como Desarrollador Full-Stack, traigo consigo una sólida formación académica de Academlo en México y una próxima certificación en Análisis y Desarrollo de Software del SENA en Colombia. Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y mejorar mis habilidades de codificación, estoy preparado para contribuir con innovación y dedicación a su equipo.",
+	"about_me_text2":"Soy Desarrollador Full-Stack con formación en Academlo (México) y próximamente certificado por el SENA (Colombia) en Análisis y Desarrollo de Software. Me enfoco en crear soluciones tecnológicas que impulsan la eficiencia empresarial, con un compromiso constante de mejora en mis habilidades de codificación. Estoy preparado para aportar innovación y dedicación a su equipo.",
+	"contact_info": {
+	  "email": "Correo:",
+	  "address": "Dirección:",
+	  "cv": "Mi Curriculum"
+	},
+	"skills": {
+	  "title": "Mis ",
+	  "text": "Habilidades"
+	},
+	"education": {
+	  "title": "Mi",
+	  "text":"Educación",
+	  "diploma": "Diploma De La Carrera",
+	  "ver": "Ver",
+	  "not_available": "Aún No Disponible",
+	  "levels": {
+		"fundamento": "Desarrollador en fundamentos",
+		"frontend": "Desarrollador Front-End",
+		"backend": "Desarrollador Back-End",
+		"english1": "Ingles Nivel 1",
+		"english2": "Ingles Nivel 2",
+		"english3": "Ingles Nivel 3",
+		"english4": "Ingles Nivel 4"
+	  },
+	  "institutions": {
+		"academlo": {
+		  "name": "Bootcamp de desarrollador Full Stack",
+		  "institution": "ACADEMLO | ACADEMIA DE CIENCIAS DE LA COMPUTACIÓN E INFORMÁTICA",
+		  "dates": "2022-2023 | Terminado",
+		  "certificates": "Ver Certificados"
+		},
+		"sena": {
+		  "name": "Tecnólogo en análisis y desarrollo de software",
+		  "institution": "SENA | SERVICIO NACIONAL DE APRENDIZAJE",
+		  "dates": "2022-2024 | Cursando",
+		  "certificates": "Ver Certificados"
+		},
+		"ademass": {
+		  "name": "Elevación de conocimientos en el desarrollo de código",
+		  "institution": "ADEMASS | PLATAFORMA VIRTUAL DE DESARROLLO",
+		  "dates": "2024 | Cursando",
+		  "certificates": "Ver Certificados"
+		}
+	  }
+	},
+	"experience": {
+	  "title": "Experiencia",
+	  "text": "Laboral",
+	  "full_stack": {
+		"title": "Desarrollador de Aplicaciones - Proyecto Freelance para Cliente (Klickylisto)",
+		"description": "Lideré el desarrollo completo de un sistema de comercio electrónico para la empresa Klickylisto, construyendo tanto el backend como el frontend desde cero.",
+		"dates": "2023-2024 | Teletrabajo",
+		"platform": "Ver Plataforma",
+		"name": "Logros",
+		"logros": ["Incremento en Ventas", " Optimización de Procesos", "Calidad y Fiabilidad", "Desarrollo Independiente"]
+	  }
+	},
+	"projects": {
+	  "title": "Mis",
+	  "text": "Proyectos"
+	},
+	"contact": {
+	  "title": "Contáctame",
+	  "text": "aquí",
+	  "form": {
+		"name": "Nombre",
+		"email": "Correo Electrónico",
+		"phone": "Teléfono",
+		"message": "Mensaje",
+		"send": "Enviar"
+	  }
+	},
+	"footer": {
+	  "name":"Yeison | Portafolio",
+	  "message": "Gracias por visitar mi sitio web, espero te haya gustado y contactes conmigo",
+	  "quote": "\"Nunca dejes de luchar por tus sueños porque cada día que pasa estás más cerca\"",
+	  "quick_links": "Enlaces Rápidos",
+	  "contact_info": "Mis Datos",
+	  "copyright": "Copyright © 2024 Yeison Marroquin.❤️"
+	}
+  }
+  

@@ -5,7 +5,7 @@
 	align-items: center;
 	width: 100%;
 	padding: 1em;
-	background-color: rgba(218, 218, 255, 0.61);
+	background-color:var(--Background-education);
 	position: relative;
 }
 .Education_title {
@@ -21,12 +21,12 @@
 	font-size: 2em;
 }
 .edu_name {
-	color: blueviolet;
+	color: var(--Blueviolet);
 }
 .Education_study {
 	border-radius: .5em;
-	background-color: rgb(244, 255, 255);
-	box-shadow: 6px 9px 7px 2px rgba(164, 173, 201, 0.836);
+	background-color: var(--Background-Unis);
+	box-shadow: 6px 9px 7px 2px var(--Shadow-Unis);
 }
 .Education_image >img {
 	border-radius: .5em .5em 0em 0em;
@@ -35,7 +35,7 @@
 	margin: 1em;
 }
 .Education_info > h1 {
-	color: rgb(16, 16, 148);
+	color: var(--Buttons);
 	font-size: 1.4em;
 }
 .Education_info > p {
@@ -46,7 +46,7 @@
 	margin-bottom: .6em;
 }
 .Education_info > span {
-	color: rgb(1, 95, 1);
+	color: var(--Green);
 }
 .Education_info > div {
 	width: 100%;
@@ -56,8 +56,8 @@
 .Education_info > div > button {
     cursor: pointer;
 	border: none;
-	background-color: blue;
-	color: white;
+	background-color: var(--Buttons);
+	color: var(--Bg-Header);
 	padding: .6em;
 	border-radius: .5em;
 }

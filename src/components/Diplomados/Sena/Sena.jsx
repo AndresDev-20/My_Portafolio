@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style/Sena.css'
 
-const Sena = ({ Academlos, setAcademlos }) => {
+const Sena = ({ Academlos, setAcademlos, t }) => {
 	const ClearAcademlo = () => {
 		setAcademlos(true)
 	}
@@ -54,8 +54,8 @@ const Sena = ({ Academlos, setAcademlos }) => {
 			<div className='Diplomas-one'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena'}>
 					<div>
-						<h1>Diploma De La Carrera</h1>
-						<p>Aun No Disponible</p>
+						<h1>{t("education.diploma")}a</h1>
+						<p> {t("education.not_available")} </p>
 					</div>
 				</div>
 			</div>
@@ -67,26 +67,26 @@ const Sena = ({ Academlos, setAcademlos }) => {
 			<div className='Diplomas-two'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena1'}>
 					<div>
-						<h1>English Level 1</h1>
-						<button onClick={VerImage1}>Ver</button>
+						<h1> {t("education.levels.english1")} </h1>
+						<button onClick={VerImage1}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena2'}>
 					<div>
-						<h1>English Level 2</h1>
-						<button onClick={VerImage2}>Ver</button>
+						<h1> {t("education.levels.english2")} </h1>
+						<button onClick={VerImage2}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena3'}>
 					<div>
-						<h1>English Level 3</h1>
-						<button onClick={VerImage3}>Ver</button>
+						<h1> {t("education.levels.english3")} </h1>
+						<button onClick={VerImage3}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena4'}>
 					<div>
-						<h1>English Level 4</h1>
-						<button onClick={VerImage4}>Ver</button>
+						<h1>{t("education.levels.english4")}</h1>
+						<button onClick={VerImage4}>{t("education.ver")}</button>
 					</div>
 				</div>
 

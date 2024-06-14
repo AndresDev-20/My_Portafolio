@@ -12,7 +12,7 @@
 	display: flex;
 }
 .Mo {
-	color: blueviolet;
+	color: var(--Blueviolet);
 	margin-left: 6px;
 }
 .About_div {
@@ -27,14 +27,14 @@
 }
 .About_image {
 	width: 100%;
-	background-color: rgb(231, 228, 233);
+	background-color: var(--Bg-Header);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	max-width: 23em;
 	border-radius: 1em;
-	box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
+	box-shadow: 1px -1px 8px 4px  var(--Shadow);
 }
 .About_image > img {
 	width: 100%;
@@ -50,7 +50,7 @@
 }
 .About_Profetional {
      font-size: .9em;
-	 color: rgb(8, 8, 104);
+	 color: var(--Buttons);
 }
 .one{
       display: none;
@@ -72,22 +72,22 @@
 	font-weight: 500;
 }
 .About_email {
-	color: rgb(4, 111, 252);
+	color: var(--Buttons);
 }
 .About_dire {
-	color: rgb(4, 111, 252);
+	color: var(--Buttons);
 }
 .About_cv {
 	margin-top: 2em;
 	font-size: 1.2em;
 	padding: .7em;
 	border: none;
-	background-color: rgb(8, 8, 167);
-	color: white;
 	border-radius: 5px;
 	width: 100%;
 	max-width: 9em;
 	cursor: pointer;
+	background-color: var(--Buttons);
+	color: var(--Bg-Header);
 }
 @media (min-width: 1000px) {
 	.About_div {
@@ -97,14 +97,12 @@
 	}
 	.About_image {
 		width: 100%;
-		background-color: rgb(231, 228, 233);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		max-width: 30em;
 		border-radius: 1em;
-		box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
 	}
 	.About_image > img {
 		width: 100%;

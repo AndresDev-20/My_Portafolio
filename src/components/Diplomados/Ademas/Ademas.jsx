@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style/Ademas.css'
 
-const Ademas = ({ Academlos, setAcademlos }) => {
+const Ademas = ({ Academlos, setAcademlos, t }) => {
 	const ClearAcademlo = () => {
 		setAcademlos(true)
 	}
@@ -46,8 +46,8 @@ const Ademas = ({ Academlos, setAcademlos }) => {
 			<div className='Diplomas-one'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomasAdemass'}>
 					<div>
-						<h1>Diploma De La Carrera</h1>
-						<p>Aun No Disponible</p>
+						<h1>{t("education.diploma")}</h1>
+						<p>{t("education.not_available")}</p>
 					</div>
 				</div>
 			</div>
@@ -60,19 +60,19 @@ const Ademas = ({ Academlos, setAcademlos }) => {
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaAdemas1'}>
 					<div>
 						<h1>Html5</h1>
-						<button onClick={VerImage1}>Ver</button>
+						<button onClick={VerImage1}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaAdemas2'}>
 					<div>
 						<h1>Css3</h1>
-						<button onClick={VerImage2}>Ver</button>
+						<button onClick={VerImage2}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaAdemas3'}>
 					<div>
 						<h1>JavaScript</h1>
-						<button onClick={VerImage3}>Ver</button>
+						<button onClick={VerImage3}>{t("education.ver")}</button>
 					</div>
 				</div>
 

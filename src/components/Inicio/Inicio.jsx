@@ -2,18 +2,12 @@ import React, { useState, useEffect } from 'react';
 import {Link } from 'react-router-dom';
 import "./style/Inicio.css";
 
-const Inicio = () => {
-  const frases = [
-    'Desarrollador Full-Stack',
-    'Desarrollador Frot-End',
-    'Ingeniero de Software',
-    'Desarrollador Back-End'
-  ];
+const Inicio = ({t}) => {
 
   const [fraseIndex, setFraseIndex] = useState(0);
   const [letraIndex, setLetraIndex] = useState(0);
   const [mostrarFrase, setMostrarFrase] = useState(true);
-
+  const frases = t('phrases', { returnObjects: true })
   useEffect(() => {
     const cambiarFrase = () => {
       setLetraIndex(0);
@@ -56,15 +50,15 @@ const Inicio = () => {
   return (
     <section className="Inicio" data-aos="fade-right" id='Inicio'>
       <div className="Inicio_div1">
-        <h1 className="Inicio_name">Hola, <br /> Soy Yeison <span>Marroquin.</span></h1>
+        <h1 className="Inicio_name">{t("welcome.hello")} <br /> {t("welcome.text")} <span>{t("welcome.surname")}</span></h1>
         <h2 className="Inicio_Profesion">
-          Desarrollo en |
+          {t("introduction")}
           <span id="frase" className="desaparecerYaparecer">
             {frases[fraseIndex].substring(0, letraIndex)}
           </span>
         </h2>
      <Link to="/#About" onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}>
-     <button className='Inicio_sobremi'>Acerca De Mi <i className='bx bx-chevron-down'></i></button>
+     <button className='Inicio_sobremi'> {t("about_me")} <i className='bx bx-chevron-down'></i></button>
      </Link>
      
         <div className="Inicio_redes">

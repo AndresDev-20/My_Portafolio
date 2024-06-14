@@ -1,6 +1,6 @@
 .Menu {
 	position: fixed;
-	background: linear-gradient(0deg, rgb(23, 6, 66) 0%, rgba(52, 10, 110, 0.978) 59%);
+	background: var(--Bg-footer);
 	right: 0;
 	width: 100%;
 	max-width: 15em;
@@ -10,12 +10,12 @@
 	align-items: center;
 	height: 100vh;
 	z-index: 1000;
-	color: white;
+	color: var(--Bg-Header);
 	transition: width 800ms ease;
 }
 .Clear{
 	transition: width 800ms ease;
-	background: linear-gradient(0deg, rgb(23, 6, 66) 0%, rgba(52, 10, 110, 0.978) 59%);
+	background: var(--Bg-footer);
 	position: fixed;
 	right: 0;
 	width: 0em;
@@ -26,7 +26,7 @@
 	align-items: center;
 	height: 100vh;
 	z-index: 1000;
-	color: white;
+	color: var(--Bg-Header);
  }
 .Menu1 {
 	display: flex;
@@ -34,15 +34,16 @@
 	gap: 3em;
 	align-items: center;
 	transition: margin-left 700ms ease;
+	color: var(--Bg-Header);
 }
 .Menu1  > a > li {
 	cursor: pointer;
-	color: white;
+	color: var(--Bg-Header);
 }
 .Menu1  > a > li:hover {
 	cursor: pointer;
-	color: rgb(236, 166, 15);
-	border-bottom: 4px solid rgb(236, 166, 15);
+	color: var(--Yellow);
+	border-bottom: 4px solid var(--Yellow);
 }
 .Clears {
 	display: flex;
@@ -51,12 +52,16 @@
 	align-items: center;
 	transition: margin-left 2000ms ease;
 	margin-left: 20em;
-	color: white;
+	color:var(--Bg-Header);
+}
+.Clears  > a > li {
+	cursor: pointer;
+	color: var(--Bg-Header);
 }
 .Clears  > a > li:hover {
 	cursor: pointer;
-	color: rgb(236, 166, 15);
-	border-bottom: 4px solid rgb(236, 166, 15);
+	color: var(--Yellow);
+	border-bottom: 4px solid var(--Yellow);
 }
 @media (min-width: 900px) {
 	.Menu {

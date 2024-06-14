@@ -1,6 +1,6 @@
 .Projects {
 	width: 100%;
-	background-color: rgba(232, 232, 236, 0.61);
+	background-color: var(--Bg-Home);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,7 +18,7 @@
 	font-size: 1.5em;
 }
 .pro{
-	color: blueviolet;
+	color: var(--Blueviolet);
 }
 .Projects_todos{
 	display: flex;
@@ -31,23 +31,23 @@
 .Projects_Project {
     width: 100%;
 	max-width: 20em;
-	background-color: rgb(255, 255, 255);
+	background-color: var(--Bg-Header);
 	border-radius: 1em;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	box-shadow: 2px -2px 10px 2px rgba(164, 173, 201, 0.836);
+	box-shadow: 2px -2px 10px 2px var(--Shadow-Unis)
 }
 .Projects_Project > h1  {
-	color: rgb(16, 16, 148);;
+	color: var(--Buttons);
 }
 .Projects_Project > figure  {
 	padding: .6em;
 }
 .Projects_Project > figure > img {
 	border-radius: .5em .5em 0em 0em;
-	border: 1px solid rgba(8, 10, 122, 0.61);
+	border: 1px solid var(--Titles);
 }
 .Projects_Project > div {
 	display: flex;
@@ -55,10 +55,10 @@
 	justify-content: space-around;
 }
 .Projects_Project > div > span > a {
-	border-bottom: 2px solid rgb(50, 50, 51);
+	border-bottom: 2px solid var(--Blueviolet);
 	cursor: pointer;
 }
 .Projects_Project > div > span > a:hover {
-	border-bottom: 2px solid blueviolet;
-	color: blueviolet;
+	border-bottom: 2px solid var(--Blueviolet);
+	color: var(--Blueviolet);
 }

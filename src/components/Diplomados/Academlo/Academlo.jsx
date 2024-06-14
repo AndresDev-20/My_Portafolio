@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style/Academlo.css'
 
-const Academlo = ({Academlos, setAcademlos}) => {
+const Academlo = ({Academlos, setAcademlos, t}) => {
 	const ClearAcademlo = () => {
 		setAcademlos(true)
 	   }
@@ -46,8 +46,8 @@ const Academlo = ({Academlos, setAcademlos}) => {
 			<div className='Diplomas-one'>
 		<div className={ Academlos ?"Clear_Diploma":'Diploma'}>
 			<div>
-		<h1>Diploma De La Carrera</h1>
-              <button onClick={VerImage}>Ver</button>
+		<h1>{t("education.diploma")}</h1>
+              <button onClick={VerImage}>{t("education.ver")}</button>
 			</div>
 		</div>				
 			</div>
@@ -59,20 +59,20 @@ const Academlo = ({Academlos, setAcademlos}) => {
 	   <div className='Diplomas-two'>
 	   <div className={ Academlos ?"Clear_Diploma":'Diploma1'}>
 			<div>
-		<h1>Desarrollador en fundamentos</h1>
-              <button onClick={VerImage1}>Ver</button>
+		<h1> {t("education.levels.fundamento")} </h1>
+              <button onClick={VerImage1}>{t("education.ver")}</button>
 			</div>
 		</div>
 		<div className={ Academlos ?"Clear_Diploma":'Diploma2'}>
 			<div>
-		<h1>Desarrollador Front-End</h1>
-              <button onClick={VerImage2}>Ver</button>
+		<h1>{t("education.levels.frontend")}</h1>
+              <button onClick={VerImage2}>{t("education.ver")}</button>
 			</div>
 		</div>
 		<div className={ Academlos ?"Clear_Diploma":'Diploma3'}>
 			<div>
-		<h1>Desarrollador Back-End</h1>
-              <button onClick={VerImage3}>Ver</button>
+		<h1> {t("education.levels.backend")} </h1>
+              <button onClick={VerImage3}>{t("education.ver")}</button>
 			</div>
 		</div>
 	   		

@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 3em;
-	background-color: rgb(246, 248, 248);
+	background-color: var(--Bg-Home);
 }
 .Inicio_div1 {
 	display: flex;
@@ -15,22 +15,22 @@
 }
 .Inicio_name {
 	font-size: 3em;
-	color: rgb(19, 19, 95);
+	color: var(--Titles);
 	font-weight: 700;
 }
 .Inicio_name > span {
-	color: rgb(253, 124, 3);
+	color: var(--Orange);
 }
   
   .Inicio_Profesion > span {
-	color: brown;
+	color: var(--Brown);
   }
   
 
  
 .Inicio_sobremi {
-	background-color: rgb(35, 35, 189);
-	color: white;
+	background-color: var(--Buttons);
+	color: var(--Bg-Header);
 	padding: .6em;
 	border: none;
 	border-radius: 3em;
@@ -51,8 +51,8 @@
 	max-width: 3em;
 }
 .Inicio_redes > a > li {
-	background-color: black;
-	color: aqua;
+	background-color: var(--Black);
+	color: var(--Aqua);
 	width: 100%;
 	max-width: 1.9em;
 	height: 1.9em;
@@ -67,7 +67,7 @@
 .Inicio_div2 > figure {
 	width: 100%;
 	max-width: 25em;
-	box-shadow: 1px -1px 8px 4px rgb(179, 179, 180);
+	box-shadow: 1px -1px 8px 4px var(--Shadow);
 	border-radius: 50%;
 }
 .bx-chevron-down {
@@ -89,8 +89,6 @@
 		gap: 1em;
 	}
 	.Inicio_sobremi {
-		background-color: rgb(35, 35, 189);
-		color: white;
 		padding: .6em;
 		border: none;
 		border-radius: 3em;

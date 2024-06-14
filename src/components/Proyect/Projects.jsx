@@ -2,14 +2,14 @@ import React from 'react'
 import './style/Projects.css'
 import { Link } from 'react-router-dom'
 
-const Projects = () => {
+const Projects = ({t}) => {
   return (
 	<section className='Projects' id='Projects'>
 		<br />
 		<br />
 		<br />
 		<br />
-	  <h1 className='Projects_title'><span><i className='bx bxs-folder folder'></i></span> Mis <span className='pro'>Proyectos</span></h1>
+	  <h1 className='Projects_title'><span><i className='bx bxs-folder folder'></i></span> {t("projects.title")} <span className='pro'>{t("projects.text")}</span></h1>
 	  <div className='Projects_todos'>
 		<div className='Projects_Project' data-aos="fade-right">
 		<h1>Klickylisto e-comerce </h1>

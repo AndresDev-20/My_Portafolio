@@ -1,14 +1,14 @@
 import React from 'react'
 import './style/Skills.css'
 
-const Skills = () => {
+const Skills = ({t}) => {
 	return (
 		<section className='Skills' id='Skills'>
 			<br />
 			<br />
 			<br />
 			<br />
-			<h1 className='Skills_title'><i className='bx bx-laptop laptop'></i>Mis <span className='Habiliti'>Habilidades</span> </h1>
+			<h1 className='Skills_title'><i className='bx bx-laptop laptop'></i> {t("skills.title")} <span className='Habiliti'>{t("skills.text")}</span> </h1>
 			<div className='Skills_container' data-aos="fade-right">
 
 

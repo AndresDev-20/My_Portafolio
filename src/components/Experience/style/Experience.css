@@ -20,7 +20,7 @@
 	font-size: 1.5em;
 }
 .laboral {
-	color: blueviolet;
+	color: var(--Blueviolet);
 }
 .Experience_works {
 	display: flex;
@@ -29,7 +29,7 @@
 	max-width: 57em;
 }
 .Experience_line {
-	background: linear-gradient(0deg, rgba(80,34,195,1) 0%, rgba(132,45,253,0.9780287114845938) 59%);
+	background: var(--Linea-Ex);
 	width: .8em;
 	border-radius: 2em;
 	position: relative;
@@ -39,17 +39,17 @@
 }
 .icon {
 	position: absolute;
-	background: linear-gradient(0deg, rgba(80,34,195,1) 0%, rgba(132,45,253,0.9780287114845938) 59%);
+	background:var(--Linea-Ex);
 	padding: .3em;
 	border-radius: 50%;
-	color: white;
+	color: var(--Bg-Header);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
 }
 .Experience_work > h1 {
-    color: blueviolet;
+    color: var(--Blueviolet);
 	margin-bottom: .5em;
 }
 .Experience_work > p {
@@ -58,32 +58,56 @@
 	margin-bottom: .5em;
 }
 .Experience_work > span {
-	color: rgb(10, 143, 10);
+	color: var(--Green);
 }
 .Experience_work > div {
     width: 100%; 
 	display: flex;
 	justify-content: end;
 }
+.Logros {
+	display: flex;
+	flex-direction: column;
+	gap: .6em;
+	color: var(--Blueviolet);
+}
+.Logros > li{
+	list-style: circle;
+	margin-left: 2em;
+	color: var(--Black);
+	font-weight: 400;
+}
 .Experience_work >div > a > button {
 	border: none;
-	padding: .4em;
+	padding: .5em;
 	border-radius: .5em;
-	background-color: rgb(104, 45, 214);
-	color: white;
+	background-color: var(--Blueviolet);
+	color: var(--Bg-Header);
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: .8em;
 }
 @media (min-width: 600px) {
 	.Experience_line {
-		background: linear-gradient(0deg, rgba(80,34,195,1) 0%, rgba(132,45,253,0.9780287114845938) 59%);
 		width: .4em;
 		border-radius: 2em;
 		position: relative;
 		display: flex;
 		align-items: start;
 		justify-content: center;
+	}
+	.Experience_work >div > a > button {
+		border: none;
+		padding: .5em;
+		border-radius: .5em;
+		background-color: var(--Blueviolet);
+		color: var(--Bg-Header);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1em;
 	}
 }

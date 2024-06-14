@@ -2,7 +2,7 @@ import React from 'react'
 import './style/Footer.css'
 import {Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({t}) => {
 	const handelWhass = (e) => {
 		e.stopPropagation()
 		const message = encodeURIComponent(`Hola Yeison, quisiera hablar contigo sobre un empleo de desarrollador.`);
@@ -12,25 +12,25 @@ const Footer = () => {
 		<footer className='Footer'>
 			<div className='Footer_one'>
 				<div className='Footer_div1'>
-					<h1>Yeison | Portafolio</h1>
-					<p>Gracias por visitar mi sitio web, espero te haya gustado y contactes conmigo</p>
+					<h1>{t("footer.name")}</h1>
+					<p>{t("footer.message")}</p>
 					<br />
-					<p>"Never stop fighting for your dreams because every day that passes you are closer"</p>
+					<p>{t("footer.quote")}</p>
 				</div>
 				<div className='Footer_div2'>
-					<h1>Enlaces Rapidos</h1>
+					<h1>{t("footer.quick_links")}</h1>
 					<ul>
-					<Link to="/#Inicio" onClick={() => document.querySelector('#Inicio').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> Inicio</li></Link>
-			<Link to="/#About" onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> Acerca De</li></Link>
-			<Link to="/#Skills" onClick={() => document.querySelector('#Skills').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> Habilidades</li></Link>
-			<Link to="/#Education" onClick={() => document.querySelector('#Education').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> Educación</li></Link>
-			<Link to="/#Experience" onClick={() => document.querySelector('#Experience').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> Experiencia</li></Link>
-			<Link to="/#Projects" onClick={() => document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> Proyectos</li></Link>
-			<Link to="/#Contact" onClick={() => document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> Contactame</li></Link>
+					<Link to="/#Inicio" onClick={() => document.querySelector('#Inicio').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.home")}</li></Link>
+			<Link to="/#About" onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> {t("Header.about")}</li></Link>
+			<Link to="/#Skills" onClick={() => document.querySelector('#Skills').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i>  {t("Header.skills")}</li></Link>
+			<Link to="/#Education" onClick={() => document.querySelector('#Education').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> {t("Header.education")}</li></Link>
+			<Link to="/#Experience" onClick={() => document.querySelector('#Experience').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.experience")}</li></Link>
+			<Link to="/#Projects" onClick={() => document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.projects")}</li></Link>
+			<Link to="/#Contact" onClick={() => document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.contact")}</li></Link>
 					</ul>
 				</div>
 				<div className='Footer_div3'>
-					<h1>Mis Datos</h1>
+					<h1>{t("footer.contact_info")}</h1>
 					<ul className='Footer_div3_ul'>
 						<li><span><i className='bx bxs-phone'></i></span> +57 3227222010</li>
 						<li><span><i className='bx bxs-envelope'></i></span> andresmarroquin887@gmail.com</li>

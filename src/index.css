@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
 --Bg-Header: white;
+--Bg-Home: rgb(246, 248, 248);
+--Shadow: rgb(179, 179, 180);
+--Titles: rgb(19, 19, 95);
+--Orange: rgb(253, 124, 3);
+--Brown: brown;
+--Buttons:  rgb(35, 35, 189);
+--Black: black;
+--Aqua: aqua;
+--Blueviolet:blueviolet;
+--Background-Skill: linear-gradient(0deg, rgba(80,34,195,1) 0%, rgba(132,45,253,0.9780287114845938) 59%);
+--Yellow: rgb(236, 156, 7);
+--Shadow-Skill: rgba(0, 0, 0, 0.753);
+--Background-education: rgba(218, 218, 255, 0.61);
+--Background-Unis: rgb(244, 255, 255);
+--Shadow-Unis: rgba(164, 173, 201, 0.836);
+--Green: rgb(1, 95, 1);
+--Linea-Ex: linear-gradient(0deg, rgba(80,34,195,1) 0%, rgba(132,45,253,0.9780287114845938) 59%);
+--AlienBlue: aliceblue;
+--Bg-footer: rgb(8, 8, 58);
 }
 * {
   margin: 0;
