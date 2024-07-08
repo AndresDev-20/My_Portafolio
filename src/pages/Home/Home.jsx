@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Inicio from '../../components/Inicio/Inicio'
 import About from '../../components/About/About'
 import './style/Home.css'
@@ -12,7 +12,8 @@ import { useTranslation } from 'react-i18next'
 
 const Home = () => {
   const {t, i18n} = useTranslation("global")
-
+  const [Day, setDay] = useState(true)
+  const [Theme, setTheme] = useState("light")
   const [isEnglish, setIsEnglish] = useState(false);
 
   const toggleLanguage = () => {
@@ -20,6 +21,25 @@ const Home = () => {
     i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish);
   };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", Theme)
+  }, [Theme])
+
+  const noche = () => {
+    const newTheme = Theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    setDay(false)
+  }
+
+  const dia = () => {
+    const newTheme = Theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    setDay(true)
+  }
+
+
+
   return (
     <article className='Home'>
     <div tabIndex={0} className='Translate' onClick={toggleLanguage}>
@@ -27,6 +47,8 @@ const Home = () => {
       <div className={`rueda ${isEnglish ? 'english' : 'spanish'}`}></div>
       <button>En</button>
     </div>
+    
+    {/* <button  className='Theme'>{Day ? <h1 onClick={noche}>Dia</h1> : <h1 onClick={dia}>Noche</h1> }</button> */}
 		<Inicio t={t}/>
     <About t={t}/>
     <Skills t={t}/>

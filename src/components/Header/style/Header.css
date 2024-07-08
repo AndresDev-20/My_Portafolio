@@ -10,7 +10,7 @@
 	z-index: 10000;
 }
 .Header_nav > h1 {
-	color: rgb(42, 11, 71);
+	color: var(--Titles);
 	transition: color 800ms ease;
 }
 .Header_nav > h1:hover {
@@ -29,7 +29,7 @@
 }
 .Header_nav2 li {
 	cursor: pointer;
-	color: rgb(42, 11, 71);
+	color: var(--Titles);
 	transition: color 500ms ease;
 }
 .Header_nav2 li:hover {

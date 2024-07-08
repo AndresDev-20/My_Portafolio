@@ -50,6 +50,18 @@
   .spanish {
 	transform: translateX(0); 
   }
+
+  .Theme {
+	background-color: transparent;
+	z-index: 10000000000;
+	position: fixed;
+	margin: 2em;
+	margin-top: 6em;
+	cursor: pointer;
+	border: none;
+	padding: .2em;
+	font-size: .9em;
+  }
   @media (min-width:900px) {
 	
 .Translate {

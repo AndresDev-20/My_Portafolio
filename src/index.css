@@ -21,6 +21,30 @@
 --AlienBlue: aliceblue;
 --Bg-footer: rgb(8, 8, 58);
 }
+
+[data-theme="dark"] {
+  --Bg-Header: rgb(18, 18, 38);
+  --Bg-Home: rgb(18, 18, 38);
+  --Shadow: rgb(100, 100, 110);
+  --Titles: rgb(235, 235, 240);
+  --Orange: rgb(255, 159, 10);
+  --Brown: rgb(139, 69, 19);
+  --Buttons: rgb(77, 77, 255);
+  --Black: rgb(30, 30, 30);
+  --Aqua: rgb(0, 255, 255);
+  --Blueviolet: rgb(138, 43, 226);
+  --Background-Skill: linear-gradient(0deg, rgba(50, 25, 150, 1) 0%, rgba(80, 25, 200, 0.978) 59%);
+  --Yellow: rgb(255, 189, 51);
+  --Shadow-Skill: rgba(0, 0, 0, 0.753);
+  --Background-education: rgba(40, 40, 80, 0.61);
+  --Background-Unis: rgb(50, 60, 70);
+  --Shadow-Unis: rgba(60, 60, 80, 0.836);
+  --Green: rgb(0, 128, 0);
+  --Linea-Ex: linear-gradient(0deg, rgba(50, 25, 150, 1) 0%, rgba(80, 25, 200, 0.978) 59%);
+  --AlienBlue: rgb(220, 220, 255);
+  --Bg-footer: rgb(15, 15, 40);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,14 +52,17 @@
   font-family: 'Roboto';
   font-weight: 700;
 }
+
 li {
   list-style: none;
 }
+
 img {
   width: 100%;
   display: block;
   object-fit: contain;
 }
+
 a {
   text-decoration: none;
 }

@@ -38,6 +38,11 @@ const Skills = ({t}) => {
 				</div>
 
 				<div>
+				    <img src="../../../images/java.png" alt="" />
+					<h1>Java</h1>
+				</div>
+
+				<div>
 					<img src="../../../images/Imagen3.png" alt="" />
 					<h1>Python</h1>
 				</div>
@@ -70,6 +75,11 @@ const Skills = ({t}) => {
 				<div>
 					<i className='bx bxl-postgresql' ></i>
 					<h1>PostgreSQL</h1>
+				</div>
+
+				<div>
+				    <img src="../../../images/mysql.png" alt="" />
+					<h1>MySQL</h1>
 				</div>
 
 				<div>
