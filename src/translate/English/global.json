@@ -81,7 +81,20 @@
 		"platform": "View Platform",
 		"name": "Achievements",
 		"logros": ["Increase in Sales", " Process Optimization", "Quality and Reliability", "Independent Development"]
-	  }
+	  },
+	  
+	  "full_stack-work": {
+	"title": "Full Stack Developer - Freelance Project for Client (TheraClinic)",
+	"description": "I led the development of a system for a clinical practice that manages appointments, patients, medical histories, and exams. I handled the analysis, design, development, and unit testing. The project is running successfully in a local environment as per the client's request.",
+	"name": "Achievements",
+	"dates": "2024 | Remote Work",
+	"logros": [
+		"Ease of Work",
+		"Process Optimization",
+		"Quality and Reliability",
+		"Eliminated paperwork and achieved complete digitalization of records"
+	]
+}
 	},
 	"projects": {
 	  "title": "My",

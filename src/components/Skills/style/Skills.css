@@ -102,6 +102,13 @@
 .bxl-git {
 	font-size: 66px;
 }
+.bxs-data {
+	font-size: 66px;
+	color: rgb(125, 163, 196);
+}
+.nn {
+	margin-top: .8em;
+}
 @media (min-width: 995px) {
 	.Skills_container{
 	border-radius: 1em;
@@ -169,6 +176,15 @@
 	}
 	.bxl-git {
 		font-size: 70px;
+	}
+
+	.bxs-data {
+		font-size: 70px;
+		color: rgb(125, 163, 196);
+	}
+
+    .nn {
+		margin-top: .9em;
 	}
 	
 }

@@ -11,6 +11,10 @@ const Skills = ({t}) => {
 			<h1 className='Skills_title'><i className='bx bx-laptop laptop'></i> {t("skills.title")} <span className='Habiliti'>{t("skills.text")}</span> </h1>
 			<div className='Skills_container' data-aos="fade-right">
 
+			    <div >
+					<img className='nn' src="../../../images/English.png" alt="" />
+					<h1 className='nn'>English</h1>
+				</div>
 
 				<div>
 					<i className='bx bxl-html5' ></i>
@@ -80,6 +84,11 @@ const Skills = ({t}) => {
 				<div>
 				    <img src="../../../images/mysql.png" alt="" />
 					<h1>MySQL</h1>
+				</div>
+
+				<div>
+				    <i className='bx bxs-data'></i>
+					<h1>SQLITE</h1>
 				</div>
 
 				<div>

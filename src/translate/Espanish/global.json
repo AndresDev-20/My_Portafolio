@@ -81,7 +81,15 @@
 		"platform": "Ver Plataforma",
 		"name": "Logros",
 		"logros": ["Incremento en Ventas", " Optimización de Procesos", "Calidad y Fiabilidad", "Desarrollo Independiente"]
+	  },
+	  "full_stack-work": {
+		"title": "Desarrollador Full Stack - Proyecto frelance para cliente (TheraClinic)",
+		"description": "Lideré el desarrollo de un sistema para un consultorio clínico que gestiona citas, pacientes, historias clínicas y exámenes. Realicé el análisis, diseño, desarrollo y pruebas unitarias. El proyecto está funcionando correctamente en un entorno local, según la solicitud del cliente.",
+		"name": "Logros",
+		"dates": "2024 | Teletrabajo",
+		"logros": ["Facilidad de trabajo", " Optimización de Procesos", "Calidad y Fiabilidad", "Eliminación de la papelería y digitalización completa de los registros"]
 	  }
+
 	},
 	"projects": {
 	  "title": "Mis",
