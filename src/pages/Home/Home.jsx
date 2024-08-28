@@ -9,6 +9,7 @@ import Projects from '../../components/Proyect/Projects'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 import { useTranslation } from 'react-i18next'
+import ViewProjets from '../Projects/ViewProjets'
 
 const Home = () => {
   const {t, i18n} = useTranslation("global")
