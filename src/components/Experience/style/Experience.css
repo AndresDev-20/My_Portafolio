@@ -5,8 +5,16 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 2em;
 	padding-bottom: 4em;
+	background: var(--color1);
+	position: relative;
+}
+.Eperieence_Image2-Luje {
+	position: absolute;
+	right: 0;
+	margin-right: 4em;
+	bottom: 0;
+	margin-bottom: 4em;
 }
 .Experience_title {
 	display: flex;
@@ -15,12 +23,13 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
+	color: var(--color2);
 }
 .bxs-brie {
 	font-size: 1.5em;
 }
 .laboral {
-	color: var(--Blueviolet);
+	color: var(--color3);
 }
 .Experience_works {
 	display: flex;
@@ -36,7 +45,7 @@
     margin-top: -1em;
 }
 .Experience_line {
-	background: var(--Linea-Ex);
+	background: var(--color2);
 	width: .8em;
 	border-radius: 2em;
 	position: relative;
@@ -47,7 +56,7 @@
 }
 
 .Experience_line-2 {
-	background: var(--Linea-Ex);
+	background: var(--color2);
 	width: 1.5em;
 	border-radius: 2em;
 	position: relative;
@@ -57,26 +66,27 @@
 }
 .icon {
 	position: absolute;
-	background:var(--Linea-Ex);
+	background:var(--color2);
 	padding: .3em;
 	border-radius: 50%;
-	color: var(--Bg-Header);
+	color: var(--color3);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
 }
 .Experience_work > h1 {
-    color: var(--Blueviolet);
+    color: var(--color2);
 	margin-bottom: .5em;
 }
 .Experience_work > p {
 	font-weight: 400;
 	line-height: 1.2;
 	margin-bottom: .5em;
+	color: var(--color3);
 }
 .Experience_work > span {
-	color: var(--Green);
+	color: var(--color2);
 }
 .Experience_work > div {
     width: 100%; 
@@ -87,12 +97,12 @@
 	display: flex;
 	flex-direction: column;
 	gap: .6em;
-	color: var(--Blueviolet);
+	color: var(--color2);
 }
 .Logros > li{
 	list-style: circle;
 	margin-left: 2em;
-	color: var(--Black);
+	color: var(--color3);
 	font-weight: 400;
 }
 .Experience_work >div > a > button {
@@ -100,7 +110,7 @@
 	padding: .5em;
 	border-radius: .5em;
 	background-color: var(--Blueviolet);
-	color: var(--Bg-Header);
+	color: var(--color1);
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -109,7 +119,6 @@
 }
 @media (min-width: 600px) {
 	.Experience_line {
-		background: var(--Linea-Ex);
 		width: .4em;
 		border-radius: 2em;
 		position: relative;
@@ -127,7 +136,6 @@
 	}
 	
 	.Experience_line-2 {
-		background: var(--Linea-Ex);
 		width: .7em;
 		border-radius: 2em;
 		position: relative;

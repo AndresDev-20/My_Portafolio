@@ -2,7 +2,7 @@ import React from 'react'
 import './style/Menu.css'
 import {Link } from 'react-router-dom';
 
-const Menu = ({open, t}) => {
+const Menu = ({open, t, setopen}) => {
 
 
   return (

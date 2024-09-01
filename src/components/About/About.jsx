@@ -1,6 +1,8 @@
 import React from 'react';
 import './style/About.css';
 import { useNavigate } from 'react-router-dom';
+import ImageRude from '../ImageRude/ImageRude';
+import Image2Rude from '../ImageRude/image2Rude';
 
 const About = ({t}) => {
 	const navigate = useNavigate()
@@ -12,7 +14,13 @@ const About = ({t}) => {
 	<section className='About' id='About' data-aos="fade-right">
 		<br />
 		<br />
-		<br />
+		<br />		
+		<div className='About_Image-Luje'>
+			<ImageRude/>
+		</div>
+		<div className='About_Image2-Luje'>
+			<Image2Rude/>
+		</div>
 	<h1 className='About_title'> <span><i className='bx bxs-user'></i></span> {t("about_me")} <span className='Mo'>{t("me")}</span></h1>
 	<div className='About_div'>
 		<div className='About_div1'>
@@ -35,6 +43,7 @@ const About = ({t}) => {
 			</ul>
 			<button onClick={cv} className='About_cv'>{t("contact_info.cv")}</button>
 		</div>
+
 	</div>
 	</section>
   )

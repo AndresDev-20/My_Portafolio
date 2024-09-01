@@ -18,7 +18,7 @@ const Header = () => {
 	<div>
 	  <header className="Header">
 		<nav className="Header_nav">
-          <Link to="/#Inicio" onClick={() => document.querySelector('#Inicio').scrollIntoView({ behavior: 'smooth' })}><h1>{"<Yeison/>"}</h1></Link> 
+          <Link to="/#Inicio" onClick={() => document.querySelector('#Inicio').scrollIntoView({ behavior: 'smooth' })}><h1 className='Header_nav-h1'> {""} <img src="../../../images/Logo.png" alt="" /> <span>{"Yeison"}</span></h1> </Link> 
 		</nav>
 		<nav className="Header_nav1">
 		<i onClick={MenuOpen} className={ open ?'bx bx-menu' : "Clear"}></i>
@@ -36,6 +36,7 @@ const Header = () => {
 	  </header>
 	  <Menu 
 	  open={open}
+	  setopen={setopen}
 	  t={t}
 	  />
 	</div>

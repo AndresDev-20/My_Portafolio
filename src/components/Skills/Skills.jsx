@@ -13,7 +13,7 @@ const Skills = ({t}) => {
 
 			    <div >
 					<img className='nn' src="../../../images/English.png" alt="" />
-					<h1 className='nn'>English</h1>
+					<h1 className='nn'>English (B1)</h1>
 				</div>
 
 				<div>

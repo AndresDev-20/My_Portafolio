@@ -6,31 +6,43 @@
 	align-items: center;
 	justify-content: center;
 	gap: 3em;
-	background-color: var(--Bg-Home);
+	background: var(--color1);
+	position: relative;
 }
+
+.suno {
+	transform: scale(0);
+	height: 0;
+}
+
 .Inicio_div1 {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	z-index: 1000;
 }
 .Inicio_name {
 	font-size: 3em;
-	color: var(--Titles);
+	color: var(--color3);
 	font-weight: 700;
 }
 .Inicio_name > span {
-	color: var(--Orange);
+	color: var(--color2);
 }
+
+.Inicio_Profesion {
+	color: var(--color3);
+  }
   
   .Inicio_Profesion > span {
-	color: var(--Brown);
+	color: var(--color2);
   }
   
 
  
 .Inicio_sobremi {
-	background-color: var(--Buttons);
-	color: var(--Bg-Header);
+	background: var(--color2);
+	color: var(--color3);
 	padding: .6em;
 	border: none;
 	border-radius: 3em;
@@ -40,19 +52,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: 1em;
 }
 .Inicio_redes {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1em;
+	gap: .5em;
 }
 .lik {
 	width: 100%;
 	max-width: 3em;
 }
 .Inicio_redes > a > li {
-	background-color: var(--Black);
-	color: var(--Aqua);
+	background: var(--color2);
+	color: var(--color3);
 	width: 100%;
 	max-width: 1.9em;
 	height: 1.9em;
@@ -64,11 +77,13 @@
 	cursor: pointer;
 	margin-top: 1em;
 }
-.Inicio_div2 > figure {
+.Inicio_div2 > figure > img {
 	width: 100%;
-	max-width: 25em;
+	max-width: 24em;
 	box-shadow: 1px -1px 8px 4px var(--Shadow);
 	border-radius: 50%;
+	background-color: var(--color2); 
+	border: 1px solid var(--color3);
 }
 .bx-chevron-down {
 	font-size: 2.5em;
@@ -81,7 +96,20 @@
 		justify-content: space-evenly;
 		width: 100%;
 		margin: auto;
-	     padding: 8em 4em 4em 4em;
+	     padding: 7em 4em 8em 4em;
+	}
+	.suno {
+		transform: scale(1);
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 18em;
+		display: block;
+	}
+	.Inicio_Image-Luje {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 7em;
+		display: block;
 	}
 	.Inicio_div1 {
 		display: flex;

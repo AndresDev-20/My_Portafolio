@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link } from 'react-router-dom';
 import "./style/Inicio.css";
+import ImageRude from '../ImageRude/ImageRude';
 
 const Inicio = ({t}) => {
 
@@ -48,7 +49,7 @@ const Inicio = ({t}) => {
   }
 
   return (
-    <section className="Inicio" data-aos="fade-right" id='Inicio'>
+    <section  className="Inicio" data-aos="fade-right" id='Inicio'>
       <div className="Inicio_div1">
         <h1 className="Inicio_name">{t("welcome.hello")} <br /> {t("welcome.text")} <span>{t("welcome.surname")}</span></h1>
         <h2 className="Inicio_Profesion">
@@ -71,9 +72,13 @@ const Inicio = ({t}) => {
         </div>
       </div>
 
+      <div className='Inicio_Image-Luje1 suno'>
+        <ImageRude/>
+      </div>
+
       <div className="Inicio_div2">
         <figure>
-          <img src="../../../images/Image1.png" alt="" />
+          <img src="../../../images/yo.png" alt="" />
         </figure>
       </div>
     </section>

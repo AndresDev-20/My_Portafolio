@@ -1,7 +1,7 @@
 .Education_Diplomas {
 	width: 100%;
 	height: 100vh;
-	background-color: rgb(218, 218, 255);
+	background: var(--color4);
 	position: fixed;
 	top: 0;
 	z-index: 900;

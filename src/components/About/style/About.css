@@ -2,17 +2,37 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 3em;
+	padding-bottom: 3em; 
+	background: var(--color4);
+	position: relative;
+}
 
+.About_Image-Luje {
+	position: absolute;
+	right: 0;
+   bottom: 0;
+   margin-right: 3em;
+   margin-bottom: 3em;
+   display: block;
+}
+
+.About_Image2-Luje {
+	position: absolute;
+	left: 0;
+   top: 0;
+   margin-left: 3em;
+   margin-top: 5em;
+   display: none;
 }
 
 .About_title {
 	font-size: 2.2em;
-	padding: .5em 0em 1em 0em;
+	padding: .5em 0em .3em 0em;
 	display: flex;
+	color: var(--color2);
 }
 .Mo {
-	color: var(--Blueviolet);
+	color: var(--color3);
 	margin-left: 6px;
 }
 .About_div {
@@ -27,7 +47,6 @@
 }
 .About_image {
 	width: 100%;
-	background-color: var(--Bg-Header);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -35,6 +54,7 @@
 	max-width: 23em;
 	border-radius: 1em;
 	box-shadow: 1px -1px 8px 4px  var(--Shadow);
+	z-index: 100;
 }
 .About_image > img {
 	width: 100%;
@@ -47,10 +67,11 @@
 }
 .About_name {
 	font-size: 2em;
+	color: var(--color3);
 }
 .About_Profetional {
      font-size: .9em;
-	 color: var(--Buttons);
+	 color: var(--color2);
 }
 .one{
       display: none;
@@ -62,6 +83,7 @@
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	color: var(--color3);
 }
 .About_datos {
 	display: flex;
@@ -70,12 +92,13 @@
 }
 .About_datos > li {
 	font-weight: 500;
+	color: var(--color3);
 }
 .About_email {
-	color: var(--Buttons);
+	color: var(--color2);
 }
 .About_dire {
-	color: var(--Buttons);
+	color: var(--color2);
 }
 .About_cv {
 	margin-top: 2em;
@@ -86,8 +109,8 @@
 	width: 100%;
 	max-width: 9em;
 	cursor: pointer;
-	background-color: var(--Buttons);
-	color: var(--Bg-Header);
+	background: var(--color2);
+	color: var(--color3);
 }
 @media (min-width: 1000px) {
 	.About_div {
@@ -95,6 +118,16 @@
 		gap: 6em;
 		justify-content: space-around;
 	}
+
+	.About_Image2-Luje {
+		position: absolute;
+		left: 0;
+	   top: 0;
+	   margin-left: 4em;
+	   margin-bottom: 7em;
+	   display: block;
+	}	
+
 	.About_image {
 		width: 100%;
 		display: flex;
@@ -107,6 +140,8 @@
 	.About_image > img {
 		width: 100%;
 		max-width: 25em;
+		border-radius: .4em;
+		border: 2px solid var(--color2);
 	}
 	.one {
 		display: block;

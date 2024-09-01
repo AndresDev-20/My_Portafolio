@@ -5,7 +5,7 @@
 	align-items: center;
 	width: 100%;
 	padding: 1em;
-	background-color:var(--Background-education);
+	background:var(--color4);
 	position: relative;
 }
 .Education_title {
@@ -16,17 +16,19 @@
 	margin-top: 2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
+	color: var(--color2);
 }
 .bxs-graduation{
 	font-size: 2em;
 }
 .edu_name {
-	color: var(--Blueviolet);
+	color: var(--color3);
 }
 .Education_study {
 	border-radius: .5em;
-	background-color: var(--Background-Unis);
-	box-shadow: 6px 9px 7px 2px var(--Shadow-Unis);
+	background: var(--color1);
+	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+	color: var(--color3);
 }
 .Education_image >img {
 	border-radius: .5em .5em 0em 0em;
@@ -35,7 +37,7 @@
 	margin: 1em;
 }
 .Education_info > h1 {
-	color: var(--Buttons);
+	color: var(--color2);
 	font-size: 1.4em;
 }
 .Education_info > p {
@@ -46,7 +48,7 @@
 	margin-bottom: .6em;
 }
 .Education_info > span {
-	color: var(--Green);
+	color: var(--color1);
 }
 .Education_info > div {
 	width: 100%;
@@ -56,8 +58,8 @@
 .Education_info > div > button {
     cursor: pointer;
 	border: none;
-	background-color: var(--Buttons);
-	color: var(--Bg-Header);
+	background: var(--color4);
+	color: var(--color3);
 	padding: .6em;
 	border-radius: .5em;
 }
