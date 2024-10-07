@@ -14,26 +14,25 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color2);
+	color: var(--color3);
 }
 .suport {
 	font-size: 1.5em;
 }
 .Aqui {
-	color: var(--color3);
+	color: var(--color2);
 }
 .Contactame_image {
     display: none;
-	background-color: var(--color1);
 }
 .Contactame_form {
 	display: flex;
 	flex-direction: column;
     gap: .7em;
-	background-color: var(--color1);
 	padding: 1.5em;
 	border-radius: .6em;
 	box-shadow: 2px 3px 8px 3px var(--Shadow-Unis);
+	background-color: var(--color13);
 }
 .Contactame_form > input {
 	padding: .5em;
@@ -61,8 +60,8 @@
 }
 .Contactame_btn > button {
 	border: none;
-	background-color: var(--color2);
-	color: var(--color3);
+	background-color: var(--color3);
+	color: var(--color1);
 	padding: .6em;
 	width: 100%;
 	max-width: 6.5em;
@@ -100,6 +99,7 @@
 		gap: .7em;
 		border-radius: 0em;
 		box-shadow: none;
+		background-color: var(--color5);
 	}
 	.Contactame_form > textarea {
 		padding: .5em;

@@ -23,13 +23,13 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color2);
+	color: var(--color3);
 }
 .bxs-brie {
 	font-size: 1.5em;
 }
 .laboral {
-	color: var(--color3);
+	color: var(--color2);
 }
 .Experience_works {
 	display: flex;
@@ -45,7 +45,7 @@
     margin-top: -1em;
 }
 .Experience_line {
-	background: var(--color2);
+	background: var(--color3);
 	width: .8em;
 	border-radius: 2em;
 	position: relative;
@@ -56,7 +56,7 @@
 }
 
 .Experience_line-2 {
-	background: var(--color2);
+	background: var(--color3);
 	width: 1.5em;
 	border-radius: 2em;
 	position: relative;
@@ -66,17 +66,17 @@
 }
 .icon {
 	position: absolute;
-	background:var(--color2);
+	background:var(--color3);
 	padding: .3em;
 	border-radius: 50%;
-	color: var(--color3);
+	color: var(--color1);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
 }
 .Experience_work > h1 {
-    color: var(--color2);
+    color: var(--color3);
 	margin-bottom: .5em;
 }
 .Experience_work > p {
@@ -87,6 +87,7 @@
 }
 .Experience_work > span {
 	color: var(--color2);
+	border-bottom: 1px solid var(--color2);
 }
 .Experience_work > div {
     width: 100%; 

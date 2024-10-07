@@ -1,6 +1,6 @@
 .Inicio {
 	width: 100%;
-	padding: 6em 2em 1em 2em;
+	padding: 9em 2em 1em 2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,6 +8,7 @@
 	gap: 3em;
 	background: var(--color1);
 	position: relative;
+	
 }
 
 .suno {
@@ -28,6 +29,7 @@
 }
 .Inicio_name > span {
 	color: var(--color2);
+	color: var(--color8);
 }
 
 .Inicio_Profesion {
@@ -35,14 +37,14 @@
   }
   
   .Inicio_Profesion > span {
-	color: var(--color2);
+	color: var(--color8);
   }
   
 
  
 .Inicio_sobremi {
 	background: var(--color2);
-	color: var(--color3);
+	color: var(--color14);
 	padding: .6em;
 	border: none;
 	border-radius: 3em;
@@ -64,8 +66,9 @@
 	max-width: 3em;
 }
 .Inicio_redes > a > li {
-	background: var(--color2);
-	color: var(--color3);
+	background: var(--color3);
+	background: var(--color3-1);
+	color: var(--color10);
 	width: 100%;
 	max-width: 1.9em;
 	height: 1.9em;
@@ -80,10 +83,8 @@
 .Inicio_div2 > figure > img {
 	width: 100%;
 	max-width: 24em;
-	box-shadow: 1px -1px 8px 4px var(--Shadow);
-	border-radius: 50%;
-	background-color: var(--color2); 
-	border: 1px solid var(--color3);
+	border-radius: 1em;
+
 }
 .bx-chevron-down {
 	font-size: 2.5em;
@@ -96,13 +97,14 @@
 		justify-content: space-evenly;
 		width: 100%;
 		margin: auto;
-	     padding: 7em 4em 8em 4em;
+	     padding: 7.5em 4em 8em 4em;
+
 	}
 	.suno {
 		transform: scale(1);
 		position: absolute;
 		bottom: 0;
-		margin-bottom: 18em;
+		margin-bottom: 13em;
 		display: block;
 	}
 	.Inicio_Image-Luje {
@@ -127,6 +129,6 @@
 	}
 	.Inicio_div2 > figure {
 		width: 100%;
-		max-width: 25em;
+		max-width: 22em;
 	}
 }

@@ -1,18 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root { 
---color1: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
---color2: #0788ff;
---color3: white;
---color4: linear-gradient(90deg, #182c50fe 1.67%, #122445 39.95%, #091e3c 58.24%, #0a1630 80.28%, #061925 101.48%);
+--color1:rgb(255, 255, 255);
+--color2: rgb(35, 35, 189);
+--color3: rgb(19, 19, 95);
+--color4: rgb(246, 247, 248);
 -px-theme-rgb: 7, 136, 255;
 --color5: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
 --color6: rgba(27, 49, 105, 0.247);
-
+--color7: blueviolet;
+--color8: rgb(253, 124, 3);
+--color9: rgb(35, 23, 103);
+--color10: aqua;
+--color11: rgba(8, 24, 81, 0.467);
+--color12: black;
+--color13: rgb(235, 234, 248);
+--color3-1: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));;
+--color14: white;
+--color15: rgb(29, 40, 87);
 }
 
-
-
-
+[data-theme="dark"] {
+  --color1: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
+  --color2: #0788ff;
+  --color3: white;
+  --color3-1: #0788ff;
+  --color4: linear-gradient(90deg, #182c50fe 1.67%, #122445 39.95%, #091e3c 58.24%, #0a1630 80.28%, #061925 101.48%);
+  -px-theme-rgb: 7, 136, 255;
+  --color5: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
+  --color6: rgba(27, 49, 105, 0.247); 
+  --color7: none;
+  --color8: #0788ff;
+  --color10: white;
+--color11: #6759ce48;
+--color12: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
+--color13: rgba(61, 53, 176, 0.27);
+--color14: white;
+--color15: rgb(29, 40, 87);
+}
 
 html {
   background: var(--color1);

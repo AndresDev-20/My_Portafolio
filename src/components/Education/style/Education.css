@@ -16,13 +16,13 @@
 	margin-top: 2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color2);
+	color: var(--color3);
 }
 .bxs-graduation{
 	font-size: 2em;
 }
 .edu_name {
-	color: var(--color3);
+	color: var(--color2);
 }
 .Education_study {
 	border-radius: .5em;
@@ -58,8 +58,8 @@
 .Education_info > div > button {
     cursor: pointer;
 	border: none;
-	background: var(--color4);
-	color: var(--color3);
+	background: var(--color15);
+	color: var(--color1);
 	padding: .6em;
 	border-radius: .5em;
 }

@@ -14,7 +14,7 @@ import ViewProjets from '../Projects/ViewProjets'
 const Home = () => {
   const {t, i18n} = useTranslation("global")
   const [Day, setDay] = useState(true)
-  const [Theme, setTheme] = useState("light")
+  const [Theme, setTheme] = useState("dark")
   const [isEnglish, setIsEnglish] = useState(false);
 
   const toggleLanguage = () => {
@@ -49,7 +49,7 @@ const Home = () => {
       <button>En</button>
     </div>
     
-    {/* <button  className='Theme'>{Day ? <h1 onClick={noche}>Dia</h1> : <h1 onClick={dia}>Noche</h1> }</button> */}
+    <button  className='Theme'>{Day ? <h1 onClick={noche}><i className='bx bx-moon' ></i></h1> : <h1 onClick={dia}><i className='bx bx-sun'></i></h1> }</button>
 		<Inicio t={t}/>
     <About t={t}/>
     <Skills t={t}/>

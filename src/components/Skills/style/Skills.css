@@ -1,5 +1,5 @@
 .Skills {
-	background: var(--color1);
+	background: var(--color7);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -13,17 +13,17 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color2);
+	color: var(--color14);
 }
 .laptop{
 	font-size: 2em;
 	color: var(--color1);
 }
 .Habiliti {
-	color: var(--color3);
+	color: var(--color8);
 }
 .Skills_container {
-	background-color: rgba(103, 89, 206, 0.281);
+	background-color:var(--color11);
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -40,8 +40,8 @@
     width: 100%;
 	max-width: 7em;
 	height: 7em;
-	background: var(--color4);
-	color: var(--color3);
+	background: var(--color12);
+	color: var(--color14);
 	padding: 1em;
 	font-size: 13px;
 	display: flex;
