@@ -55,19 +55,22 @@
   }
 
   .Theme {
-	background: var(--color1);
+	background: var(--color4);
 	width: 100%;
 	color: var(--color3);
-	z-index: 10000000000;
+	z-index: 10000;
 	position: fixed;
 	margin: 0em;
 	max-width: 3em;
 	top: 0;
-	margin-top: 3.6em;
+	margin-top: 4.1em;
 	cursor: pointer;
 	border: none;
 	padding: 0em;
-	font-size: 1.5em;
+	font-size: 1.25em;
+	padding: .3em;
+	padding-top: .6em;
+	border-radius: 0em 0em .5em 0em;
   }
   @media (min-width:900px) {
 	  .Theme {

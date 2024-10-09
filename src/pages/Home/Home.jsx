@@ -49,7 +49,7 @@ const Home = () => {
       <button>En</button>
     </div>
     
-    <button  className='Theme'>{Day ? <h1 onClick={noche}><i className='bx bx-moon' ></i></h1> : <h1 onClick={dia}><i className='bx bx-sun'></i></h1> }</button>
+    <button  className='Theme'>{Day ? <h1 onClick={noche}><i className='bx bx-sun' ></i></h1> : <h1 onClick={dia}><i className='bx bx-moon'></i></h1> }</button>
 		<Inicio t={t}/>
     <About t={t}/>
     <Skills t={t}/>

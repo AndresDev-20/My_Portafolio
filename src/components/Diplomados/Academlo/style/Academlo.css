@@ -4,10 +4,10 @@
 	background: var(--color4);
 	position: fixed;
 	top: 0;
-	z-index: 900;
 	padding: 2em;
 	padding-top: 6em;
 	overflow-y: scroll;
+	z-index: 100000;
 }
 .Academlo_title {
 	padding: 3em;
