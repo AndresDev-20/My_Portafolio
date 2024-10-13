@@ -90,14 +90,14 @@ const Academlo = ({Academlos, setAcademlos, t}) => {
 			<div className='exit'>
 			<i onClick={CerrarImage1} className='bx bx-x'></i>
 			</div>
-				<img src="../../../../images/fundamentos.jpg" alt="" />
+				<img src="../../../../images/fundamentos.png" alt="" />
 			</div>
 
 			<div className={Front ?"Image_Clear" :'Diploma_Image'}>
 			<div className='exit'>
 			<i onClick={CerrarImage2} className='bx bx-x'></i>
 			</div>
-				<img src="../../../../images/ReactNative.jpg" alt="" />
+				<img src="../../../../images/ReactNative.png" alt="" />
 			</div>
 
 			<div className={Back ?"Image_Clear" :'Diploma_Image'}>
