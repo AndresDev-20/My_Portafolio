@@ -36,6 +36,20 @@ const [Senas, setSenas] = useState(true)
 
 
 	  <div className='edu'  data-aos="fade-right">
+	  <div className='Education_study'>
+          <figure className='Education_image'>
+			<img src="../../../images/America-english.png" alt="" />
+		  </figure>
+		  <div className='Education_info'>
+			<h1>{t("education.institutions.american school way.name")}</h1>
+			<p> {t("education.institutions.american school way.institution")} </p>
+			<span>{t("education.institutions.american school way.dates")}</span><br />
+			<div>
+			<button > {t("education.institutions.american school way.certificates")} </button>
+			</div>
+		  </div>
+	   </div>
+
        <div className='Education_study'>
           <figure className='Education_image'>
 			<img src="../../../images/Image4.webp" alt="" />

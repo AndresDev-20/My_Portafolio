@@ -76,7 +76,7 @@
 	  .Theme {
 	background: transparent;
 	color: var(--color3);
-	z-index: 10000000000;
+	z-index: 10000;
 	position: fixed;
 	margin: 2em;
 	top: 0;

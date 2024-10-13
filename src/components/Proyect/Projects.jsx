@@ -11,7 +11,7 @@ const Projects = ({t}) => {
 		<br />
 	  <h1 className='Projects_title'><span><i className='bx bxs-folder folder'></i></span> {t("projects.title")} <span className='pro'>{t("projects.text")}</span></h1>
 	  <div className='Projects_todos'>
-		<div className='Projects_Project' data-aos="fade-right">
+		{/* <div className='Projects_Project' data-aos="fade-right">
 		<h1>Klickylisto e-comerce </h1>
 			<figure>
 				<img src="../../../images/Klickylisto.png" alt="" />
@@ -21,16 +21,38 @@ const Projects = ({t}) => {
 				<span><Link to="https://github.com/yeisonmarroquin887/My_e-Comerce.git">Code</Link></span>
 				<span><Link to="https://github.com/yeisonmarroquin887/My_e-Comerce-Api.git">Back-end</Link></span>
 			</div>
-		</div>
+		</div> */}
 
 		<div className='Projects_Project' data-aos="fade-right">
-		<h1>E-comerce CLA</h1>
+		<h1>E-comerce CLA ()</h1>
 			<figure>
 				<img src="../../../images/Image7.png" alt="" />
 			</figure>
 			<div>
 				<span> <Link to="https://zippy-pavlova-3da0ad.netlify.app/">App</Link> </span>
 				<span> <Link to="https://github.com/yeisonmarroquin887/Computers-Store.git">Code</Link> </span>
+			</div>
+		</div>
+
+		<div className='Projects_Project' data-aos="fade-right">
+		<h1>Pokedex</h1>
+			<figure>
+				<img src="../../../images/Pokedex.png" alt="" />
+			</figure>
+			<div>
+			<span> <Link to="https://tourmaline-starlight-86b771.netlify.app">App</Link> </span>
+				<span> <Link to="https://github.com/yeisonmarroquin887/Entregablecinco.git">Code</Link> </span>
+			</div>
+		</div>
+
+		<div className='Projects_Project' data-aos="fade-right">
+		<h1>Weather App</h1>
+			<figure>
+				<img src="../../../images/Weather App.png" alt="" />
+			</figure>
+			<div>
+			<span> <Link to="https://zingy-gecko-5df221.netlify.app/">App</Link> </span>
+				<span> <Link to="https://github.com/yeisonmarroquin887/segundo-entregable.git">Code</Link> </span>
 			</div>
 		</div>
 
@@ -57,26 +79,27 @@ const Projects = ({t}) => {
 		</div>
 
 		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Pokedex</h1>
+		<h1>The savanna (In vanilla)</h1>
 			<figure>
-				<img src="../../../images/Pokedex.png" alt="" />
+				<img src="../../../images/The savanna.png" alt="" />
 			</figure>
 			<div>
-			<span> <Link to="https://capable-zabaione-ea68ab.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/Entregablecinco.git">Code</Link> </span>
+			<span> <Link to="https://preeminent-kataifi-f75a2a.netlify.app">App</Link> </span>
+				<span> <Link to="https://github.com/yeisonmarroquin887/Animals.git">Code</Link> </span>
 			</div>
 		</div>
 
 		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Weather App</h1>
+		<h1>Solar system (Animation)</h1>
 			<figure>
-				<img src="../../../images/Weather App.png" alt="" />
+				<img src="../../../images/SystemSolar.png" alt="" />
 			</figure>
 			<div>
-			<span> <Link to="https://zingy-gecko-5df221.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/segundo-entregable.git">Code</Link> </span>
+			<span> <Link to="https://kaleidoscopic-sunshine-db62c9.netlify.app/">App</Link> </span>
+				<span> <Link to="https://github.com/yeisonmarroquin887/SistemaSolar.git">Code</Link> </span>
 			</div>
 		</div>
+
 	  </div>
 	</section>
   )

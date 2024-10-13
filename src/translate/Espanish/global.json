@@ -51,6 +51,12 @@
 		"english4": "Ingles Nivel 4"
 	  },
 	  "institutions": {
+		"american school way": {
+		  "name": "Curso de todos lo niveles de ingles A1 -> C1",
+		  "institution": "AMERICAN SCHOOL WAY",
+		  "dates": "2024-2026 | Cursando",
+		  "certificates": "No disponible"
+		},
 		"academlo": {
 		  "name": "Bootcamp de desarrollador Full Stack",
 		  "institution": "ACADEMLO | ACADEMIA DE CIENCIAS DE LA COMPUTACIÓN E INFORMÁTICA",

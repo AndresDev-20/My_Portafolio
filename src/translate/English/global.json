@@ -51,6 +51,12 @@
 		"english4": "English Level 4"
 	  },
 	  "institutions": {
+		"american school way": {
+		  "name": "Course for all levels of English A1 -> C1",
+		  "institution": "AMERICAN SCHOOL WAY",
+		  "dates": "2024-2026 | Studying",
+		  "certificates": "Not available"
+		},
 		"academlo": {
 		  "name": "Full Stack Developer Bootcamp",
 		  "institution": "ACADEMLO | ACADEMY OF COMPUTER SCIENCE AND INFORMATICS",

@@ -25,9 +25,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	padding: 1em;
 	gap: 2em;
+	width: 100%;
+	max-width: 66em;
 }
 .Projects_Project {
     width: 100%;
@@ -76,4 +78,17 @@
 .Projects_Project > div > span > a:hover {
 	border-bottom: 2px solid var(--color3);
 	color: var(--color3);
+}
+
+@media (max-width: 1084px) {
+	.Projects_todos{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 1em;
+		gap: 2em;
+		width: 100%;
+		max-width: 66em;
+	}
 }
