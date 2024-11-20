@@ -5,12 +5,32 @@ import Header from './components/Header/Header'
 import Cv from './pages/Mi_Cv/Cv'
 import ViewProjets from './pages/Projects/ViewProjets'
 import Certificados from './pages/Certificados/Certificados'
+import Loader from './components/Loader/Loader'
+import { useEffect, useState } from 'react'
 
 function App() {
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(true);
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, [])
+
 
   return (
     <div>
       <Header/>
+      {
+        !loading && (
+          <div>
+           <Loader/>
+          </div>
+        )
+      }
      <Routes>
            <Route  path='/' element={<Home/>} />
            <Route path='/cv' element={<Cv/>}/>

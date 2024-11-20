@@ -18,6 +18,7 @@
 --color14: white;
 --color15: rgb(29, 40, 87);
 --color16: #0788ff;
+--color17: #b3bed591;
 }
 
 [data-theme="dark"] {
@@ -38,6 +39,7 @@
 --color14: white;
 --color15: rgb(29, 40, 87);
 --color16: #0788ff;
+--color17: #040821a7;
 }
 
 html {
