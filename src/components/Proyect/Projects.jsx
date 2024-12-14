@@ -40,7 +40,7 @@ const Projects = ({t}) => {
 				<img src="../../../images/Pokedex.png" alt="" />
 			</figure>
 			<div>
-			<span> <Link to="https://tourmaline-starlight-86b771.netlify.app">App</Link> </span>
+			<span> <Link to="https://pokedex-andres-dev.netlify.app">App</Link> </span>
 				<span> <Link to="https://github.com/yeisonmarroquin887/Entregablecinco.git">Code</Link> </span>
 			</div>
 		</div>
