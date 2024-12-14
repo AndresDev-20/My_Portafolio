@@ -64,7 +64,7 @@ const Inicio = ({t}) => {
      
         <div className="Inicio_redes">
           <Link to="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/" className='lik'><li><i className='bx bxl-linkedin-square'></i></li></Link>
-          <Link to="https://github.com/yeisonmarroquin887?tab=repositories" className='lik'> <li ><i className='bx bxl-github' ></i></li></Link>
+          <Link to="https://github.com/AndresDev-20" className='lik'> <li ><i className='bx bxl-github' ></i></li></Link>
           <Link onClick={handelWhass} className='lik'><li><i className='bx bxl-whatsapp-square'></i></li></Link>
           <Link to="https://www.instagram.com/marroquinbernalyeisonandres?igsh=MTY0eGRudTlpbW16Zg==" className='lik'><li><i className='bx bxl-instagram' ></i></li></Link>
           <Link to="/#Contact" onClick={() => document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' })} className='lik'><li><i className='bx bx-envelope' ></i></li></Link>
