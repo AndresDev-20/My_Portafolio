@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 3em; 
-	background: var(--color4);
+	background: var(--color5);
 	position: relative;
 }
 
@@ -29,7 +29,7 @@
 	font-size: 2.2em;
 	padding: .5em 0em .3em 0em;
 	display: flex;
-	color: var(--color3);
+	color: var(--color3-2);
 }
 .Mo {
 	color: var(--color2);
@@ -62,8 +62,9 @@
 }
 .About_div2 {
 	width: 100%;
-	max-width: 30em;
+	max-width: 50em;
 	padding: 2em;
+	margin-top: -3em;
 }
 .About_name {
 	font-size: 2em;
@@ -83,7 +84,7 @@
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	color: var(--color3);
+	color: var(--color3-2);
 }
 .About_datos {
 	display: flex;
@@ -92,7 +93,7 @@
 }
 .About_datos > li {
 	font-weight: 500;
-	color: var(--color3);
+	color: var(--color3-2);
 }
 .About_email {
 	color: var(--color2);
@@ -110,13 +111,14 @@
 	max-width: 9em;
 	cursor: pointer;
 	background: var(--color2);
-	color: var(--color14);
+	color: var(--color3-1);
 }
 @media (min-width: 1000px) {
 	.About_div {
 		flex-direction: row;
 		gap: 6em;
 		justify-content: space-around;
+		padding-bottom: 5em;
 	}
 
 	.About_Image2-Luje {
@@ -127,6 +129,21 @@
 	   margin-bottom: 7em;
 	   display: block;
 	}	
+
+	.About_title {
+		font-size: 2.2em;
+		padding: .5em 0em .3em 0em;
+		display: flex;
+		color: var(--color3);
+		margin-top: 1em;
+	}
+
+	.About_div2 {
+		width: 100%;
+		max-width: 50em;
+		padding: 2em;
+		margin-top: 0em;
+	}
 
 	.About_image {
 		width: 100%;
@@ -148,5 +165,55 @@
 	}
 	.two {
 		display: none;
+	}
+}
+
+@media (min-width: 1367px) {
+	.About_title {
+		font-size: 2.2em;
+		padding: .5em 0em .3em 0em;
+		display: flex;
+		color: var(--color3);
+	}
+	.Mo {
+		color: var(--color2);
+		margin-left: 6px;
+	}
+	
+
+
+	.About_name {
+		font-size: 2.2em;
+		color: var(--color3);
+	}
+	.About_Profetional {
+		 font-size: .9em;
+		 color: var(--color2);
+	}
+	
+	.About_text {
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 17.5px;
+		line-height: 1.5em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		color: var(--color3-2);
+	}
+	.About_datos {
+		display: flex;
+		flex-direction: column;
+		gap: .5em;
+		font-size: 17.5px;
+	}
+	.About_datos > li {
+		font-weight: 500;
+		color: var(--color3-2);
+	}
+	.About_email {
+		color: var(--color2);
+	}
+	.About_dire {
+		color: var(--color2);
 	}
 }

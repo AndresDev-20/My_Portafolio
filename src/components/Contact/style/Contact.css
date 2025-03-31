@@ -32,7 +32,7 @@
 	padding: 1.5em;
 	border-radius: .6em;
 	box-shadow: 2px 3px 8px 3px var(--Shadow-Unis);
-	background-color: var(--color13);
+	background-color: var(--color6);
 }
 .Contactame_form > input {
 	padding: .5em;
@@ -99,7 +99,7 @@
 		gap: .7em;
 		border-radius: 0em;
 		box-shadow: none;
-		background-color: var(--color5);
+		background-color: var(--color1);
 	}
 	.Contactame_form > textarea {
 		padding: .5em;

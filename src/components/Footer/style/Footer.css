@@ -1,6 +1,6 @@
 .Footer {
-	background: var(--color5);
-	color: var(--color14);
+	background: var(--color7);
+	color: var(--color3-1);
 	padding: 1em;
 	width: 100%;
 	border-top: 1px solid var(--color5);
@@ -23,7 +23,7 @@
 	font-weight: 300;
 }
 .Footer_div2 > h1 {
-	color: var(--color8);
+	color: var(--color1);
 }
 .Footer_div2 > ul {
 	display: flex;
@@ -32,26 +32,26 @@
 	margin-top: .6em;
 }
 .Footer_div2 > ul >  a> li > i {
-	background-color: var(--color14);
-	color: var(--color2);
+	background-color: var(--color2);
+	color: var(--color3-1);
 	border-radius: 50%;
 	font-weight: 700;
 }
 .Footer_div2 > ul > a > li {
     font-weight: 300;
 	cursor: pointer;
-	color: var(--color14);
+	color: var(--color3-1);
 }
 .Footer_div2 > ul > li:hover {
-	color: var(--color8);
+	color: var(--color3-1);
 }
 .Footer_div2 > ul > a > li > i:hover {
-	background-color: var(--color8);
-	color: var(--color2);
+	background-color: var(--color2);
+	color: var(--color1);
 	cursor: pointer;
 }
 .Footer_div3 > h1 {
-	color:  var(--color8);
+	color:  var(--color1);
 }
 .Footer_div3_ul{
 	display: flex;
@@ -63,7 +63,7 @@
 	font-weight: 300;
 }
 .Footer_div3_ul > li > span {
-	color: var(--color8);
+	color: var(--color2);
 }
 .Footer_div3_ul1 {
 	display: flex;
@@ -77,7 +77,7 @@
 	max-width: 2.5em;
 }
 .Footer_div3_ul1 > a > li {
-	background-color: var(--color14);
+	background-color: var(--color3-1);
 	border-radius: 50%;
 	padding: .2em;
 	color: var(--color2);

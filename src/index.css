@@ -3,15 +3,21 @@
 --color1:rgb(255, 255, 255);
 --color2: rgb(35, 35, 189);
 --color3: rgb(19, 19, 95);
+--color3-1: white;
+--color3-2: #4a4b6d;
+--color5: rgb(246, 247, 248);
+--color6: rgba(61, 53, 176, 0.27);
+--color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
+/*
 --color4: rgb(246, 247, 248);
 -px-theme-rgb: 7, 136, 255;
---color5: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
+
 --color6: rgba(27, 49, 105, 0.247);
 --color7: blueviolet;
 --color8: rgb(253, 124, 3);
 --color9: rgb(35, 23, 103);
 --color10: aqua;
---color11: rgba(8, 24, 81, 0.467);
+
 --color12: black;
 --color13: rgb(235, 234, 248);
 --color3-1: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));;
@@ -19,12 +25,19 @@
 --color15: rgb(29, 40, 87);
 --color16: #0788ff;
 --color17: #b3bed591;
+*/
 }
 
 [data-theme="dark"] {
-  --color1: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
-  --color2: #0788ff;
+  --color1: linear-gradient(to right, rgb(18, 17, 48), rgb(30, 29, 75), rgb(18, 17, 48));
+  --color2: rgb(57, 49, 225);
   --color3: white;
+  --color3-1: white;
+  --color3-2: white;
+  --color5:linear-gradient(to right, rgb(18, 17, 48), rgb(30, 29, 75), rgb(18, 17, 48));
+  --color6: rgba(61, 53, 176, 0.27);
+  --color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
+  /*
   --color3-1: #0788ff;
   --color4: linear-gradient(90deg, #182c50fe 1.67%, #122445 39.95%, #091e3c 58.24%, #0a1630 80.28%, #061925 101.48%);
   -px-theme-rgb: 7, 136, 255;
@@ -33,13 +46,13 @@
   --color7: none;
   --color8: #0788ff;
   --color10: white;
---color11: #6759ce48;
+
 --color12: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
 --color13: rgba(61, 53, 176, 0.27);
 --color14: white;
 --color15: rgb(29, 40, 87);
 --color16: #0788ff;
---color17: #040821a7;
+--color17: #040821a7;*/
 }
 
 html {
@@ -70,7 +83,7 @@ a {
 
 /* Estilo para navegadores basados en WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento */
+  width: 10px; /* Ancho de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-track {
@@ -80,7 +93,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: var(--color15); /* Color del "dedo" de la barra */
   border-radius: 10px; /* Bordes redondeados del scrollbar */
-  border: 2px solid var(--color16); /* Bordes alrededor del scrollbar */
+  border: 2px solid var(--color4); /* Bordes alrededor del scrollbar */
 }
 
 ::-webkit-scrollbar-thumb:hover {

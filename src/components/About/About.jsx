@@ -24,9 +24,7 @@ const About = ({t}) => {
 	<h1 className='About_title'> <span><i className='bx bxs-user'></i></span> {t("about_me")} <span className='Mo'>{t("me")}</span></h1>
 	<div className='About_div'>
 		<div className='About_div1'>
-           <figure className='About_image'>
-			<img src="../../../images/Image2.jpg" alt="" />
-		   </figure>
+           
 		</div>
 		<div className='About_div2'>
 			<h1 className='About_name'> {t("I")} </h1>

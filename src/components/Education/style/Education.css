@@ -5,7 +5,7 @@
 	align-items: center;
 	width: 100%;
 	padding: 1em;
-	background:var(--color4);
+	background:var(--color5);
 	position: relative;
 }
 .Education_title {
@@ -58,7 +58,7 @@
 .Education_info > div > button {
     cursor: pointer;
 	border: none;
-	background: var(--color15);
+	background: var(--color2);
 	color: var(--color1);
 	padding: .6em;
 	border-radius: .5em;

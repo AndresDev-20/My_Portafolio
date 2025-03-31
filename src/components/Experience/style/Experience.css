@@ -45,7 +45,7 @@
     margin-top: -1em;
 }
 .Experience_line {
-	background: var(--color3);
+	background: var(--color2);
 	width: .8em;
 	border-radius: 2em;
 	position: relative;
@@ -56,7 +56,7 @@
 }
 
 .Experience_line-2 {
-	background: var(--color3);
+	background: var(--color2);
 	width: 1.5em;
 	border-radius: 2em;
 	position: relative;
@@ -66,17 +66,17 @@
 }
 .icon {
 	position: absolute;
-	background:var(--color3);
+	background:var(--color2);
 	padding: .3em;
 	border-radius: 50%;
-	color: var(--color1);
+	color: var(--color3-1);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
 }
 .Experience_work > h1 {
-    color: var(--color3);
+    color: var(--color2);
 	margin-bottom: .5em;
 }
 .Experience_work > p {

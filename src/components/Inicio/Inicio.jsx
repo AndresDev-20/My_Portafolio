@@ -49,9 +49,9 @@ const Inicio = ({t}) => {
   }
 
   return (
-    <section  className="Inicio" data-aos="fade-right" id='Inicio'>
+    <section  className="Inicio" data-aos="fade-right" id='home'>
       <div className="Inicio_div1">
-        <h1 className="Inicio_name">{t("welcome.hello")} <br /> {t("welcome.text")} <span>{t("welcome.surname")}</span></h1>
+        <h1 className="Inicio_name"> <span className='Inicio__hello'>{t("welcome.hello")}</span>  <br /><span className='Inicio__firstname'> {t("welcome.text")} {t("welcome.surname")}</span></h1>
         <h2 className="Inicio_Profesion">
           {t("introduction")}
           <span id="frase" className="desaparecerYaparecer">

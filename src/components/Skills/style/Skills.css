@@ -1,5 +1,5 @@
 .Skills {
-	background: var(--color7);
+	background: var(--color1);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -13,17 +13,17 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color14);
+	color: var(--color3);
 }
 .laptop{
 	font-size: 2em;
-	color: var(--color1);
+	color: var(--color3);
 }
 .Habiliti {
-	color: var(--color8);
+	color: var(--color2);
 }
 .Skills_container {
-	background-color:var(--color11);
+	background-color:var(--color1);
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -40,8 +40,8 @@
     width: 100%;
 	max-width: 7em;
 	height: 7em;
-	background: var(--color12);
-	color: var(--color14);
+	background: var(--color5);
+	color: var(--color3);
 	padding: 1em;
 	font-size: 13px;
 	display: flex;
@@ -115,6 +115,21 @@
 @media (min-width: 995px) {
 	.Skills_container{
 	border-radius: 1em;
+	}
+
+	.Skills_container {
+		background-color:var(--color1);
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 62em;
+		padding: 1.5em;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5em;
+		margin: 1em;
+		margin-bottom: 6em;
+	
 	}
 	.Skills_container > div {
 		width: 100%;
