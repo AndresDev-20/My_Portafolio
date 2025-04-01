@@ -29,12 +29,20 @@
 }
 
 .Inicio__firstname {
-  font-size: 3em;
-  color: var(--color2);
-}
+    font-size: 3em;
+    color: var(--color2);
+    text-shadow: 
+      -2px -2px 0 var(--color2),  
+       2px -2px 0 white,  
+      -2px  2px 0 white,  
+       2px  2px 0 white;
+  }
+  
 
 .Inicio_Profesion {
   color: var(--color3);
+  display: flex;
+  gap: .3em;
 }
 
 .Inicio_Profesion > span {

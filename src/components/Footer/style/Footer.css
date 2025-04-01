@@ -4,6 +4,7 @@
 	padding: 1em;
 	width: 100%;
 	border-top: 1px solid var(--color5);
+	border-top: 1px solid var(--color2);
 }
 .Footer_one {
 	display: flex;

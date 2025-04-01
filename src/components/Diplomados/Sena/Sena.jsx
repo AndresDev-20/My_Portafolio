@@ -71,7 +71,12 @@ const Sena = ({ Academlos, setAcademlos, t }) => {
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena'}>
 					<div>
 						<h1>{t("education.diploma")}a</h1>
-						<p> {t("education.not_available")} </p>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<button className='Viw' onClick={VerImage}>{t("education.ver")}</button>
 					</div>
 				</div>
 			</div>
@@ -123,12 +128,16 @@ const Sena = ({ Academlos, setAcademlos, t }) => {
 
 			</div>
 
+			
 
-			<div className={Image ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Image ? "Image_Clear" : 'Diploma_ImageSenaT'}>
+				<div className='exitSenaT'>
 					<i onClick={CerrarImage} className='bx bx-x'></i>
 				</div>
-				<img src="../../../../images/.png" alt="" />
+				<div>
+					<img className='Tecnologo' src="../../../../images/Certificado-Tecnologo.jpg" alt="" />
+				</div>
+				
 			</div>
 
 			<div className={Fundamentos ? "Image_Clear" : 'Diploma_ImageSena'}>
