@@ -41,8 +41,6 @@
 
 .Inicio_Profesion {
   color: var(--color3);
-  display: flex;
-  gap: .3em;
 }
 
 .Inicio_Profesion > span {
