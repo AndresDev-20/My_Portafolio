@@ -1,13 +1,15 @@
-import React, { useEffect } from "react"; // agrega useEffect
+import React, { useEffect, useState } from "react"; // agrega useEffect
 import Academlo from "../../components/Diplomados/Academlo/Academlo";
 import Sena from "../../components/Diplomados/Sena/Sena";
 import Ademas from "../../components/Diplomados/Ademas/Ademas";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Loader from "../../components/Loader/Loader";
 
 const Diplomas = () => {
   const { instituto } = useParams();
   const { t } = useTranslation("global");
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     // Esto fuerza el scroll al inicio cuando carga el componente
@@ -17,8 +19,23 @@ const Diplomas = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(true);
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, [])
+
   return (
     <section>
+      {
+        !loading && (
+          <div>
+           <Loader/>
+          </div>
+        )
+      }
       {
         instituto === "SENA" ? (
           <Sena t={t} />
