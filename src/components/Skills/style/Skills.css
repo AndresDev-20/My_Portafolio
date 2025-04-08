@@ -41,7 +41,7 @@
 	max-width: 7em;
 	height: 7em;
 	background: var(--color5);
-	color: var(--color3);
+	color: var(--text);
 	padding: 1em;
 	font-size: 13px;
 	display: flex;

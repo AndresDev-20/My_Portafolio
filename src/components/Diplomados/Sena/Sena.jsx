@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import './style/Sena.css'
+import "../Diplomados.css"
+import { useNavigate } from 'react-router-dom'
 
 const Sena = ({ Academlos, setAcademlos, t }) => {
-	const ClearAcademlo = () => {
-		setAcademlos(true)
-	}
+	const navigate = useNavigate()
+	  const VolverHome = () => {
+		navigate('/', { state: { scrollTo: 'Education' } });
+	  };
 
 	const [Image, setImage] = useState(true)
 	const VerImage = () => {
@@ -62,15 +65,21 @@ const Sena = ({ Academlos, setAcademlos, t }) => {
 		setsix(true)
 	}
 	return (
-		<div>
-			<div className='Academlo_exit'>
-				<i onClick={ClearAcademlo} className='bx bx-x'></i>
-			</div>
-
-			<div className='Diplomas-one'>
+		<div className='Diplomados' id='Diplos'>
+			<div className="Diplomados_exit">	
+        <h1 onClick={VolverHome}>Volver</h1>
+      </div>
+	  <br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+			<div className='Diplomados__carrer-diploma'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena'}>
 					<div>
-						<h1>{t("education.diploma")}a</h1>
+						<h1 className="Diplomados__title">{t("education.diploma")}a</h1>
 						<br />
 						<br />
 						<br />
@@ -85,53 +94,53 @@ const Sena = ({ Academlos, setAcademlos, t }) => {
 			<br />
 			<hr />
 			<br />
-			<div className='Diplomas-two'>
+			<div className="Diplomados__complementarios">
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena1'}>
 					<div>
-						<h1> {t("education.levels.english1")} </h1>
+						<h1 className='Diplomados__title'> {t("education.levels.english1")} </h1>
 						<button onClick={VerImage1}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena2'}>
 					<div>
-						<h1> {t("education.levels.english2")} </h1>
+						<h1 className='Diplomados__title'> {t("education.levels.english2")} </h1>
 						<button onClick={VerImage2}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena3'}>
 					<div>
-						<h1> {t("education.levels.english3")} </h1>
+						<h1 className='Diplomados__title'> {t("education.levels.english3")} </h1>
 						<button onClick={VerImage3}>{t("education.ver")}</button>
 					</div>
 				</div>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena4'}>
 					<div>
-						<h1>{t("education.levels.english4")}</h1>
+						<h1 className='Diplomados__title'>{t("education.levels.english4")}</h1>
 						<button onClick={VerImage4}>{t("education.ver")}</button>
 					</div>
 				</div>
 
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena5'}>
 					<div>
-						<h1>{t("education.levels.english5")}</h1>
+						<h1 className='Diplomados__title'>{t("education.levels.english5")}</h1>
 						<button onClick={VerImage5}>{t("education.ver")}</button>
 					</div>
 				</div>
 
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaSena6'}>
 					<div>
-						<h1>{t("education.levels.english6")}</h1>
+						<h1 className='Diplomados__title'>{t("education.levels.english6")}</h1>
 						<button onClick={VerImage6}>{t("education.ver")}</button>
 					</div>
 				</div>
 
-
 			</div>
+			<br />
 
 			
 
 			<div className={Image ? "Image_Clear" : 'Diploma_ImageSenaT'}>
-				<div className='exitSenaT'>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage} className='bx bx-x'></i>
 				</div>
 				<div>
@@ -140,43 +149,43 @@ const Sena = ({ Academlos, setAcademlos, t }) => {
 				
 			</div>
 
-			<div className={Fundamentos ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Fundamentos ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage1} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven1.png" alt="" />
 			</div>
 
-			<div className={Front ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Front ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage2} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven2.png" alt="" />
 			</div>
 
-			<div className={Back ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Back ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage3} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven3.png" alt="" />
 			</div>
 
-			<div className={Four ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Four ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage4} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven4.png" alt="" />
 			</div>
 
-			<div className={Five ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={Five ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage5} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven5.png" alt="" />
 			</div>
 
-			<div className={six ? "Image_Clear" : 'Diploma_ImageSena'}>
-				<div className='exitSena'>
+			<div className={six ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage6} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Leven6.png" alt="" />

@@ -1,7 +1,54 @@
-/* .Education_Diplomas {
+.Diplomados {
+    width: 100%;
+	height: 105vh;
+}
+
+.Diplomados_exit {
+    padding-top: 2.5em;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 2em;
+}
+
+.Diplomados_exit > h1 {
+	font-size: 1.2em;
+    padding-left: 1em;
+	color: var(--color3);
+	cursor: pointer;
+    border-bottom: 2px solid var(--color3);
+    width: 100%;
+    max-width: 4.5em;
+    border-radius: 1px 1px 10px 1px;
+    background-color: var(--color1);
+    padding-top: 3em;
+} 
+
+.Diplomados__carrer-diploma {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 66em;
+	margin: auto;
+}
+
+.Diplomados__title {
+	font-size: 1.2em;
+}
+
+.Diplomados__complementarios {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+
+.Education_Diplomas {
 	width: 100%;
 	height: 100vh;
-	background: var(--color4);
+	background: var(--color1);
 	position: fixed;
 	top: 0;
 	padding: 2em;
@@ -9,9 +56,48 @@
 	overflow-y: scroll;
 	z-index: 100000;
 }
+
 .Academlo_title {
 	padding: 3em;
 }
+
+.Diplomado__exit {
+    width: 100%;
+    margin: auto;
+	margin-bottom: 3em;
+	text-align: center;
+}
+
+.Diplomado__exit > i {
+	background-color: var(--color3);
+	color: var(--color1);
+	padding: .4em;
+	font-size: 1.3em;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.Diploma_Image {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 1em;
+	background: var(--color9);
+	backdrop-filter: blur(4px);
+	padding-top: 7em;
+}
+
+.Diploma_Image > img {
+	width: 100%;
+	max-width: 40em;
+	margin-top: 0em;
+}
+
+.Image_Clear {
+	display: none;
+}
+
 .Diploma {
     width: 100%;
     max-width: 20.5em;
@@ -29,10 +115,6 @@
     align-items: start; 
 	border: 7px solid rgb(76, 19, 102);
 }
-.Clear_Diploma {
-	transform: scale(0);
-	height: 0em;
-}
 
 .Diploma > div {
 	background-color: rgba(13, 22, 66, 0.719);
@@ -45,6 +127,7 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
 .Diploma > div > button {
     background-color: blueviolet;
 	color: white;
@@ -56,6 +139,7 @@
 	border-radius: 1em;
 	cursor: pointer;
 }
+
 .Diploma1 {
     width: 100%;
     max-width: 20.5em;
@@ -73,6 +157,7 @@
     align-items: start; 
 	border: 7px solid rgb(76, 19, 102);
 }
+
 .Diploma1 > div {
 	background-color: rgba(13, 22, 66, 0.719);
 	height: 100%;
@@ -83,7 +168,9 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+    text-align: center;
 }
+
 .Diploma1 > div > button {
     background-color: blueviolet;
 	color: white;
@@ -95,6 +182,7 @@
 	border-radius: 1em;
 	cursor: pointer;
 }
+
 .Diploma2 {
     width: 100%;
     max-width: 20.5em;
@@ -112,6 +200,7 @@
     align-items: start; 
 	border: 7px solid rgb(76, 19, 102);
 }
+
 .Diploma2 > div {
 	background-color: rgba(13, 22, 66, 0.719);
 	height: 100%;
@@ -123,6 +212,7 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
 .Diploma2 > div > button {
     background-color: blueviolet;
 	color: white;
@@ -134,6 +224,7 @@
 	border-radius: 1em;
 	cursor: pointer;
 }
+
 .Diploma3 {
     width: 100%;
     max-width: 20.5em;
@@ -151,6 +242,7 @@
     align-items: start; 
 	border: 7px solid rgb(76, 19, 102);
 }
+
 .Diploma3 > div {
 	background-color: rgba(13, 22, 66, 0.719);
 	height: 100%;
@@ -162,6 +254,7 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
 .Diploma3 > div > button {
     background-color: blueviolet;
 	color: white;
@@ -173,70 +266,16 @@
 	border-radius: 1em;
 	cursor: pointer;
 }
-.Diploma_Image {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(65, 55, 88, 0.863);
-	left: 0;
-	height: 100vh;
-	padding: 1em;
-	transition: visibility 500ms ease;
-}
-.Diploma_Image > img {
-	width: 100%;
-	max-width: 40em;
-	margin-top: 5em;
-}
-.exit {
-	width: 100%;
-	margin-bottom: -5em;
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	margin-right: 40em;
-}
-.exit > i {
-	font-size: 3.4em;
-	color: white;
-	cursor: pointer;
-}
-.Image_Clear {
-    visibility: hidden;
-}
-.Academlo_exit {
-	display: flex;
-	justify-content: start;
-	margin-bottom: 2em;
-}
-.Academlo_exit > i {
-	font-size: 3em;
-	cursor: pointer;
-	background-color: blueviolet;
-	border-radius: 50%;
-	color: white;
-}
-.Diplomas-one {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 66em;
-	margin: auto;
-}
-.Diplomas-two {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2em;
-	flex-wrap: wrap;
-}
-@media (min-width: 800px) {
-	.Diplomas-one {
+
+
+
+
+
+
+
+
+@media (min-width: 639px) {
+	.Diplomados__carrer-diploma {
 		display: flex;
 		align-items: center;
 		justify-content: start;
@@ -244,4 +283,44 @@
 		max-width: 66em;
 		margin: auto;
 	}
-} */
+	.Diplomado__exit {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 0em;
+		margin-top: 3em;
+		text-align: end;
+		width: 100%;
+		max-width: 45em;
+	}
+	
+	.Diplomado__exit > i {
+		background-color: var(--color3);
+		color: var(--color1);
+		padding: .4em;
+		font-size: 1.3em;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.Diploma_Image {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		padding: 1em;
+		background: var(--color9);
+		backdrop-filter: blur(4px);
+		padding-top: 0em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3em;
+		padding-bottom: 10em;
+	}
+	
+	.Diploma_Image > img {
+		width: 100%;
+		max-width: 39em;
+		margin-top: 0em;
+	}
+}

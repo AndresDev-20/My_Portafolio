@@ -84,7 +84,7 @@
 	line-height: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	color: var(--color3-2);
+	color: var(--text);
 }
 .About_datos {
 	display: flex;
@@ -93,7 +93,7 @@
 }
 .About_datos > li {
 	font-weight: 500;
-	color: var(--color3-2);
+	color: var(--text);
 }
 .About_email {
 	color: var(--color2);

@@ -1,18 +1,4 @@
-.Education_Diplomas {
-	width: 100%;
-	height: 100vh;
-	background-color: rgb(218, 218, 255);
-	position: fixed;
-	top: 0;
-	z-index: 100000000000000000000000000;
-	padding: 2em;
-	padding-top: 6em;
-	overflow-y: scroll;
-	padding: 3em;
-}
-.Academlo_title {
-	padding: 3em;
-}
+
 .DiplomaSena {
     width: 100%;
     max-width: 20.5em;
@@ -300,102 +286,22 @@
 	cursor: pointer;
 }
 
-.Diploma_ImageSena {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(65, 55, 88, 0.863);
-	left: 0;
-	height: 100vh;
-	padding: 1em;
-	transition: transform 500ms ease;
-}
-.Diploma_ImageSena > img {
-	width: 100%;
-	max-width: 36em;
-	margin-top: 5em;
-}
-.exitSena{
-	width: 100%;
-	margin-bottom: -5em;
-	display: flex;
-	align-items: center;
-	justify-content: end;
-}
-.exitSena > i {
-	font-size: 3.4em;
-	color: white;
-	cursor: pointer;
-}
-.Image_Clear {
-	transform: scale(0);
-	height: 0;
-}
-.Academlo_exit {
-	display: flex;
-	justify-content: start;
-	margin-bottom: 2em;
-}
-.Academlo_exit > i {
-	font-size: 3em;
-	cursor: pointer;
-	background-color: blueviolet;
-	border-radius: 50%;
-	color: white;
-}
-.Diplomas-one {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 66em;
-	margin: auto;
-}
-.Diplomas-two {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2em;
-	flex-wrap: wrap;
-	width: 100%;
-	max-width: 70em;
-	margin: auto;
-}
-
-.Diploma_ImageSena > img {
-	width: 100%;
-	max-width: 36em;
-}
-
 .Diploma_ImageSenaT {
 	position: fixed;
-	top: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(65, 55, 88, 0.863);
-	left: 0;
-	height: 100vh;
-	padding: 1em;
-	transition: transform 500ms ease;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		padding: 1em;
+		background: var(--color9);
+		backdrop-filter: blur(4px);
+		padding-top: 0em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3em;
+		padding-bottom: 10em;
 }
-.exitSenaT{
-	width: 100%;
-	text-align: center;
-	margin-top: -3em;
-	margin-bottom: 1em;
-}
-.exitSenaT > i {
-	font-size: 3.4em;
-	color: white;
-	cursor: pointer;
-}
+
 .Tecnologo{
 	max-width: 22em;
 }
@@ -411,28 +317,7 @@
 	cursor: pointer;
 }
 @media (min-width: 800px) {
-	.Diplomas-one {
-		display: flex;
-		align-items: center;
-		justify-content: start;
-		width: 100%;
-		max-width: 66em;
-		margin: auto;
-	}
-	.exitSena{
-		width: 100%;
-		max-width: 43em;
-		margin-bottom: -5em;
-		display: flex;
-		align-items: center;
-		justify-content: end;
-	}
-	.Diploma_ImageSena > img {
-		width: 100%;
-		max-width: 36em;
-		margin-top: 5.5em;
-	}
-
+	
 	.Diploma_ImageSenaT {
 		position: fixed;
 		top: 0;
@@ -441,13 +326,13 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba(65, 55, 88, 0.863);
 		left: 0;
 		height: 100vh;
 		padding: 1em;
 		transition: transform 500ms ease;
 		overflow: scroll;
-		padding-top: 25em;
+		padding-top: 15em;
+		padding-bottom: 4em;
 	}
 	.exitSenaT{
 		width: 100%;
@@ -468,4 +353,4 @@
 	.Tecnologo{
 		max-width: 29em;
 	}
-}
+} 

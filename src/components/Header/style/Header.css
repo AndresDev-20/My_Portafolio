@@ -51,7 +51,7 @@
 
 .Header_nav2-li {
     cursor: pointer;
-    color: var(--color3);
+    color: var(--text);
     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
     width: 100%;

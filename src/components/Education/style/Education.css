@@ -28,7 +28,7 @@
 	border-radius: .5em;
 	background: var(--color1);
 	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
-	color: var(--color3);
+	color: var(--text);
 }
 .Education_image >img {
 	border-radius: .5em .5em 0em 0em;
@@ -48,7 +48,7 @@
 	margin-bottom: .6em;
 }
 .Education_info > span {
-	color: var(--color1);
+	color: var(--text);
 }
 .Education_info > div {
 	width: 100%;
@@ -79,4 +79,5 @@
 		width: 100%;
 		max-width: 20em;
 	}
+	
 }

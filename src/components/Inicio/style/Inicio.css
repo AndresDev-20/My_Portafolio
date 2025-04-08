@@ -23,8 +23,8 @@
 }
 
 .Inicio__hello {
-  color: var(--color3);
-  font-size: 2em;
+  color: var(--text);
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -32,15 +32,17 @@
     font-size: 3em;
     color: var(--color2);
     text-shadow: 
-      -2px -2px 0 var(--color3-1),  
-       2px -2px 0 white,  
-      -2px  2px 0 white,  
-       2px  2px 0 white;
+      -2px -2px 0 var(--color2-2),  
+       2px -2px 0 var(--color8),  
+      -2px  2px 0 var(--color8),  
+       2px  2px 0 var(--color8);
   }
+
+
   
 
 .Inicio_Profesion {
-  color: var(--color3);
+  color: var(--text);
 }
 
 .Inicio_Profesion > span {
@@ -72,6 +74,7 @@
 }
 .Inicio_redes > a > li {
   background-color: var(--color2);
+  border: 1px solid var(--color2-2);
   color: var(--color3-1);
   width: 100%;
   max-width: 1.9em;
@@ -100,7 +103,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin: auto;
-    padding: 7.5em 4em 8em 4em;
+    padding: 8em 4em 8em 4em;
   }
   .suno {
     transform: scale(1);
@@ -114,6 +117,11 @@
     bottom: 0;
     margin-bottom: 7em;
     display: block;
+  }
+  .Inicio__hello {
+    color: var(--text);
+    font-size: 2em;
+    font-weight: 400;
   }
   .Inicio_div1 {
     display: flex;

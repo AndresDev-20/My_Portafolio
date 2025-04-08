@@ -7,6 +7,7 @@ import ViewProjets from './pages/Projects/ViewProjets'
 import Certificados from './pages/Certificados/Certificados'
 import Loader from './components/Loader/Loader'
 import { useEffect, useState } from 'react'
+import Diplomas from './pages/Diplomas/Diplomas'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
            <Route path='/cv' element={<Cv/>}/>
            <Route path='/pro' element={<ViewProjets/>}/>
            <Route path='/diplomados' element={<Certificados/>}/>
+           <Route path='/education-diplomas/:instituto' element={<Diplomas/>}/>
      </Routes>
     </div>
   )
