@@ -108,6 +108,14 @@
 		max-width: 66em;
 		margin: auto;
 	}
+
+	.Diplomados__complementarios {
+		width: 100%;
+		max-width: 72em;
+		margin: auto;
+		margin-bottom: 2em;
+	}
+
 	.Diplomado__exit {
 		width: 100%;
 		margin: auto;
