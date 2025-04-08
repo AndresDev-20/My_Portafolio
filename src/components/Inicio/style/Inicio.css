@@ -1,4 +1,4 @@
-.Inicio {
+ .Inicio {
   width: 100%;
   padding: 9em 2em 1em 2em;
   display: flex;
@@ -87,10 +87,18 @@
   cursor: pointer;
   margin-top: 1em;
 }
+.Inicio_div2 > figure  {
+   background-color: var(--color2);
+    border: 3px solid var(--text);
+    margin-top: -3em;
+    margin-bottom: 2em;
+}
 .Inicio_div2 > figure > img {
   width: 100%;
   max-width: 24em;
   border-radius: 1em;
+  padding-top: 0em;
+ 
 }
 .bx-chevron-down {
   font-size: 2.5em;
@@ -103,7 +111,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin: auto;
-    padding: 8em 4em 8em 4em;
+    padding: 8em 3.5em 8em 3.5em;
   }
   .suno {
     transform: scale(1);
@@ -127,6 +135,7 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-top: -3em;
   }
   .Inicio_sobremi {
     padding: 0.6em;
@@ -137,9 +146,15 @@
     cursor: pointer;
     font-size: 0.9em;
   }
+
   .Inicio_div2 > figure {
     width: 100%;
-    max-width: 22em;
+    max-width: 34em;
+    background-color: var(--color2);
+    border: 3px solid var(--text);
+    border-radius: .5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
   }
 }
 
@@ -151,7 +166,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin: auto;
-    padding: 8em 4em 8em 5em;
+    padding: 10em 4em 8em 5em;
   }
 
   .suno {
@@ -205,7 +220,7 @@
 
   .Inicio_div2 > figure > img {
     width: 100%;
-    max-width: 30em;
+    max-width: 40em;
     border-radius: 1em;
   }
 
@@ -235,4 +250,6 @@
     cursor: pointer;
     margin-top: 1em;
   }
-}
+} 
+
+

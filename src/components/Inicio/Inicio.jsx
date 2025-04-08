@@ -78,7 +78,7 @@ const Inicio = ({t}) => {
 
       <div className="Inicio_div2">
         <figure>
-          <img src="../../../images/yooo.png" alt="" />
+          <img src="../../../images/Yop.png" alt="" />
         </figure>
       </div>
     </section>

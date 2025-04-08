@@ -1,18 +1,3 @@
-/* .Education_Diplomas {
-	width: 100%;
-	height: 100vh;
-	background-color: rgb(218, 218, 255);
-	position: fixed;
-	top: 0;
-	z-index: 10000;
-	padding: 2em;
-	padding-top: 6em;
-	overflow-y: scroll;
-	transition: transform 500ms ease, height 200ms ease;
-}
-.Academlo_title {
-	padding: 3em;
-}
 .DiplomasAdemass{
     width: 100%;
     max-width: 20.5em;
@@ -30,10 +15,6 @@
     align-items: start; 
 	border: 7px solid rgb(76, 19, 102);
 }
-.Clear_Diploma {
-	transform: scale(0);
-	height: 0em;
-}
 
 .DiplomasAdemass > div {
 	background-color: rgba(13, 22, 66, 0.719);
@@ -46,6 +27,18 @@
 	justify-content: space-evenly;
 	align-items: center;
 }
+
+
+.Academlo_title {
+	padding: 3em;
+}
+
+.Clear_Diploma {
+	transform: scale(0);
+	height: 0em;
+}
+
+
 .DiplomasAdemass > div > button {
     background-color: blueviolet;
 	color: white;
@@ -227,21 +220,7 @@
 .Academlo_exit > i:hover {
 	background-color: rgb(88, 32, 141);
 }
-.Diplomas-one {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 66em;
-	margin: auto;
-}
-.Diplomas-two {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2em;
-	flex-wrap: wrap;
-}
+
 @media (min-width: 800px) {
 	.Diplomas-one {
 		display: flex;
@@ -264,4 +243,4 @@
 		max-width: 36em;
 		margin-top: 5.5em;
 	}
-} */
+}

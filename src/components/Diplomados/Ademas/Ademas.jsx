@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './style/Ademas.css'
+import { useNavigate } from 'react-router-dom';
 
 const Ademas = ({ Academlos, setAcademlos, t }) => {
-	const ClearAcademlo = () => {
-		setAcademlos(true)
-	}
+	const navigate = useNavigate()
+	const VolverHome = () => {
+		navigate('/', { state: { scrollTo: 'Education' } });
+	  };
 
 	const [Image, setImage] = useState(true)
 	const VerImage = () => {
@@ -38,12 +40,19 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 		setBack(true)
 	}
 	return (
-		<div>
-			<div className='Academlo_exit'>
-				<i onClick={ClearAcademlo} className='bx bx-x'></i>
-			</div>
+		<div  className="Diplomados">
+			<div className="Diplomados_exit">	
+        <h1 onClick={VolverHome}>Volver</h1>
+      </div>
+	  <br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
 
-			<div className='Diplomas-one'>
+			<div className='Diplomados__carrer-diploma'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomasAdemass'}>
 					<div>
 						<h1>{t("education.diploma")}</h1>
@@ -56,7 +65,7 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 			<br />
 			<hr />
 			<br />
-			<div className='Diplomas-two'>
+			<div className='Diplomados__complementarios'>
 				<div className={Academlos ? "Clear_Diploma" : 'DiplomaAdemas1'}>
 					<div>
 						<h1>Html5</h1>
@@ -79,29 +88,29 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 			</div>
 
 
-			<div className={Image ? "Image_Clear" : 'Diploma_ImageAdemass'}>
-				<div className='exitSena'>
+			<div className={Image ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../" alt="" />
 			</div>
 
-			<div className={Fundamentos ? "Image_Clear" : 'Diploma_ImageAdemass'}>
-				<div className='exitSena'>
+			<div className={Fundamentos ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage1} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Ademass-Html.png" alt="" />
 			</div>
 
-			<div className={Front ? "Image_Clear" : 'Diploma_ImageAdemass'}>
-				<div className='exitSena'>
+			<div className={Front ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage2} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Ademass-Css3.png" alt="" />
 			</div>
 
-			<div className={Back ? "Image_Clear" : 'Diploma_ImageAdemass'}>
-				<div className='exitSena'>
+			<div className={Back ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
 					<i onClick={CerrarImage3} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Ademass-JavaScript.png" alt="" />

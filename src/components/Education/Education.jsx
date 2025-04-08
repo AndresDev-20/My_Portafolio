@@ -1,13 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './style/Education.css'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Education = ({t}) => {
 	const navigate = useNavigate();
+	const location = useLocation();
 
 	const GoDiplomas = (Instituto) => {
 		navigate(`/education-diplomas/${Instituto}`, { state: { scrollTo: 'Diplos' } })
 	}
+
+	useEffect(() => {
+		if (location.state?.scrollTo === 'Education') {
+			const section = document.getElementById('Education');
+			if (section) {
+				section.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	}, [location]);
 
   return (
 	<section className='Education' id='Education'>
