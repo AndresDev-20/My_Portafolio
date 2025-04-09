@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root { 
 --color1:rgb(255, 255, 255);
---color2: rgba(35, 35, 189, 0.962);
+--color2: rgb(42, 32, 133);
 --color2-1: rgb(35, 35, 189);
 --color2-2: rgba(206, 193, 244, 0.795);
 --color3: rgb(19, 19, 95);
@@ -10,7 +10,7 @@
 --color5: rgb(246, 247, 248);
 --color6: rgba(61, 53, 176, 0.27);
 --color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
---color8: rgba(206, 193, 244, 0.795);
+--color8: rgba(204, 218, 247, 0.493);
 --color9: rgba(203, 207, 237, 0.188);
 --text: black;
 }

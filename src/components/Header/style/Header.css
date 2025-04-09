@@ -16,7 +16,7 @@
 
 .Header_nav-h1 {
     font-size: 1.5em;
-    color: var(--color3);
+    color: var(--color2);
     display: flex;
     align-items: center;
 }
@@ -105,7 +105,6 @@
 
 .Header_nav-h1 {
     font-size: 1.5em;
-    color: var(--color3);
     display: flex;
     align-items: center;
 }
