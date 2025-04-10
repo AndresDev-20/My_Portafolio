@@ -22,7 +22,7 @@
 	  ],
 	"about_me": "Acerca De ",
 	"me": "Mi",
-	"I": "Hola...",
+	"I": "Hola soy...",
 	"profession": "Desarrollador Full Stack",
 	"about_me_text1": "Como Desarrollador Full-Stack, cuento con una sólida formación académica respaldada por Academlo en México y una certificación como Tecnólogo en Análisis y Desarrollo de Software otorgada por el SENA en Colombia. Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y perfeccionar mis habilidades de codificación, estoy preparado para contribuir con innovación, compromiso y dedicación a su equipo.",
 	"about_me_text2":"Soy Desarrollador Full-Stack con formación en Academlo (México) y certificado como Tecnólogo en Análisis y Desarrollo de Software por el SENA (Colombia). Me enfoco en crear soluciones que impulsan la eficiencia empresarial, con un compromiso constante de mejora. Aporto innovación y dedicación a su equipo.",
@@ -56,19 +56,19 @@
 		"american school way": {
 		  "name": "Curso de todos los niveles de ingles A1 -> C1",
 		  "institution": "AMERICAN SCHOOL WAY",
-		  "dates": "2024-2026 | Cursando",
+		  "dates": "09/2024 - 12/2025 | Cursando",
 		  "certificates": "No disponible"
 		},
 		"academlo": {
 		  "name": "Bootcamp de desarrollador Full Stack",
 		  "institution": "ACADEMLO | ACADEMIA DE CIENCIAS DE LA COMPUTACIÓN E INFORMÁTICA",
-		  "dates": "2022-2023 | Terminado",
+		  "dates": "02/2023 - 10/2023 | Terminado",
 		  "certificates": "Ver Certificados"
 		},
 		"sena": {
 		  "name": "Tecnólogo en análisis y desarrollo de software",
 		  "institution": "SENA | SERVICIO NACIONAL DE APRENDIZAJE",
-		  "dates": "2022-2024 | Cursando",
+		  "dates": "09/2022 - 03/2025 | Terminado",
 		  "certificates": "Ver Certificados"
 		},
 		"ademass": {
@@ -83,8 +83,8 @@
 	  "title": "Experiencia",
 	  "text": "Laboral",
 	  "full_stack": {
-		"title": "Desarrollador de Aplicaciones - Proyecto Freelance para Cliente (Klickylisto)",
-		"description": "Lideré el desarrollo completo de un sistema de comercio electrónico para la empresa Klickylisto, construyendo tanto el backend como el frontend desde cero.",
+		"title": "Desarrollador de Aplicaciones - Proyecto Freelance para Cliente (Recarga Movil SAS)",
+		"description": "Lideré el desarrollo completo de un sistema de comercio electrónico para la empresa Recarga Movil SAS, construyendo tanto el backend como el frontend desde cero.",
 		"dates": "2023-2024 | Teletrabajo",
 		"platform": "Ver Plataforma",
 		"name": "Logros",

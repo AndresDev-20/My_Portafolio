@@ -22,7 +22,7 @@
 	],
 	"about_me": "About ",
 	"me": "Me",
-	"I": "Hello...",
+	"I": "Hello I am...",
 	"profession": "Full Stack Developer",
 	"about_me_text1": "As a Full-Stack Developer, I have a solid academic background backed by Academlo in Mexico and a certification as a Software Analysis and Development Technologist awarded by SENA in Colombia. My focus is on creating technological solutions that drive your company's efficiency and growth. With a fervent desire to learn and perfect my coding skills, I am ready to contribute innovation, commitment, and dedication to your team.",
 	"about_me_text2": "I'm a Full-Stack Developer trained at Academlo (Mexico) and certified as a Software Analysis and Development Technologist by SENA (Colombia). I focus on creating solutions that drive business efficiency, with a constant commitment to improvement. I bring innovation and dedication to your team.",
@@ -56,19 +56,19 @@
 		"american school way": {
 		  "name": "Course for all levels of English A1 -> C1",
 		  "institution": "AMERICAN SCHOOL WAY",
-		  "dates": "2024-2026 | Studying",
+		  "dates": "09/2024 - 12/2025 | Studying",
 		  "certificates": "Not available"
 		},
 		"academlo": {
 		  "name": "Full Stack Developer Bootcamp",
 		  "institution": "ACADEMLO | ACADEMY OF COMPUTER SCIENCE AND INFORMATICS",
-		  "dates": "2022-2023 | Completed",
+		  "dates": "02/2022 - 10/2023 | Completed",
 		  "certificates": "View Certificates"
 		},
 		"sena": {
 		  "name": "Technologist in Software Analysis and Development",
 		  "institution": "SENA | NATIONAL LEARNING SERVICE",
-		  "dates": "2022-2024 | In Progress",
+		  "dates": "09/2022 - 03/2025 | Completed",
 		  "certificates": "View Certificates"
 		},
 		"ademass": {
@@ -83,8 +83,8 @@
 	  "title": "Work",
 	  "text": "Experience",
 	  "full_stack": {
-		"title": "Application Developer - Freelance Project for Client (Klickylisto)",
-		"description": "Led the complete development of an e-commerce system for the company Klickylisto, building both the backend and frontend from scratch.",
+		"title": "Application Developer - Freelance Project for Client (Recarga Movil SAS)",
+		"description": "Led the complete development of an e-commerce system for the company Recarga Movil SAS, building both the backend and frontend from scratch.",
 		"dates": "2023-2024 | Remote",
 		"platform": "View Platform",
 		"name": "Achievements",
