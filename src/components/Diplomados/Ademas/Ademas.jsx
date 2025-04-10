@@ -39,6 +39,14 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 	const CerrarImage3 = () => {
 		setBack(true)
 	}
+
+	const [Ts, setTs] = useState(true)
+	const VerImage4 = () => {
+		setTs(false)
+	}
+	const CerrarImage4 = () => {
+		setTs(true)
+	}
 	return (
 		<div  className="Diplomados">
 			<div className="Diplomados_exit">	
@@ -84,6 +92,13 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 						<button onClick={VerImage3}>{t("education.ver")}</button>
 					</div>
 				</div>
+				<div className={Academlos ? "Clear_Diploma" : 'DiplomaAdemas4'}>
+					<div>
+						<h1>TypeScript</h1>
+						<button onClick={VerImage4}>{t("education.ver")}</button>
+					</div>
+				</div>
+
 
 			</div>
 
@@ -114,6 +129,12 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
 					<i onClick={CerrarImage3} className='bx bx-x'></i>
 				</div>
 				<img src="../../../../images/Ademass-JavaScript.png" alt="" />
+			</div>
+			<div className={Ts ? "Image_Clear" : 'Diploma_Image'}>
+				<div className='Diplomado__exit'>
+					<i onClick={CerrarImage4} className='bx bx-x'></i>
+				</div>
+				<img src="../../../../images/TypeScript-Ademas.jpg" alt="" />
 			</div>
 		</div>
 	)

@@ -102,7 +102,7 @@
 	display: none;
 }
 
-@media (min-width: 639px) {
+@media (min-width: 1050px) {
 	.Diplomados__carrer-diploma {
 		display: flex;
 		align-items: center;
@@ -114,9 +114,10 @@
 
 	.Diplomados__complementarios {
 		width: 100%;
-		max-width: 72em;
+		max-width: 65.5em;
 		margin: auto;
 		margin-bottom: 2em;
+		justify-content: start;
 	}
 
 	.Diplomado__exit {
