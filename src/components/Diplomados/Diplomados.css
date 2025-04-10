@@ -1,6 +1,9 @@
 .Diplomados {
     width: 100%;
-	height: 105vh;
+	background-image: var(--fondo-b);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 2em;
 }
 
 .Diplomados_exit {

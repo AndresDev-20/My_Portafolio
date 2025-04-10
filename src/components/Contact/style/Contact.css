@@ -6,6 +6,9 @@
 	align-items: center;
 	width: 100%;
 	padding-bottom: 4em;
+	background-image: var(--fondo-b);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Contactame_title {
 	display: flex;

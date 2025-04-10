@@ -1,7 +1,7 @@
 /* Estilos del Header */
 .Header {
     position: fixed;
-    background: var(--color1);
+  
     display: flex;
     width: 100%;
     align-items: center;
@@ -12,6 +12,8 @@
     margin-top: -0.1em;
     transition: background 0.3s ease-in-out;
     box-shadow: 0 1px 3px #0000001a;
+    background-size: cover;  
+    background: var(--color1);
 }
 
 .Header_nav-h1 {
@@ -64,8 +66,8 @@
 
 /* Sección activa */
 .activo {
-    color: var(--color2);
-    border-bottom: 3px solid var(--color2);
+    color: var(--color2-3);
+    border-bottom: 3px solid var(--color2-3);
     border-radius: .2em;
 }
 

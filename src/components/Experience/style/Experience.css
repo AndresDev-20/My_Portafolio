@@ -8,6 +8,9 @@
 	padding-bottom: 4em;
 	background: var(--color1);
 	position: relative;
+	background-image: var(--fondo-b);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Eperieence_Image2-Luje {
 	position: absolute;

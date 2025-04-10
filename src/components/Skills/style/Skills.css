@@ -5,6 +5,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-image: var(--fondo-b);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Skills_title {
 	display: flex;
