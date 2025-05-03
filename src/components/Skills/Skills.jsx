@@ -62,18 +62,18 @@ const Skills = ({t}) => {
 				</div>
 
 				<div>
-					<i className='bx bxl-angular' ></i>
-					<h1>Angular</h1>
-				</div>
-
-				<div>
-					<i className='bx bxl-vuejs' ></i>
-					<h1>Vue.js</h1>
-				</div>
-
-				<div>
 					<i className='bx bxl-nodejs' ></i>
 					<h1>Node.js</h1>
+				</div>
+
+				<div>
+				    <img src="../../../images/Express.png" alt="" />
+					<h1>Express.js</h1>
+				</div>
+
+				<div>
+				    <img src="../../../images/Sequelize.png" alt="" />
+					<h1>Sequelize</h1>
 				</div>
 
 				<div>

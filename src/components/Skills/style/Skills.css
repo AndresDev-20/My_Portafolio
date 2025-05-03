@@ -1,211 +1,213 @@
 .Skills {
-	background: var(--color1);
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-image: var(--fondo-b);
+  background: var(--color1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--fondo-b);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Skills_title {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: .2em;
-	margin-bottom: 1.3em;
-	font-size: 1.6em;
-	color: var(--color3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2em;
+  margin-bottom: 1.3em;
+  font-size: 1.6em;
+  color: var(--color3);
 }
-.laptop{
-	font-size: 2em;
-	color: var(--color3);
+.laptop {
+  font-size: 2em;
+  color: var(--color3);
 }
 .Habiliti {
-	color: var(--color2);
+  color: var(--color2);
 }
 .Skills_container {
-	background-color:var(--color1);
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	max-width: 62em;
-	padding: 1.5em;
-	align-items: center;
-	justify-content: center;
-	gap: 1em;
-	margin: 1em;
-	margin-bottom: 6em;
-
+  background-color: var(--color1);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 62em;
+  padding: 1.5em;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em;
+  margin-bottom: 6em;
 }
 .Skills_container > div {
-    width: 100%;
-	max-width: 7em;
-	height: 7em;
-	background: var(--color5);
-	color: var(--text);
-	padding: 1em;
-	font-size: 13px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border: .1px solid var(--color3);
-	border-radius: 1em;
+  width: 100%;
+  max-width: 7em;
+  height: 7em;
+  background: var(--color5);
+  background-image: var(--fondo-b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--text);
+  padding: 1em;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.1px solid var(--color3);
+  border-radius: 1em;
 }
 .bxl-html5 {
-	font-size: 66px;
-	color: rgb(224, 96, 22);
+  font-size: 66px;
+  color: rgb(224, 96, 22);
 }
 .bxl-css3 {
-	font-size: 66px;
-	color: rgb(16, 119, 255);
+  font-size: 66px;
+  color: rgb(16, 119, 255);
 }
 .bxl-bootstrap {
-	font-size: 66px;
-	color: rgb(162, 0, 255);
+  font-size: 66px;
+  color: rgb(162, 0, 255);
 }
 .bxl-javascript {
-	font-size: 66px;
-	color: yellow;
+  font-size: 66px;
+  color: yellow;
 }
-.bxl-typescript{
-	font-size: 66px;
-	color: rgb(27, 99, 255);
+.bxl-typescript {
+  font-size: 66px;
+  color: rgb(27, 99, 255);
 }
 .bxl-python {
-	font-size: 66px;
+  font-size: 66px;
 }
 .bxl-react {
-	font-size: 66px;
-	color: aqua;
+  font-size: 66px;
+  color: aqua;
 }
 .bxl-redux {
-	font-size: 66px;
-	color: blueviolet;
+  font-size: 66px;
+  color: blueviolet;
 }
 .bxl-angular {
-	font-size: 66px;
-	color: rgb(220, 20, 20);
+  font-size: 66px;
+  color: rgb(220, 20, 20);
 }
-.bxl-vuejs{
-	font-size: 66px;
-	color: rgb(10, 145, 102);
+.bxl-vuejs {
+  font-size: 66px;
+  color: rgb(10, 145, 102);
 }
 .bxl-nodejs {
-	font-size: 66px;
-	color: green;
+  font-size: 66px;
+  color: green;
 }
 .bxl-postgresql {
-	font-size: 66px;
-	color: rgb(3, 45, 233);
+  font-size: 66px;
+  color: rgb(3, 45, 233);
 }
-.bxl-mongodb{
-	font-size: 66px;
-	color: rgb(11, 185, 78);
+.bxl-mongodb {
+  font-size: 66px;
+  color: rgb(11, 185, 78);
 }
 .bxl-git {
-	font-size: 66px;
+  font-size: 66px;
 }
 .bxs-data {
-	font-size: 66px;
-	color: rgb(125, 163, 196);
+  font-size: 66px;
+  color: rgb(125, 163, 196);
 }
 .nn {
-	margin-top: .8em;
+  margin-top: 0.8em;
+  font-size: 0.9em;
+  text-align: center;
 }
 @media (min-width: 995px) {
-	.Skills_container{
-	border-radius: 1em;
-	}
+  .Skills_container {
+    border-radius: 1em;
+  }
 
-	.Skills_container {
-		background-color:var(--color1);
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		max-width: 62em;
-		padding: 1.5em;
-		align-items: center;
-		justify-content: center;
-		gap: 1.em;
-		margin: 1em;
-		margin-bottom: 6em;
-	
-	}
-	.Skills_container > div {
-		width: 100%;
-		max-width: 11em;
-		height: 9em;
-		padding: 1em;
-		font-size: 13px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		border-radius: 1em;
-	}
-	.Skills_container > div > img {
-		width: 100%;
-		max-width: 5.6em;
+  .Skills_container {
+    background-color: var(--color1);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 62em;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em;
+    margin-bottom: 6em;
+  }
+  .Skills_container > div {
+    width: 100%;
+    max-width: 11em;
+    height: 9em;
+    padding: 1em;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+  }
+  .Skills_container > div > img {
+    width: 100%;
+    max-width: 5.1em;
+  }
+  .bxl-html5 {
+    font-size: 70px;
+    color: rgb(224, 96, 22);
+  }
+  .bxl-css3 {
+    font-size: 70px;
+    color: rgb(16, 119, 255);
+  }
+  .bxl-bootstrap {
+    font-size: 70px;
+    color: rgb(162, 0, 255);
+  }
+  .bxl-javascript {
+    font-size: 70px;
+    color: yellow;
+  }
+  .bxl-typescript {
+    font-size: 70px;
+    color: rgb(27, 99, 255);
+  }
+  .bxl-react {
+    font-size: 70px;
+    color: aqua;
+  }
+  .bxl-redux {
+    font-size: 70px;
+    color: blueviolet;
+  }
+  .bxl-angular {
+    font-size: 70px;
+    color: rgb(220, 20, 20);
+  }
+  .bxl-nodejs {
+    font-size: 70px;
+    color: green;
+  }
+  .bxl-postgresql {
+    font-size: 70px;
+    color: rgb(3, 45, 233);
+  }
+  .bxl-mongodb {
+    font-size: 70px;
+    color: rgb(11, 185, 78);
+  }
+  .bxl-git {
+    font-size: 70px;
+  }
 
-	}
-	.bxl-html5 {
-		font-size: 70px;
-		color: rgb(224, 96, 22);
-	}
-	.bxl-css3 {
-		font-size: 70px;
-		color: rgb(16, 119, 255);
-	}
-	.bxl-bootstrap {
-		font-size: 70px;
-		color: rgb(162, 0, 255);
-	}
-	.bxl-javascript {
-		font-size: 70px;
-		color: yellow;
-	}
-	.bxl-typescript{
-		font-size: 70px;
-		color: rgb(27, 99, 255);
-	}
-	.bxl-react {
-		font-size: 70px;
-		color: aqua;
-	}
-	.bxl-redux {
-		font-size: 70px;
-		color: blueviolet;
-	}
-	.bxl-angular {
-		font-size: 70px;
-		color: rgb(220, 20, 20);
-	}
-	.bxl-nodejs {
-		font-size: 70px;
-		color: green;
-	}
-	.bxl-postgresql {
-		font-size: 70px;
-		color: rgb(3, 45, 233);
-	}
-	.bxl-mongodb{
-		font-size: 70px;
-		color: rgb(11, 185, 78);
-	}
-	.bxl-git {
-		font-size: 70px;
-	}
+  .bxs-data {
+    font-size: 70px;
+    color: rgb(125, 163, 196);
+  }
 
-	.bxs-data {
-		font-size: 70px;
-		color: rgb(125, 163, 196);
-	}
-
-    .nn {
-		margin-top: .9em;
-	}
-	
+  .nn {
+    margin-top: 0.9em;
+    font-size: 1.1em;
+  }
 }

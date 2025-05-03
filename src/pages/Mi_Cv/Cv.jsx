@@ -23,7 +23,7 @@ useEffect(() => {
       }
       <div className="frame">
         <iframe
-          src="../../../images/Cv.pdf"
+          src="../../../images/Cv-AndresDev.pdf"
           type="application/pdf"
           width="100%"
           height="600px"

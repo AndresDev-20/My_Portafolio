@@ -19,7 +19,7 @@
 
 [data-theme="dark"] {
   --color1: linear-gradient(to right, rgb(12, 11, 31), rgb(20, 19, 50), rgb(10, 10, 29));
-  --fondo-b: none;
+  --fondo-b: linear-gradient(to right, rgb(12, 11, 31), rgb(20, 19, 50), rgb(10, 10, 29));
   --fondo-h: none;
   --color2: rgb(57, 49, 225);
   --color2-1: white;
