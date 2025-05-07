@@ -211,6 +211,49 @@
 	border-radius: 1em;
 	cursor: pointer;
 }
+
+.DiplomaAdemas5 {
+    width: 100%;
+    max-width: 20.5em;
+    height: 14.9em;
+    background-image: url(../../../../../images/Python-Ademas.jpg);
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    align-items: start; 
+	border: 7px solid rgb(76, 19, 102);
+	background-color: white;
+}
+
+.DiplomaAdemas5 > div {
+	background-color: rgba(13, 22, 66, 0.719);
+	height: 100%;
+	width: 100%;
+	padding: 1em;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.DiplomaAdemas5 > div > button {
+    background-color: blueviolet;
+	color: white;
+	width: 100%;
+	max-width: 7em;
+	right: 0;
+	border: none;
+	padding: .5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
 .Diploma_ImageAdemass {
 	position: fixed;
 	top: 0;
@@ -261,6 +304,8 @@
 .Academlo_exit > i:hover {
 	background-color: rgb(88, 32, 141);
 }
+
+
 
 @media (min-width: 800px) {
 	.Diplomas-one {

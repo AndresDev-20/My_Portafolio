@@ -1,64 +1,67 @@
 import React, { useState } from "react";
 import "./style/Academlo.css";
-import "../Diplomados.css"
+import "../Diplomados.css";
 import { useNavigate } from "react-router-dom";
+import LoaderDiplomas from "../../Loader/LoaderDiplomas";
 
 const Academlo = ({ Academlos, setAcademlos, t }) => {
-  const navigate = useNavigate()
+  const [selectedDiploma, setSelectedDiploma] = useState(null);
+  const [Image, setImage] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
   const VolverHome = () => {
-	navigate('/', { state: { scrollTo: 'Education' } });
+    navigate('/', { state: { scrollTo: 'Education' } });
   };
-  
 
-  const [Image, setImage] = useState(true);
-  const VerImage = () => {
-    setImage(false);
-  };
-  const CerrarImage = () => {
+  const OpenDiploma = (Value) => {
+    setLoading(false);
+    switch (Value) {
+      case 1:
+        setSelectedDiploma("../../../../images/FULL-STAK.png");
+        break;
+      case 2:
+        setSelectedDiploma("../../../../images/fundamentos.png");
+        break;
+      case 3:
+        setSelectedDiploma("../../../../images/ReactNative.png");
+        break;
+      case 4:
+        setSelectedDiploma("../../../../images/Back-end.png");
+        break;
+      default:
+        break;
+    }
     setImage(true);
+
+    setTimeout(() => {
+      setLoading(true);
+    }, 1700);
   };
 
-  const [Fundamentos, setFundamentos] = useState(true);
-  const VerImage1 = () => {
-    setFundamentos(false);
-  };
-  const CerrarImage1 = () => {
-    setFundamentos(true);
+  const CloseDiploma = () => {
+    setImage(false);
+    setSelectedDiploma(null);
   };
 
-  const [Front, setFront] = useState(true);
-  const VerImage2 = () => {
-    setFront(false);
-  };
-  const CerrarImage2 = () => {
-    setFront(true);
-  };
-
-  const [Back, setBack] = useState(true);
-  const VerImage3 = () => {
-    setBack(false);
-  };
-  const CerrarImage3 = () => {
-    setBack(true);
-  };
   return (
     <div className="Diplomados">
-      <div className="Diplomados_exit">	
+      <div className="Diplomados_exit">
         <h1 onClick={VolverHome}>Volver</h1>
       </div>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <div className="Diplomados__carrer-diploma">
-		
         <div className={Academlos ? "Clear_Diploma" : "Diploma"}>
           <div>
             <h1 className="Diplomados__title">{t("education.diploma")}</h1>
-            <button onClick={VerImage}>{t("education.ver")}</button>
+            <button onClick={() => OpenDiploma(1)}>{t("education.ver")}</button>
           </div>
         </div>
       </div>
@@ -69,50 +72,33 @@ const Academlo = ({ Academlos, setAcademlos, t }) => {
       <div className="Diplomados__complementarios">
         <div className={Academlos ? "Clear_Diploma" : "Diploma1"}>
           <div>
-            <h1 className="Diplomados__title"> {t("education.levels.fundamento")} </h1>
-            <button onClick={VerImage1}>{t("education.ver")}</button>
+            <h1 className="Diplomados__title">{t("education.levels.fundamento")}</h1>
+            <button onClick={() => OpenDiploma(2)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "Diploma2"}>
           <div>
             <h1 className="Diplomados__title">{t("education.levels.frontend")}</h1>
-            <button onClick={VerImage2}>{t("education.ver")}</button>
+            <button onClick={() => OpenDiploma(3)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "Diploma3"}>
           <div>
-            <h1 className="Diplomados__title"> {t("education.levels.backend")} </h1>
-            <button onClick={VerImage3}>{t("education.ver")}</button>
+            <h1 className="Diplomados__title">{t("education.levels.backend")}</h1>
+            <button onClick={() => OpenDiploma(4)}>{t("education.ver")}</button>
           </div>
         </div>
       </div>
 
-      <div className={Image ? "Image_Clear" : "Diploma_Image"}>
+      <div className={Image ? "Diploma_Image" : "Image_Clear"}>
         <div className="Diplomado__exit">
-          <i onClick={CerrarImage} className="bx bx-x"></i>
+          <i onClick={CloseDiploma} className="bx bx-x"></i>
         </div>
-        <img src="../../../../images/FULL-STAK.png" alt="" />
-      </div>
-
-      <div className={Fundamentos ? "Image_Clear" : "Diploma_Image"}>
-        <div className="Diplomado__exit">
-          <i onClick={CerrarImage1} className="bx bx-x"></i>
-        </div>
-        <img src="../../../../images/fundamentos.png" alt="" />
-      </div>
-
-      <div className={Front ? "Image_Clear" : "Diploma_Image"}>
-        <div className="Diplomado__exit">
-          <i onClick={CerrarImage2} className="bx bx-x"></i>
-        </div>
-        <img src="../../../../images/ReactNative.png" alt="" />
-      </div>
-
-      <div className={Back ? "Image_Clear" : "Diploma_Image"}>
-        <div className="Diplomado__exit">
-          <i onClick={CerrarImage3} className="bx bx-x"></i>
-        </div>
-        <img src="../../../../images/Back-end.png" alt="" />
+        {!loading ? (
+          <LoaderDiplomas />
+        ) : (
+          <img src={selectedDiploma} alt="Diploma" />
+        )}
       </div>
     </div>
   );

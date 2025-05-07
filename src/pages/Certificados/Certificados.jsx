@@ -7,6 +7,8 @@ function Certificados() {
 
 	return(
 		<section>
+			<br />
+			<br />
 			<Education t={t}/>
 		</section>
 	)

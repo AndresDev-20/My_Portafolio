@@ -14,7 +14,7 @@ import ViewProjets from "../Projects/ViewProjets";
 const Home = () => {
   const { t, i18n } = useTranslation("global");
   const [Day, setDay] = useState(true);
-  const [Theme, setTheme] = useState("dark");
+  const [Theme, setTheme] = useState("");
   const [isEnglish, setIsEnglish] = useState(false);
 
   const toggleLanguage = () => {

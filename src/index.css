@@ -1,25 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root { 
---color1:	#FFFFFF;
---fondo-b: url(../images/fondo-b.avif);
---color2: 	#248ade;
---color2-1: rgb(35, 35, 189);
---color2-2: rgba(206, 193, 244, 0.795);
---color2-3: rgb(30, 61, 201);
---color3: rgb(19, 19, 95);
---color3-1: white;
---color3-2: #4a4b6d;
---color5: rgb(246, 247, 248);
---color6: rgba(61, 53, 176, 0.27);
---color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
---color8: rgba(204, 218, 247, 0.493);
---color9: rgba(203, 207, 237, 0.188);
---text: black;
-}
-
-[data-theme="dark"] {
-  --color1: linear-gradient(to right, rgb(12, 11, 31), rgb(20, 19, 50), rgb(10, 10, 29));
-  --fondo-b: linear-gradient(to right, rgb(12, 11, 31), rgb(20, 19, 50), rgb(10, 10, 29));
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color1: linear-gradient(
+    to right,
+    rgb(12, 11, 31),
+    rgb(20, 19, 50),
+    rgb(10, 10, 29)
+  );
+  --fondo-b: linear-gradient(
+    to right,
+    rgb(12, 11, 31),
+    rgb(20, 19, 50),
+    rgb(10, 10, 29)
+  );
   --fondo-h: none;
   --color2: rgb(57, 49, 225);
   --color2-1: white;
@@ -28,12 +20,35 @@
   --color3: white;
   --color3-1: white;
   --color3-2: white;
-  --color5: linear-gradient(to right, rgb(12, 11, 31), rgb(20, 19, 50), rgb(10, 10, 29));
+  --color5: linear-gradient(
+    to right,
+    rgb(12, 11, 31),
+    rgb(20, 19, 50),
+    rgb(10, 10, 29)
+  );
   --color6: rgba(61, 53, 176, 0.27);
   --color7: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
   --color8: white;
   --color9: rgba(203, 207, 237, 0.188);
   --text: white;
+}
+
+[data-theme="dark"] {
+  --color1: #ffffff;
+  --fondo-b: url(../images/fondo-b.avif);
+  --color2: #248ade;
+  --color2-1: rgb(35, 35, 189);
+  --color2-2: rgba(206, 193, 244, 0.795);
+  --color2-3: rgb(30, 61, 201);
+  --color3: rgb(19, 19, 95);
+  --color3-1: white;
+  --color3-2: #4a4b6d;
+  --color5: rgb(246, 247, 248);
+  --color6: rgba(61, 53, 176, 0.27);
+  --color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
+  --color8: rgba(204, 218, 247, 0.493);
+  --color9: rgba(203, 207, 237, 0.188);
+  --text: black;
 }
 
 html {
@@ -44,7 +59,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
 }
 
@@ -80,4 +95,3 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Color cuando se pasa el mouse sobre el scrollbar */
 }
-

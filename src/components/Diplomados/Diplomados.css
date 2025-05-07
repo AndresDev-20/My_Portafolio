@@ -99,7 +99,7 @@
 }
 
 .Image_Clear {
-	display: none;
+	display: block;
 }
 
 @media (min-width: 1050px) {
