@@ -36,7 +36,7 @@ const Academlo = ({ Academlos, setAcademlos, t }) => {
 
     setTimeout(() => {
       setLoading(true);
-    }, 1700);
+    }, 550);
   };
 
   const CloseDiploma = () => {
