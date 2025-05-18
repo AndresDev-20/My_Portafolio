@@ -24,11 +24,11 @@
 	align-items: center;
 	gap: .2em;
 	margin-bottom: 1.3em;
-	font-size: 1.9em;
+	font-size: 30px;
 	color: var(--Third-color);
 }
 .bxs-brie {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 .laboral {
 	color: var(--First-color);
@@ -82,8 +82,9 @@
 	margin-bottom: .5em;
 }
 .Experience_work > p {
+	font-size: 17px;
 	font-weight: 400;
-	line-height: 1.2;
+	line-height: 27px;
 	margin-bottom: .5em;
 	color: var(--Third-color);
 }

@@ -17,7 +17,7 @@ const About = ({t}) => {
 		<br />		
 		
 		
-	<h1 className='About_title'>  <span><i className='bx bxs-user'></i></span> {t("about_me")} <span className='About_Me'>{t("me")}</span></h1>
+	<h1 className='About_title'>  <span><i className='bx bxs-user'></i></span>  {t("about_me")} <span className='About_Me'>{t("me")}</span></h1>
 	<div className='About_div'>
 		<div className='About_div1'></div>
 		<div className='About_div2'>

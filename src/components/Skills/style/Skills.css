@@ -1,16 +1,17 @@
 .Skills {
-  padding: 2em;
+  padding: 1.2em;
   background-color: var(--Fourt-color);
 }
 
 .Skills_title {
-  font-size: 35px;
+  font-size: 30px;
 	text-align: center;
   margin-bottom: 1em;
   color: var(--Third-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: .2em;
 }
 
 .Habiliti {
@@ -43,9 +44,9 @@
 }
 
 .laptop {
-  font-size: 1.4em;
+  font-size: 1.1em;
   color: var(--color3);
-  margin-right: .2em;
+  margin-right: -.1em;
 }
 
 .Skills_icon {
@@ -55,8 +56,8 @@
 }
 
 .Skill_profetion-title {
-  font-size: 23px;
-  margin-top: .7em;
+  font-size: 21px;
+  margin-top: 0em;
   color: var(--Third-color);
 }
 

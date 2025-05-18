@@ -5,7 +5,7 @@
 }
 
 .About_title {
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
 	color: var(--Third-color);
 }
@@ -26,11 +26,11 @@
 
 .About_text {
 	font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     width: 100%;
     color: var(--Third-color);
 	margin-top: 1.8em;
-	line-height: 30px;
+	line-height: 27px;
 	unicode-bidi: isolate;
 }
 
@@ -53,7 +53,7 @@
 	flex-direction: column;
 	gap: .4em;
 	font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
 	color: var(--Third-color);
 }
 
@@ -63,12 +63,12 @@
 
 .About_cv {
 	width: 100%;
-	max-width: 12em;
+	max-width: 10em;
     margin-top: 1.7em;
     border: none;
-    padding: .7em;
+    padding: .8em;
     border-radius: 3em;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     background-color: var(--First-color);
     color: var(--Text-fijo);

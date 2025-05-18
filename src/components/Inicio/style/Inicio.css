@@ -30,7 +30,6 @@
 
 .Inicio__firstname {
   color: var(--First-color);
-  text-shadow:  2px 2px 0 var(--Third-color);
 }
 
 .Inicio_Profesion {
@@ -41,15 +40,16 @@
 }
 
 .desaparecerYaparecer {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   color: var(--First-color);
+  text-shadow:  .9px .4px var(--Third-color);
 }
 
 .Profesion_introduccion {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   width: 100%;
   color: var(--Third-color);
 }
@@ -58,9 +58,9 @@
   width: 100%;
   margin-top: 1.1em;
   border: none;
-  padding: .6em;
+  padding: .9em;
   border-radius: 3em;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 500;
   background-color: var(--First-color);
   color: var(--Text-fijo);
@@ -77,17 +77,17 @@
   font-size: 2.5em;
   color: var(--Third-color);
   border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.4em;
+  height: 1.4em;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: .2em;
+  padding-top: 1px;
   background-color: var(--First-color);
 }
 
 .Inicio_redes > a > li > i {
-  font-size: 1em;
+  font-size: 30px;
   color: var(--Text-fijo);
 }
 

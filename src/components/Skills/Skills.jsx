@@ -8,14 +8,14 @@ const Skills = ({ t }) => {
       <br />
       <br />
       <h1 className="Skills_title">
-        <i className='bx bx-laptop laptop'></i>
+        <i className='bx bx-laptop laptop'></i> 
         {" "}
         {t("skills.title")} <span className="Habiliti">{t("skills.text")}</span>{" "}
       </h1>
       <article className="Skills_skills">
         <div className="Skills_skill">
           <h1 className="Skills_icon">
-            <i className="bx bx-bracket"></i>
+            <i className="bx bx-clipboard"></i>
           </h1>
           <h1 className="Skill_profetion-title">{t("skills.setion1")}</h1>
           <div className="Skills_container">
