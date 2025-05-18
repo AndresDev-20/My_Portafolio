@@ -1,58 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --color1: linear-gradient(
-    to right,
-    rgb(12, 11, 31),
-    rgb(20, 19, 50),
-    rgb(10, 10, 29)
-  );
-  --fondo-b: linear-gradient(
-    to right,
-    rgb(12, 11, 31),
-    rgb(20, 19, 50),
-    rgb(10, 10, 29)
-  );
-  --fondo-h: none;
-  --color2: rgb(57, 49, 225);
-  --color2-1: white;
-  --color2-2: rgba(110, 101, 169, 0.962);
-  --color2-3: rgb(57, 49, 225);
-  --color3: white;
-  --color3-1: white;
-  --color3-2: white;
-  --color5: linear-gradient(
-    to right,
-    rgb(12, 11, 31),
-    rgb(20, 19, 50),
-    rgb(10, 10, 29)
-  );
-  --color6: rgba(61, 53, 176, 0.27);
-  --color7: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
-  --color8: white;
-  --color9: rgba(203, 207, 237, 0.188);
-  --text: white;
+  --First-color: #5f52f6;
+  --Second-color: #1a1a2e;
+  --Third-color: white;
+  --Fourt-color: #16213e;
+  --Text-fijo: white;
+  --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
+  --Shadow: rgb(44, 44, 87);
+  --badrop: rgba(20, 20, 145, 0.127);
 }
 
 [data-theme="dark"] {
-  --color1: #ffffff;
-  --fondo-b: url(../images/fondo-b.avif);
-  --color2: #248ade;
-  --color2-1: rgb(35, 35, 189);
-  --color2-2: rgba(206, 193, 244, 0.795);
-  --color2-3: rgb(30, 61, 201);
-  --color3: rgb(19, 19, 95);
-  --color3-1: white;
-  --color3-2: #4a4b6d;
-  --color5: rgb(246, 247, 248);
-  --color6: rgba(61, 53, 176, 0.27);
-  --color7: linear-gradient(rgb(14, 23, 61), rgb(15, 7, 37));
-  --color8: rgba(204, 218, 247, 0.493);
-  --color9: rgba(203, 207, 237, 0.188);
-  --text: black;
+  --First-color: #5f52f6;
+  --Second-color: #f8f9fa;
+  --Third-color: #333333;
+  --Fourt-color: #e9ecef;
+  --Text-fijo: white;
+  --Text-fijo-two: white;
+  --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
+  --Shadow: rgba(148, 148, 220, 0.452);
+  --badrop: rgba(20, 20, 145, 0.505);
 }
 
 html {
-  background: var(--color1);
+  background: var(--Second-color);
 }
 
 * {
@@ -83,11 +54,11 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color7); /* Color del fondo del track del scrollbar */
+  background: var(--Second-color); /* Color del fondo del track del scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color2); /* Color del "dedo" de la barra */
+  background-color: var(--First-color); /* Color del "dedo" de la barra */
   border-radius: 10px; /* Bordes redondeados del scrollbar */
   border: 2px solid var(--color4); /* Bordes alrededor del scrollbar */
 }

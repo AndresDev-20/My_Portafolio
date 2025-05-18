@@ -53,13 +53,15 @@ const Inicio = ({t}) => {
       <div className="Inicio_div1">
         <h1 className="Inicio_name"> <span className='Inicio__hello'>{t("welcome.hello")}</span>  <br /><span className='Inicio__firstname'> {t("welcome.text")} {t("welcome.surname")}</span></h1>
         <h2 className="Inicio_Profesion">
-          {t("introduction")}
           <span id="frase" className="desaparecerYaparecer">
-            {frases[fraseIndex].substring(0, letraIndex)}
+           👨‍💻 {frases[fraseIndex].substring(0, letraIndex)}...
+          </span>
+          <span className='Profesion_introduccion'>
+            {t("welcome.intro")}
           </span>
         </h2>
      <Link to="/#About" onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}>
-     <button className='Inicio_sobremi'> {t("about_me")} <i className='bx bx-chevron-down'></i></button>
+     <button className='Inicio_sobremi'> {t("about_me")} {t("me")}  <i className='bx bx-chevron-down'></i></button>
      </Link>
      
         <div className="Inicio_redes">
@@ -68,17 +70,16 @@ const Inicio = ({t}) => {
           <Link onClick={handelWhass} className='lik'><li><i className='bx bxl-whatsapp-square'></i></li></Link>
           <Link to="https://www.instagram.com/marroquinbernalyeisonandres?igsh=MTY0eGRudTlpbW16Zg==" className='lik'><li><i className='bx bxl-instagram' ></i></li></Link>
           <Link to="/#Contact" onClick={() => document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' })} className='lik'><li><i className='bx bx-envelope' ></i></li></Link>
-          <Link to="https://www.facebook.com/profile.php?id=61551874028183&mibextid=ZbWKwL" className='lik'><li><i className='bx bxl-facebook-square' ></i></li></Link>
         </div>
       </div>
 
-      <div className='Inicio_Image-Luje1 suno'>
+     <div className='Inicio_Image-Luje1 suno'>
         <ImageRude/>
       </div>
 
       <div className="Inicio_div2">
         <figure>
-          <img src="../../../images/Yop.png" alt="" />
+          <img src="../../../images/My_photo.jpg" alt="" />
         </figure>
       </div>
     </section>

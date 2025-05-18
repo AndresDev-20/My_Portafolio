@@ -1,7 +1,7 @@
 {
 	"Header": {
 	  "home": "Inicio",
-	  "about": "Acerca De",
+	  "about": "Sobre mi",
 	  "skills": "Habilidades",
 	  "education": "Educación",
 	  "experience": "Experiencia",
@@ -9,31 +9,35 @@
 	  "contact": "Contáctame"
 	},
 	"welcome": {
-		"hello": "Hola Soy,",
-		"text": " Yeison",
-		"surname": "Marroquin."
+		"hello": "Hola, Soy",
+		"text": " Yeison Andrés",
+		"surname": "Marroquin Bernal.",
+		"intro": " Cuento con experiencia en el desarrollo de aplicaciones robustas y escalables."
 	},
-	"introduction": "Desarrollo en | ",
 	"phrases": [
 		"Desarrollador Full-Stack",
 		"Desarrollador Front-End",
 		"Ingeniero de Software",
 		"Desarrollador Back-End"
 	  ],
-	"about_me": "Acerca De ",
+	"about_me": "Sobre",
 	"me": "Mi",
-	"I": "Hola soy...",
-	"profession": "Desarrollador Full Stack",
 	"about_me_text1": "Como Desarrollador Full-Stack, cuento con una sólida formación académica respaldada por Academlo en México y una certificación como Tecnólogo en Análisis y Desarrollo de Software otorgada por el SENA en Colombia. Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y perfeccionar mis habilidades de codificación, estoy preparado para contribuir con innovación, compromiso y dedicación a su equipo.",
-	"about_me_text2":"Como Desarrollador Full-Stack con formación en Academlo (México) y certificado como Tecnólogo en Análisis y Desarrollo de Software por el SENA (Colombia). Me enfoco en crear soluciones que impulsan la eficiencia empresarial, con un compromiso constante de mejora. Aporto innovación y dedicación a su equipo.",
+	"about_me_text2":"Como Desarrollador Full-Stack con formación en Academlo (México) y certificado como Tecnólogo en Análisis y Desarrollo de Software por el SENA (Colombia).",
+	"about_me_text2.1": "Me enfoco en crear soluciones que impulsan la eficiencia empresarial, con un compromiso constante de mejora. Aporto innovación y dedicación a su equipo.",
 	"contact_info": {
 	  "email": "Correo:",
-	  "address": "Dirección:",
+	  "nombre": "Nombre:",
+	  "experiencia": "Experiencia:",
+	  "ubicacion": "Ubicación:",
 	  "cv": "Mi Curriculum"
 	},
 	"skills": {
 	  "title": "Mis ",
-	  "text": "Habilidades"
+	  "text": "Habilidades",
+	  "setion1": "Desarrollo Backend",
+	  "setion2": "Desarrollo Frontend",
+	  "setion3": "Herramientas"
 	},
 	"education": {
 	  "title": "Mi",
@@ -101,7 +105,35 @@
 	},
 	"projects": {
 	  "title": "Mis",
-	  "text": "Proyectos"
+	  "text": "Proyectos",
+	  "projects": {
+		"Project1":{
+			"name": "E-comerce CLA ()",
+			"text": "Plataforma de comercio electrónico para marca de moda sostenible.",
+			"usage": ["UI/UX", "Frontend", "Responsivo"]
+		},
+
+		"Project2":{
+			"name": "Pokedex",
+			"text": "Enciclopedia digital con datos de Pokémon.",
+			"usage": ["UI/UX", "React", "Responsivo"]
+		},
+		"Project3":{
+			"name": "Weather App",
+			"text": "Consulta el clima en tiempo real por ciudad.",
+			"usage": ["UI/UX", "React", "Responsivo"]
+		},
+		"Project4":{
+			"name": "Cookies App",
+			"text": "Generador de frases aleatorias al estilo galleta de la fortuna.",
+			"usage": ["UI/UX", "React", "Responsivo"]
+		},
+		"Project5":{
+			"name": "Riky and mortid",
+			"text": "App de personajes de Rick and Morty con buscador.",
+			"usage": ["UI/UX", "React", "Responsivo"]
+		}
+	  }
 	},
 	"contact": {
 	  "title": "Contáctame",

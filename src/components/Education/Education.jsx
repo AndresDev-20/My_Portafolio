@@ -21,7 +21,7 @@ const Education = ({t}) => {
 
   return (
 	<section className='Education' id='Education'>
-	  <h1 className='Education_title'><i className='bx bxs-graduation'></i>{t("education.title")} <span className='edu_name'>{t("education.text")}</span></h1>
+	  <h1 className='Education_title'><span><i className='bx bxs-graduation'></i></span>{t("education.title")} <span className='edu_name'>{t("education.text")}</span></h1>
 
 	  
 

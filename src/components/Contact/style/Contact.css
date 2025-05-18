@@ -1,12 +1,11 @@
 .Contactame {
-	background: var(--color1);
+	background-color: var(--Fourt-color);
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	padding-bottom: 4em;
-	background-image: var(--fondo-b);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -17,13 +16,13 @@
 	gap: .2em;
 	margin-bottom: 1.3em;
 	font-size: 1.6em;
-	color: var(--color3);
+	color: var(--Third-color);
 }
 .suport {
 	font-size: 1.5em;
 }
 .Aqui {
-	color: var(--color2);
+	color: var(--First-color);
 }
 .Contactame_image {
     display: none;
@@ -39,21 +38,21 @@
 }
 .Contactame_form > input {
 	padding: .5em;
-	background-color: var(--AlienBlue);
+	background-color: var(--Second-color);
 	border-radius: .6em;
 	border: none;
-	border: 1px solid var(--color3);
-	color: var(--color3);
+	border: 1px solid var(--Third-color);
+	color: var(--Third-color);
 }
 .Contactame_form > textarea {
 	padding: .5em;
-	background-color: var(--AlienBlue);
 	border-radius: .6em;
 	border: none;
-	border: 1px solid var(--color3);
+	border: 1px solid var(--Third-color);
 	width: 100%;
 	max-width: 15em;
-	color: var(--color3);
+	color: var(--Third-color);
+	background-color: var(--Second-color);
 }
 .Contactame_btn {
 	width: 100%;
@@ -63,8 +62,8 @@
 }
 .Contactame_btn > button {
 	border: none;
-	background-color: var(--color3);
-	color: var(--color1);
+	background-color: var(--First-color);
+	color: var(--Text-fijo);
 	padding: .6em;
 	width: 100%;
 	max-width: 6.5em;
@@ -83,8 +82,7 @@
 	.Contactame_Father {
 		display: flex;
 		border-radius: .5em;
-		background: var(--color4);
-		border: 1px solid var(--color2);
+		background: var(--Second-color);
 		width: 100%;
 		max-width: 850px;
 		justify-content: space-evenly;

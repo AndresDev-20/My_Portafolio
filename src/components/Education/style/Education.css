@@ -5,7 +5,7 @@
 	align-items: center;
 	width: 100%;
 	padding: 1em;
-	background:var(--color5);
+	background-color: var(--Fourt-color);
 	position: relative;
 }
 .Education_title {
@@ -15,20 +15,21 @@
 	gap: .2em;
 	margin-top: 2em;
 	margin-bottom: 1.3em;
-	font-size: 1.6em;
-	color: var(--color3);
+	font-size: 35px;
+	color: var(--Third-color);
 }
 .bxs-graduation{
-	font-size: 2em;
+	font-size: 1.5em;
 }
 .edu_name {
-	color: var(--color2);
+	color: var(--First-color);
 }
 .Education_study {
 	border-radius: .5em;
-	background: var(--color1);
+	background: var(--Second-color);
 	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
-	color: var(--text);
+	width: 100%;
+	max-width: 30em;
 }
 .Education_image >img {
 	border-radius: .5em .5em 0em 0em;
@@ -37,7 +38,7 @@
 	margin: 1em;
 }
 .Education_info > h1 {
-	color: var(--color2);
+	color: var(--First-color);
 	font-size: 1.4em;
 }
 .Education_info > p {
@@ -46,9 +47,10 @@
 	line-height: 1.3;
 	margin-top: .6em;
 	margin-bottom: .6em;
+	color: var(--Third-color);
 }
 .Education_info > span {
-	color: var(--text);
+	color: var(--Third-color);
 }
 .Education_info > div {
 	width: 100%;
@@ -58,8 +60,8 @@
 .Education_info > div > button {
     cursor: pointer;
 	border: none;
-	background: var(--color2);
-	color: var(--color1);
+	background: var(--First-color);
+	color: var(--Text-fijo);
 	padding: .6em;
 	border-radius: .5em;
 }
@@ -69,15 +71,32 @@
 	gap: 2em;
 }
 
-@media (min-width: 550px) {
-	.Education_study {
-    display: flex;
+@media (min-width: 800px) {
+	.Education_title {
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	}
+	gap: .2em;
+	margin-top: 2em;
+	margin-bottom: 1.3em;
+	font-size: 35px;
+	color: var(--Third-color);
+}
+
+	.Education_study {
+	display: flex;
+	align-items: center;
+	border-radius: .5em;
+	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+	color: var(--text);
+	width: 100%;
+	max-width: 100%;
+}	
 	.Education_image >img {
 		border-radius: .5em 0em 0em .5em;
 		width: 100%;
 		max-width: 20em;
 	}
+
 	
 }

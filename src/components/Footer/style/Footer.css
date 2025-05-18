@@ -1,10 +1,9 @@
 .Footer {
-	background: var(--color7);
+	background: var(--footer);
 	color: var(--color3-1);
 	padding: 1em;
 	width: 100%;
-	border-top: 1px solid var(--color5);
-	border-top: 1px solid var(--color2);
+	border-top: 1px solid var(--footer);
 }
 .Footer_one {
 	display: flex;
@@ -18,13 +17,14 @@
 .Footer_div1 > h1 {
 	margin-top: 1em;
 	margin-bottom: .5em;
-	color: var(--color8);
+	color: var(--First-color);
 }
 .Footer_div1 > p {
 	font-weight: 300;
+	color: var(--Text-fijo);
 }
 .Footer_div2 > h1 {
-	color: var(--color1);
+	color: var(--First-color);
 }
 .Footer_div2 > ul {
 	display: flex;
@@ -33,26 +33,26 @@
 	margin-top: .6em;
 }
 .Footer_div2 > ul >  a> li > i {
-	background-color: var(--color2);
-	color: var(--color3-1);
+	background-color: var(--Text-fijo);
+	color: var(--First-color);
 	border-radius: 50%;
 	font-weight: 700;
 }
 .Footer_div2 > ul > a > li {
     font-weight: 300;
 	cursor: pointer;
-	color: var(--color3-1);
+	color: var(--Text-fijo);
 }
-.Footer_div2 > ul > li:hover {
-	color: var(--color3-1);
+.Footer_div2 > ul > a > li:hover {
+	color: var(--First-color);
 }
 .Footer_div2 > ul > a > li > i:hover {
-	background-color: var(--color2);
-	color: var(--color1);
+	background-color: var(--First-color);
+	color: var(--Text-fijo);
 	cursor: pointer;
 }
 .Footer_div3 > h1 {
-	color:  var(--color1);
+	color:  var(--First-color);
 }
 .Footer_div3_ul{
 	display: flex;
@@ -62,9 +62,10 @@
 }
 .Footer_div3_ul> li{
 	font-weight: 300;
+	color: var(--Text-fijo);
 }
 .Footer_div3_ul > li > span {
-	color: var(--color2);
+	color: var(--First-color);
 }
 .Footer_div3_ul1 {
 	display: flex;
@@ -78,23 +79,29 @@
 	max-width: 2.5em;
 }
 .Footer_div3_ul1 > a > li {
-	background-color: var(--color3-1);
+	background-color: var(--Text-fijo);
 	border-radius: 50%;
 	padding: .2em;
-	color: var(--color2);
+	color: var(--Second-color);
 	font-size: 1.8em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+.Footer_div3_ul1 > a > li > i {
+	color: var(--First-color);
+	font-size: 1em;
+}
+
 .Footer_two {
 	text-align: center;
 	font-size: .6em;
 	margin-top: 2em;
+	color: var(--Text-fijo);
 }
 .Footer_fin {
-	color: var(--color8);
+	color: var(--First-color);
 }
 hr {
 	width: 100%;

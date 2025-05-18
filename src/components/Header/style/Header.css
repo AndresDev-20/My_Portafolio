@@ -1,24 +1,36 @@
 /* Estilos del Header */
 .Header {
     position: fixed;
-  
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 1em 2.5em;
     z-index: 100000000;
-    border-bottom: 1px solid var(--color6);
     margin-top: -0.1em;
     transition: background 0.3s ease-in-out;
-    box-shadow: 0 1px 3px #0000001a;
     background-size: cover;  
-    background: var(--color1);
+    background: var(--Second-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+/* Clase que se activa con scroll */
+.Header.scrolled {
+  box-shadow: 0 2px 8px var(--Shadow);
+}
+
 
 .Header_nav-h1 {
     font-size: 1.5em;
-    color: var(--color3);
+    color: var(--First-color);
+    display: flex;
+    align-items: center;
+}
+
+.Header_nav-h1:hover {
+    font-size: 1.5em;
+    color: var(--Third-color);
     display: flex;
     align-items: center;
 }
@@ -31,11 +43,9 @@
 /* Iconos del menú */
 .Header_nav1 > i {
     font-size: 2.5em;
-    background: var(--color1);
     font-weight: 500;
     cursor: pointer;
-    color: var(--color3);
-    border: 0.1px solid var(--color3);
+    color: var(--Third-color);
     border-radius: 0.1em;
     transition: transform 0.3s ease-in-out;
 }
@@ -53,21 +63,21 @@
 
 .Header_nav2-li {
     cursor: pointer;
-    color: var(--text);
+    color: var(--Third-color);
     transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
     width: 100%;
 }
 
 .Header_nav2 li:hover {
-    color: var(--color2);
-    border-bottom: 3px solid var(--color2);
+    color: var(First-color);
+    border-bottom: 3px solid var(--First-color);
 }
 
 /* Sección activa */
 .activo {
-    color: var(--color2-3);
-    border-bottom: 3px solid var(--color2-3);
+    color: var(--First-color);
+    border-bottom: 3px solid var(--First-color);
     border-radius: .2em;
 }
 
@@ -92,14 +102,12 @@
     /* Estilos del Header */
 .Header {
     position: fixed;
-    background: var(--color1);
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 1em 6em;
     z-index: 100000000;
-    border-bottom: 1px solid var(--color6);
     margin-top: -0.1em;
     transition: background 0.3s ease-in-out;
     box-shadow: 0 1px 3px #0000001a;

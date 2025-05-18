@@ -2,12 +2,12 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: var(--color17);
-	z-index: 1000000000;
+	background-color: var(--badrop);
+	z-index: 999999;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
   }
 
   .container__spinner-Diplosmas {
@@ -20,12 +20,15 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color17);
   }
   
   .container__spinner span {
 	position: fixed;
-	color: var(--color3);
+	color: var(--Third-color);
+	font-size: 1.2em;
+	text-align: center;
+	margin-left: .4em;
+	margin-top: .5em;
   }
   
   .atom-spinner,
@@ -34,8 +37,8 @@
   }
   
   .atom-spinner {
-	height: 60px;
-	width: 60px;
+	height: 80px;
+	width: 80px;
 	overflow: hidden;
   }
   
@@ -49,7 +52,7 @@
   .atom-spinner .spinner-circle {
 	display: block;
 	position: absolute;
-	color: var(--color3);
+	color: var(--Third-color);
 	font-size: calc(60px * 0.24);
 	top: 50%;
 	left: 50%;
@@ -64,7 +67,7 @@ border-radius: 50%;
 animation-duration: 1s;
 border-left-width: calc(60px / 25);
 border-top-width: calc(60px / 25);
-border-left-color: var(--color3);
+border-left-color: var(--Third-color);
 border-left-style: solid;
 border-top-style: solid;
 border-top-color: transparent;
@@ -97,7 +100,6 @@ transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: var(--color17);
 	  }
 	
 }

@@ -1,213 +1,244 @@
 .Skills {
-  background: var(--color1);
-  width: 100%;
+  padding: 2em;
+  background-color: var(--Fourt-color);
+}
+
+.Skills_title {
+  font-size: 35px;
+	text-align: center;
+  margin-bottom: 1em;
+  color: var(--Third-color);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: var(--fondo-b);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.Skills_title {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.2em;
-  margin-bottom: 1.3em;
-  font-size: 1.6em;
-  color: var(--color3);
-}
-.laptop {
-  font-size: 2em;
-  color: var(--color3);
-}
+
 .Habiliti {
-  color: var(--color2);
+  color: var(--First-color);
 }
-.Skills_container {
-  background-color: var(--color1);
+.bx-bracket-curly {
+  background-color: var(--First-color);
+  font-size: 3em;
+}
+
+.Skills_skills {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 62em;
-  padding: 1.5em;
-  align-items: center;
   justify-content: center;
   gap: 1em;
-  margin: 1em;
-  margin-bottom: 6em;
 }
-.Skills_container > div {
+
+.Skills_skill {
   width: 100%;
-  max-width: 7em;
-  height: 7em;
-  background: var(--color5);
-  background-image: var(--fondo-b);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--text);
+  max-width: 30em;
+  background-color: var(--Second-color);
   padding: 1em;
-  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .8em;
+  margin-top: .5em;
+  padding-bottom: 2em;
+}
+
+.laptop {
+  font-size: 1.4em;
+  color: var(--color3);
+  margin-right: .2em;
+}
+
+.Skills_icon {
+  font-size: 3.4em;
+  color: var(--First-color);
+  margin-top: .4em;
+}
+
+.Skill_profetion-title {
+  font-size: 23px;
+  margin-top: .7em;
+  color: var(--Third-color);
+}
+
+.Skills_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.Skills_container > div {
+  background-color: var(--Second-color);
+  width: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0.1px solid var(--color3);
-  border-radius: 1em;
+  padding: .2em;
+  border-radius: .5em;
 }
+
+.Skills_container > div > i {
+  font-size: 3.2em;
+}
+
+.Skills_container > div > h1 {
+  font-size: .9em;
+  font-weight: 500;
+  color: var(--Third-color);
+}
+
+.Skills_container > div > img {
+  max-width: 3.2em;
+}
+
 .bxl-html5 {
   font-size: 66px;
   color: rgb(224, 96, 22);
 }
+
 .bxl-css3 {
   font-size: 66px;
   color: rgb(16, 119, 255);
 }
+
 .bxl-bootstrap {
   font-size: 66px;
   color: rgb(162, 0, 255);
 }
+
 .bxl-javascript {
   font-size: 66px;
-  color: yellow;
+  color: rgb(211, 211, 24);
 }
+
 .bxl-typescript {
   font-size: 66px;
   color: rgb(27, 99, 255);
 }
+
 .bxl-python {
   font-size: 66px;
 }
+
 .bxl-react {
   font-size: 66px;
   color: aqua;
 }
+
 .bxl-redux {
   font-size: 66px;
   color: blueviolet;
 }
+
 .bxl-angular {
   font-size: 66px;
   color: rgb(220, 20, 20);
 }
+
 .bxl-vuejs {
   font-size: 66px;
   color: rgb(10, 145, 102);
 }
+
 .bxl-nodejs {
   font-size: 66px;
   color: green;
 }
+
 .bxl-postgresql {
   font-size: 66px;
   color: rgb(3, 45, 233);
 }
+
 .bxl-mongodb {
   font-size: 66px;
   color: rgb(11, 185, 78);
 }
+
+.bxl-github {
+  font-size: 66px;
+}
+
 .bxl-git {
-  font-size: 66px;
+  color: rgb(236, 92, 36);
 }
-.bxs-data {
-  font-size: 66px;
-  color: rgb(125, 163, 196);
+
+
+
+@media (min-width: 800px) {
+
+.Skills_skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
-.nn {
-  margin-top: 0.8em;
-  font-size: 0.9em;
-  text-align: center;
+
+.Skills_title {
+  font-size: 35px;
+	text-align: center;
+  margin-bottom: 1em;
 }
-@media (min-width: 995px) {
-  .Skills_container {
-    border-radius: 1em;
-  }
+  
+.Skills_skill {
+  width: 100%;
+  max-width: 22em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .8em;
+  margin-top: 0em;
+  padding-bottom: 2em;
+}
 
-  .Skills_container {
-    background-color: var(--color1);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 62em;
-    padding: 1.5em;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    margin: 1em;
-    margin-bottom: 6em;
-  }
-  .Skills_container > div {
-    width: 100%;
-    max-width: 11em;
-    height: 9em;
-    padding: 1em;
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1em;
-  }
-  .Skills_container > div > img {
-    width: 100%;
-    max-width: 5.1em;
-  }
-  .bxl-html5 {
-    font-size: 70px;
-    color: rgb(224, 96, 22);
-  }
-  .bxl-css3 {
-    font-size: 70px;
-    color: rgb(16, 119, 255);
-  }
-  .bxl-bootstrap {
-    font-size: 70px;
-    color: rgb(162, 0, 255);
-  }
-  .bxl-javascript {
-    font-size: 70px;
-    color: yellow;
-  }
-  .bxl-typescript {
-    font-size: 70px;
-    color: rgb(27, 99, 255);
-  }
-  .bxl-react {
-    font-size: 70px;
-    color: aqua;
-  }
-  .bxl-redux {
-    font-size: 70px;
-    color: blueviolet;
-  }
-  .bxl-angular {
-    font-size: 70px;
-    color: rgb(220, 20, 20);
-  }
-  .bxl-nodejs {
-    font-size: 70px;
-    color: green;
-  }
-  .bxl-postgresql {
-    font-size: 70px;
-    color: rgb(3, 45, 233);
-  }
-  .bxl-mongodb {
-    font-size: 70px;
-    color: rgb(11, 185, 78);
-  }
-  .bxl-git {
-    font-size: 70px;
-  }
+.Skills_icon {
+  font-size: 3.2em;
+  color: var(--First-color);
+  margin-top: .4em;
+}
 
-  .bxs-data {
-    font-size: 70px;
-    color: rgb(125, 163, 196);
-  }
+.Skill_profetion-title {
+  font-size: 20px;
+  margin-top: .7em;
+}
 
-  .nn {
-    margin-top: 0.9em;
-    font-size: 1.1em;
-  }
+.Skills_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1em;
+  margin-top: 2em;
+  width: 100%;
+  padding-left: .5em;
+}
+
+.Skills_container > div {
+  background-color: var(--Second-color);
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: .2em;
+  border-radius: .5em;
+}
+
+.Skills_container > div > i {
+  font-size: 2.5em;
+}
+
+.Skills_container > div > h1 {
+  font-size: .8em;
+  font-weight: 500;
+  color: var(--Third-color);
+}
+
+.Skills_container > div > img {
+  max-width: 2.5em;
+}
+
 }

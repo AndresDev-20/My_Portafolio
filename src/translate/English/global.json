@@ -1,131 +1,155 @@
 {
-	"Header": {
-	  "home": "Home",
-	  "about": "About",
-	  "skills": "Skills",
-	  "education": "Education",
-	  "experience": "Experience",
-	  "projects": "Projects",
-	  "contact": "Contact Me"
-	},
-	"welcome": {
-	  "hello": "Hello I am,",
-	  "text": "Yeison",
-	  "surname": "Marroquin."
-	},
-	"introduction": "Developing in |",
-	"phrases": [
-	  "Full-Stack Developer",
-	  "Front-End Developer",
-	  "Software Engineer",
-	  "Back-End Developer"
-	],
-	"about_me": "About ",
-	"me": "Me",
-	"I": "Hello I am...",
-	"profession": "Full Stack Developer",
-	"about_me_text1": "As a Full-Stack Developer, I have a solid academic background backed by Academlo in Mexico and a certification as a Software Analysis and Development Technologist awarded by SENA in Colombia. My focus is on creating technological solutions that drive your company's efficiency and growth. With a fervent desire to learn and perfect my coding skills, I am ready to contribute innovation, commitment, and dedication to your team.",
-	"about_me_text2": "As a Full-Stack Developer trained at Academlo (Mexico) and certified as a Software Analysis and Development Technologist by SENA (Colombia). I focus on creating solutions that drive business efficiency, with a constant commitment to improvement. I bring innovation and dedication to your team.",
-	"contact_info": {
-	  "email": "Email:",
-	  "address": "Address:",
-	  "cv": "My Resume"
-	},
-	"skills": {
-	  "title": "My ",
-	  "text": "Skills"
-	},
-	"education": {
-	  "title": "My",
-	  "text": "Education",
-	  "diploma": "Career Diploma",
-	  "ver": "View",
-	  "not_available": "Not Available Yet",
-	  "levels": {
-		"fundamento": "Fundamentals Developer",
-		"frontend": "Front-End Developer",
-		"backend": "Back-End Developer",
-		"english1": "English Level 1",
-		"english2": "English Level 2",
-		"english3": "English Level 3",
-		"english4": "English Level 4",
-		"english5": "Ingles Nivel 5",
-		"english6": "Ingles Nivel 6"
-	  },
-	  "institutions": {
-		"american school way": {
-		  "name": "Course for all levels of English A1 -> C1",
-		  "institution": "AMERICAN SCHOOL WAY",
-		  "dates": "09/2024 - 12/2025 | Studying",
-		  "certificates": "Not available"
-		},
-		"academlo": {
-		  "name": "Full Stack Developer Bootcamp",
-		  "institution": "ACADEMLO | ACADEMY OF COMPUTER SCIENCE AND INFORMATICS",
-		  "dates": "02/2022 - 10/2023 | Completed",
-		  "certificates": "View Certificates"
-		},
-		"sena": {
-		  "name": "Technologist in Software Analysis and Development",
-		  "institution": "SENA | NATIONAL LEARNING SERVICE",
-		  "dates": "09/2022 - 03/2025 | Completed",
-		  "certificates": "View Certificates"
-		},
-		"ademass": {
-		  "name": "Knowledge Enhancement in Code Development",
-		  "institution": "ADEMASS | VIRTUAL DEVELOPMENT PLATFORM",
-		  "dates": "2024 | In Progress",
-		  "certificates": "View Certificates"
-		}
-	  }
-	},
-	"experience": {
-	  "title": "Work",
-	  "text": "Experience",
-	  "full_stack": {
-		"title": "Application Developer - Freelance Project for Client (Recarga Movil SAS)",
-		"description": "Led the complete development of an e-commerce system for the company Recarga Movil SAS, building both the backend and frontend from scratch.",
-		"dates": "2023-2024 | Remote",
-		"platform": "View Platform",
-		"name": "Achievements",
-		"logros": ["Increase in Sales", " Process Optimization", "Quality and Reliability", "Independent Development"]
-	  },
-	  
-	  "full_stack-work": {
-	"title": "Full Stack Developer - Freelance Project for Client (TheraClinic)",
-	"description": "I led the development of a system for a clinical practice that manages appointments, patients, medical histories, and exams. I handled the analysis, design, development, and unit testing. The project is running successfully in a local environment as per the client's request.",
-	"name": "Achievements",
-	"dates": "2024 | Remote Work",
-	"logros": [
-		"Ease of Work",
-		"Process Optimization",
-		"Quality and Reliability",
-		"Eliminated paperwork and achieved complete digitalization of records"
-	]
-}
-	},
-	"projects": {
-	  "title": "My",
-	  "text": "Projects"
-	},
-	"contact": {
-	  "title": "Contact Me",
-	  "text": "here",
-	  "form": {
-		"name": "Name",
-		"email": "Email",
-		"phone": "Phone",
-		"message": "Message",
-		"send": "Send"
-	  }
-	},
-	"footer": {
-	  "name": "Yeison | Portfolio",
-	  "message": "Thank you for visiting my website, I hope you liked it and contact me",
-	  "quote": "\"Never stop fighting for your dreams because every day you are closer\"",
-	  "quick_links": "Quick Links",
-	  "contact_info": "My Info",
-	  "copyright": "Copyright © 2024 Yeison Marroquin.❤️"
-	}
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact Me"
+  },
+  "welcome": {
+    "hello": "Hello, I'm",
+    "text": " Yeison Andrés",
+    "surname": "Marroquin Bernal.",
+    "intro": " I have experience in developing robust and scalable applications."
+  },
+  "phrases": [
+    "Full-Stack Developer",
+    "Front-End Developer",
+    "Software Engineer",
+    "Back-End Developer"
+  ],
+  "about_me": "About",
+  "me": "Me",
+  "about_me_text1": "As a Full-Stack Developer, I have a strong academic background supported by Academlo in Mexico and a certification as a Technologist in Software Analysis and Development awarded by SENA in Colombia. My focus is on creating technological solutions that drive your company's efficiency and growth. With a strong desire to learn and improve my coding skills, I am ready to contribute innovation, commitment, and dedication to your team.",
+  "about_me_text2": "As a Full-Stack Developer trained at Academlo (Mexico) and certified as a Technologist in Software Analysis and Development by SENA (Colombia).",
+  "about_me_text2.1": "I focus on creating solutions that enhance business efficiency, with a constant commitment to improvement. I bring innovation and dedication to your team.",
+  "contact_info": {
+    "email": "Email:",
+    "nombre": "Name:",
+    "experiencia": "Experience:",
+    "ubicacion": "Location:",
+    "cv": "My Resume"
+  },
+  "skills": {
+    "title": "My ",
+    "text": "Skills",
+    "setion1": "Backend Development",
+    "setion2": "Frontend Development",
+    "setion3": "Tools"
+  },
+  "education": {
+    "title": "My",
+    "text": "Education",
+    "diploma": "Career Diploma",
+    "ver": "View",
+    "not_available": "Not Available Yet",
+    "levels": {
+      "fundamento": "Developer in Fundamentals",
+      "frontend": "Front-End Developer",
+      "backend": "Back-End Developer",
+      "english1": "English Level 1",
+      "english2": "English Level 2",
+      "english3": "English Level 3",
+      "english4": "English Level 4",
+      "english5": "English Level 5",
+      "english6": "English Level 6"
+    },
+    "institutions": {
+      "american school way": {
+        "name": "All levels English course A1 -> C1",
+        "institution": "AMERICAN SCHOOL WAY",
+        "dates": "09/2024 - 12/2025 | In Progress",
+        "certificates": "Not Available"
+      },
+      "academlo": {
+        "name": "Full Stack Developer Bootcamp",
+        "institution": "ACADEMLO | ACADEMY OF COMPUTER AND INFORMATION SCIENCES",
+        "dates": "02/2023 - 10/2023 | Completed",
+        "certificates": "View Certificates"
+      },
+      "sena": {
+        "name": "Technologist in Software Analysis and Development",
+        "institution": "SENA | NATIONAL LEARNING SERVICE",
+        "dates": "09/2022 - 03/2025 | Completed",
+        "certificates": "View Certificates"
+      },
+      "ademass": {
+        "name": "Knowledge Enhancement in Code Development",
+        "institution": "ADEMASS | VIRTUAL DEVELOPMENT PLATFORM",
+        "dates": "2024 | In Progress",
+        "certificates": "View Certificates"
+      }
+    }
+  },
+  "experience": {
+    "title": "Work",
+    "text": "Experience",
+    "full_stack": {
+      "title": "Application Developer - Freelance Project for Client (Recarga Movil SAS)",
+      "description": "Led the complete development of an e-commerce system for Recarga Movil SAS, building both backend and frontend from scratch.",
+      "dates": "2023-2024 | Remote",
+      "platform": "View Platform",
+      "name": "Achievements",
+      "logros": ["Increased Sales", " Process Optimization", "Quality and Reliability", "Independent Development"]
+    },
+    "full_stack-work": {
+      "title": "Full Stack Developer - Freelance project for client (TheraClinic)",
+      "description": "Led the development of a system for a clinical office that manages appointments, patients, medical records, and exams. Performed analysis, design, development, and unit testing. The project is running correctly in a local environment as requested by the client.",
+      "name": "Achievements",
+      "dates": "2024 | Remote",
+      "logros": ["Ease of Work", " Process Optimization", "Quality and Reliability", "Elimination of Paperwork and Complete Digitalization of Records"]
+    }
+  },
+  "projects": {
+    "title": "My",
+    "text": "Projects",
+    "projects": {
+      "Project1": {
+        "name": "E-commerce CLA ()",
+        "text": "E-commerce platform for sustainable fashion brand.",
+        "usage": ["UI/UX", "Frontend", "Responsive"]
+      },
+      "Project2": {
+        "name": "Pokedex",
+        "text": "Digital encyclopedia with Pokémon data.",
+        "usage": ["UI/UX", "React", "Responsive"]
+      },
+      "Project3": {
+        "name": "Weather App",
+        "text": "Real-time weather lookup by city.",
+        "usage": ["UI/UX", "React", "Responsive"]
+      },
+      "Project4": {
+        "name": "Cookies App",
+        "text": "Random phrase generator in fortune cookie style.",
+        "usage": ["UI/UX", "React", "Responsive"]
+      },
+      "Project5": {
+        "name": "Riky and mortid",
+        "text": "Rick and Morty character app with search feature.",
+        "usage": ["UI/UX", "React", "Responsive"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "text": "here",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+  "footer": {
+    "name": "Yeison | Portfolio",
+    "message": "Thank you for visiting my website, I hope you liked it and get in touch with me",
+    "quote": "\"Never stop fighting for your dreams because every day that passes you're closer\"",
+    "quick_links": "Quick Links",
+    "contact_info": "My Info",
+    "copyright": "Copyright © 2024 Yeison Marroquin.❤️"
   }
-  
+}

@@ -1,16 +1,16 @@
- .Inicio {
-  width: 100%;
-  padding: 9em 2em 1em 2em;
+.Inicio {
+  background-color: var(--Second-color);
+  padding: 2em;
+  padding-top: 10em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 3em;
-  background: var(--color1);
-  position: relative;
-  background-image: var(--fondo-b);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.Inicio_div1 {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 .suno {
@@ -18,391 +18,311 @@
   height: 0;
 }
 
-.Inicio_div1 {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  z-index: 1000;
+.Inicio__hello {
+  color: var(--Third-color);
 }
 
-.Inicio__hello {
-  color: var(--text);
-  font-size: 1.5em;
-  font-weight: 400;
+.Inicio_name {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .Inicio__firstname {
-    font-size: 3em;
-    color: var(--color2-3);
-    text-shadow: 
-      -2px -2px 0 var(--color2-2),  
-       2px -2px 0 var(--color8),  
-      -2px  2px 0 var(--color8),  
-       2px  2px 0 var(--color8);
-  }
-
-.Inicio_Profesion {
-  color: var(--text);
+  color: var(--First-color);
+  text-shadow:  2px 2px 0 var(--Third-color);
 }
 
-.Inicio_Profesion > span {
-  color: var(--color2);
+.Inicio_Profesion {
+  display: flex;
+  flex-direction: column;
+  margin-top: .5em;
+  gap: .5em;
+}
+
+.desaparecerYaparecer {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--First-color);
+}
+
+.Profesion_introduccion {
+  font-weight: 400;
+  font-size: 22px;
+  width: 100%;
+  color: var(--Third-color);
 }
 
 .Inicio_sobremi {
-  background: var(--color2);
-  color: var(--color3-1);
-  padding: 0.6em;
-  border: none;
-  border-radius: 3em;
   width: 100%;
-  max-width: 200px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1em;
+  margin-top: 1.1em;
+  border: none;
+  padding: .6em;
+  border-radius: 3em;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: var(--First-color);
+  color: var(--Text-fijo);
 }
+
 .Inicio_redes {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-}
-.lik {
+  justify-content: space-around;
   width: 100%;
-  max-width: 3em;
+  margin-top: 1.5em;
 }
-.Inicio_redes > a > li {
-  background-color: var(--color2);
-  border: 1px solid var(--color2-2);
-  color: var(--color3-1);
-  width: 100%;
-  max-width: 1.9em;
-  height: 1.9em;
+
+.Inicio_redes > a {
+  font-size: 2.5em;
+  color: var(--Third-color);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin-top: 1em;
+  padding-top: .2em;
+  background-color: var(--First-color);
 }
-.Inicio_div2 > figure  {
-  background-image: url(../../../../images/fondo-image.jpg);
-  background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid var(--text);
-    margin-top: -3em;
-    margin-bottom: 2em;
+
+.Inicio_redes > a > li > i {
+  font-size: 1em;
+  color: var(--Text-fijo);
 }
-.Inicio_div2 > figure > img {
+
+.Inicio_div2 {
   width: 100%;
-  max-width: 24em;
-  border-radius: .5em;
+}
+
+.Inicio_div2 > figure > img {
+  background-color: var(--First-color);
+  border-radius: 1em;
+   max-width: 30em;
+   margin: auto;
+   mask-image: linear-gradient(rgb(19, 45, 189) 80%, transparent);
+}
+
+.bxl-linkedin-square {
+  color: rgb(0, 140, 255);
+}
+
+.bxl-github {
+  color: black;
+}
+
+.bxl-whatsapp-square {
+  color: rgb(46, 177, 6);
+}
+
+.bxl-instagram {
+  color: rgb(226, 95, 43);
+}
+
+.bx-envelope {
+  color: rgb(142, 142, 144);
+}
+
+@media (min-width: 900px) {
+  .Inicio {
+  background-color: var(--Second-color);
+  padding-top: 6.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.suno {
+  transform: scale(1);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8em;
+  display: block;
+}
+.Inicio_Image-Luje {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 7em;
+  display: block;
+  
+}
+
+.Inicio_div1 {
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+  margin-top: -3em;
+}
+
+.Inicio_name {
+  font-size: 42px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.desaparecerYaparecer {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--Third-color);
+}
+
+.Inicio_sobremi {
+  width: 100%;
+  max-width: 10em;
+  margin-top: 1.1em;
+  border: none;
+  padding: .6em;
+  border-radius: 3em;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--First-color);
+}
+
+.Profesion_introduccion {
+  display: none;
+}
+
+.Inicio_redes {
+  display: flex;
+  width: 100%;
+  max-width: 26em;
+  margin-top: 1.5em;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
+.Inicio_redes > a {
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 0em;
-  transition: all 0.3s ease-in-out;
-}
-.bx-chevron-down {
-  font-size: 2.5em;
 }
 
-@media (min-width: 850px) {
-  .Inicio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: auto;
-    padding: 10em 3em 6.5em 3.5em;
-  }
-  
-  .suno {
-    transform: scale(1);
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10em;
-    display: block;
-  }
-  .Inicio_Image-Luje {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 7em;
-    display: block;
-    
-  }
-  .Inicio__hello {
-    color: var(--text);
-    font-size: 1.4em;
-    font-weight: 400;
-  }
-  .Inicio__firstname {
-    font-size: 2.7em;
-    text-shadow: 
-      -2px -2px 0 var(--color2-2),  
-       2px -2px 0 var(--color8),  
-      -2px  2px 0 var(--color8),  
-       2px  2px 0 var(--color8);
-  }
-  .Inicio_Profesion {
-    font-size: 1.5em;
-  }
-  .Inicio_Profesion > span {
-    color: var(--color2);
-    font-size: 1em;
-  }
-  .Inicio_div1 {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: -3em;
-  }
-  .Inicio_sobremi {
-    padding: 0.6em;
-    border: none;
-    border-radius: 3em;
-    width: 100%;
-    max-width: 200px;
-    cursor: pointer;
-    font-size: 0.7em;
-  }
-  .Inicio_redes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5em;
-  }
-  .lik {
-    width: 100%;
-    max-width: 3em;
-  }
-  .Inicio_redes > a > li {
-    background-color: var(--color2);
-    border: 1px solid var(--color2-2);
-    color: var(--color3-1);
-    width: 100%;
-    max-width: 2em;
-    height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.3em;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-
-.Inicio_div2 > figure  {
-    background-color: transparent;
-    background-image: url(../../../../images/fondo-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-     border: 3px solid var(--text);
-     margin-top: 0em;
-     margin-bottom: 2em;
-     border-radius: .6em;
- }
-
- .Inicio_div2 > figure > img {
-    max-width: 20em; 
-  }
-
+.Inicio_redes > a > li > i {
+  font-size: .8em;
 }
 
-@media (min-width: 1080px) {
-  .Inicio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 9em;
-    width: 100%;
-    margin: auto;
-    padding: 6.8em 3em 6.5em 3.5em;
-  }
-  
-  .suno {
-    transform: scale(1);
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 13em;
-    display: block;
-  }
-  .Inicio_Image-Luje {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 7em;
-    display: block;
-  }
-  .Inicio__hello {
-    color: var(--text);
-    font-size: 2em;
-    font-weight: 400;
-  }
-  
-  .Inicio__firstname {
-    font-size: 3em;
-  }
-  .Inicio_Profesion {
-    font-size: 1.5em;
-  }
-  .Inicio_Profesion > span {
-    color: var(--color2);
-    font-size: 1em;
-  }
-  .Inicio_div1 {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: -3em;
-  }
-  .Inicio_sobremi {
-    padding: 0.6em;
-    border: none;
-    border-radius: 3em;
-    width: 100%;
-    max-width: 200px;
-    cursor: pointer;
-    font-size: 0.9em;
-  }
-
-    .Inicio_redes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.1em;
-  }
-  .lik {
-    width: 100%;
-    max-width: 3.2em;
-  } 
-  .Inicio_redes > a > li {
-    background-color: var(--color2);
-    border: 1px solid var(--color2-2);
-    color: var(--color3-1);
-    width: 100%;
-    max-width: 2em;
-    height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.6em;
-    cursor: pointer;
-    margin-top: 1em;
-  } 
-
-.Inicio_div2 > figure  {
-    background-color: transparent;
-    background-image: url(../../../../images/fondo-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-     border: 3px solid var(--text);
-     margin-top: 0em;
-     margin-bottom: 2em;
-     border-radius: .6em;
- }
-
- .Inicio_div2 > figure > img {
-    max-width: 27em; 
-  }
-
-  
-
+.Inicio_div2 {
+  width: 100%;
+  max-width: 27em;
 }
 
+.Inicio_div2 > figure > img {
+  background-color: var(--First-color);
+  border-radius: 1em;
+}
+
+
+}
 
  @media (min-width: 1367px) {
-  .Inicio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 11em;
-    width: 100%;
-    margin: auto;
-    padding: 10em 4em 8em 5em;
-  }
+    .Inicio {
+  background-color: var(--Second-color);
+  padding-top: 9em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
 
-  .suno {
-    transform: scale(1);
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 13em;
-    display: block;
-  }
+}
 
-  .Inicio_Image-Luje {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 7em;
-    display: block;
-  }
+.Inicio_div1 {
+  width: 100%;
+  max-width: 570px;
+  margin: 0;
+  margin-top: -2em;
+}
 
-  .Inicio_div1 {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: -2em;
-  }
+.suno {
+  transform: scale(1);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10em;
+  display: block;
+}
+.Inicio_Image-Luje {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 7em;
+  display: block;
+  
+}
 
-  .Inicio__hello {
-    color: var(--color3);
-    font-size: 2.2em;
-    font-weight: 400;
-  }
+.Inicio_name {
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 600;
+}
 
-  .Inicio__firstname {
-    font-size: 3.5em;
-  }
+.Inicio__firstname {
+  color: var(--First-color);
+  text-shadow:  2px 2px 0 var(--Third-color);
+  font-size: 50px;
+}
 
-  .Inicio_sobremi {
-    padding: 0.6em;
-    border: none;
-    border-radius: 3em;
-    width: 100%;
-    max-width: 200px;
-    cursor: pointer;
-    font-size: 0.9em;
-    margin-top: 2em;
-  }
+.desaparecerYaparecer {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--Third-color);
+}
 
-  .Inicio_div2 > figure {
-    width: 100%;
-    max-width: 28em;
-  }
+.Inicio_sobremi {
+  width: 100%;
+  max-width: 10em;
+  margin-top: 1.1em;
+  border: none;
+  padding: .9em;
+  border-radius: 3em;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--First-color);
+}
 
-  .Inicio_div2 > figure > img {
-    width: 100%;
-    max-width: 40em;
-    border-radius: 1em;
-  }
+.Profesion_introduccion {
+  display: none;
+}
 
-  .Inicio_redes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-  }
+.Inicio_redes {
+  display: flex;
+  width: 100%;
+  max-width: 26em;
+  margin-top: 1.5em;
+  align-items: center;
+  justify-content: start;
+  gap: 2em;
+}
 
-  .lik {
-    width: 100%;
-    max-width: 3.8em;
-    margin-top: -1em;
-  }
+.Inicio_redes > a {
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0em;
+}
 
-  .Inicio_redes > a > li {
-    background-color: var(--color2);
-    color: var(--color3-1);
-    width: 100%;
-    max-width: 1.9em;
-    height: 1.9em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 2em;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-  .Inicio_div2 > figure > img {
-    max-width: 30em; 
-  }
+.Inicio_redes > a > li > i {
+  font-size: .8em;
+}
+
+.Inicio_div2 {
+  width: 100%;
+  max-width: 27em;
+}
+
+.Inicio_div2 > figure > img {
+  background-color: var(--First-color);
+  border-radius: 1em;
+}
 } 
+

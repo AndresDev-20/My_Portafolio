@@ -6,9 +6,8 @@
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 4em;
-	background: var(--color1);
+	background: var(--Second-color);
 	position: relative;
-	background-image: var(--fondo-b);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -25,14 +24,14 @@
 	align-items: center;
 	gap: .2em;
 	margin-bottom: 1.3em;
-	font-size: 1.6em;
-	color: var(--color3);
+	font-size: 1.9em;
+	color: var(--Third-color);
 }
 .bxs-brie {
 	font-size: 1.5em;
 }
 .laboral {
-	color: var(--color2);
+	color: var(--First-color);
 }
 .Experience_works {
 	display: flex;
@@ -48,7 +47,7 @@
     margin-top: -1em;
 }
 .Experience_line {
-	background: var(--color2);
+	background: var(--First-color);
 	width: .8em;
 	border-radius: 2em;
 	position: relative;
@@ -59,7 +58,7 @@
 }
 
 .Experience_line-2 {
-	background: var(--color2);
+	background: var(--First-color);
 	width: 1.5em;
 	border-radius: 2em;
 	position: relative;
@@ -69,28 +68,28 @@
 }
 .icon {
 	position: absolute;
-	background:var(--color2);
+	background:var(--First-color);
 	padding: .3em;
 	border-radius: 50%;
-	color: var(--color3-1);
+	color: var(--Second-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
 }
 .Experience_work > h1 {
-    color: var(--color2);
+    color: var(--First-color);
 	margin-bottom: .5em;
 }
 .Experience_work > p {
 	font-weight: 400;
 	line-height: 1.2;
 	margin-bottom: .5em;
-	color: var(--text);
+	color: var(--Third-color);
 }
 .Experience_work > span {
-	color: var(--color2);
-	border-bottom: 1px solid var(--color2);
+	color: var(--Third-color);
+	border-bottom: 1px solid var(--First-color);
 }
 .Experience_work > div {
     width: 100%; 
@@ -101,27 +100,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: .6em;
-	color: var(--color2);
+	color: var(--First-color);
 }
 .Logros > li{
 	list-style: circle;
 	margin-left: 2em;
-	color: var(--color3);
+	color: var(--Third-color);
 	font-weight: 400;
 }
-.Experience_work >div > a > button {
-	border: none;
-	padding: .5em;
-	border-radius: .5em;
-	background-color: var(--Blueviolet);
-	color: var(--color1);
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: .8em;
-}
-@media (min-width: 600px) {
+
+@media (min-width: 620px) {
 	.Experience_line {
 		width: .4em;
 		border-radius: 2em;
@@ -147,23 +135,11 @@
 		align-items: start;
 		justify-content: center;
 	}
-	.Experience_work >div > a > button {
-		border: none;
-		padding: .5em;
-		border-radius: .5em;
-		background-color: var(--Blueviolet);
-		color: var(--Bg-Header);
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1em;
-	}
+	
 }
 
 @media (max-width: 320px) {
 	.Experience_line {
-		background: var(--Linea-Ex);
 		width: .8em;
 		border-radius: 2em;
 		position: relative;

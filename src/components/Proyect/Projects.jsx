@@ -1,17 +1,22 @@
-import React from 'react'
-import './style/Projects.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./style/Projects.css";
+import { Link } from "react-router-dom";
 
-const Projects = ({t}) => {
+const Projects = ({ t }) => {
   return (
-	<section className='Projects' id='Projects'>
-		<br />
-		<br />
-		<br />
-		<br />
-	  <h1 className='Projects_title'><span><i className='bx bxs-folder folder'></i></span> {t("projects.title")} <span className='pro'>{t("projects.text")}</span></h1>
-	  <div className='Projects_todos'>
-		{/* <div className='Projects_Project' data-aos="fade-right">
+    <section className="Projects" id="Projects">
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 className="Projects_title">
+        <span>
+          <i className="bx bxs-folder folder"></i>
+        </span>{" "}
+        {t("projects.title")} <span className="pro">{t("projects.text")}</span>
+      </h1>
+      <div className="Projects_todos">
+        {/* <div className='Projects_Project' data-aos="fade-right">
 		<h1>Klickylisto e-comerce </h1>
 			<figure>
 				<img src="../../../images/Klickylisto.png" alt="" />
@@ -23,86 +28,169 @@ const Projects = ({t}) => {
 			</div>
 		</div> */}
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>E-comerce CLA ()</h1>
-			<figure>
-				<img src="../../../images/Image7.png" alt="" />
-			</figure>
-			<div>
-				<span> <Link to="https://zippy-pavlova-3da0ad.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/Computers-Store.git">Code</Link> </span>
-			</div>
-		</div>
+        <div className="Projects_Project" data-aos="fade-right">
+          <figure className="Project_image">
+            <img src="../../../images/Image7.png" alt="" />
+          </figure>
+          <div className="Project_about">
+            <h1>{t("projects.projects.Project1.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project1.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project1.usage.0")}</li>
+              <li>{t("projects.projects.Project1.usage.1")}</li>
+              <li>{t("projects.projects.Project1.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://zippy-pavlova-3da0ad.netlify.app/">
+                  <i className='openGite bx bx-link' ></i> App
+                </Link>{" "}
+              </span>
+              <span>
+                {" "}
+                <Link to="https://github.com/yeisonmarroquin887/Computers-Store.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Pokedex</h1>
-			<figure>
-				<img src="../../../images/Pokedex.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://pokedex-andres-dev.netlify.app">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/Entregablecinco.git">Code</Link> </span>
-			</div>
-		</div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Weather App</h1>
-			<figure>
-				<img src="../../../images/Weather App.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://zingy-gecko-5df221.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/segundo-entregable.git">Code</Link> </span>
-			</div>
-		</div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Cookies App</h1>
-			<figure>
-				<img src="../../../images/Cokies.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://storied-stroopwafel-f2f6e0.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/proyecto.git">Code</Link> </span>
-			</div>
-		</div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Riky and mortid</h1>
-			<figure>
-				<img src="../../../images/Riky.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://calm-kulfi-7e2e7e.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/tercerEntregable.git">Code</Link> </span>
-			</div>
-		</div>
+        <div className="Projects_Project" data-aos="fade-right">
+         
+          <figure className="Project_image">
+            <img src="../../../images/Pokedex.png" alt="" />
+          </figure>
+           <div className="Project_about">
+           <h1>{t("projects.projects.Project2.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project2.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project2.usage.0")}</li>
+              <li>{t("projects.projects.Project2.usage.1")}</li>
+              <li>{t("projects.projects.Project2.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://pokedex-andres-dev.netlify.app">
+                  <i className='openGite bx bx-link' ></i> App
+                </Link>{" "}
+              </span>
+              <span>
+                {" "}
+                <Link to="https://github.com/yeisonmarroquin887/Entregablecinco.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>The savanna (In vanilla)</h1>
-			<figure>
-				<img src="../../../images/The savanna.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://preeminent-kataifi-f75a2a.netlify.app">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/Animals.git">Code</Link> </span>
-			</div>
-		</div>
+        <div className="Projects_Project" data-aos="fade-right">
+         
+          <figure className="Project_image">
+            <img src="../../../images/Weather App.png" alt="" />
+          </figure>
+           <div className="Project_about">
+            <h1>{t("projects.projects.Project3.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project3.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project3.usage.0")}</li>
+              <li>{t("projects.projects.Project3.usage.1")}</li>
+              <li>{t("projects.projects.Project3.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://zingy-gecko-5df221.netlify.app/">
+                  <i className='openGite bx bx-link' ></i> App
+                </Link>{" "}
+              </span>
+              <span>
+                {" "}
+                <Link to="https://github.com/yeisonmarroquin887/segundo-entregable.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
 
-		<div className='Projects_Project' data-aos="fade-right">
-		<h1>Solar system (Animation)</h1>
-			<figure>
-				<img src="../../../images/SystemSolar.png" alt="" />
-			</figure>
-			<div>
-			<span> <Link to="https://kaleidoscopic-sunshine-db62c9.netlify.app/">App</Link> </span>
-				<span> <Link to="https://github.com/yeisonmarroquin887/SistemaSolar.git">Code</Link> </span>
-			</div>
-		</div>
+        <div className="Projects_Project" data-aos="fade-right">
+          <figure className="Project_image">
+            <img src="../../../images/Cokies.png" alt="" />
+          </figure>
+          <div className="Project_about">
+           <h1>{t("projects.projects.Project4.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project4.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project4.usage.0")}</li>
+              <li>{t("projects.projects.Project4.usage.1")}</li>
+              <li>{t("projects.projects.Project4.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://storied-stroopwafel-f2f6e0.netlify.app/">
+                  <i className='openGite bx bx-link' ></i> App
+                </Link>{" "}
+              </span>
+              <span>
+                {" "}
+                <Link to="https://github.com/yeisonmarroquin887/proyecto.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
 
-	  </div>
-	</section>
-  )
-}
+        <div className="Projects_Project" data-aos="fade-right">
+          <figure className="Project_image">
+            <img src="../../../images/Riky.png" alt="" />
+          </figure>
+           <div className="Project_about">
+            <h1>{t("projects.projects.Project5.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project5.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project5.usage.0")}</li>
+              <li>{t("projects.projects.Project5.usage.1")}</li>
+              <li>{t("projects.projects.Project5.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://calm-kulfi-7e2e7e.netlify.app/">
+                  <i className='openGite bx bx-link' ></i> App
+                </Link>{" "}
+              </span>
+              <span>
+                {" "}
+                <Link to="https://github.com/yeisonmarroquin887/tercerEntregable.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
 
-export default Projects
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

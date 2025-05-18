@@ -8,11 +8,12 @@ const Header = () => {
 	const [t] = useTranslation("global");
 	const [open, setOpen] = useState(true);
 	const [activeSection, setActiveSection] = useState();
+	const [scrolled, setScrolled] = useState(false); // Nuevo estado para el scroll
 	const observerRef = useRef(null);
 	const location = useLocation();
 
+	// Observer para secciones activas
 	useEffect(() => {
-		// Función para inicializar observer
 		const initObserver = () => {
 			const observer = new IntersectionObserver((entries) => {
 				entries.forEach(entry => {
@@ -31,11 +32,10 @@ const Header = () => {
 			observerRef.current = observer;
 		};
 
-		// Delay si venimos de una ruta con scrollTo (evita que se active mal el observer)
 		if (location.state?.scrollTo) {
 			setTimeout(() => {
 				initObserver();
-			}, 800); // Espera a que el scroll termine
+			}, 800);
 		} else {
 			initObserver();
 		}
@@ -45,9 +45,19 @@ const Header = () => {
 		};
 	}, [location]);
 
+	// Listener de scroll
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrolled(window.scrollY > 50);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
 		<div>
-			<header className="Header">
+			<header className={`Header ${scrolled ? 'scrolled' : ''}`}>
 				<nav className="Header_nav">
 					<Link to="/#home" onClick={() => document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })}>
 						<h1 className='Header_nav-h1'>

@@ -1,9 +1,9 @@
 .Diplomados {
     width: 100%;
-	background-image: var(--fondo-b);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 2em;
+	background-color: var(--Second-color);
 }
 
 .Diplomados_exit {
@@ -11,18 +11,17 @@
     width: 100%;
     position: fixed;
     padding-bottom: 2em;
+	color: var(--First-color);
 }
 
 .Diplomados_exit > h1 {
 	font-size: 1.2em;
     padding-left: 1em;
-	color: var(--color3);
 	cursor: pointer;
-    border-bottom: 2px solid var(--color3);
+    border-bottom: 2px solid var(--First-color);
     width: 100%;
     max-width: 4.5em;
     border-radius: 1px 1px 10px 1px;
-    background-color: var(--color1);
     padding-top: 3em;
 } 
 
@@ -51,7 +50,6 @@
 .Education_Diplomas {
 	width: 100%;
 	height: 100vh;
-	background: var(--color1);
 	position: fixed;
 	top: 0;
 	padding: 2em;
@@ -73,8 +71,8 @@
 }
 
 .Diplomado__exit > i {
-	background-color: var(--color3);
-	color: var(--color1);
+	background-color: var(--First-color);
+	color: var(--Text-fijo);
 	padding: .4em;
 	font-size: 1.3em;
 	border-radius: 50%;
@@ -87,9 +85,9 @@
 	width: 100%;
 	height: 100vh;
 	padding: 1em;
-	background: var(--color9);
 	backdrop-filter: blur(4px);
 	padding-top: 7em;
+	background-color: var(--badrop);
 }
 
 .Diploma_Image > img {
@@ -131,8 +129,6 @@
 	}
 	
 	.Diplomado__exit > i {
-		background-color: var(--color3);
-		color: var(--color1);
 		padding: .4em;
 		font-size: 1.3em;
 		border-radius: 50%;
@@ -145,7 +141,6 @@
 		width: 100%;
 		height: 100vh;
 		padding: 1em;
-		background: var(--color9);
 		backdrop-filter: blur(4px);
 		padding-top: 0em;
 		display: flex;

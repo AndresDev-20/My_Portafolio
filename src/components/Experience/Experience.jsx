@@ -11,9 +11,7 @@ const Experience = ({t}) => {
 			<br />
 			<br />
 			<br />
-			<div className='Eperieence_Image2-Luje'> 
-			<ImageRude/>	
-			</div>
+			
 			
 			<h1 className='Experience_title'> <span><i className='bx bxs-briefcase bxs-brie'></i></span> {t("experience.title")} <span className='laboral'>{t("experience.text")}</span> </h1>
 			<div className='Experience_works'>
