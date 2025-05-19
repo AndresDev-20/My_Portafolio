@@ -54,7 +54,7 @@
   gap: .8em;
 }
 
-.Inicio_buttons > a > button {
+.Inicio_buttons  > button {
   width: 100%;
   padding: .7em;
   font-size: 14px;
@@ -207,7 +207,7 @@
  }
 
  .Inicio_container-one {
- margin-top: 3.5em;
+ margin-top: 1.5em;
 }
 
  .Inicio_welcome > h1{

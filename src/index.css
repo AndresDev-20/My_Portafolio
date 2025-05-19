@@ -8,7 +8,7 @@
   --Text-fijo: white;
   --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
   --Shadow: rgb(44, 44, 87);
-  --badrop: rgba(20, 20, 145, 0.127);
+  --badrop: rgba(8, 8, 68, 0.127);
   
     
 }
@@ -22,7 +22,7 @@
   --Text-fijo: white;
   --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
   --Shadow: rgba(148, 148, 220, 0.452);
-  --badrop: rgba(20, 20, 145, 0.505);
+  --badrop: rgba(19, 19, 78, 0.336);
 }
 
 html {

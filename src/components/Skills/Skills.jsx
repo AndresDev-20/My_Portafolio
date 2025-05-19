@@ -13,7 +13,7 @@ const Skills = ({ t }) => {
         {t("skills.title")} <span className="Habiliti">{t("skills.text")}</span>{" "}
       </h1>
       <article className="Skills_skills">
-        <div className="Skills_skill">
+        <div className="Skills_skill" data-aos="fade-right">
           <h1 className="Skills_icon">
             <i className="bx bx-clipboard"></i>
           </h1>
@@ -73,7 +73,7 @@ const Skills = ({ t }) => {
           </div>
         </div>
 
-        <div className="Skills_skill">
+        <div className="Skills_skill" data-aos="fade-right">
           <h1 className="Skills_icon">
             <i className="bx bx-code-alt"></i>
           </h1>
@@ -111,7 +111,7 @@ const Skills = ({ t }) => {
           </div>
         </div>
 
-        <div className="Skills_skill">
+        <div className="Skills_skill" data-aos="fade-right">
           <h1 className="Skills_icon">
             <i className="bx bx-desktop"></i>
           </h1>

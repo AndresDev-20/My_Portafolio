@@ -1,8 +1,4 @@
-import React from 'react';
 import './style/About.css';
-import { useNavigate } from 'react-router-dom';
-import ImageRude from '../ImageRude/ImageRude';
-import Image2Rude from '../ImageRude/image2Rude';
 
 const About = ({t}) => {
 
@@ -19,6 +15,9 @@ const About = ({t}) => {
 		<div className='About_div2'>
 			<p className='About_text one'>
 			{t("about_me_text1")}
+			<br />
+			<div className='space'></div>
+			{t("about_me_text1.1")}
 			</p>
 			<p className='About_text two'>
 			{t("about_me_text2")}

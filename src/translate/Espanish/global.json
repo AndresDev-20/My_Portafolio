@@ -11,7 +11,7 @@
 	"welcome": {
 		"name": " Yeison Andrés",
 		"surname": "Marroquin Bernal.",
-		"intro": " Especializado en crear experiencias web modernas y atractivas utilizando React, Next.js y otras tecnologías de vanguardia.",
+		"intro": "Especializado en desarrollo Full Stack con enfoque en backend usando Python, Node.js y React para soluciones completas. ",
 		 "contact": "Contáctame",
 		 "projects": "Ver proyectos",
 		 "cv": "Descargar Cv"
@@ -25,7 +25,8 @@
 	  ],
 	"about_me": "Sobre",
 	"me": "Mi",
-	"about_me_text1": "Como Desarrollador Full-Stack, cuento con una sólida formación académica respaldada por Academlo en México y una certificación como Tecnólogo en Análisis y Desarrollo de Software otorgada por el SENA en Colombia. Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y perfeccionar mis habilidades de codificación, estoy preparado para contribuir con innovación, compromiso y dedicación a su equipo.",
+	"about_me_text1": "Como Desarrollador Full-Stack, cuento con una sólida formación académica respaldada por Academlo en México y una certificación como Tecnólogo en Análisis y Desarrollo de Software otorgada por el SENA en Colombia.",
+	"about_me_text1.1": " Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y perfeccionar mis habilidades de codificación, estoy preparado para contribuir con innovación, compromiso y dedicación a su equipo.",
 	"about_me_text2":"Como Desarrollador Full-Stack con formación en Academlo (México) y certificado como Tecnólogo en Análisis y Desarrollo de Software por el SENA (Colombia).",
 	"about_me_text2.1": "Me enfoco en crear soluciones que impulsan la eficiencia empresarial, con un compromiso constante de mejora. Aporto innovación y dedicación a su equipo.",
 	"contact_info": {
@@ -99,7 +100,7 @@
 	  },
 	  "full_stack-work": {
 		"title": "Desarrollador Full Stack - Proyecto frelance para cliente (TheraClinic)",
-		"description": "Lideré el desarrollo de un sistema para un consultorio clínico que gestiona citas, pacientes, historias clínicas y exámenes. Realicé el análisis, diseño, desarrollo y pruebas unitarias. El proyecto está funcionando correctamente en un entorno local, según la solicitud del cliente.",
+		"description": "Desarrollé un sistema para un consultorio clínico que gestiona citas, pacientes, historias clínicas y exámenes. Me encargué del análisis, diseño, desarrollo y pruebas en entorno local.",
 		"name": "Logros",
 		"dates": "2024 | Teletrabajo",
 		"logros": ["Facilidad de trabajo", " Optimización de Procesos", "Calidad y Fiabilidad", "Eliminación de la papelería y digitalización completa de los registros"]

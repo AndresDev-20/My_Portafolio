@@ -36,7 +36,7 @@ const Experience = ({t}) => {
 			<div className='Experience_works-2'>
 				<span className='Experience_line-2'><i className='bx bxs-briefcase icon'></i></span>
 				<div className='Experience_work' data-aos="fade-right">
-					<h1>{t("experience.full_stack-work.title")}</h1>
+					<h1>{t("experience.full_stack.title")}</h1>
 					<p>{t("experience.full_stack-work.description")}</p>
 					<ul className='Logros'>
 						<h1>{t("experience.full_stack-work.name")}:</h1>

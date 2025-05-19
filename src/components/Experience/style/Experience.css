@@ -91,6 +91,10 @@
 	line-height: 27px;
 	margin-bottom: .5em;
 }
+.text2 {
+	font-size: large;
+	color: red;
+}
 .Experience_work > span {
 	color: var(--Third-color);
 	border-bottom: 1px solid var(--First-color);
