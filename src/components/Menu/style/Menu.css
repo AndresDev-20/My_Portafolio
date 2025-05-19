@@ -1,14 +1,20 @@
-.Menu {
-	background: var(--color1);
-	z-index: 1000000000000000;
-	width: 100%;
-	height: 30em;
-	position: fixed;
-	margin-top: 5em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+
+/* Menú lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculto fuera de pantalla */
+  width: 250px;
+  height: 100vh;
+  background-color: var(--Second-color);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.side-menu.open {
+  left: 0; /* Se desliza hacia dentro */
 }
 
 .Menu1 {
@@ -17,23 +23,14 @@
 	justify-content: space-around;
 	gap: 2.3em;
 	align-items: center;
+	margin-top: 7em;
 }
 
-.Menu1 > a {
-	color: var(--color3);
-}
-
-.Menu1 > a:hover {
-	color: var(--color7);
-}
-
-
-.Clear {
-	background-color: rgb(255, 247, 0);
-	z-index: 100000000000000000000;
-	position: fixed;
-	width: 100%;
-	margin-top: 5em;
-	height: 0;
-	display: none;
+.Clears {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 2.3em;
+	align-items: center;
+	margin-top: 7em;
 }

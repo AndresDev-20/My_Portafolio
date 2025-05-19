@@ -69,30 +69,7 @@ const Skills = ({ t }) => {
               <h1>Sprint</h1>
             </div>
 
-            <div>
-              <img src="../../../images/Sequelize.png" alt="" />
-              <h1>Sequelize</h1>
-            </div>
-
-            <div>
-              <i className="bx bxl-postgresql"></i>
-              <h1>Postgre</h1>
-            </div>
-
-            <div>
-              <img src="../../../images/mysql.png" alt="" />
-              <h1>MySQL</h1>
-            </div>
-
-            <div>
-              <img src="../../../images/SQLite.png" alt="" />
-              <h1>SQLITE</h1>
-            </div>
-
-            <div>
-              <img src="../../../images/SQLl.png" alt="" />
-              <h1>SQL</h1>
-            </div>
+            
           </div>
         </div>
 
@@ -163,6 +140,26 @@ const Skills = ({ t }) => {
             <div>
               <img src="../../../images/Postman.png" alt="" />
               <h1>Postman</h1>
+            </div>
+            <div>
+              <img src="../../../images/mysql.png" alt="" />
+              <h1>MySQL</h1>
+            </div>
+
+            <div>
+              <img src="../../../images/SQLite.png" alt="" />
+              <h1>SQLITE</h1>
+            </div>
+
+            <div>
+              <img src="../../../images/SQLl.png" alt="" />
+              <h1>SQL</h1>
+            </div>
+            
+
+            <div>
+              <i className="bx bxl-postgresql"></i>
+              <h1>PostgreSQL</h1>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@
 	position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 5em;
 }
 .Eperieence_Image2-Luje {
 	position: absolute;
@@ -79,14 +80,16 @@
 }
 .Experience_work > h1 {
     color: var(--First-color);
+	font-size: 17px;
 	margin-bottom: .5em;
 }
 .Experience_work > p {
-	font-size: 17px;
-	font-weight: 400;
+   font-size: 16px;
+   line-height: 1.3rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
 	line-height: 27px;
 	margin-bottom: .5em;
-	color: var(--Third-color);
 }
 .Experience_work > span {
 	color: var(--Third-color);
@@ -102,12 +105,16 @@
 	flex-direction: column;
 	gap: .6em;
 	color: var(--First-color);
+    font-size: 16px;
+	font-weight: 200;
 }
 .Logros > li{
 	list-style: circle;
 	margin-left: 2em;
-	color: var(--Third-color);
-	font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
 }
 
 @media (min-width: 620px) {

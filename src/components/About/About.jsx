@@ -5,10 +5,6 @@ import ImageRude from '../ImageRude/ImageRude';
 import Image2Rude from '../ImageRude/image2Rude';
 
 const About = ({t}) => {
-	const navigate = useNavigate()
-	const cv = () => {
-		navigate("cv")
-	}
 
   return (
 	<section className='About' id='About' data-aos="fade-right">
@@ -40,7 +36,6 @@ const About = ({t}) => {
 				    <li><b className='About_item'> {t("contact_info.ubicacion")} </b>Ibague-Tolima, Colombia</li>
 				</div>
 			</ul>
-			<button onClick={cv} className='About_cv'>{t("contact_info.cv")}</button>
 		</div>
 
 	</div>

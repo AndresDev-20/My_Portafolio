@@ -1,7 +1,9 @@
 .About {
 	background-color: var(--Second-color);
-	padding: 2em;
+	padding: 1em;
 	width: 100%;
+	padding-bottom: 5em;
+	padding-top: 6em;
 }
 
 .About_title {
@@ -25,10 +27,11 @@
 }
 
 .About_text {
-	font-weight: 400;
-    font-size: 17px;
+   font-size: 16px;
+   line-height: 1.5rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
     width: 100%;
-    color: var(--Third-color);
 	margin-top: 1.8em;
 	line-height: 27px;
 	unicode-bidi: isolate;
@@ -53,8 +56,9 @@
 	flex-direction: column;
 	gap: .4em;
 	font-weight: 400;
-    font-size: 17px;
-	color: var(--Third-color);
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--Fourt-color);
 }
 
 .About_item {
@@ -80,7 +84,7 @@
 	.About_title {
 	font-size: 35px;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: -.8em;
 }
 
 	.one {
@@ -99,22 +103,21 @@
 }
 
 .About_text {
-	font-weight: 400;
-    font-size: 17px;
-    width: 100%;
-    color: var(--Third-color);
-	margin-top: 1.8em;
-	line-height: 30px;
-	unicode-bidi: isolate;
+   font-size: 16px;
+   line-height: 1.9rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
 }
 
 .About_datos > div > li {
 	display: flex;
 	flex-direction: column;
 	gap: .4em;
-	font-weight: 400;
-    font-size: 18px;
-	color: var(--Third-color);
+   font-size: 16px;
+   line-height: 1.3rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+   margin-bottom: .2em;
 }
 
 .About_cv {

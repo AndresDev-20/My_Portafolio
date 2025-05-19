@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --First-color: #6c63ff;
-  --Second-color: #1a1a2e;
-  --Third-color: white;
-  --Fourt-color: #16213e;
+  --First-color: #3B82F6;
+  --Second-color: hsl(222.2, 84%, 4.9%);
+  --Third-color: #F8FAFC;
+  --Fourt-color: #94A3B8;
+  --Five-color: #1E293B;
   --Text-fijo: white;
   --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
   --Shadow: rgb(44, 44, 87);
   --badrop: rgba(20, 20, 145, 0.127);
+  
+    
 }
 
 [data-theme="dark"] {
-  --First-color: #5f52f6;
+  --First-color: #3B82F6;
   --Second-color: #f8f9fa;
-  --Third-color: #333333;
-  --Fourt-color: #e9ecef;
+  --Third-color: #0a0a10;
+  --Fourt-color: #000000;
+  --Five-color: #d9dadc;
   --Text-fijo: white;
-  --Text-fijo-two: white;
   --footer: linear-gradient(rgb(9, 15, 39), rgb(7, 3, 19));
   --Shadow: rgba(148, 148, 220, 0.452);
   --badrop: rgba(20, 20, 145, 0.505);

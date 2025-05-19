@@ -5,6 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 3em;
+	padding-top: 5em;
 }
 .Projects_title {
 	display: flex;
@@ -25,7 +26,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: start;
+	justify-content: center;
 	padding: 1em;
 	gap: 1em;
 	width: 100%;
@@ -34,17 +35,18 @@
 .Projects_Project {
    width: 100%;
    max-width: 25em;
-   background-color: var(--Fourt-color);
-   border-radius: 1em;
+   background-color: var(--Second-color);
+   border: 1px solid var(--Five-color);
+   border-radius: .5em;
    width: 100%;
 }
 
 .Project_image > img {
-	border-radius: 1em 1em 0em 0em;
+	border-radius: .4em .4em 0em 0em;
 }
 
 .Project_about {
-	padding: 2em;
+	padding: 2em 2em 2em 1em;
 	display: flex; 
 	flex-direction: column;
 	gap: .5em;
@@ -73,7 +75,7 @@
 
 .Project_about > p {
 	font-weight: 400;
-	color: var(--Third-color);
+	color: var(--Fourt-color);
 	line-height: 1.7em;
 }
 

@@ -1,328 +1,237 @@
 .Inicio {
-  background-color: var(--Second-color);
-  padding: 2em;
-  padding-top: 10em;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  background-color: var(--Second-color);
+  padding: 16px;
+  padding-top: 10em;
+  justify-content: center;
 }
 
-.Inicio_div1 {
+.Inicio_container-one {
   width: 100%;
-  max-width: 500px;
+  max-width: 25em;
+  display: grid;
+  text-align: start;
   margin: auto;
 }
 
-.suno {
-  transform: scale(0);
-  height: 0;
-}
-
-.Inicio__hello {
-  color: var(--Third-color);
+.Inicio_welcome > h1{
+  font-size: 2.25rem;
 }
 
 .Inicio_name {
-  font-size: 40px;
-  line-height: 45px;
-  font-weight: 700;
+  color: var(--Third-color);
 }
 
-.Inicio__firstname {
+.Inicio_firtsname {
   color: var(--First-color);
 }
 
-.Inicio_Profesion {
-  display: flex;
-  flex-direction: column;
-  margin-top: .5em;
-  gap: .5em;
-}
-
-.desaparecerYaparecer {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  color: var(--First-color);
-  text-shadow:  .9px .4px var(--Third-color);
-}
-
-.Profesion_introduccion {
+.Inicio_welcome > h2{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--Fourt-color);
   font-weight: 400;
-  font-size: 18px;
-  width: 100%;
-  color: var(--Third-color);
+  margin-top: 16px;
 }
 
-.Inicio_sobremi {
+.Inicio_welcome > p{
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: var(--Fourt-color);
+  font-weight: 400;
+  margin-top: 22px;
   width: 100%;
-  margin-top: 1.1em;
-  border: none;
-  padding: .9em;
-  border-radius: 3em;
-  font-size: 17px;
-  font-weight: 500;
-  background-color: var(--First-color);
-  color: var(--Text-fijo);
+  max-width: 22em;
 }
 
-.Inicio_redes {
+.Inicio_buttons {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  flex-wrap: wrap;
   margin-top: 1.5em;
+  gap: .8em;
 }
 
-.Inicio_redes > a {
-  font-size: 2.5em;
-  color: var(--Third-color);
-  border-radius: 50%;
-  width: 1.4em;
-  height: 1.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1px;
-  background-color: var(--First-color);
-}
-
-.Inicio_redes > a > li > i {
-  font-size: 30px;
-  color: var(--Text-fijo);
-}
-
-.Inicio_div2 {
+.Inicio_buttons > a > button {
   width: 100%;
+  padding: .7em;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: .5em;
 }
 
-.Inicio_div2 > figure > img {
+.Inicio_btn1 {
   background-color: var(--First-color);
-  border-radius: 1em;
-   max-width: 30em;
-   margin: auto;
-   mask-image: linear-gradient(rgb(19, 45, 189) 80%, transparent);
+  color: var(--Second-color);
+  border: 1px solid var(--First-color);
+  cursor: pointer;
 }
 
-.bxl-linkedin-square {
-  color: rgb(0, 140, 255);
-}
-
-.bxl-github {
-  color: black;
-}
-
-.bxl-whatsapp-square {
-  color: rgb(46, 177, 6);
-}
-
-.bxl-instagram {
-  color: rgb(226, 95, 43);
-}
-
-.bx-envelope {
-  color: rgb(142, 142, 144);
-}
-
-@media (min-width: 900px) {
-  .Inicio {
+.Inicio_btn2 {
   background-color: var(--Second-color);
-  padding-top: 6.5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 4em;
+  border: none;
+  border: 1px solid var(--Five-color);
+  color: var(--Third-color);
+  cursor: pointer;
 }
 
-.suno {
-  transform: scale(1);
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 8em;
-  display: block;
-}
-.Inicio_Image-Luje {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 7em;
-  display: block;
-  
-}
-
-.Inicio_div1 {
-  width: 100%;
-  max-width: 500px;
-  margin: 0;
-  margin-top: -3em;
-}
-
-.Inicio_name {
-  font-size: 42px;
-  line-height: 45px;
-  font-weight: 700;
-}
-
-.desaparecerYaparecer {
-  font-size: 23px;
-  font-weight: 500;
-  line-height: 26px;
+.Inicio_btn2 > a{
   color: var(--Third-color);
 }
 
-.Inicio_sobremi {
-  width: 100%;
-  max-width: 10em;
-  margin-top: 1.1em;
-  border: none;
-  padding: .6em;
-  border-radius: 3em;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: var(--First-color);
+.Inicio_btn3 {
+  background-color: var(--Five-color);
+  color: var(--Third-color);
+  border: 1px solid var(--Five-color);
+  cursor: pointer;
 }
 
-.Profesion_introduccion {
-  display: none;
-}
-
-.Inicio_redes {
+.Inicio_urls {
   display: flex;
-  width: 100%;
-  max-width: 26em;
-  margin-top: 1.5em;
-  align-items: center;
-  justify-content: start;
   gap: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
 }
 
-.Inicio_redes > a {
-  border-radius: 50%;
-  width: 1.3em;
-  height: 1.3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0em;
+.Inicio_urls > a{
+  font-size: 1em;
 }
 
-.Inicio_redes > a > li > i {
-  font-size: .8em;
+.Inicio_urls > a > li > i{
+  font-size: 2em;
+  color: var(--Fourt-color);
 }
 
-.Inicio_div2 {
+.Inicio_container-two {
   width: 100%;
-  max-width: 27em;
 }
 
-.Inicio_div2 > figure > img {
-  background-color: var(--First-color);
-  border-radius: 1em;
+.Inicio_container-two > figure > img {
+  width: 100%;
+  max-width: 30em;
+  margin: auto;
+  border-radius: .7em;
 }
 
 
+
+@media (min-width: 500px) {
+.Inicio_container-one {
+  width: 100%;
+  max-width: 30em;
+  display: grid;
+  text-align: center;
+  margin: auto;
 }
 
- @media (min-width: 1367px) {
-    .Inicio {
-  background-color: var(--Second-color);
-  padding-top: 9em;
+.Inicio_welcome > h1{
+  width: 100%;
+  max-width: 15em;
+  margin: auto;
+}
+
+.Inicio_welcome > p{
+  max-width: 30em;
+}
+}
+
+@media (min-width: 954px) {
+ .Inicio {
+  width: 100%;
+  max-width: 65em;
   display: flex;
   flex-direction: row;
+  background-color: var(--Second-color);
+  padding: 16px;
+  padding-top: 8em;
   justify-content: center;
-  align-items: center;
-  gap: 5em;
+  align-items: start;
+  gap: 1em;
+  margin: auto;
+ }
 
+.Inicio_container-one {
+  text-align: start;
+  max-width: 100%;
+  padding-top: 2em;
 }
 
-.Inicio_div1 {
+.Inicio_welcome > h1{
   width: 100%;
-  max-width: 570px;
+  max-width: 11em;
   margin: 0;
-  margin-top: -2em;
+  font-size: 2.8em;
 }
 
-.suno {
-  transform: scale(1);
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 10em;
-  display: block;
-}
-.Inicio_Image-Luje {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 7em;
-  display: block;
-  
-}
-
-.Inicio_name {
-  font-size: 35px;
-  line-height: 48px;
-  font-weight: 600;
-}
-
-.Inicio__firstname {
-  color: var(--First-color);
-  text-shadow:  2px 2px 0 var(--Third-color);
-  font-size: 50px;
-}
-
-.desaparecerYaparecer {
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 40px;
-  color: var(--Third-color);
-}
-
-.Inicio_sobremi {
-  width: 100%;
-  max-width: 10em;
-  margin-top: 1.1em;
-  border: none;
-  padding: .9em;
-  border-radius: 3em;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: var(--First-color);
-}
-
-.Profesion_introduccion {
-  display: none;
-}
-
-.Inicio_redes {
-  display: flex;
-  width: 100%;
-  max-width: 26em;
-  margin-top: 1.5em;
-  align-items: center;
-  justify-content: start;
-  gap: 2em;
-}
-
-.Inicio_redes > a {
-  border-radius: 50%;
-  width: 1.3em;
-  height: 1.3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0em;
-}
-
-.Inicio_redes > a > li > i {
-  font-size: .8em;
-}
-
-.Inicio_div2 {
-  width: 100%;
+.Inicio_welcome > p{
   max-width: 27em;
 }
 
-.Inicio_div2 > figure > img {
-  background-color: var(--First-color);
-  border-radius: 1em;
+.Inicio_buttons > button {
+  width: 100%;
+  max-width: 10em;
+  padding: .7em;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: .5em;
 }
-} 
 
+.Inicio_urls {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.Inicio_container-two {
+  max-width: 100%;
+}
+
+.Inicio_container-two > figure > img {
+  width: 100%;
+  max-width: 26em;
+  margin: auto;
+  border-radius: .7em;
+}
+
+}
+
+@media (min-width:1450px) {
+  .Inicio {
+  padding-top: 8em;
+  padding-left: 3em;
+  gap: 4em;
+  max-width: 75em;
+ }
+
+ .Inicio_container-one {
+ margin-top: 3.5em;
+}
+
+ .Inicio_welcome > h1{
+  font-size: 3.3em;
+}
+
+.Inicio_welcome > h2{
+  font-size: 1.30rem;
+  line-height: 1.80rem;
+}
+
+.Inicio_welcome > p{
+  max-width: 30em;
+  font-size: 1.25rem;
+  line-height: 1.80rem;
+}
+
+.Inicio_container-two > figure > img {
+  width: 100%;
+  max-width: 31em;
+  margin: auto;
+  border-radius: .7em;
+}
+
+
+
+}

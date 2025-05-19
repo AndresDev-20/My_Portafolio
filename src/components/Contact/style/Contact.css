@@ -1,5 +1,5 @@
 .Contactame {
-	background-color: var(--Fourt-color);
+	background-color: var(--Second-color);
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
@@ -8,6 +8,7 @@
 	padding-bottom: 4em;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 5em;
 }
 .Contactame_title {
 	display: flex;
@@ -28,30 +29,34 @@
     display: none;
 }
 .Contactame_form {
+	border: 1px solid var(--Fourt-color);
+	width: 100%;
+	max-width: 20em;
 	display: flex;
 	flex-direction: column;
-    gap: .7em;
-	padding: 1.5em;
-	border-radius: .6em;
-	box-shadow: 2px 3px 8px 3px var(--Shadow-Unis);
-	background-color: var(--color6);
+	padding: 1em;
+	border-radius: .5em;
+	gap: 1em;
 }
+
 .Contactame_form > input {
 	padding: .5em;
 	background-color: var(--Second-color);
 	border-radius: .6em;
 	border: none;
-	border: 1px solid var(--Third-color);
-	color: var(--Third-color);
+	border: 1px solid var(--Five-color);
+	color: var(--Five-color);
+	width: 100%;
+	max-width: 30em;
 }
 .Contactame_form > textarea {
 	padding: .5em;
 	border-radius: .6em;
 	border: none;
-	border: 1px solid var(--Third-color);
+	border: 1px solid var(--Five-color);
 	width: 100%;
-	max-width: 15em;
-	color: var(--Third-color);
+	max-width: 30em;
+	color: var(--Five-color);
 	background-color: var(--Second-color);
 }
 .Contactame_btn {
@@ -70,7 +75,7 @@
 	border-radius: .5em;
 	cursor: pointer;
 }
-@media (min-width: 880px) {
+@media (min-width: 780px) {
 	.Contactame {
 		padding: 1em;
 		display: flex;
@@ -82,7 +87,7 @@
 	.Contactame_Father {
 		display: flex;
 		border-radius: .5em;
-		background: var(--Second-color);
+		border: 1px solid var(--Five-color);
 		width: 100%;
 		max-width: 850px;
 		justify-content: space-evenly;
@@ -101,6 +106,7 @@
 		border-radius: 0em;
 		box-shadow: none;
 		background-color: var(--color1);
+		border: none;
 	}
 	.Contactame_form > textarea {
 		padding: .5em;
@@ -108,4 +114,4 @@
 		width: 100%;
 		max-width: 23em;
 	}
-}
+} 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Inicio from "../../components/Inicio/Inicio";
 import About from "../../components/About/About";
 import "./style/Home.css";
@@ -10,11 +10,11 @@ import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import ViewProjets from "../Projects/ViewProjets";
+import Translate from "../../components/Tools/Translate";
+import Theme from "../../components/Tools/Theme";
 
 const Home = () => {
   const { t, i18n } = useTranslation("global");
-  const [Day, setDay] = useState(true);
-  const [Theme, setTheme] = useState("");
   const [isEnglish, setIsEnglish] = useState(false);
 
   const toggleLanguage = () => {
@@ -23,43 +23,10 @@ const Home = () => {
     setIsEnglish(!isEnglish);
   };
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", Theme);
-  }, [Theme]);
-
-  const noche = () => {
-    const newTheme = Theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    setDay(false);
-  };
-
-  const dia = () => {
-    const newTheme = Theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    setDay(true);
-  };
 
   return (
     <article className="Home">
-      <div className="Home__configure">
-        <div tabIndex={0} className="Translate" onClick={toggleLanguage}>
-          <button>Es</button>
-          <div className={`rueda ${isEnglish ? "english" : "spanish"}`}></div>
-          <button>En</button>
-        </div>
-        <button className="Theme">
-          {Day ? (
-            <h1 onClick={noche}>
-              <i className="bx bx-sun"></i>
-            </h1>
-          ) : (
-            <h1 onClick={dia}>
-              <i className="bx bx-moon"></i>
-            </h1>
-          )}
-        </button>
-      </div>
-
+      <Translate isEnglish={isEnglish} toggleLanguage={toggleLanguage}/>
       <Inicio t={t} />
       <About t={t} />
       <Skills t={t} />

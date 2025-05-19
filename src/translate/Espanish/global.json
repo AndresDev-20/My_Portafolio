@@ -9,10 +9,13 @@
 	  "contact": "Contáctame"
 	},
 	"welcome": {
-		"hello": "Hola, Soy",
-		"text": " Yeison Andrés",
+		"name": " Yeison Andrés",
 		"surname": "Marroquin Bernal.",
-		"intro": " Cuento con experiencia en el desarrollo de aplicaciones robustas y escalables."
+		"intro": " Especializado en crear experiencias web modernas y atractivas utilizando React, Next.js y otras tecnologías de vanguardia.",
+		 "contact": "Contáctame",
+		 "projects": "Ver proyectos",
+		 "cv": "Descargar Cv"
+	   
 	},
 	"phrases": [
 		"Desarrollador Full-Stack",
@@ -37,7 +40,7 @@
 	  "text": "Habilidades",
 	  "setion1": "Desarrollo Backend",
 	  "setion2": "Desarrollo Frontend",
-	  "setion3": "Herramientas"
+	  "setion3": "Herramientas y Bases de Datos"
 	},
 	"education": {
 	  "title": "Mi",
@@ -132,6 +135,11 @@
 			"name": "Riky and mortid",
 			"text": "App de personajes de Rick and Morty con buscador.",
 			"usage": ["UI/UX", "React", "Responsivo"]
+		},
+		"Project6":{
+			"name": "Animación Css",
+			"text": "Una hermosa animación de como dia a dia nuetra tierra rota ante el sol.",
+			"usage": ["Html", "Css", "Responsivo"]
 		}
 	  }
 	},

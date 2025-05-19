@@ -3,8 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './style/Header.css';
 import Menu from '../Menu/Menu';
+import Theme from '../Tools/Theme';
 
-const Header = () => {
+function Header() {
 	const [t] = useTranslation("global");
 	const [open, setOpen] = useState(true);
 	const [activeSection, setActiveSection] = useState();
@@ -21,7 +22,7 @@ const Header = () => {
 						setActiveSection(entry.target.id);
 					}
 				});
-			}, { threshold: 0.6 });
+			}, { threshold: 0.4 });
 
 			const sections = ["home", "About", "Skills", "Education", "Experience", "Projects", "Contact"];
 			sections.forEach(id => {
@@ -61,14 +62,18 @@ const Header = () => {
 				<nav className="Header_nav">
 					<Link to="/#home" onClick={() => document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })}>
 						<h1 className='Header_nav-h1'>
-							<img src="../../../images/Logo.png" alt="Logo" />
-							<span>Yeison</span>
+							<span>{"<Y.M/>"}</span>
 						</h1>
 					</Link>
 				</nav>
 				<nav className="Header_nav1">
-					<i onClick={() => setOpen(false)} className={open ? 'bx bx-menu' : "Clear"}></i>
-					<i onClick={() => setOpen(true)} className={open ? "Clear" : 'bx bx-x'}></i>
+					<div className='Theme_view'>
+					<Theme />
+					</div>
+					<div className='Menu_view'>
+						<i onClick={() => setOpen(false)} className={open ? 'bx bx-menu' : "Clear"}></i>
+					    <i onClick={() => setOpen(true)} className={open ? "Clear" : 'bx bx-x'}></i>
+					</div>
 				</nav>
 				<nav className="Header_nav2">
 					{["home", "About", "Skills", "Education", "Experience", "Projects", "Contact"].map((id) => (
@@ -78,9 +83,10 @@ const Header = () => {
 					))}
 				</nav>
 			</header>
-			<Menu open={open} setOpen={setOpen} t={t} activeSection={activeSection}/>
+				<Menu open={open} setOpen={setOpen} t={t} activeSection={activeSection} />
+			
 		</div>
 	);
-};
+}
 
 export default Header;

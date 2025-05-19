@@ -1,17 +1,4 @@
- .Home__configure {
-	position: fixed;
-	margin-top: 6em;
-	z-index: 10000;
-	width: 100%;
-	max-width: 4em;
-	height: 6em;
-	display: flex;
-	flex-direction: column;
-	right: 0;
-	margin-right: 2em;
-	align-items: center;
-	justify-content: space-around;
-  }
+
   
 .Translate {
 	position: static;
@@ -64,27 +51,6 @@
 	transform: translateX(0); 
   }
 
-  .Theme {
-	background: var(--First-color);
-	width: 100%;
-	color: var(--Text-fijo);
-	z-index: 10000;
-	position: static;
-	margin: 0em;
-	max-width: 2.5em;
-	top: 0;
-	margin-top: 0em;
-	cursor: pointer;
-	border: none;
-	font-size: 1.25em;
-	padding: 0em;
-	padding-top: .3em;
-	margin-left: 0em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: .3em;
-  }
  
   @media (min-width:900px) {
   .Home__configure {
@@ -98,24 +64,6 @@
 	right: 0;
 	margin-right: 4em;
   }
-
-  .Theme {
-	z-index: 10000;
-	position: absolute;
-	margin: 2em;
-	top: 0;
-	margin-top: 0em;
-	cursor: pointer;
-	border: none;
-	padding: 0em;
-	font-size: 1em;
-	max-width: 2.5em;
-	margin-left: 6.8em;
-	border-radius: .3em;
-	padding: .2em;
-  }
-
-
 	
 .Translate {
 	position: absolute;
