@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './style/Header.css';
 import Menu from '../Menu/Menu';
 import Theme from '../Tools/Theme';
+import Translate from '../Tools/Translate';
 
 function Header() {
 	const [t] = useTranslation("global");

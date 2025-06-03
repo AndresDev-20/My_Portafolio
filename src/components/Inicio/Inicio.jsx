@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style/Inicio.css";
-import ImageRude from "../ImageRude/ImageRude";
-import Theme from "../Tools/Theme";
 
 const Inicio = ({ t }) => {
   const [fraseIndex, setFraseIndex] = useState(0);

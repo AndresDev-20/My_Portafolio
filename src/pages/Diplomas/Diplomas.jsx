@@ -5,6 +5,7 @@ import Ademas from "../../components/Diplomados/Ademas/Ademas";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Loader from "../../components/Loader/Loader";
+import "./style/Diplomas.css"; // Asegúrate de tener el CSS para estilos
 
 const Diplomas = () => {
   const { instituto } = useParams();
