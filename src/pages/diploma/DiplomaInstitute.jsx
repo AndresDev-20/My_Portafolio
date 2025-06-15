@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"; // agrega useEffect
 
 import { useParams } from "react-router-dom";
-import Loader from "../../components/loader/Loader";
+import Loader from "../../components/loaderr/Loader";
 import "./style/diplomaInstitute.css"; // Asegúrate de tener el CSS para estilos
 import Sena from "../../components/diplomas/sena/Sena";
 import Academlo from "../../components/diplomas/academlo/Academlo";
