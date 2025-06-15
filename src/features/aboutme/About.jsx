@@ -1,3 +1,4 @@
+import { Images } from "../../assets/images";
 import "./style/about.css";
 
 const About = ({ t }) => {
@@ -15,7 +16,10 @@ const About = ({ t }) => {
         {t("about_me")} <span className="About_Me">{t("me")}</span>
       </h1>
       <div className="About_div">
-        <div className="About_div1"></div>
+        <div className="About_div1">
+          <figure>
+          </figure>
+        </div>
         <div className="About_div2">
           <p className="About_text one">
             {t("about_me_text1")}

@@ -19,7 +19,7 @@ const Footer = ({t}) => {
 				<div className='Footer_div2'>
 					<h1>{t("footer.quick_links")}</h1>
 					<ul>
-					<Link to="/#home" onClick={() => document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.home")}</li></Link>
+					<Link to="/#Start" onClick={() => document.querySelector('#Start').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i> {t("Header.home")}</li></Link>
 			<Link to="/#About" onClick={() => document.querySelector('#About').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> {t("Header.about")}</li></Link>
 			<Link to="/#Skills" onClick={() => document.querySelector('#Skills').scrollIntoView({ behavior: 'smooth' })}><li> <i className='bx bx-chevron-right'></i>  {t("Header.skills")}</li></Link>
 			<Link to="/#Education" onClick={() => document.querySelector('#Education').scrollIntoView({ behavior: 'smooth' })}>	<li> <i className='bx bx-chevron-right'></i> {t("Header.education")}</li></Link>

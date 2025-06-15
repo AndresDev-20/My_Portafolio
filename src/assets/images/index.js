@@ -51,9 +51,11 @@ import Animation from "./img/SystemSolar.png"
 
 //Imagen de la sesion contact me
 import Conatctme from "./img/Contact.png"
+import MyPhoto from '../../assets/images/img/My_photo.jpg';
 
 
 export const Images = {
+  MyPhoto,
   Express,
   Python,
   FastAPI,

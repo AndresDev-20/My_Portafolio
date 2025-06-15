@@ -13,7 +13,6 @@ const Home = ({t}) => {
 
   return (
     <div className="Home">
-      <AnimatedCursor />
       <Start t={t}/>
       <About t={t}/>
       <Skill t={t}/>

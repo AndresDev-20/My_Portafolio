@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import MyPhoto from '../../assets/images/img/My_photo.jpg';
+import { Images } from "../../assets/images";
 import CV from '../../assets/documents/Cv-AndresDev.pdf';
 import "./style/start.css";
 
@@ -141,7 +141,7 @@ const Start = ({ t }) => {
 
       <article className="Start_container-two">
         <figure>
-          <img src={MyPhoto} alt="My photo" />
+          <img src={Images.MyPhoto} alt="My photo" />
         </figure>
       </article>
     </section>

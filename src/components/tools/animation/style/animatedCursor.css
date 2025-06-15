@@ -1,28 +1,40 @@
-.custom-cursor {
+.trail-dot,
+.main-cursor {
   position: fixed;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #00ffff;
+  width: 10px;
+  height: 10px;
+  background-color: var(--First-color);
   border-radius: 50%;
+  transition: transform 0.05s ease-out;;
   pointer-events: none;
-  z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, background-color 0.3s ease;
-  mix-blend-mode: difference;
-  animation: pulse 1s infinite;
+  z-index: 10000000000;
 }
 
-@keyframes pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.2);
+.trail-dot {
+  opacity: 0.6;
+  filter: blur(1px);
+  box-shadow: 0 1 10px var(--First-color);
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  from {
     opacity: 0.6;
-  }
-  100% {
     transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
   }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.main-cursor {
+  background-color: var(--First-color);
+  filter: blur(1px);
+  box-shadow:  0 0 10px var(--First-color),
+    0 0 10px var(--First-color),
+    0 0 20px var(--First-color),
+    0 0 4px var(--First-color);
+  transition: transform 0.05s ease-out;
 }
