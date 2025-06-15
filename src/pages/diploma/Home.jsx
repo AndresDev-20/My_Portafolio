@@ -1,4 +1,3 @@
-import React from "react";
 import './style/home.css'
 import Start from "../../features/start/Start";
 import About from "../../features/aboutme/About";
