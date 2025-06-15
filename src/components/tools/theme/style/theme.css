@@ -8,7 +8,7 @@
   margin-top: 0.2em;
 }
 
-@media (min-width: 1066px) {
+@media (min-width: 1050px) {
   .Theme {
     background: transparent;
     border: none;

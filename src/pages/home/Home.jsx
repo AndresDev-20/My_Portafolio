@@ -6,12 +6,14 @@ import Education from "../../features/education/Education";
 import Experience from "../../features/experience/Experience";
 import Project from "../../features/projects/Project";
 import Contact from "../../features/contactme/Contact";
+import AnimatedCursor from '../../components/tools/animation/AnimatedCursor';
 
 const Home = ({t}) => {
 
 
   return (
     <div className="Home">
+      <AnimatedCursor />
       <Start t={t}/>
       <About t={t}/>
       <Skill t={t}/>

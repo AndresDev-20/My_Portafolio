@@ -17,6 +17,8 @@ const Education = ({t}) => {
 			if (section) {
 				section.scrollIntoView({ behavior: 'smooth' });
 			}
+
+			navigate(location.pathname, { replace: true });
 		}
 	}, [location]);
 	

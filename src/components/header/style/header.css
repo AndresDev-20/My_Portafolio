@@ -80,14 +80,14 @@
 }
 
 
-@media (min-width: 1066px) {
+@media (min-width: 1050px) {
   .Header_div {
     width: 100%;
     display: flex;
     gap: 3em;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3em 6em 1.3em 5em;
+    padding: 1.3em 5em 1.3em 5em;
   }
 
   .Header_logo {
