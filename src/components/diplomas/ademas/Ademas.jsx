@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Images } from "../../../assets/images";
-import LoaderDiplomas from "../../loaderr/LoaderDiplomas";
+import LoaderDiplomas from "../../loader/LoaderDiplomas";
 import "./style/ademas.css";
 
 const Ademas = ({ Academlos, setAcademlos, t }) => {
