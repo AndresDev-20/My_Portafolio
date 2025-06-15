@@ -1,0 +1,33 @@
+.App {
+    width: 100%;
+}
+
+.App_header {
+    width: 100%;
+    background-color: var(--Second-color);
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    margin-top: -0.1em;
+}
+
+.Header_scrolled {
+  width: 100%;
+  background-color: var(--Second-color);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px var(--Shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.App_footer {
+	background: var(--footer);
+	color: var(--color3-1);
+	width: 100%;
+	border-top: 1px solid var(--footer);
+}
+
+.App_footer > div {
+	padding: 1.2em;
+}

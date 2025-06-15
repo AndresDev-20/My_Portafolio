@@ -1,0 +1,33 @@
+.Theme {
+  background: transparent;
+  color: var(--Fourt-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-top: 0.2em;
+}
+
+@media (min-width: 1066px) {
+  .Theme {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.3em;
+    background-color: var(--Second-color);
+    border: 0.1px solid var(--First-color);
+    padding: 0.3em;
+    width: 1.9em;
+    height: 1.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 200ms ease transform;
+  }
+
+  .Theme:hover {
+    transform: scale(1.01);
+    color: rgb(173, 134, 5);
+  }
+}

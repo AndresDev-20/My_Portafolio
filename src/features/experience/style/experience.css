@@ -1,0 +1,140 @@
+.Experience {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4em;
+  background: var(--Second-color);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3em;
+}
+.Eperieence_Image2-Luje {
+  position: absolute;
+  right: 0;
+  margin-right: 4em;
+  bottom: 0;
+  margin-bottom: 4em;
+}
+.Experience_title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2em;
+  margin-bottom: 1.3em;
+  font-size: 30px;
+  color: var(--Third-color);
+}
+.bxs-brie {
+  font-size: 1.3em;
+}
+.laboral {
+  color: var(--First-color);
+}
+
+.Experience_contain {
+  border-left: 3px solid var(--First-color);
+  margin-left: 1em;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  position: relative;
+}
+
+.Experience_works {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  max-width: 57em;
+}
+.Experience_works-2 {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  max-width: 57em;
+  margin-top: -1em;
+}
+
+.icon {
+  position: absolute;
+  background: var(--First-color);
+  padding: 0.3em;
+  border-radius: 50%;
+  color: var(--Second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  left: 0;
+  margin-left: -15px;
+  margin-top: -0.2em;
+}
+.Experience_work > h1 {
+  color: var(--First-color);
+  font-size: 17px;
+  margin-bottom: 0.5em;
+  display: flex;
+}
+.Experience_work > p {
+  font-size: 16px;
+  line-height: 1.3rem;
+  color: var(--Fourt-color);
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 0.5em;
+}
+.text2 {
+  font-size: large;
+  color: red;
+}
+.Experience_work > span {
+  color: var(--Third-color);
+  border-bottom: 1px solid var(--First-color);
+}
+.Experience_work > div {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.Logros {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  color: var(--First-color);
+  font-size: 16px;
+  font-weight: 200;
+}
+.Logros > li {
+  list-style: circle;
+  margin-left: 2em;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: var(--Fourt-color);
+  font-weight: 400;
+}
+
+@media (min-width: 620px) {
+  .Experience_works-2 {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    max-width: 57em;
+    margin-top: -1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .Experience_line {
+    width: 0.8em;
+    border-radius: 2em;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 30em;
+  }
+}

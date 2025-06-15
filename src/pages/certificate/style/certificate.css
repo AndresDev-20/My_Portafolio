@@ -1,0 +1,32 @@
+.Certificates {
+    margin-top: 3.5em;
+}
+
+.Certificate_volver {
+    position: fixed;
+    top: 0;
+    margin-top: 1em;
+    padding-top: 2em;
+    width: 100%;
+	color: var(--First-color);
+    z-index: 100;
+    max-width: 6em;
+}
+
+.Certificate_volver > h1 {
+	font-size: 1.2em;
+    padding-left: 1em;
+	cursor: pointer;
+    border-bottom: 2px solid var(--First-color);
+    width: 100%;
+    max-width: 4.5em;
+    border-radius: 1px 1px 10px 1px;
+    padding-top: 3em;
+} 
+
+@media (min-width: 700px) {
+    .Certificates {
+    margin-top: 0em;
+}
+
+}

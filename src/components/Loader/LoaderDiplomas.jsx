@@ -1,8 +1,8 @@
-import "./style/Loader.css";
+import "./style/loader.css";
 
-const LoaderDiplomas = () => {
+const Loader = () => {
   return (
-    <div className="container__spinner-Diplosmas">
+    <div className="container__spinner">
       <div className="atom-spinner">
         <div className="spinner-inner">
           <div className="spinner-line"></div>
@@ -16,4 +16,4 @@ const LoaderDiplomas = () => {
   );
 };
 
-export default LoaderDiplomas;
+export default Loader;

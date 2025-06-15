@@ -1,5 +1,4 @@
-import React from 'react'
-import './style/Footer.css'
+import './style/footer.css'
 import {Link } from 'react-router-dom';
 
 const Footer = ({t}) => {
@@ -9,7 +8,7 @@ const Footer = ({t}) => {
 		window.open(`https://wa.me/573227222010?text=${message}`, "_blank");
 	  }
 	return (
-		<footer className='Footer'>
+		<div>
 			<div className='Footer_one'>
 				<div className='Footer_div1'>
 					<h1>{t("footer.name")}</h1>
@@ -50,7 +49,7 @@ const Footer = ({t}) => {
 			<div className='Footer_two'>
 				<h1>Copyright © 2024 <span className='Footer_fin'>Yeison Marroquin.</span>❤️</h1>
 			</div>
-		</footer>
+		</div>
 	)
 }
 

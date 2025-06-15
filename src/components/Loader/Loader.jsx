@@ -1,4 +1,4 @@
-import "./style/Loader.css";
+import "./style/loader.css";
 
 const Loader = () => {
   return (

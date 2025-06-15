@@ -1,0 +1,158 @@
+.Diplomados {
+    width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 2em;
+	background-color: var(--Second-color);
+}
+
+.Diplomados_exit {
+    padding-top: 2.5em;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 2em;
+	color: var(--First-color);
+}
+
+.Diplomados_exit > h1 {
+	font-size: 1.2em;
+    padding-left: 1em;
+	cursor: pointer;
+    border-bottom: 2px solid var(--First-color);
+    width: 100%;
+    max-width: 4.5em;
+    border-radius: 1px 1px 10px 1px;
+    padding-top: 3em;
+} 
+
+.Diplomados__carrer-diploma {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 66em;
+	margin: auto;
+}
+
+.Diplomados__title {
+	font-size: 1.2em;
+}
+
+.Diplomados__complementarios {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+
+.Education_Diplomas {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding: 2em;
+	padding-top: 6em;
+	overflow-y: scroll;
+	z-index: 100000;
+}
+
+.Academlo_title {
+	padding: 3em;
+}
+
+.Diplomado__exit {
+    width: 100%;
+    margin: auto;
+	margin-bottom: 3em;
+	text-align: center;
+	margin-top: 4em;
+}
+
+.Diplomado__exit > i {
+	background-color: var(--First-color);
+	color: var(--Text-fijo);
+	padding: .4em;
+	font-size: 1.3em;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.Diploma_Image {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 1em;
+	backdrop-filter: blur(4px);
+	padding-top: 7em;
+	background-color: var(--badrop);
+}
+
+.Diploma_Image > img {
+	width: 100%;
+	max-width: 40em;
+	margin-top: 0em;
+}
+
+.Image_Clear {
+	display: block;
+}
+
+@media (min-width: 1050px) {
+	.Diplomados__carrer-diploma {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		width: 100%;
+		max-width: 66em;
+		margin: auto;
+	}
+
+	.Diplomados__complementarios {
+		width: 100%;
+		max-width: 65.5em;
+		margin: auto;
+		margin-bottom: 2em;
+		justify-content: start;
+	}
+
+	.Diplomado__exit {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 0em;
+		margin-top: 3em;
+		text-align: end;
+		width: 100%;
+		max-width: 45em;
+	}
+	
+	.Diplomado__exit > i {
+		padding: .4em;
+		font-size: 1.3em;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.Diploma_Image {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		padding: 1em;
+		backdrop-filter: blur(4px);
+		padding-top: 0em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3em;
+		padding-bottom: 10em;
+	}
+	
+	.Diploma_Image > img {
+		width: 100%;
+		max-width: 39em;
+		margin-top: 0em;
+	}
+}

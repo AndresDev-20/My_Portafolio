@@ -1,0 +1,109 @@
+.Education {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: .5em;
+	background-color: var(--Second-color);
+	position: relative;
+	padding-top: 2em;
+}
+.Education_title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .2em;
+	margin-top: 2em;
+	margin-bottom: 1.3em;
+	font-size: 30px;
+	color: var(--Third-color);
+}
+.bxs-graduation{
+	font-size: 1.5em;
+}
+.edu_name {
+	color: var(--First-color);
+}
+.Education_study {
+	border-radius: .5em;
+	background: var(--Second-color);
+	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+	width: 100%;
+	max-width: 30em;
+}
+.Education_image >img {
+	border-radius: .5em .5em 0em 0em;
+}
+.Education_info {
+	margin: 1em;
+}
+.Education_info > h1 {
+	color: var(--First-color);
+	font-size: 1.4em;
+}
+.Education_info > p {
+   font-size: 16px;
+   line-height: 1.5rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+	line-height: 1.3;
+	margin-top: .6em;
+	margin-bottom: .6em;
+}
+.Education_info > span {
+	color: var(--Third-color);
+	font-size: 15px;
+}
+.Education_info > div {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+.Education_info > div > button {
+    cursor: pointer;
+	border: none;
+	background: var(--First-color);
+	color: var(--Text-fijo);
+	padding: .6em;
+	border-radius: .5em;
+}
+.edu {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.Education_exit {
+display: none;
+}
+
+@media (min-width: 800px) {
+	.Education_title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .2em;
+	margin-top: 2em;
+	margin-bottom: 1.3em;
+	font-size: 35px;
+	color: var(--Third-color);
+}
+
+	.Education_study {
+	display: flex;
+	align-items: center;
+	border-radius: .5em;
+	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+	color: var(--text);
+	width: 100%;
+	max-width: 100%;
+}	
+	.Education_image >img {
+		border-radius: .5em 0em 0em .5em;
+		width: 100%;
+		max-width: 20em;
+	}
+
+	
+}

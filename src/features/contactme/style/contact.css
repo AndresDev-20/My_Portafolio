@@ -1,0 +1,119 @@
+.Contactame {
+  background-color: var(--Second-color);
+  padding: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5em;
+}
+.Contactame_title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2em;
+  margin-bottom: 1.3em;
+  font-size: 1.6em;
+  color: var(--Third-color);
+}
+.suport {
+  font-size: 1.5em;
+}
+.Aqui {
+  color: var(--First-color);
+}
+.Contactame_image {
+  display: none;
+}
+.Contactame_form {
+  width: 100%;
+  max-width: 22em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 0.5em;
+  gap: 1em;
+  box-shadow: var(--Shadow-two);
+}
+
+.Contactame_form > input {
+  padding: 0.5em;
+  background-color: var(--Second-color);
+  border-radius: 0.6em;
+  border: none;
+  border: 1px solid var(--Five-color);
+  color: var(--Third-color);
+  width: 100%;
+  max-width: 30em;
+}
+.Contactame_form > textarea {
+  padding: 0.5em;
+  border-radius: 0.6em;
+  border: none;
+  border: 1px solid var(--Five-color);
+  width: 100%;
+  max-width: 24em;
+  color: var(--Five-color);
+  background-color: var(--Second-color);
+}
+.Contactame_btn {
+  width: 100%;
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: end;
+}
+.Contactame_btn > button {
+  border: none;
+  background-color: var(--First-color);
+  color: var(--Text-fijo);
+  padding: 0.6em;
+  width: 100%;
+  max-width: 6.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .Contactame {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 4em;
+    padding-top: 3em;
+  }
+  .Contactame_Father {
+    display: flex;
+    border-radius: 0.5em;
+    border: 1px solid var(--Five-color);
+    width: 100%;
+    max-width: 850px;
+    justify-content: space-evenly;
+    box-shadow: var(--Shadow-two);
+  }
+  .Contactame_image {
+    display: flex;
+  }
+  .Contactame_image > img {
+    border-radius: 1em;
+    max-width: 30em;
+  }
+  .Contactame_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    border-radius: 0em;
+    box-shadow: none;
+    background-color: var(--color1);
+    border: none;
+  }
+  .Contactame_form > textarea {
+    padding: 0.5em;
+    border-radius: 0.6em;
+    width: 100%;
+    max-width: 24em;
+  }
+}

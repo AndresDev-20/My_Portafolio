@@ -1,0 +1,180 @@
+.About {
+	background-color: var(--Second-color);
+	padding: 1em;
+	width: 100%;
+	padding-bottom: 5em;
+	padding-top: 5em;
+}
+
+.About_title {
+	font-size: 30px;
+	text-align: center;
+	color: var(--Third-color);
+}
+
+.About_div {
+	width: 100%;
+	max-width: 60em;
+	margin: auto;
+}
+
+.About_Me {
+	color: var(--First-color);
+}
+
+.one {
+	display: none;
+}
+
+.About_text {
+   font-size: 16px;
+   line-height: 1.5rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+    width: 100%;
+	margin-top: 1.8em;
+	line-height: 27px;
+	unicode-bidi: isolate;
+}
+
+.About_datos {
+	margin-top: 1.7em;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	width: 100%;
+}
+
+.About_datos > div {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.About_datos > div > li {
+	display: flex;
+	flex-direction: column;
+	gap: .4em;
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--Fourt-color);
+}
+
+.About_item {
+	color: var(--First-color);
+}
+
+.About_cv {
+	width: 100%;
+	max-width: 10em;
+    margin-top: 1.7em;
+    border: none;
+    padding: .8em;
+    border-radius: 3em;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--First-color);
+    color: var(--Text-fijo);
+	cursor: pointer;
+}
+
+
+@media (min-width: 700px) {
+	.About_title {
+	font-size: 35px;
+	text-align: center;
+	margin-top: -.8em;
+}
+
+	.one {
+	display: block;
+}
+
+.About_div {
+	display: flex;
+}
+
+
+
+.two {
+	display: none;
+}
+
+.About_datos {
+	margin-top: 1.7em;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7em;
+	justify-content: center;
+}
+
+.About_div2 {
+	width: 100%;
+}
+
+.About_text {
+   font-size: 16px;
+   line-height: 1.9rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+   text-align: start;
+   width: 100%;
+   text-align: center;
+}
+
+.space {
+	height: 1em;
+}
+
+.About_datos > div > li {
+	display: flex;
+	flex-direction: column;
+	gap: .6em;
+   font-size: 16px;
+   line-height: 1.3rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+   margin-bottom: .2em;
+}
+
+.About_cv {
+	width: 100%;
+	max-width: 10em;
+    margin-top: 1.7em;
+    border: none;
+    padding: .8em;
+    border-radius: 3em;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: var(--First-color);
+	margin-bottom: 4em;
+}
+
+}
+
+
+@media (min-width:1450px) {
+	.About_datos {
+	margin-top: 1.7em;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7em;
+	justify-content: center;
+}
+
+.About_div2 {
+	width: 100%;
+}
+
+.About_text {
+   font-size: 1.1em;
+   line-height: 1.9rem;
+   color: var(--Fourt-color);
+   font-weight: 400;
+   text-align: start;
+   width: 100%;
+   margin-left: 0em;
+   text-align: center;
+}
+}
