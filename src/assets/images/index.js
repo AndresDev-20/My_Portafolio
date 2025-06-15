@@ -3,13 +3,13 @@ import Express from "./logos/Express.png";
 import Python from "./logos/Python.png";
 import FastAPI from "./logos/FastAPI.png";
 import Django from "./logos/Django.png";
-import Java from "./logos/Java.png";
+import Java from "./logos/java.png";
 import Sprint from "./logos/Sprint.png";
 import Tailwin from "./logos/Tailwind.png";
-import Npm from "./logos/Npm.png";
+import Npm from "./logos/npm.png";
 import Figma from "./logos/Figma.png";
 import Postman from "./logos/Postman.png";
-import Mysql from "./logos/Mysql.png";
+import Mysql from "./logos/mysql.png";
 import SQLite from "./logos/SQLite.png";
 import SQLl from "./logos/SQLl.png";
 
