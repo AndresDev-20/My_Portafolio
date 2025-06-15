@@ -1,6 +1,6 @@
 // src/components/AnimatedCursor.jsx
 import { useEffect, useState } from 'react';
-import './animatedCursor.css';
+import './style/animatedCursor.css';
 
 const AnimatedCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
