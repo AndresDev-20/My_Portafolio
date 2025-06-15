@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Home from "./pages/home/Home";
-import Header from "./components/header/Header";
+import Home from "./pages/home/Home.jsx";
+import Header from "./components/header/Header.jsx";
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import Certificate from "./pages/certificate/Certificate";
-import DiplomaInstitute from "./pages/diploma/DiplomaInstitute";
-import ViewProjets from "./pages/project/ViewProject";
+import Footer from "./components/footer/Footer.jsx";
+import Certificate from "./pages/certificate/Certificate.jsx";
+import DiplomaInstitute from "./pages/diploma/DiplomaInstitute.jsx";
+import ViewProjets from "./pages/project/ViewProject.jsx";
 
 
 
