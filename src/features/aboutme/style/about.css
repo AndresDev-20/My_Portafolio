@@ -23,7 +23,7 @@
 }
 
 .About_div2 {
-	background-color: var(--Second-color);
+	background-color: var(--badrop-2);
 }
 
 .About_Me {
@@ -192,7 +192,7 @@
   }
 
   .About_text {
-    font-size: 1.1rem;
+    font-size: 17px;
     line-height: 1.8rem;
   }
 
@@ -209,6 +209,7 @@
 }
 
   .About_datos > div > li {
+    font-size: 17px;
     line-height: 1.5rem;
   }
 }

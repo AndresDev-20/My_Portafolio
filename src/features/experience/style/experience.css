@@ -42,7 +42,7 @@
   flex-direction: column;
   gap: 5em;
   position: relative;
-	background-color: var(--Second-color);
+  background-color: var(--badrop-2);
 }
 
 .Experience_works {
@@ -75,16 +75,16 @@
 }
 .Experience_work > h1 {
   color: var(--First-color);
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 0.5em;
   display: flex;
 }
 .Experience_work > p {
-  font-size: 16px;
+  font-size: 15.4px;
   line-height: 1.3rem;
   color: var(--Fourt-color);
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.7;
   margin-bottom: 0.5em;
 }
 .text2 {
@@ -108,11 +108,14 @@
   font-size: 16px;
   font-weight: 200;
 }
+.Logros > h1 {
+  font-size: 18px;
+}
 .Logros > li {
   list-style: circle;
   margin-left: 2em;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 15.4px;
+  line-height: 1.4;
   color: var(--Fourt-color);
   font-weight: 400;
 }
@@ -137,4 +140,17 @@
     justify-content: center;
     height: 30em;
   }
+}
+
+@media (min-width: 1450px) {
+  .Experience_work > p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.Logros > h1 {
+  font-size: 18px;
+}
+.Logros > li {
+  font-size: 17px;
+}
 }

@@ -33,7 +33,7 @@ const Footer = ({t}) => {
 					<ul className='Footer_div3_ul'>
 						<li><span><i className='bx bxs-phone'></i></span> +57 3227222010</li>
 						<li><span><i className='bx bxs-envelope'></i></span> andresmarroquin887@gmail.com</li>
-						<li><span><i className='bx bxs-map'></i></span> Rovira-Tolima, Colombia</li>
+						<li><span><i className='bx bxs-map'></i></span> Ibague-Tolima, Colombia</li>
 					</ul>
 					<ul className='Footer_div3_ul1'>
 					<Link to="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/" className='lik'><li><i className='bx bxl-linkedin-square'></i></li></Link>

@@ -10,6 +10,7 @@
   --Shadow: rgb(44, 44, 87);
   --Shadow-two: inset 0 -3em 3em rgba(13, 77, 238, 0.17), 0 0 0 2px rgba(23, 158, 182, 0.079),    0.3em 0.3em 1em rgba(19, 160, 184, 0.337);
   --badrop: rgba(8, 8, 68, 0.127);
+  --badrop-2: hsla(223, 84%, 5%, 0.844);
   --particle-color: #c1caf4;  
   --line-color: rgba(156, 219, 219, 0.4); 
     
@@ -26,6 +27,7 @@
   --Shadow: rgba(148, 148, 220, 0.452);
   --Shadow-two: inset 0 -3em 3em rgba(5, 76, 255, 0.051), 0 0 0 2px rgba(149, 206, 240, 0.264),    0.3em 0.3em 1em rgba(41, 114, 249, 0.237);
   --badrop: rgba(19, 19, 78, 0.336);
+  --badrop-2:  #f8f9fabf;
   --particle-color: #0732f249;  
   --line-color: rgba(3, 74, 239, 0.13); 
 }

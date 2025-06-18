@@ -48,8 +48,8 @@
     "diploma": "Career Diploma",
     "ver": "View",
     "not_available": "Not Available Yet",
-      "title_curso1": "English:",
-		  "title_curso2": "Development courses:",
+    "title_curso1": "English:",
+    "title_curso2": "Development courses:",
     "levels": {
       "fundamento": "Fundamentals Developer",
       "frontend": "Front-End Developer",
@@ -92,19 +92,30 @@
     "title": "Experience",
     "text": "Work",
     "full_stack": {
-      "title": "Application Developer - Freelance Project for Client (Recarga Movil SAS)",
-      "description": "Led the full development of an e-commerce system for the company Recarga Movil SAS, building both backend and frontend from scratch.",
-      "dates": "2023-2024 | Remote work",
+      "title": "Application Developer – Freelance Project and Internship (Recarga Móvil SAS)",
+      "description": "Since 2023, I collaborated as a freelance developer with the company Recarga Móvil SAS, working on various commissioned software projects without a formal contract. Later, I completed my internship for the Software Analysis and Development technologist program at the same company, finishing in 2025. During this time, I actively participated in the full development of an e-commerce system, handling both the backend and frontend.",
+      "dates": "2023 - 2025 | Remote work and internship",
       "platform": "View Platform",
       "name": "Achievements",
-      "logros": ["Increased Sales", "Process Optimization", "Quality and Reliability", "Independent Development"]
+      "logros": [
+        "Increased sales",
+        "Process optimization",
+        "Independent development",
+        "Achievement of academic goals during internship"
+      ]
     },
     "full_stack-work": {
-      "title": "Full Stack Developer - Freelance Project for Client (TheraClinic)",
-      "description": "Developed a system for a clinical office that manages appointments, patients, medical records, and exams. Responsible for analysis, design, development, and local testing.",
+      "title": "Full Stack Developer – Local Freelance Project (TheraClinic)",
+      "description": "Short-term freelance project (2 months) for a medical clinic. I developed a complete management system covering medical appointments, patients, clinical records, and exams. I was responsible for analysis, design, development, and local testing, all tailored to the client’s specific needs.",
+      "dates": "2024 | Local freelance project",
       "name": "Achievements",
-      "dates": "2024 | Remote work",
-      "logros": ["Ease of work", "Process Optimization", "Quality and Reliability", "Paperwork elimination and full digitalization of records"]
+      "logros": [
+        "Administrative process simplification",
+        "Optimization of clinical workflows",
+        "Full digitization of records",
+        "Elimination of paper-based processes",
+        "On-time and efficient project delivery"
+      ]
     }
   },
   "projects": {
@@ -132,7 +143,7 @@
         "usage": ["UI/UX", "React", "Responsive"]
       },
       "Project5": {
-        "name": "Riky and mortid",
+        "name": "Rick and Morty",
         "text": "Rick and Morty character app with search feature.",
         "usage": ["UI/UX", "React", "Responsive"]
       },

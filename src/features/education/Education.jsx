@@ -43,6 +43,19 @@ const Education = ({t}) => {
 		  </div>
 	   </div>
 
+	   <div className='Education_study'>
+          <figure className='Education_image'>
+			<img src={Images.Ademas} alt="" />
+		  </figure>
+		  <div className='Education_info'>
+			<h1>{t("education.institutions.ademass.name")}</h1>
+			<p> {t("education.institutions.ademass.institution")} </p>
+			<span>{t("education.institutions.ademass.dates")}</span><br />
+			<div>
+			<button onClick={() => GoDiplomas("ADEMAS")} > {t("education.institutions.academlo.certificates")} </button>
+			</div>
+		  </div>
+	   </div>
 
 	   <div className='Education_study'>
           <figure className='Education_image'>
@@ -68,20 +81,6 @@ const Education = ({t}) => {
 			<span>{t("education.institutions.academlo.dates")}</span><br />
 			<div>
 			<button onClick={() => GoDiplomas("ACADEMLO")} > {t("education.institutions.academlo.certificates")} </button>
-			</div>
-		  </div>
-	   </div>
-
-	   <div className='Education_study'>
-          <figure className='Education_image'>
-			<img src={Images.Ademas} alt="" />
-		  </figure>
-		  <div className='Education_info'>
-			<h1>{t("education.institutions.ademass.name")}</h1>
-			<p> {t("education.institutions.ademass.institution")} </p>
-			<span>{t("education.institutions.ademass.dates")}</span><br />
-			<div>
-			<button onClick={() => GoDiplomas("ADEMAS")} > {t("education.institutions.academlo.certificates")} </button>
 			</div>
 		  </div>
 	   </div>

@@ -37,7 +37,6 @@
    background-color: var(--Second-color);
    border: 1px solid var(--Five-color);
    border-radius: .5em;
-   width: 100%;
 }
 
 .Project_image > img {
@@ -76,6 +75,7 @@
 	font-weight: 400;
 	color: var(--Fourt-color);
 	line-height: 1.7em;
+	height: 5em;
 }
 
 .Project_open {
