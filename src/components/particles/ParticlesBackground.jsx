@@ -5,27 +5,28 @@ const ParticlesBackground = () => {
   const canvasRef = useRef(null);
   const particles = [];
 
-  const createParticles = (width, height, count = 90) => {
+  const createParticles = (width, height, count = 100) => {
     particles.length = 0;
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        radius: 2,
+        vx: (Math.random() - 0.5) * 0.8, // Movimiento más suave
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: Math.random() * 1.5 + 1.5, // Radios más variados
       });
     }
   };
 
-  const drawLine = (ctx, p1, p2, lineColor) => {
+  const drawLine = (ctx, p1, p2, baseColor) => {
     const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
-    const maxDist = 120;
+    const maxDist = 150;
     if (dist < maxDist) {
-      const alpha = 1 - dist / maxDist;
+      const alpha = (1 - dist / maxDist) * 0.5; // transiciones más suaves
+      const color = baseColor.replace(/[\d\.]+\)$/g, `${alpha})`);
       ctx.beginPath();
-      ctx.strokeStyle = lineColor.replace("0.4", alpha.toFixed(2));
-      ctx.lineWidth = 0.5;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 0.6;
       ctx.moveTo(p1.x, p1.y);
       ctx.lineTo(p2.x, p2.y);
       ctx.stroke();
@@ -50,6 +51,7 @@ const ParticlesBackground = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
       const particleColor = getCSSVar("--particle-color");
       const lineColor = getCSSVar("--line-color");
 
