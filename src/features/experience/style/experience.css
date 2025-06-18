@@ -80,6 +80,7 @@
   display: flex;
 }
 .Experience_work > p {
+  width: 100%;
   font-size: 15.4px;
   line-height: 1.3rem;
   color: var(--Fourt-color);
