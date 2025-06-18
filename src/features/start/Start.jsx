@@ -12,10 +12,6 @@ const Start = ({ t }) => {
    const [showAlert, setShowAlert] = useState(false); 
 
   const frases = t("phrases", { returnObjects: true });
-  const navigate = useNavigate();
-  const cv = () => {
-    navigate("cv");
-  };
   useEffect(() => {
     const cambiarFrase = () => {
       setLetraIndex(0);
@@ -60,16 +56,21 @@ const Start = ({ t }) => {
 
   // FUNCIÓN DE DESCARGA DEL CV
   const handleDownloadCV = () => {
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000); // Oculta el alert luego de 3 seg
+  setShowAlert(true);
+  setTimeout(() => setShowAlert(false), 3000); // Oculta la notificación tras 3s
 
-    const link = document.createElement('a');
-    link.href = CV;
-    link.download = 'CV_Yeison_Andres_Marroquin.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // Descarga del archivo
+  const link = document.createElement('a');
+  link.href = CV;
+  link.download = 'CV_Yeison_Andres_Marroquin.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  // Abrir el archivo en nueva pestaña
+  window.open(CV, "_blank");
+};
+
 
 
 

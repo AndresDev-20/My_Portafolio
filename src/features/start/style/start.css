@@ -13,15 +13,16 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--Five-color);
-  border: .1px solid var(--First-color);
+  border: 0.1px solid var(--First-color);
   color: var(--Third-color);
   padding: 12px 24px;
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  animation: flyIn 0.4s ease, flyOut 0.4s ease 2.6s;
-  z-index: 10000000000;
+  animation: flyIn 0.4s ease forwards, flyOut 0.4s ease 2.6s forwards;
+  z-index: 999999999;
 }
+
 
 .Start_container-one {
   width: 100%;
