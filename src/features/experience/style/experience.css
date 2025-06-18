@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 4em;
-  background: var(--Second-color);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,6 +42,7 @@
   flex-direction: column;
   gap: 5em;
   position: relative;
+	background-color: var(--Second-color);
 }
 
 .Experience_works {

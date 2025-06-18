@@ -1,5 +1,4 @@
 .About {
-  background-color: var(--Second-color);
   padding: 1em;
   width: 100%;
   padding-bottom: 5em;
@@ -21,6 +20,10 @@
 
 .About_div1 {
   display: none;
+}
+
+.About_div2 {
+	background-color: var(--Second-color);
 }
 
 .About_Me {
@@ -79,6 +82,10 @@
 
 
 @media (min-width: 600px) {
+	.About {
+		background-color: transparent;
+	}
+
   .one {
     display: block;
   }
@@ -104,7 +111,7 @@
 @media (min-width: 992px) {
   .About_div {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     margin-top: 3em;
     align-items: start;
     justify-content: center;
@@ -114,7 +121,7 @@
     display: flex;
     width: 100%;
     max-width: 30em;
-    margin-left: 4em;
+    margin-left: 3em;
   }
 
   .About_img {
@@ -125,7 +132,7 @@
   }
 
   .About_img > img {
-    max-width: 28.5em;
+    max-width: 27.5em;
     border-radius: 0.7em;
   }
 
@@ -154,12 +161,18 @@
     text-align: start;
     margin-top: 0em;
     font-size: 15.3px;
+	line-height: 1.7;
   }
 
   .About_datos {
     align-items: start;
     justify-content: start;
     flex-wrap: nowrap;
+  }
+
+  .About_datos > div > li {
+    line-height: 1.4rem;
+	font-size: 15px;
   }
 }
 
@@ -174,7 +187,7 @@
   }
 
   .About_img > img {
-    max-width: 32.5em;
+    max-width: 32.1em;
   }
 
   .About_text {

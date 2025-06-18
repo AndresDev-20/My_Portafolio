@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import AnimatedCursor from "./components/tools/animation/AnimatedCursor.jsx";
+import ParticlesBackground from "./components/particles/ParticlesBackground.jsx"
 
 function App() {
   const { t } = useTranslation("global");
@@ -48,6 +49,7 @@ function App() {
   return (
     <div className="App">
       <AnimatedCursor />
+      <ParticlesBackground/>
       <header className={`App_header ${scrolled ? 'Header_scrolled' : ''}`}>
         <Header t={t}/>
       </header>
