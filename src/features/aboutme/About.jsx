@@ -4,11 +4,7 @@ import "./style/about.css";
 const About = ({ t }) => {
   return (
     <section className="About" id="About" data-aos="fade-right">
-      <br />
-      <br />
-      <br />
-
-      <h1 className="About_title">
+      <h1 className="About_title" >
         {" "}
         <span>
           <i className="bx bxs-user"></i>
@@ -17,21 +13,19 @@ const About = ({ t }) => {
       </h1>
       <div className="About_div">
         <div className="About_div1">
-          <figure>
+          <figure className="About_img">
+            <img src={Images.Setup} alt="" />
           </figure>
         </div>
         <div className="About_div2">
           <p className="About_text one">
-            {t("about_me_text1")}
-            <br />
-            <br />
-            {t("about_me_text1.1")}
+            <span>{t("about_me_text1")}</span>
+            <span>{t("about_me_text1.1")}</span>
           </p>
+
           <p className="About_text two">
-            {t("about_me_text2")}
-            <br />
-            <br />
-            {t("about_me_text2.1")}
+            <span>{t("about_me_text2")}</span>
+            <span>{t("about_me_text2.1")}</span>
           </p>
           <ul className="About_datos">
             <div>

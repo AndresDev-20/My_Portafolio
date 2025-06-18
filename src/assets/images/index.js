@@ -13,6 +13,11 @@ import Mysql from "./logos/mysql.png";
 import SQLite from "./logos/SQLite.png";
 import SQLl from "./logos/SQLl.png";
 
+
+//Imagenes para personales para la app
+import Setup from './img/Setup.jpg'
+import MyPhoto from './img/My_photo.jpg';
+
 //Imagen de los institutos de educación 
 import Sena from "./img/Sena.png";
 import Academlo from "./img/Academlo.webp";
@@ -51,11 +56,11 @@ import Animation from "./img/SystemSolar.png"
 
 //Imagen de la sesion contact me
 import Conatctme from "./img/Contact.png"
-import MyPhoto from '../../assets/images/img/My_photo.jpg';
 
 
 export const Images = {
   MyPhoto,
+  Setup,
   Express,
   Python,
   FastAPI,
