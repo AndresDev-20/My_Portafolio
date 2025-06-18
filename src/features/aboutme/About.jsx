@@ -18,6 +18,7 @@ const About = ({ t }) => {
           </figure>
         </div>
         <div className="About_div2">
+          <h1>{t("Hi")}</h1>
           <p className="About_text one">
             <span>{t("about_me_text1")}</span>
             <span>{t("about_me_text1.1")}</span>
