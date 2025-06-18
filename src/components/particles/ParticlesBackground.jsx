@@ -11,9 +11,9 @@ const ParticlesBackground = () => {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 1, // Movimiento más suave
-        vy: (Math.random() - 0.5) * 0.6,
-        radius: Math.random() * 1.5 + 1.5, // Radios más variados
+        vx: (Math.random() - 0.5) * 1.2, // Movimiento más suave
+        vy: (Math.random() - 0.5) * 0.7,
+        radius: Math.random() * 1.5 + 1.3, // Radios más variados
       });
     }
   };

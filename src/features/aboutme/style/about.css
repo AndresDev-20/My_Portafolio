@@ -39,13 +39,12 @@
 }
 
 .About_text {
-  font-size: 16px;
   color: var(--Fourt-color);
   font-weight: 100;
   width: 100%;
   margin-top: 1.8em;
   line-height: 29px;
-  unicode-bidi: isolate;
+  font-size: 1em;
 }
 
 .About_text > span {
@@ -81,25 +80,27 @@
 }
 
 
+
 @media (min-width: 600px) {
 	.About {
 		background-color: transparent;
 	}
 
   .one {
-    display: block;
+    display: none;
   }
 
   .two {
-    display: none;
+    display: block;
   }
 
   .About_text {
     text-align: center;
     width: 100%;
-    max-width: 55em;
+    max-width: 80em;
     margin: auto;
     margin-top: 1.5em;
+	font-size: 16px;
   }
 
   .About_datos {
@@ -108,7 +109,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 954px) {
   .About_div {
     display: flex;
     gap: 1em;
@@ -211,3 +212,4 @@
     line-height: 1.5rem;
   }
 }
+
