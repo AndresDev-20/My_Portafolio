@@ -44,10 +44,20 @@
   color: var(--First-color);
 }
 
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  background-color: var(--First-color);
+  animation: blink 0.9s steps(1) infinite;
+}
+
 .Start_welcome > h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: var(--Fourt-color);
+  text-shadow: .4px .4px var(--First-color);
   font-weight: 400;
   margin-top: 16px;
 }
@@ -268,3 +278,13 @@
     opacity: 0;
   }
 }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
