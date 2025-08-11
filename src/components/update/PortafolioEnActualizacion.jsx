@@ -12,43 +12,56 @@ export default function PortafolioEnActualizacion() {
   };
 
   return (
-    <div className="container">
-      <div className="card">
-        <div className="icon">
+    <div className="pea-container">
+      <div className="pea-card">
+        <div className="pea-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h3l3 8 4-16 3 8h4" />
           </svg>
         </div>
 
-        <h1>Mi portafolio está en actualización</h1>
-        <p>
+        <h1 className="pea-title">Mi portafolio está en actualización</h1>
+        <p className="pea-description">
           Estoy trabajando en mejoras y nuevos proyectos. Pronto volverá con un diseño
           más fresco y contenido actualizado. Gracias por tu paciencia ✨
         </p>
 
-        <div className="buttons">
-          <button onClick={handleNotify} id="notify-btn">
+        <div className="pea-buttons">
+          <button
+            className="pea-btn-notify"
+            onClick={handleNotify}
+            id="notify-btn"
+          >
             {notified ? "Te avisaré cuando vuelva" : "Notificarme"}
           </button>
-          <a href="https://portafolio-andres-dev.netlify.app/#/pro" id="go-to-home">Ver proyectos anteriores</a>
+
+          <a
+            className="pea-btn-link"
+            href="https://portafolio-andres-dev.netlify.app/#/pro"
+            id="go-to-home"
+          >
+            Ver proyectos anteriores
+          </a>
         </div>
 
-        <div className="progress">
-          <div className="progress-bar" style={{ width: '40%' }}></div>
-          <div className="progress-text">
+        <div className="pea-progress">
+          <div className="pea-progress-bar" style={{ width: "40%" }}></div>
+          <div className="pea-progress-text">
             <span>Actualizando contenido</span>
             <span>40%</span>
           </div>
         </div>
 
         {showToast && (
-          <div className="toast">
+          <div className="pea-toast">
             Te avisaremos cuando el portafolio esté disponible ✅
           </div>
         )}
 
-        <p className="footer">Construido con JavaScript + React — Interfaz simple y elegante</p>
-        <p className="footer_name">Ingeniero Andres.dev</p>
+        <p className="pea-footer">
+          Construido con JavaScript + React — Interfaz simple y elegante
+        </p>
+        <p className="pea-footer-name">Ingeniero Andres.dev</p>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.container {
+.pea-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,7 +7,8 @@
   padding: 1.5rem;
   color: white;
 }
-.card {
+
+.pea-card {
   max-width: 700px;
   width: 100%;
   background: rgba(255, 255, 255, 0.05);
@@ -19,14 +20,7 @@
   position: relative;
 }
 
-.card > h1 {
-    margin-bottom: .4em;
-}
-
-.card > p {
-    line-height: 1.6;
-}
-.icon {
+.pea-icon {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -37,69 +31,90 @@
   margin: -3rem auto 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
-.icon svg {
+
+.pea-icon svg {
   width: 4rem;
   height: 4rem;
   color: white;
-  animation: pulse 1.5s infinite;
+  animation: pea-pulse 1.5s infinite;
 }
-@keyframes pulse {
+
+@keyframes pea-pulse {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.1); opacity: 0.7; }
 }
-.buttons {
+
+.pea-title {
+  margin-bottom: 0.4em;
+}
+
+.pea-description {
+  line-height: 1.6;
+}
+
+.pea-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
 }
-button, a {
+
+.pea-btn-notify {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.pea-btn-notify:hover {
+  transform: translateY(-2px);
+}
+
+.pea-btn-link {
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: bold;
   text-decoration: none;
-  cursor: pointer;
-  border: none;
-  transition: transform 0.2s, opacity 0.2s;
-}
-button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-}
-button:hover {
-  transform: translateY(-2px);
-}
-a {
   background: white;
   color: #4338ca;
+  transition: opacity 0.2s;
 }
-a:hover {
+
+.pea-btn-link:hover {
   opacity: 0.9;
 }
-.progress {
+
+.pea-progress {
   margin-top: 3rem;
 }
-.progress-bar {
+
+.pea-progress-bar {
   height: 0.75rem;
   background: linear-gradient(to right, #6366f1, #ec4899);
   border-radius: 9999px;
-  animation: loading 1.6s ease-in-out infinite;
+  animation: pea-loading 1.6s ease-in-out infinite;
 }
-.progress-text {
+
+@keyframes pea-loading {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(10%); }
+}
+
+.pea-progress-text {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
   margin-top: 0.5rem;
   opacity: 0.7;
 }
-@keyframes loading {
-  0% { transform: translateX(-10%); }
-  50% { transform: translateX(0%); }
-  100% { transform: translateX(10%); }
-}
-.toast {
+
+.pea-toast {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -112,15 +127,16 @@ a:hover {
   color: rgb(6, 52, 167);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-.footer {
+
+.pea-footer {
   font-size: 0.75rem;
   opacity: 0.5;
   margin-top: 2rem;
 }
 
-.footer_name {
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-    color: white;
-    text-decoration: underline;
+.pea-footer-name {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: white;
+  text-decoration: underline;
 }

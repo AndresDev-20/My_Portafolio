@@ -15,7 +15,6 @@ import "aos/dist/aos.css";
 import "./App.css";
 import AnimatedCursor from "./components/tools/animation/AnimatedCursor.jsx";
 import ParticlesBackground from "./components/particles/ParticlesBackground.jsx"
-import PortafolioEnActualizacion from "./components/update/PortafolioEnActualizacion.jsx";
 
 function App() {
   const { t } = useTranslation("global");
@@ -49,10 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      {
-        false
-        ?     <div>
-       <AnimatedCursor />
+      <AnimatedCursor />
       <ParticlesBackground/>
       <header className={`App_header ${scrolled ? 'Header_scrolled' : ''}`}>
         <Header t={t}/>
@@ -68,11 +64,6 @@ function App() {
       <footer className="App_footer">
         <Footer t={t}/>
       </footer>
-     </div>
-        : <PortafolioEnActualizacion />
-      }
-
-     
     </div>
   );
 }
