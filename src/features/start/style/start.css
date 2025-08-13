@@ -1,0 +1,254 @@
+.Start {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    padding-top: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+/* Para la alerta de la descarga del CV */
+.Start_alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--Five-color);
+  border: 0.1px solid var(--First-color);
+  color: var(--Third-color);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: flyIn 0.4s ease forwards, flyOut 0.4s ease 2.6s forwards;
+  z-index: 999999999;
+}
+
+
+/* Continuo con el estilo movil*/
+.Start_container-one {
+  width: 100%;
+  max-width: 25em;
+}
+
+.Start_welcome > h1 {
+  font-size: 2.3rem;
+}
+
+.Start_name {
+  color: var(--Third-color);
+}
+
+.Start_firtsname {
+  color: var(--First-color);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  background-color: var(--First-color);
+  animation: blink 0.9s steps(1) infinite;
+}
+
+.Start_welcome > h2 {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  color: var(--Third-color);
+  text-shadow: .4px .4px var(--Shadow);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.Start_welcome > p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: var(--Fourt-color);
+  font-weight: 400;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 24em;
+}
+
+.Start_buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  gap: 0.8em;
+}
+
+.Start_buttons > button {
+  width: 100%;
+  padding: 0.7em;
+  font-size: 14px;
+  font-weight: 450;
+  border-radius: 0.5em;
+}
+
+.Start_btn1 {
+  background-color: var(--First-color);
+  color: var(--Second-color);
+  border: 1px solid var(--First-color);
+  cursor: pointer;
+}
+
+.Start_btn2 {
+  background-color: var(--Second-color);
+  border: none;
+  border: 1px solid var(--Five-color);
+  color: var(--Third-color);
+  cursor: pointer;
+}
+
+.Start_btn2 > a {
+  color: var(--Third-color);
+}
+
+.Start_btn3 {
+  background-color: var(--Five-color);
+  color: var(--Third-color);
+  border: 1px solid var(--Five-color);
+  cursor: pointer;
+}
+
+.Start_urls {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.Start_urls > a {
+  font-size: 1em;
+}
+
+.Start_urls > a > li > i {
+  font-size: 2em;
+  color: var(--Fourt-color);
+}
+
+.Start_container-two {
+  width: 100%;
+  max-width: 25em;
+}
+
+.Start_container-two > figure > img {
+  width: 100%;
+  max-width: 30em;
+  margin: auto;
+  border-radius: 0.7em;
+}
+
+@media (min-width: 600px) {
+    .Start_container-one {
+        max-width: 30em;
+    }
+
+    .Start_welcome > h1 {
+        font-size: 2.7rem;
+    }
+
+    .Start_welcome > p {
+        max-width: 29em;
+    }
+
+    .Start_container-two {
+        max-width: 30em;
+    }
+
+}
+
+@media (min-width: 954px) {
+    .Start {
+        width: 100%;
+        gap: 4em;
+        flex-wrap: nowrap;
+        padding-top: 8em;
+    }
+
+    .Start_welcome > h1 {
+        font-size: 3rem;
+    }
+
+    .Start_welcome > h2 {
+        margin-top: 11px;
+    }
+
+    .Start_welcome > p {
+        max-width: 27em;
+        font-size: 17px;
+        line-height: 1.5rem;
+        margin-top: 11px;
+    }
+
+    .Start_buttons > button {
+        width: 100%;
+        max-width: 10em;
+        padding: 0.7em;
+        font-size: 14px;
+        font-weight: 450;
+        border-radius: 0.5em;
+    }
+
+    .Start_container-two {
+        width: 100%;
+        max-width: 25em;
+    }
+}
+
+
+/* Estilo para monitores grandes */
+
+@media (min-width: 1400px) {
+    .Start {
+        height: 100vh;
+        padding-top: 3em;
+        gap: 2em;
+    }
+
+    .Start_container-one {
+        max-width: 35em;
+    }
+
+    .Start_welcome > h1 {
+        font-size: 4.1rem;
+    }
+
+    .Start_welcome > h2 {
+        margin-top: 11px;
+        font-size: 1.3em;
+    }
+
+    .Start_welcome > p {
+        max-width: 27em;
+        font-size: 19px;
+        line-height: 2rem;
+        margin-top: 11px;
+    }
+
+    .Start_buttons > button {
+        width: 100%;
+        padding: 0.7em;
+        font-size: 14.5px;
+        font-weight: 450;
+        border-radius: 0.5em;
+    }
+
+    .Start_urls > a {
+        font-size: 1.15em;
+    }
+
+    .Start_container-two {
+        max-width: 35em;
+    }
+
+    .Start_container-two > figure > img {
+        max-width: 30em;
+    }
+}

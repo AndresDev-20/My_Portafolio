@@ -99,7 +99,7 @@
     width: 100%;
     max-width: 80em;
     margin: auto;
-    margin-top: 1.5em;
+    margin-top: 0em;
 	font-size: 16px;
   }
 
@@ -177,14 +177,19 @@
   }
 }
 
-@media (min-width: 1450px) {
-.About_div {
-	gap: 3em;
-}
+@media (min-width: 1400px) {
+  .About {
+    height: 100vh;
+    padding-bottom: 0em;
+  }
+
+ .About_div {
+	 gap: 3em;
+ }
 
   .About_div1 {
     max-width: 33em;
-	margin-left: 1em;
+	  margin-left: 1em;
   }
 
   .About_img > img {

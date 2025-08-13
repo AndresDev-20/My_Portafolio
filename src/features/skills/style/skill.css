@@ -250,3 +250,9 @@
 }
 
 }
+
+@media (min-width: 1400px) {
+    .Skills {
+      height: 100vh;
+    }
+}
