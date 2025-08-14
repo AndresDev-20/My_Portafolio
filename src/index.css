@@ -17,13 +17,13 @@
 }
 
 [data-theme="dark"] {
-  --First-color: oklch(44.6% .03 256.802);
+  --First-color: oklch(41.049% 0.11208 258.411);
   --Second-color: #f8f9fa;
   --Third-color: oklch(21% .034 264.665);
   --Fourt-color: #000000;
   --Five-color: #d9dadc;
   --Text-fijo: white;
-  --footer: linear-gradient(rgb(251, 251, 251), rgb(121, 121, 121));
+  --footer: linear-gradient(rgb(13, 16, 20), rgb(11, 13, 66));
   --Shadow: rgba(148, 148, 220, 0.452);
   --Shadow-two: inset 0 -3em 3em rgba(5, 76, 255, 0.051), 0 0 0 2px rgba(149, 206, 240, 0.264),    0.3em 0.3em 1em rgba(41, 114, 249, 0.237);
   --badrop: rgba(19, 19, 78, 0.336);

@@ -5,31 +5,36 @@ const ParticlesBackground = () => {
   const canvasRef = useRef(null);
   const particles = [];
 
-  const createParticles = (width, height, count = 100) => {
+  const createParticles = (width, height, count = 110) => {
     particles.length = 0;
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 1.2, // Movimiento más suave
-        vy: (Math.random() - 0.5) * 0.7,
-        radius: Math.random() * 1.5 + 1.3, // Radios más variados
+        vx: (Math.random() - 0.5) * 1.9, // más suave
+        vy: (Math.random() - 0.5) * 1.2,
+        radius: Math.random() * 1.8 + 1.2, // más variedad
+        opacity: Math.random() * 0.8 + 0.2, // para parpadeo
+        flickerSpeed: Math.random() * 0.02 + 0.005, // velocidad de parpadeo
       });
     }
   };
 
   const drawLine = (ctx, p1, p2, baseColor) => {
     const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
-    const maxDist = 150;
+    const maxDist = 180;
     if (dist < maxDist) {
-      const alpha = (1 - dist / maxDist) * 0.5; // transiciones más suaves
+      const alpha = (1 - dist / maxDist) * 0.4;
       const color = baseColor.replace(/[\d\.]+\)$/g, `${alpha})`);
       ctx.beginPath();
       ctx.strokeStyle = color;
-      ctx.lineWidth = 0.6;
+      ctx.lineWidth = 0.5;
+      ctx.shadowBlur = 4;
+      ctx.shadowColor = color;
       ctx.moveTo(p1.x, p1.y);
       ctx.lineTo(p2.x, p2.y);
       ctx.stroke();
+      ctx.shadowBlur = 0;
     }
   };
 
@@ -62,10 +67,18 @@ const ParticlesBackground = () => {
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
+        // Simular parpadeo
+        p.opacity += p.flickerSpeed;
+        if (p.opacity > 1 || p.opacity < 0.2) p.flickerSpeed *= -1;
+
+        // Dibujar partículas con glow
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = particleColor;
+        ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = particleColor;
         ctx.fill();
+        ctx.shadowBlur = 0;
       });
 
       for (let i = 0; i < particles.length; i++) {

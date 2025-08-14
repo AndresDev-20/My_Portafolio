@@ -144,6 +144,9 @@
 }
 
 @media (min-width: 1450px) {
+  .Experience {
+  min-height: 100vh;
+}
   .Experience_work > p {
   font-size: 17px;
   line-height: 1.7;

@@ -115,6 +115,9 @@
 
 
 @media (min-width: 700px) {
+	.Projects {
+  min-height: 100vh;
+}
 	.Projects_todos{
 		display: flex;
 		flex-wrap: wrap;
