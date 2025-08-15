@@ -10,6 +10,9 @@ const Header = ({t}) => {
 
   const scrollTo = (e, id) => {
     e.preventDefault();
+    setTimeout(() => {
+    setOpen(true);
+  }, 1000); 
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
