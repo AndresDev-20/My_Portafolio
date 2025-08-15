@@ -32,3 +32,13 @@
 .App_footer > div {
 	padding: 1.2em;
 }
+
+.particles {
+  display: none;
+}
+
+@media (min-width: 954px) {
+  .particles {
+    display: block;
+  }
+}

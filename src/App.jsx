@@ -49,7 +49,9 @@ function App() {
   return (
     <div className="App">
       <AnimatedCursor />
+      <div className="particles">
       <ParticlesBackground />
+      </div>
       <header className={`App_header ${scrolled ? 'Header_scrolled' : ''}`}>
         <Header t={t}/>
       </header>

@@ -7,7 +7,6 @@
 	padding: .5em;
 	position: relative;
 	padding-top: 2em;
-	min-height: 100vh;
 }
 .Education_title {
 	display: flex;
@@ -106,4 +105,10 @@ display: none;
 	}
 
 	
+}
+
+@media (min-width: 1400px) {
+	.Education {
+		min-height: 100vh;
+	}
 }

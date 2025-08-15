@@ -115,9 +115,6 @@
 
 
 @media (min-width: 700px) {
-	.Projects {
-  min-height: 100vh;
-}
 	.Projects_todos{
 		display: flex;
 		flex-wrap: wrap;
@@ -130,4 +127,11 @@
    max-width: 20em;
    border-radius: 1em;
 }
+}
+
+
+@media (min-width: 1400px) {
+	.Projects {
+		min-height: 100vh;
+	}
 }
