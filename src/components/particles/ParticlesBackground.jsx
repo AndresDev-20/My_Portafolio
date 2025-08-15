@@ -1,101 +1,63 @@
-import { useEffect, useRef } from "react";
-import "./style/particlesBackground.css";
+// src/components/ParticlesBackground.jsx
+import { useCallback, useMemo } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground = () => {
-  const canvasRef = useRef(null);
-  const particles = [];
-
-  const createParticles = (width, height, count = 110) => {
-    particles.length = 0;
-    for (let i = 0; i < count; i++) {
-      particles.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 1.9, // más suave
-        vy: (Math.random() - 0.5) * 1.2,
-        radius: Math.random() * 1.8 + 1.2, // más variedad
-        opacity: Math.random() * 0.8 + 0.2, // para parpadeo
-        flickerSpeed: Math.random() * 0.02 + 0.005, // velocidad de parpadeo
-      });
-    }
-  };
-
-  const drawLine = (ctx, p1, p2, baseColor) => {
-    const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
-    const maxDist = 180;
-    if (dist < maxDist) {
-      const alpha = (1 - dist / maxDist) * 0.4;
-      const color = baseColor.replace(/[\d\.]+\)$/g, `${alpha})`);
-      ctx.beginPath();
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 0.5;
-      ctx.shadowBlur = 4;
-      ctx.shadowColor = color;
-      ctx.moveTo(p1.x, p1.y);
-      ctx.lineTo(p2.x, p2.y);
-      ctx.stroke();
-      ctx.shadowBlur = 0;
-    }
-  };
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-
-    const getCSSVar = (name) =>
-      getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      createParticles(canvas.width, canvas.height);
-    };
-
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      const particleColor = getCSSVar("--particle-color");
-      const lineColor = getCSSVar("--line-color");
-
-      particles.forEach((p) => {
-        p.x += p.vx;
-        p.y += p.vy;
-
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-        // Simular parpadeo
-        p.opacity += p.flickerSpeed;
-        if (p.opacity > 1 || p.opacity < 0.2) p.flickerSpeed *= -1;
-
-        // Dibujar partículas con glow
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
-        ctx.shadowBlur = 12;
-        ctx.shadowColor = particleColor;
-        ctx.fill();
-        ctx.shadowBlur = 0;
-      });
-
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          drawLine(ctx, particles[i], particles[j], lineColor);
-        }
-      }
-
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    return () => window.removeEventListener("resize", resizeCanvas);
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
   }, []);
 
-  return <canvas ref={canvasRef} className="canvas-bg" />;
+  // Obtenemos las variables de CSS solo una vez
+  const cssVars = useMemo(() => {
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      particleColor: styles.getPropertyValue("--Particle-color"),
+      linkColor: styles.getPropertyValue("--line-color"),
+    };
+  }, []);
+
+  return (
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      options={{
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: { enable: false },
+            resize: true,
+          },
+        },
+        particles: {
+          color: { value: cssVars.particleColor },
+          links: {
+            color: cssVars.linkColor,
+            distance: 140,
+            enable: true,
+            opacity: 0.25,
+            width: 0.5,
+          },
+          move: {
+            enable: true,
+            speed: 2.5,
+            direction: "none",
+            outModes: { default: "bounce" },
+          },
+          number: {
+            value: 90,
+            density: { enable: true, area: 800 },
+          },
+          opacity: { value: 0.7 },
+          size: { value: { min: 1, max: 2 } },
+        },
+        detectRetina: true,
+        background: {
+          color: "transparent",
+        },
+      }}
+    />
+  );
 };
 
 export default ParticlesBackground;
