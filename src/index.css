@@ -6,7 +6,7 @@
   --Fourt-color: #94A3B8;
   --Five-color: #1E293B;
   --Text-fijo: white;
-  --footer: linear-gradient(rgba(9, 15, 39, 0.925), rgb(7, 3, 19));
+  --footer: linear-gradient(rgba(7, 17, 54, 0.925), rgb(7, 3, 19));
   --Shadow: rgb(44, 44, 87);
   --Shadow-two: inset 0 -3em 3em rgba(13, 77, 238, 0.17), 0 0 0 2px rgba(23, 158, 182, 0.079),    0.3em 0.3em 1em rgba(19, 160, 184, 0.337);
   --badrop: rgba(8, 8, 68, 0.127);
@@ -16,13 +16,13 @@
 }
 
 [data-theme="dark"] {
-  --First-color: oklch(41.049% 0.11208 258.411);
+  --First-color: oklch(56.021% 0.18452 259.021);
   --Second-color: #f8f9fa;
   --Third-color: oklch(21% .034 264.665);
   --Fourt-color: #000000;
   --Five-color: #d9dadc;
   --Text-fijo: white;
-  --footer: linear-gradient(rgb(13, 16, 20), rgb(11, 13, 66));
+  --footer: linear-gradient(rgb(11, 13, 66), rgb(13, 16, 20));
   --Shadow: rgba(148, 148, 220, 0.452);
   --Shadow-two: inset 0 -3em 3em rgba(5, 76, 255, 0.051), 0 0 0 2px rgba(149, 206, 240, 0.264),    0.3em 0.3em 1em rgba(41, 114, 249, 0.237);
   --badrop: rgba(19, 19, 78, 0.336);

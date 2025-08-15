@@ -22,10 +22,11 @@
 }
 
 .App_footer {
-	background: var(--footer);
 	color: var(--color3-1);
 	width: 100%;
 	border-top: 1px solid var(--footer);
+  background: var(--footer);
+  position: absolute;
 }
 
 .App_footer > div {
