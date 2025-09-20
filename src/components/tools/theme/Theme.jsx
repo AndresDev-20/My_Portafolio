@@ -25,13 +25,13 @@ const Theme = () => {
     <section>
       <button className="Theme">
         {Day ? (
-          <h1 onClick={noche}>
+          <h2 onClick={noche}>
             <i className="bx bx-sun"></i>
-          </h1>
+          </h2>
         ) : (
-          <h1 onClick={dia}>
+          <h2 onClick={dia}>
             <i className="bx bx-moon"></i>
-          </h1>
+          </h2>
         )}
       </button>
     </section>
