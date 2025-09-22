@@ -69,6 +69,7 @@
 
 .Project_about > h1 {
 	color: var(--First-color);
+	font-size: 1.4em;
 }
 
 .Project_about > p {

@@ -29,6 +29,31 @@ const Project = ({ t }) => {
 			</div>
 		</div> */}
 
+     <div className="Projects_Project" data-aos="fade-right">
+          <figure className="Project_image">
+            <img src={Images.Univercity} alt="" />
+          </figure>
+           <div className="Project_about">
+            <h1>{t("projects.projects.Project6.name")}</h1>
+            <p className="Project_text">
+              {t("projects.projects.Project6.text")}
+            </p>
+            <ul className="Project_usage">
+              <li>{t("projects.projects.Project6.usage.0")}</li>
+              <li>{t("projects.projects.Project6.usage.1")}</li>
+              <li>{t("projects.projects.Project6.usage.2")}</li>
+            </ul>
+            <div className="Project_open">
+              <span>
+                {" "}
+                <Link to="https://github.com/AndresDev-20/UniverCity__Backend.git">
+                   <i className='openGite bx bxl-github' ></i> Code
+                </Link>{" "}
+              </span>
+            </div>
+          </div>
+        </div>
+
         <div className="Projects_Project" data-aos="fade-right">
           <figure className="Project_image">
             <img src={Images.Ecomerce_CLA} alt="" />
@@ -182,37 +207,6 @@ const Project = ({ t }) => {
               <span>
                 {" "}
                 <Link to="https://github.com/yeisonmarroquin887/tercerEntregable.git">
-                   <i className='openGite bx bxl-github' ></i> Code
-                </Link>{" "}
-              </span>
-            </div>
-          </div>
-        </div>
-
-         <div className="Projects_Project" data-aos="fade-right">
-          <figure className="Project_image">
-            <img src={Images.Animation} alt="" />
-          </figure>
-           <div className="Project_about">
-            <h1>{t("projects.projects.Project6.name")}</h1>
-            <p className="Project_text">
-              {t("projects.projects.Project6.text")}
-            </p>
-            <ul className="Project_usage">
-              <li>{t("projects.projects.Project6.usage.0")}</li>
-              <li>{t("projects.projects.Project6.usage.1")}</li>
-              <li>{t("projects.projects.Project6.usage.2")}</li>
-            </ul>
-            <div className="Project_open">
-              <span>
-                {" "}
-                <Link to="https://kaleidoscopic-sunshine-db62c9.netlify.app/">
-                  <i className='openGite bx bx-link' ></i> App
-                </Link>{" "}
-              </span>
-              <span>
-                {" "}
-                <Link to="https://github.com/AndresDev-20/Animation_Practica_SistemaSolar.git">
                    <i className='openGite bx bxl-github' ></i> Code
                 </Link>{" "}
               </span>

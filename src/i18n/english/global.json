@@ -148,9 +148,9 @@
         "usage": ["UI/UX", "React", "Responsive"]
       },
       "Project6": {
-        "name": "Css Animation",
-        "text": "A beautiful animation showing how our Earth rotates daily in front of the sun.",
-        "usage": ["Html", "Css", "Responsive"]
+        "name": "Univercity Backend",
+        "text": "It is a university educational platform developed with FastAPI.",
+        "usage": ["Python", "FasApi", "PostgreSQL"]
       }
     }
   },

@@ -52,7 +52,7 @@ import Pokedex from "./img/Pokedex.png"
 import Weather from "./img/Weather_App.png"
 import Cookies from "./img/Cokies.png"
 import Riky from "./img/Riky.png"
-import Animation from "./img/SystemSolar.png"
+import Univercity from "./img/Univercity.png"
 
 //Imagen de la sesion contact me
 import Conatctme from "./img/Contact.png"
@@ -83,7 +83,7 @@ export const Images = {
   Weather,
   Cookies,
   Riky,
-  Animation,
+  Univercity,
   Conatctme,
   Sena_tecnologo,
   Sena_python,
