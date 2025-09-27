@@ -76,7 +76,7 @@ Soy un desarrollador Full Stack certificado por Academlo (México) y el SENA (Co
 ### 🏥 TheraClinic (Freelance)
 **Sistema de gestión clínica: citas, pacientes, historiales médicos y exámenes**  
 - Análisis, diseño y desarrollo completo  
-- Logros: Digitalización total, reducción de papeleo, mejora en procesos nn
+- Logros: Digitalización total, reducción de papeleo, mejora en procesos
 
 📅 `2024 | Trabajo remoto`
 
