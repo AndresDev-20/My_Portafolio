@@ -23,11 +23,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     transition: 200ms ease transform;
   }
 
+  .Theme > h2 {
+    font-size: 1.35em;
+    margin-top: 3px;
+  }
+
   .Theme:hover {
-    transform: scale(1.01);
     color: rgb(173, 134, 5);
   }
 }
