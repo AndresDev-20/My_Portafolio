@@ -25,9 +25,10 @@
 	color: var(--First-color);
 }
 .Education_study {
-	border-radius: .5em;
+	border-radius: .5em; 
 	background: var(--Second-color);
 	box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+	border: 1px solid var(--Five-color);
 	width: 100%;
 	max-width: 30em;
 }

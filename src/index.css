@@ -17,7 +17,7 @@
 
 [data-theme="dark"] {
   --First-color: oklch(56.021% 0.18452 259.021);
-  --Second-color: #f8f9fa;
+  --Second-color: #eaf0f6;
   --Third-color: oklch(21% .034 264.665);
   --Fourt-color: #000000;
   --Five-color: #d9dadc;
@@ -27,8 +27,6 @@
   --Shadow-two: inset 0 -3em 3em rgba(5, 76, 255, 0.051), 0 0 0 2px rgba(149, 206, 240, 0.264),    0.3em 0.3em 1em rgba(41, 114, 249, 0.237);
   --badrop: rgba(19, 19, 78, 0.336);
   --badrop-2:  #f8f9fabf;
-  --Particle-color: #1307ff;   
-  --line-color: rgb(12, 50, 137); 
 }
 
 html {

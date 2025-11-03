@@ -5,7 +5,7 @@ import Theme from "../tools/theme/Theme";
 import Translate from "../tools/translate/Translate";
 import { Link } from "react-router-dom";
 
-const Header = ({t}) => {
+const Header = ({t, particles}) => {
   const [open, setOpen] = useState(true);
 
   const scrollTo = (e, id) => {
@@ -26,7 +26,7 @@ const Header = ({t}) => {
       <nav className="Header_nav">
         <div className="Header_nav-tools">
           <Translate />
-          <Theme />
+          <Theme particles={particles} />
         </div>
         <div className="Header_nav-toggle">
           <i

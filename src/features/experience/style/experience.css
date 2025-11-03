@@ -42,7 +42,7 @@
   flex-direction: column;
   gap: 5em;
   position: relative;
-  background-color: var(--badrop-2);
+  background-color: var(--Second-color);
 }
 
 .Experience_works {

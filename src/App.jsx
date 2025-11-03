@@ -19,6 +19,7 @@ import ParticlesBackground from "./components/particles/ParticlesBackground.jsx"
 function App() {
   const { t } = useTranslation("global");
   const [scrolled, setScrolled] = useState(false);
+  const [particles, setParticles] = useState(true);
   const location = useLocation();
 
   // ✅ Inicializa AOS una sola vez
@@ -50,10 +51,10 @@ function App() {
     <div className="App">
       <AnimatedCursor />
       <div className="particles">
-      <ParticlesBackground />
+        {particles && <ParticlesBackground />}
       </div>
       <header className={`App_header ${scrolled ? 'Header_scrolled' : ''}`}>
-        <Header t={t}/>
+        <Header t={t} particles={setParticles} />
       </header>
       <main className="App_main">
         <Routes>

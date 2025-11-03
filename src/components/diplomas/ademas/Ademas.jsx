@@ -63,7 +63,12 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
       <div className="Diplomados__carrer-diploma">
         <div className={Academlos ? "Clear_Diploma" : "DiplomasAdemass"}>
           <div>
-            <h1>{t("education.diploma")}</h1>
+            <h1 className="Diplomados__title">{t("education.diploma")}</h1>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <p>{t("education.not_available")}</p>
           </div>
         </div>
@@ -75,31 +80,31 @@ const Ademas = ({ Academlos, setAcademlos, t }) => {
       <div className="Diplomados__complementarios">
         <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas1"}>
           <div>
-            <h1>Html5</h1>
+            <h1 className="Diplomados__title" >Html5</h1>
             <button onClick={() => OpenDiploma(1)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas2"}>
           <div>
-            <h1>Css3</h1>
+            <h1 className="Diplomados__title">Css3</h1>
             <button onClick={() => OpenDiploma(2)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas3"}>
           <div>
-            <h1>JavaScript</h1>
+            <h1 className="Diplomados__title">JavaScript</h1>
             <button onClick={() => OpenDiploma(3)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas4"}>
           <div>
-            <h1>TypeScript</h1>
+            <h1 className="Diplomados__title">TypeScript</h1>
             <button onClick={() => OpenDiploma(4)}>{t("education.ver")}</button>
           </div>
         </div>
         <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas5"}>
           <div>
-            <h1>Python</h1>
+            <h1 className="Diplomados__title">Python</h1>
             <button onClick={() => OpenDiploma(5)}>{t("education.ver")}</button>
           </div>
         </div>

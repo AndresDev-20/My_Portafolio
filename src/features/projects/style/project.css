@@ -35,7 +35,8 @@
    width: 100%;
    max-width: 25em;
    background-color: var(--Second-color);
-   border: 1px solid var(--Five-color);
+   box-shadow: 6px 9px 7px 2px rgba(173, 170, 238, 0.33);
+border: 1px solid var(--Five-color);
    border-radius: .5em;
 }
 

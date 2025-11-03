@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './style/theme.css'
+import { t } from "i18next";
 
-const Theme = () => {
+const Theme = ({particles}) => {
   const [Day, setDay] = useState(true);
   const [Theme, setTheme] = useState("");
 
@@ -13,12 +14,14 @@ const Theme = () => {
     const newTheme = Theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     setDay(false);
+    particles(false);
   };
 
   const dia = () => {
     const newTheme = Theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     setDay(true);
+    particles(true);
   };
 
   return (
