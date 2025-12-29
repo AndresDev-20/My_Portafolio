@@ -53,6 +53,7 @@ import Weather from "./img/Weather_App.png"
 import Cookies from "./img/Cokies.png"
 import Riky from "./img/Riky.png"
 import Univercity from "./img/Univercity.png"
+import Dominos from "./img/DominosStore.png"
 
 //Imagen de la sesion contact me
 import Conatctme from "./img/Contact.png"
@@ -84,6 +85,7 @@ export const Images = {
   Cookies,
   Riky,
   Univercity,
+  Dominos,
   Conatctme,
   Sena_tecnologo,
   Sena_python,

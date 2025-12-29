@@ -183,6 +183,10 @@
     padding-bottom: 0em;
   }
 
+  .About_title {
+  font-size: 35px;
+}
+
  .About_div {
 	 gap: 3em;
  }

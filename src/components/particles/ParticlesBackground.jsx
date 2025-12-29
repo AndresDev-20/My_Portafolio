@@ -36,7 +36,7 @@ const ParticlesBackground = () => {
             distance: 140,
             enable: true,
             opacity: 0.25,
-            width: 0.5,
+            width: 1,
           },
           move: {
             enable: true,

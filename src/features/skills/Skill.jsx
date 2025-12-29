@@ -30,6 +30,16 @@ const Skill = ({ t }) => {
             </div>
 
             <div>
+              <img src={Images.Python} alt="" />
+              <h1>Python</h1>
+            </div>
+
+            <div>
+              <img src={Images.Java} alt="" />
+              <h1>Java</h1>
+            </div>
+
+            <div>
               <i className="bx bxl-nodejs"></i>
               <h1>Node.js</h1>
             </div>
@@ -37,11 +47,6 @@ const Skill = ({ t }) => {
             <div>
               <img src={Images.Express} alt="" />
               <h1>Express.js</h1>
-            </div>
-
-            <div>
-              <img src={Images.Python} alt="" />
-              <h1>Python</h1>
             </div>
 
             <div>
@@ -55,18 +60,8 @@ const Skill = ({ t }) => {
             </div>
 
             <div>
-              <i className="bx bxl-mongodb"></i>
-              <h1>MongoDB</h1>
-            </div>
-
-            <div>
-              <img src={Images.Java} alt="" />
-              <h1>Java</h1>
-            </div>
-
-            <div>
               <img src={Images.Sprint} alt="" />
-              <h1>Sprint</h1>
+              <h1>Spring</h1>
             </div>
 
             
@@ -155,12 +150,17 @@ const Skill = ({ t }) => {
               <img src={Images.SQLl} alt="" />
               <h1>SQL</h1>
             </div>
-            
 
             <div>
               <i className="bx bxl-postgresql"></i>
               <h1>PostgreSQL</h1>
             </div>
+
+            <div>
+              <i className="bx bxl-mongodb"></i>
+              <h1>MongoDB</h1>
+            </div>
+            
           </div>
         </div>
       </article>

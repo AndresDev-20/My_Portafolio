@@ -56,7 +56,7 @@ const Project = ({ t }) => {
 
         <div className="Projects_Project" data-aos="fade-right">
           <figure className="Project_image">
-            <img src={Images.Ecomerce_CLA} alt="" />
+            <img src={Images.Dominos} alt="" />
           </figure>
           <div className="Project_about">
             <h1>{t("projects.projects.Project1.name")}</h1>
@@ -71,13 +71,7 @@ const Project = ({ t }) => {
             <div className="Project_open">
               <span>
                 {" "}
-                <Link to="https://zippy-pavlova-3da0ad.netlify.app/">
-                  <i className='openGite bx bx-link' ></i> App
-                </Link>{" "}
-              </span>
-              <span>
-                {" "}
-                <Link to="https://github.com/yeisonmarroquin887/Computers-Store.git">
+                <Link to="https://github.com/AndresDev-20/Dominos_Store-Backend.git">
                    <i className='openGite bx bxl-github' ></i> Code
                 </Link>{" "}
               </span>

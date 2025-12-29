@@ -123,9 +123,9 @@
     "text": "Proyectos",
     "projects": {
       "Project1": {
-        "name": "E-commerce CLA ()",
-        "text": "Plataforma de comercio electrónico para marca de moda sostenible.",
-        "usage": ["UI/UX", "Frontend", "Responsivo"]
+        "name": "Dominos Store Backend",
+        "text": "Backend del sistema de comercio electrónico \"Dominós Store\".",
+        "usage": ["JavaScript", "Node.js", "Express"]
       },
       "Project2": {
         "name": "Pokedex",
