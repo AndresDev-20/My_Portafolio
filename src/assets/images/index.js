@@ -19,7 +19,7 @@ import Docker from "./logos/Docker.png"
 
 //Imagenes para personales para la app
 import Setup from './img/Setup.jpg'
-import MyPhoto from './img/My_photo.jpg';
+import MyPhoto from './img/My_photo.png';
 
 //Imagen de los institutos de educación 
 import Sena from "./img/Sena.png";
