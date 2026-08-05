@@ -113,13 +113,20 @@ const Skill = ({ t }) => {
           <h1 className="Skill_profetion-title">{t("skills.setion3")}</h1>
           <div className="Skills_container">
             <div>
+              <img src={Images.Claude} alt="" />
+              <h1>Claude</h1>
+            </div>
+            <div>
+              <img src={Images.N8n} alt="" />
+              <h1>N8n</h1>
+            </div>
+            <div>
+              <img src={Images.Docker} alt="" />
+              <h1>Docker</h1>
+            </div>
+            <div>
               <i className="bx bxl-github"></i>
               <h1>GitHub</h1>
-            </div>
-
-            <div>
-              <i className="bx bxl-git"></i>
-              <h1>Git</h1>
             </div>
 
             <div>

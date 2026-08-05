@@ -12,6 +12,9 @@ import Postman from "./logos/Postman.png";
 import Mysql from "./logos/mysql.png";
 import SQLite from "./logos/SQLite.png";
 import SQLl from "./logos/SQLl.png";
+import Claude from "./logos/Claude.png"
+import N8n from "./logos/N8n.png"
+import Docker from "./logos/Docker.png"
 
 
 //Imagenes para personales para la app
@@ -75,6 +78,9 @@ export const Images = {
   Mysql,
   SQLite,
   SQLl,
+  Claude,
+  N8n,
+  Docker,
   Sena,
   Academlo,
   American,

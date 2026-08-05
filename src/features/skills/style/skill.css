@@ -249,6 +249,7 @@
 
 .Skills_container > div > img {
   max-width: 2.5em;
+  min-height: 2.5em;
 }
 
 }
