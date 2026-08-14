@@ -11,6 +11,24 @@ const Experience = ({t}) => {
 			<br />
 			<h1 className='Experience_title'> <span><i className='bx bxs-briefcase bxs-brie'></i></span> {t("experience.title")} <span className='laboral'>{t("experience.text")}</span> </h1>
             <div className='Experience_contain'>
+				<div className='Experience_works'>
+				<div className='Experience_work' data-aos="fade-right">
+					<h1><span><i className='bx bxs-briefcase icon'></i></span>{t("experience.alphalux.title")}</h1>
+					<p>{t("experience.alphalux.description")}</p>
+					<ul className='Logros'>
+						<h1>{t("experience.alphalux.name")}:</h1>
+						<li>{t("experience.alphalux.logros.0")}</li>
+						<li>{t("experience.alphalux.logros.1")}</li>
+						<li>{t("experience.alphalux.logros.2")}</li>
+						<li>{t("experience.alphalux.logros.3")}</li>
+					</ul>
+					<br />
+					<span>{t("experience.alphalux.dates")}</span><br />
+					<div>
+
+					</div>
+				</div>
+			</div>
                <div className='Experience_works'>
 				<div className='Experience_work' data-aos="fade-right">
 					<h1><span><i className='bx bxs-briefcase icon'></i></span>{t("experience.full_stack.title")}</h1>

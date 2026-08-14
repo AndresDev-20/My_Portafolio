@@ -116,7 +116,22 @@
         "Elimination of paper-based processes",
         "On-time and efficient project delivery"
       ]
-    }
+    },
+    "alphalux": {
+    "title": "Full Stack & AI Developer – Alphalux",
+    "description": "Collaborated on the development of AI-powered business solutions focused on process automation and operational efficiency. Worked on CRM integrations, workflow automation, API integrations, and intelligent assistants powered by Claude AI. Also contributed to Meta Business Manager integrations to improve customer communication and business processes. Participated in the development of scalable software solutions within a collaborative development environment, following best practices in software engineering.",
+    "dates": "2026 | Remote Work",
+    "platform": "View Company",
+    "name": "Achievements",
+    "logros": [
+      "Developed AI-powered business automations",
+      "Integrated CRM platforms and APIs",
+      "Built intelligent assistants using Claude AI",
+      "Integrated Meta Business Manager services",
+      "Optimized business workflows through automation",
+      "Collaborated on Full Stack software development projects"
+    ]
+  }
   },
   "projects": {
     "title": "My",
