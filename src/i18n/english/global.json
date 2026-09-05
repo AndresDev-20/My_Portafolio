@@ -1,33 +1,41 @@
 {
   "Header": {
     "home": "Home",
-    "about": "About me",
+    "about": "About Me",
     "skills": "Skills",
     "education": "Education",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact me"
+    "contact": "Contact Me"
   },
+
   "welcome": {
-    "name": " Yeison Andrés",
-    "surname": "Marroquin Bernal.",
-    "intro": "Specialized in Full Stack development with a backend focus using Python, Node.js, and React for complete and efficient solutions.",
-    "contact": "Contact me",
-    "projects": "See projects",
+    "name": "Yeison Andrés",
+    "surname": "Marroquín Bernal.",
+    "intro": "Full Stack Developer with a focus on Backend and databases, specialized in Node.js, TypeScript, Express.js, and SQL to build applications and APIs focused on real-world needs.",
+    "contact": "Contact Me",
+    "projects": "View Projects",
     "cv": "Download CV"
   },
+
   "phrases": [
-    "Full-Stack Developer",
-    "Front-End Developer",
-    "Back-End Developer"
+    "Full Stack Developer",
+    "Backend Developer",
+    "Software Developer"
   ],
+
   "about_me": "About",
   "me": "Me",
-  "Hi": "Hello...",
-  "about_me_text1": "As a Full-Stack Developer, I have a solid academic background supported by Academlo in Mexico and a certification as a Software Analysis and Development Technologist granted by SENA in Colombia. ",
-  "about_me_text1.1": "My focus is on creating technological solutions that drive efficiency and growth for your company. With a strong desire to learn and improve my coding skills, I am ready to contribute with innovation, commitment, and dedication to your team.",
-  "about_me_text2": "As a Full-Stack Developer trained at Academlo (Mexico) and certified as a Software Analysis and Development Technologist by SENA (Colombia).",
-  "about_me_text2.1": "I focus on creating solutions that drive business efficiency, with a constant commitment to improvement. I bring innovation and dedication to your team.",
+  "Hi": "Hi...",
+
+  "about_me_text1": "As a Full Stack Developer, I have experience building web applications, REST APIs, database integrations, and external services. My main professional interest is Backend development and data management.",
+
+  "about_me_text1.1": "I am a Software Analysis and Development Technologist from SENA, with training in Full Stack development. I mainly work with Node.js, TypeScript, Express.js, SQL, and Docker, while maintaining complementary knowledge in frontend development, Python, Java, and automation.",
+
+  "about_me_text2": "My profile combines Full Stack development with a growing focus on Backend, databases, software architecture, and service integration.",
+
+  "about_me_text2.1": "I am currently strengthening my Backend knowledge and progressively building my profile toward Cloud, infrastructure, and distributed systems, while continuing to develop applications.",
+
   "contact_info": {
     "email": "Email:",
     "nombre": "Name:",
@@ -35,23 +43,26 @@
     "ubicacion": "Location:",
     "cv": "My Resume"
   },
+
   "skills": {
-    "title": "My ",
+    "title": "My",
     "text": "Skills",
     "setion1": "Backend Development",
     "setion2": "Frontend Development",
     "setion3": "Tools and Databases"
   },
+
   "education": {
     "title": "My",
     "text": "Education",
-    "diploma": "Career Diploma",
+    "diploma": "Program Diploma",
     "ver": "View",
     "not_available": "Not Available Yet",
-    "title_curso1": "English:",
-    "title_curso2": "Development courses:",
+    "title_curso1": "English",
+    "title_curso2": "Development Courses",
+
     "levels": {
-      "fundamento": "Fundamentals Developer",
+      "fundamento": "Development Fundamentals",
       "frontend": "Front-End Developer",
       "backend": "Back-End Developer",
       "english1": "English Level 1",
@@ -61,85 +72,92 @@
       "english5": "English Level 5",
       "english6": "English Level 6"
     },
+
     "institutions": {
       "american school way": {
-        "name": "Course of all English levels A1 -> C1",
+        "name": "English Course from A1 to C1",
         "institution": "AMERICAN SCHOOL WAY",
-        "dates": "09/2024 - 12/2025 | Ongoing",
-        "certificates": "Not available"
+        "dates": "09/2024 - 12/2025 ",
+        "certificates": "Not Available"
       },
+
       "academlo": {
         "name": "Full Stack Developer Bootcamp",
-        "institution": "ACADEMLO | ACADEMY OF COMPUTER AND INFORMATION SCIENCES",
+        "institution": "ACADEMLO | ACADEMY OF COMPUTER SCIENCE AND INFORMATION TECHNOLOGY",
         "dates": "02/2023 - 10/2023 | Completed",
         "certificates": "View Certificates"
       },
+
       "sena": {
-        "name": "Technologist in Software Analysis and Development",
+        "name": "Software Analysis and Development Technologist",
         "institution": "SENA | NATIONAL LEARNING SERVICE",
         "dates": "09/2022 - 03/2025 | Completed",
         "certificates": "View Certificates"
       },
+
       "ademass": {
-        "name": "Enhancement of coding development knowledge",
+        "name": "Advanced Programming Development Skills",
         "institution": "ADEMASS | VIRTUAL DEVELOPMENT PLATFORM",
-        "dates": "2024 | Ongoing",
+        "dates": "2024 | In Progress",
         "certificates": "View Certificates"
       }
     }
   },
+
   "experience": {
-    "title": "Experience",
-    "text": "Work",
+    "title": "Work",
+    "text": "Experience",
+
     "full_stack": {
-      "title": "Application Developer – Freelance Project and Internship (Recarga Móvil SAS)",
-      "description": "Since 2023, I collaborated as a freelance developer with the company Recarga Móvil SAS, working on various commissioned software projects without a formal contract. Later, I completed my internship for the Software Analysis and Development technologist program at the same company, finishing in 2025. During this time, I actively participated in the full development of an e-commerce system, handling both the backend and frontend.",
-      "dates": "2023 - 2025 | Remote work and internship",
+      "title": "Full Stack Developer — Freelancer",
+      "description": "Development of web applications and backend services for freelance projects, participating in the analysis, development, and integration of solutions according to the needs of each project. Experience with REST APIs, databases, external services, automation, and frontend development.",
+      "dates": "2023 - Present | Remote",
       "platform": "View Platform",
       "name": "Achievements",
       "logros": [
-        "Increased sales",
-        "Process optimization",
-        "Independent development",
-        "Achievement of academic goals during internship"
+        "Development of web applications",
+        "Development and integration of REST APIs",
+        "Integration of databases and external services",
+        "Independent solution development"
       ]
     },
+
     "full_stack-work": {
-      "title": "Full Stack Developer – Local Freelance Project (TheraClinic)",
-      "description": "Short-term freelance project (2 months) for a medical clinic. I developed a complete management system covering medical appointments, patients, clinical records, and exams. I was responsible for analysis, design, development, and local testing, all tailored to the client’s specific needs.",
-      "dates": "2024 | Local freelance project",
+      "title": "Software Development Intern — Recarga Móvil SAS",
+      "description": "I participated in the development and maintenance of internal applications, implementing frontend and backend features. I also supported requirements analysis, functional testing, and the automation of internal processes.",
+      "dates": "01/12/2023 - 04/09/2025 | Remote",
       "name": "Achievements",
       "logros": [
-        "Administrative process simplification",
-        "Optimization of clinical workflows",
-        "Full digitization of records",
-        "Elimination of paper-based processes",
-        "On-time and efficient project delivery"
+        "Development and maintenance of applications",
+        "Implementation of backend features",
+        "Support in analysis and testing",
+        "Automation of internal processes"
       ]
     },
+
     "alphalux": {
-    "title": "Full Stack & AI Developer – Alphalux",
-    "description": "Collaborated on the development of AI-powered business solutions focused on process automation and operational efficiency. Worked on CRM integrations, workflow automation, API integrations, and intelligent assistants powered by Claude AI. Also contributed to Meta Business Manager integrations to improve customer communication and business processes. Participated in the development of scalable software solutions within a collaborative development environment, following best practices in software engineering.",
-    "dates": "2026 | Remote Work",
-    "platform": "View Company",
-    "name": "Achievements",
-    "logros": [
-      "Developed AI-powered business automations",
-      "Integrated CRM platforms and APIs",
-      "Built intelligent assistants using Claude AI",
-      "Integrated Meta Business Manager services",
-      "Optimized business workflows through automation",
-      "Collaborated on Full Stack software development projects"
-    ]
-  }
+      "title": "Software Developer — Alphalux",
+      "description": "I collaborated in the development of business solutions focused on web applications, APIs, external service integration, and process automation. I participated in the development of backend and frontend features, applying best practices and Docker for environment management.",
+      "dates": "01/03/2026 - 01/08/2026 | Remote",
+      "platform": "View Company",
+      "name": "Achievements",
+      "logros": [
+        "Development of business solutions",
+        "Development and integration of APIs",
+        "Integration of external services",
+        "Implementation of automation solutions",
+        "Collaborative work on software projects"
+      ]
+    }
   },
+
   "projects": {
     "title": "My",
     "text": "Projects",
     "projects": {
       "Project1": {
         "name": "Dominos Store Backend",
-        "text": "Backend of the e-commerce system \"Domino's Store\".",
+        "text": "Backend for the \"Dominos Store\" e-commerce system.",
         "usage": ["JavaScript", "Node.js", "Express"]
       },
       "Project2": {
@@ -149,43 +167,45 @@
       },
       "Project3": {
         "name": "Weather App",
-        "text": "Check the real-time weather by city.",
+        "text": "Check real-time weather by city.",
         "usage": ["UI/UX", "React", "Responsive"]
       },
       "Project4": {
         "name": "Cookies App",
-        "text": "Random fortune cookie-style phrase generator.",
+        "text": "Random quote generator inspired by fortune cookies.",
         "usage": ["UI/UX", "React", "Responsive"]
       },
       "Project5": {
         "name": "Rick and Morty",
-        "text": "Rick and Morty character app with search feature.",
+        "text": "Rick and Morty character app with a search feature.",
         "usage": ["UI/UX", "React", "Responsive"]
       },
       "Project6": {
         "name": "Univercity Backend",
-        "text": "It is a university educational platform developed with FastAPI.",
+        "text": "A university educational platform developed with FastAPI.",
         "usage": ["Python", "FasApi", "PostgreSQL"]
       }
     }
   },
+
   "contact": {
     "title": "Contact Me",
     "text": "here",
     "form": {
       "name": "Name",
-      "email": "Email",
+      "email": "Email Address",
       "phone": "Phone",
       "message": "Message",
       "send": "Send"
     }
   },
+
   "footer": {
     "name": "Yeison | Portfolio",
-    "message": "Thanks for visiting my website, I hope you liked it and get in touch with me",
-    "quote": "\"Never stop fighting for your dreams because every day that passes you're getting closer\"",
+    "message": "Thank you for visiting my website. I hope you enjoyed it and feel free to contact me.",
+    "quote": "\"Never stop fighting for your dreams because with each passing day, you are getting closer.\"",
     "quick_links": "Quick Links",
-    "contact_info": "My Info",
-    "copyright": "Copyright © 2024 Yeison Marroquin.❤️"
+    "contact_info": "My Information",
+    "copyright": "Copyright © 2026 Yeison Marroquín.❤️"
   }
 }

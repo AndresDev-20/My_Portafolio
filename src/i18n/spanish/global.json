@@ -8,26 +8,34 @@
     "projects": "Proyectos",
     "contact": "Contáctame"
   },
+
   "welcome": {
     "name": "Yeison Andrés",
     "surname": "Marroquín Bernal.",
-    "intro": "Especializado en desarrollo Full Stack con enfoque en backend usando Python, Node.js y React para soluciones completas.",
+    "intro": "Desarrollador Full Stack con enfoque en Backend y bases de datos, especializado en Node.js, TypeScript, Express.js y SQL para construir aplicaciones y APIs orientadas a necesidades reales.",
     "contact": "Contáctame",
     "projects": "Ver proyectos",
     "cv": "Descargar CV"
   },
+
   "phrases": [
-    "Desarrollador Full-Stack",
-    "Desarrollador Front-End",
-    "Desarrollador Back-End"
+    "Desarrollador Full Stack",
+    "Desarrollador Backend",
+    "Desarrollador de Software"
   ],
+
   "about_me": "Sobre",
   "me": "Mí",
   "Hi": "Hola...",
-  "about_me_text1": "Como Desarrollador Full-Stack, cuento con una sólida formación académica respaldada por Academlo en México y una certificación como Tecnólogo en Análisis y Desarrollo de Software otorgada por el SENA en Colombia.",
-  "about_me_text1.1": "Mi enfoque se centra en crear soluciones tecnológicas que impulsen la eficiencia y el crecimiento de su empresa. Con un ferviente deseo de aprender y perfeccionar mis habilidades de codificación, estoy preparado para contribuir con innovación, compromiso y dedicación a su equipo.",
-  "about_me_text2": "Como Desarrollador Full-Stack con formación en Academlo (México) y certificado como Tecnólogo en Análisis y Desarrollo de Software por el SENA (Colombia).",
-  "about_me_text2.1": "Me enfoco en crear soluciones que impulsan la eficiencia empresarial, con un compromiso constante de mejora. Aporto innovación y dedicación a su equipo.",
+
+  "about_me_text1": "Como Desarrollador Full Stack, tengo experiencia en la construcción de aplicaciones web, APIs REST, integración de bases de datos y servicios externos. Mi mayor interés profesional está en el desarrollo Backend y la gestión de datos.",
+
+  "about_me_text1.1": "Soy Tecnólogo en Análisis y Desarrollo de Software del SENA y cuento con formación en desarrollo Full Stack. Trabajo principalmente con Node.js, TypeScript, Express.js, SQL y Docker, manteniendo conocimientos complementarios en frontend, Python, Java y automatización.",
+
+  "about_me_text2": "Mi perfil combina desarrollo Full Stack con un enfoque creciente hacia Backend, bases de datos, arquitectura de software e integración de servicios.",
+
+  "about_me_text2.1": "Actualmente estoy fortaleciendo mis conocimientos en Backend y construyendo progresivamente mi perfil hacia Cloud, infraestructura y sistemas distribuidos, sin dejar de lado el desarrollo de aplicaciones.",
+
   "contact_info": {
     "email": "Correo:",
     "nombre": "Nombre:",
@@ -35,6 +43,7 @@
     "ubicacion": "Ubicación:",
     "cv": "Mi Currículum"
   },
+
   "skills": {
     "title": "Mis",
     "text": "Habilidades",
@@ -42,6 +51,7 @@
     "setion2": "Desarrollo Frontend",
     "setion3": "Herramientas y Bases de Datos"
   },
+
   "education": {
     "title": "Mi",
     "text": "Educación",
@@ -50,6 +60,7 @@
     "not_available": "Aún No Disponible",
     "title_curso1": "Inglés",
     "title_curso2": "Cursos de Desarrollo",
+
     "levels": {
       "fundamento": "Desarrollador en Fundamentos",
       "frontend": "Desarrollador Front-End",
@@ -61,25 +72,29 @@
       "english5": "Inglés Nivel 5",
       "english6": "Inglés Nivel 6"
     },
+
     "institutions": {
       "american school way": {
         "name": "Curso de todos los niveles de inglés A1 -> C1",
         "institution": "AMERICAN SCHOOL WAY",
-        "dates": "09/2024 - 12/2025 | Cursando",
+        "dates": "09/2024 - 12/2025 ",
         "certificates": "No disponible"
       },
+
       "academlo": {
         "name": "Bootcamp de Desarrollador Full Stack",
         "institution": "ACADEMLO | ACADEMIA DE CIENCIAS DE LA COMPUTACIÓN E INFORMÁTICA",
         "dates": "02/2023 - 10/2023 | Terminado",
         "certificates": "Ver Certificados"
       },
+
       "sena": {
         "name": "Tecnólogo en Análisis y Desarrollo de Software",
         "institution": "SENA | SERVICIO NACIONAL DE APRENDIZAJE",
         "dates": "09/2022 - 03/2025 | Terminado",
         "certificates": "Ver Certificados"
       },
+
       "ademass": {
         "name": "Elevación de conocimientos en el desarrollo de código",
         "institution": "ADEMASS | PLATAFORMA VIRTUAL DE DESARROLLO",
@@ -88,51 +103,54 @@
       }
     }
   },
+
   "experience": {
     "title": "Experiencia",
     "text": "Laboral",
+
     "full_stack": {
-      "title": "Desarrollador de Aplicaciones - Proyecto freelance y pasantías (Recarga Móvil SAS)",
-      "description": "Desde 2023, colaboré como desarrollador freelance en la empresa Recarga Móvil SAS, realizando diversos proyectos de software por encargo, sin contrato formal. Posteriormente, en esta misma empresa llevé a cabo mis prácticas de pasantía como parte del tecnólogo en Análisis y Desarrollo de Software, finalizadas en 2025. Durante este tiempo participé activamente en el desarrollo completo de un sistema de comercio electrónico, trabajando tanto en el backend como en el frontend.",
-      "dates": "2023 - 2025 | Teletrabajo y pasantías",
+      "title": "Desarrollador Full Stack — Freelancer",
+      "description": "Desarrollo de aplicaciones web y servicios backend para proyectos freelance, participando en el análisis, desarrollo e integración de soluciones según las necesidades de cada proyecto. Experiencia con APIs REST, bases de datos, servicios externos, automatización y desarrollo frontend.",
+      "dates": "2023 - Actualidad | Remoto",
       "platform": "Ver Plataforma",
       "name": "Logros",
       "logros": [
-        "Incremento en ventas",
-        "Calidad y fiabilidad",
-        "Desarrollo independiente",
-        "Cumplimiento de objetivos académicos en pasantías"
+        "Desarrollo de aplicaciones web",
+        "Construcción e integración de APIs REST",
+        "Integración de bases de datos y servicios externos",
+        "Desarrollo independiente de soluciones"
       ]
     },
+
     "full_stack-work": {
-      "title": "Desarrollador Full Stack - Proyecto freelance local (TheraClinic)",
-      "description": "Proyecto freelance de corta duración (2 meses) para un consultorio clínico. Desarrollé un sistema completo de gestión que abarca citas médicas, pacientes, historias clínicas y exámenes. Fui responsable del análisis, diseño, desarrollo y pruebas del software en entorno local, adaptado a las necesidades específicas del cliente.",
-      "dates": "2024 | Proyecto local freelance",
+      "title": "Practicante de Desarrollo de Software — Recarga Móvil SAS",
+      "description": "Participé en el desarrollo y mantenimiento de aplicaciones internas, implementando funcionalidades frontend y backend. También apoyé el análisis de requerimientos, pruebas funcionales y automatización de procesos internos.",
+      "dates": "01/12/2023 - 04/09/2025 | Remoto",
       "name": "Logros",
       "logros": [
-        "Facilitación del trabajo administrativo",
-        "Optimización de procesos clínicos",
-        "Digitalización completa de los registros",
-        "Eliminación del uso de papelería",
-        "Entrega eficiente en tiempos establecidos"
+        "Desarrollo y mantenimiento de aplicaciones",
+        "Implementación de funcionalidades backend",
+        "Apoyo en análisis y pruebas",
+        "Automatización de procesos internos"
       ]
     },
+
     "alphalux": {
-      "title": "Desarrollador Full Stack y Automatización IA - Alphalux",
-      "description": "Colaboré en el desarrollo de soluciones empresariales enfocadas en la automatización de procesos mediante inteligencia artificial. Participé en la implementación e integración de CRM, automatizaciones de flujos de trabajo, APIs y herramientas de IA para optimizar procesos internos y la atención al cliente. También trabajé con Meta Business Manager para la integración de canales de comunicación y campañas, utilizando Claude AI para desarrollar asistentes inteligentes y automatizar tareas empresariales. Formé parte del desarrollo de soluciones escalables en un entorno colaborativo, aplicando buenas prácticas de desarrollo y resolución de problemas.",
-      "dates": "2026 | Teletrabajo",
+      "title": "Desarrollador de Software — Alphalux",
+      "description": "Colaboré en el desarrollo de soluciones empresariales orientadas a aplicaciones web, APIs, integración de servicios externos y automatización de procesos. Participé en el desarrollo de funcionalidades backend y frontend, aplicando buenas prácticas y Docker para la gestión de entornos.",
+      "dates": "01/03/2026 - 01/08/2026 | Remoto",
       "platform": "Ver Empresa",
       "name": "Logros",
       "logros": [
-        "Desarrollo de automatizaciones empresariales",
-        "Integración de CRM y APIs para optimizar procesos",
-        "Implementación de asistentes inteligentes con Claude AI",
-        "Integración de Meta Business Manager y canales de comunicación",
-        "Optimización de procesos internos mediante automatización",
-        "Trabajo colaborativo en proyectos de desarrollo Full Stack"
+        "Desarrollo de soluciones empresariales",
+        "Construcción e integración de APIs",
+        "Integración de servicios externos",
+        "Implementación de automatizaciones",
+        "Trabajo colaborativo en proyectos de software"
       ]
     }
   },
+
   "projects": {
     "title": "Mis",
     "text": "Proyectos",
@@ -169,6 +187,7 @@
       }
     }
   },
+
   "contact": {
     "title": "Contáctame",
     "text": "aquí",
@@ -180,12 +199,13 @@
       "send": "Enviar"
     }
   },
+
   "footer": {
     "name": "Yeison | Portafolio",
-    "message": "Gracias por visitar mi sitio web. Espero te haya gustado y contactes conmigo.",
+    "message": "Gracias por visitar mi sitio web. Espero que te haya gustado y puedas contactarme.",
     "quote": "\"Nunca dejes de luchar por tus sueños porque cada día que pasa estás más cerca.\"",
     "quick_links": "Enlaces Rápidos",
     "contact_info": "Mis Datos",
-    "copyright": "Copyright © 2024 Yeison Marroquín.❤️"
+    "copyright": "Copyright © 2026 Yeison Marroquín.❤️"
   }
 }
