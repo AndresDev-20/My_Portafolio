@@ -42,7 +42,7 @@ const About = ({ t }) => {
             <div>
               <li>
                 <b className="About_item"> {t("contact_info.experiencia")} </b>
-                3 año
+                3 años
               </li>
               <li>
                 <b className="About_item"> {t("contact_info.ubicacion")} </b>
