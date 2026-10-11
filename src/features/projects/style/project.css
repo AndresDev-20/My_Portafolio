@@ -1,3 +1,6 @@
+/* ==========================================================
+   ESTILOS ORIGINALES (sin cambios de tamaño)
+   ========================================================== */
 .Projects {
 	width: 100%;
 	display: flex;
@@ -106,15 +109,12 @@ border: 1px solid var(--Five-color);
 
 .openGite {
 	font-size: 1.8em;
-	color: rgb(5, 205, 255);;
+	color: rgb(5, 205, 255);
 }
 
 .Project_open > span > a:hover {
 	color: blueviolet;
 }
-
-
-
 
 @media (min-width: 700px) {
 	.Projects_todos{
@@ -139,5 +139,179 @@ border: 1px solid var(--Five-color);
 @media (min-width: 1400px) {
 	.Projects {
 		min-height: 100vh;
+	}
+}
+
+
+/* ==========================================================
+   MEJORAS NUEVAS (solo animaciones e info, no tocan tamaños)
+   ========================================================== */
+
+/* --- Tarjeta: se eleva y se ilumina al pasar el mouse ---
+   AOS fija su propio "transform" y "transition-property" en la tarjeta,
+   por eso el levantado usa la propiedad `translate` (independiente de
+   transform) y este selector (más específico) suma las propiedades
+   al transition de AOS. La velocidad es la misma que configuraste en AOS. */
+.Projects_todos .Projects_Project[data-aos] {
+	transition-property: opacity, transform, translate, box-shadow, border-color;
+}
+
+.Projects_Project:hover,
+.Projects_Project:focus-within {
+	translate: 0 -8px;
+	border-color: var(--First-color);
+	box-shadow: 6px 16px 24px 2px rgba(173, 170, 238, 0.5);
+}
+
+
+/* --- Imagen: zoom suave + destello --- */
+.Project_image {
+	position: relative;
+	overflow: hidden;
+	border-radius: .4em .4em 0em 0em;
+}
+
+.Project_image > img {
+	transition: transform .7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.Projects_Project:hover .Project_image > img,
+.Projects_Project:focus-within .Project_image > img {
+	transform: scale(1.07);
+}
+
+.Project_image::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.22) 50%, transparent 70%);
+	transform: translateX(-100%);
+	pointer-events: none;
+}
+
+.Projects_Project:hover .Project_image::after {
+	transform: translateX(100%);
+	transition: transform .9s ease;
+}
+
+
+/* --- Insignia nueva: tipo de proyecto (Backend / Frontend) --- */
+.Project_type {
+	position: absolute;
+	top: .8em;
+	left: .8em;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	gap: .4em;
+	padding: .4em .9em .4em .7em;
+	font-size: 11px;
+	font-weight: 700;
+	color: var(--Text-fijo);
+	background: rgba(7, 17, 54, 0.7);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 3em;
+	transition: transform .35s ease, background .35s ease;
+}
+
+.Project_typeIcon {
+	font-size: 1.5em;
+}
+
+.Project_type--backend .Project_typeIcon {
+	color: rgb(5, 205, 255);
+}
+
+.Project_type--frontend .Project_typeIcon {
+	color: blueviolet;
+}
+
+.Projects_Project:hover .Project_type {
+	transform: translateY(2px);
+	background: rgba(7, 17, 54, 0.9);
+}
+
+
+/* --- Título de la tarjeta: subrayado que se dibuja --- */
+.Project_about > h1 {
+	align-self: flex-start;
+	background: linear-gradient(var(--First-color), var(--First-color)) 0 100% / 0 2px no-repeat;
+	transition: background-size .45s ease;
+}
+
+.Projects_Project:hover .Project_about > h1,
+.Projects_Project:focus-within .Project_about > h1 {
+	background-size: 100% 2px;
+}
+
+
+/* --- Etiquetas de tecnologías: suben en cascada --- */
+.Project_usage > li {
+	transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.Projects_Project:hover .Project_usage > li {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 12px -4px var(--First-color);
+}
+
+.Projects_Project:hover .Project_usage > li:nth-child(2) {
+	transition-delay: .06s;
+}
+
+.Projects_Project:hover .Project_usage > li:nth-child(3) {
+	transition-delay: .12s;
+}
+
+
+/* --- Enlaces App / Code --- */
+.Project_open > span > a {
+	transition: color .25s ease;
+}
+
+.openGite {
+	transition: transform .3s ease;
+}
+
+.Project_open > span > a:hover .openGite {
+	transform: translateY(-3px) scale(1.15);
+}
+
+.Project_open > span > a:focus-visible {
+	outline: 2px solid var(--First-color);
+	outline-offset: 4px;
+	border-radius: .3em;
+}
+
+
+/* --- Respeta a quien prefiere menos movimiento --- */
+@media (prefers-reduced-motion: reduce) {
+	.Projects_Project:hover,
+	.Projects_Project:focus-within {
+		translate: none;
+	}
+
+	.Projects_Project:hover .Project_image > img,
+	.Projects_Project:focus-within .Project_image > img,
+	.Projects_Project:hover .Project_type,
+	.Projects_Project:hover .Project_usage > li,
+	.Project_open > span > a:hover .openGite {
+		transform: none;
+	}
+
+	.Project_image::after {
+		display: none;
+	}
+
+	.Project_image > img,
+	.Project_type,
+	.Project_about > h1,
+	.Project_usage > li,
+	.Project_open > span > a,
+	.openGite {
+		transition: none;
 	}
 }
