@@ -1,35 +1,69 @@
 import './style/contact.css'
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Images } from '../../assets/images';
-import emailjs from '@emailjs/browser';
+
+// Correo donde quieres recibir los mensajes (FormSubmit.co)
+const CONTACT_EMAIL = 'yeisonmarroquin887@gmail.com';
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 
 export const Contact = ({ t }) => {
-  const form = useRef();
   const [isSending, setIsSending] = useState(false);
 
   const illustration = Images?.Conatctme;
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    if (isSending) return;
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    // Honeypot anti-spam: si este campo oculto viene lleno, es un bot
+    if (data.get('_honey')) return;
+
     setIsSending(true);
 
-    emailjs
-      .sendForm('service_vz2us7f', 'template_i3pobus', form.current, {
-        publicKey: 'Q9IesQb1m7BE5RKEA',
-      })
-      .then(
-        () => {
-          alert(t('contact.form.success'));
-          // Limpiar el formulario
-          form.current.reset();
-          setIsSending(false);
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-        (error) => {
-          console.log('FAILED...', error.text);
-          alert(t('contact.form.error'));
-          setIsSending(false);
-        },
-      );
+        body: JSON.stringify({
+          // --- Configuración de FormSubmit ---
+          _subject: `Nuevo mensaje de ${data.get('user_name')} desde tu portafolio`,
+          _template: 'box', // plantillas disponibles: basic | table | box
+          _captcha: 'false',
+
+          // --- Datos que verás en el correo (salen en este orden) ---
+          Nombre: data.get('user_name'),
+          email: data.get('user_email'), // FormSubmit lo usa como "Reply-To"
+          Teléfono: data.get('user_phone') || 'No indicado',
+          Mensaje: data.get('message'),
+          Recibido: new Date().toLocaleString('es-CO', {
+            timeZone: 'America/Bogota',
+            dateStyle: 'full',
+            timeStyle: 'short',
+          }),
+          Sitio: window.location.hostname,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || String(result.success) === 'false') {
+        throw new Error(result.message || 'Error al enviar');
+      }
+
+      alert(t('contact.form.success'));
+      form.reset();
+    } catch (error) {
+      console.error('FormSubmit error:', error);
+      alert(t('contact.form.error'));
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -69,7 +103,18 @@ export const Contact = ({ t }) => {
           </figure>
         )}
 
-        <form className='contact__form' ref={form} onSubmit={sendEmail}>
+        <form className='contact__form' onSubmit={sendEmail}>
+
+          {/* Honeypot anti-spam (oculto para personas) */}
+          <input
+            type='text'
+            name='_honey'
+            tabIndex='-1'
+            autoComplete='off'
+            aria-hidden='true'
+            style={{ display: 'none' }}
+          />
+
           <div className='contact__field'>
             <input
               className='contact__input'
