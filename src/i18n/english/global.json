@@ -189,16 +189,21 @@
   },
 
   "contact": {
-    "title": "Contact Me",
-    "text": "here",
-    "form": {
-      "name": "Name",
-      "email": "Email Address",
-      "phone": "Phone",
-      "message": "Message",
-      "send": "Send"
-    }
-  },
+  "title": "Contact Me",
+  "text": "here",
+  "description": "Tell me what you need and I'll get back to you with a clear proposal.",
+  "availability": "Available for new projects",
+  "form": {
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "success": "Your message has been sent",
+    "error": "Error sending the message"
+  }
+},
 
   "footer": {
     "name": "Yeison | Portfolio",

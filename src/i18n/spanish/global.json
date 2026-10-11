@@ -189,16 +189,21 @@
   },
 
   "contact": {
-    "title": "Contáctame",
-    "text": "aquí",
-    "form": {
-      "name": "Nombre",
-      "email": "Correo Electrónico",
-      "phone": "Teléfono",
-      "message": "Mensaje",
-      "send": "Enviar"
-    }
-  },
+  "title": "Contáctame",
+  "text": "aquí",
+  "description": "Cuéntame qué necesitas y te respondo con una propuesta clara.",
+  "availability": "Disponible para nuevos proyectos",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando…",
+    "success": "Tu mensaje ha sido enviado",
+    "error": "Error al enviar el mensaje"
+  }
+},
 
   "footer": {
     "name": "Yeison | Portafolio",

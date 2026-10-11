@@ -1,13 +1,17 @@
 import './style/contact.css'
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Images } from '../../assets/images';
 import emailjs from '@emailjs/browser';
 
-export const Contact = ({t}) => {
+export const Contact = ({ t }) => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+
+  const illustration = Images?.Conatctme;
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm('service_vz2us7f', 'template_i3pobus', form.current, {
@@ -15,41 +19,127 @@ export const Contact = ({t}) => {
       })
       .then(
         () => {
-          alert("Tu mensaje ha sido enviado");
+          alert(t('contact.form.success'));
           // Limpiar el formulario
           form.current.reset();
+          setIsSending(false);
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert("Error al enviar el mensaje");
+          alert(t('contact.form.error'));
+          setIsSending(false);
         },
       );
   };
 
+  return (
+    <section className='contact' id='Contact' aria-labelledby='contact-title'>
 
-	return (
-		<section className='Contactame' id='Contact'>
-			<br />
-			<br />
-			<br />
-			<h1 className='Contactame_title'><span><i className='bx bx-support suport'></i></span> {t("contact.title")} <span className='Aqui'>{t("contact.text")}</span></h1>
-			<div className='Contactame_Father'>
-				<figure className='Contactame_image'>
-					<img src={Images.Conatctme} alt="" />
-				</figure>
-				<form  ref={form} onSubmit={sendEmail}className='Contactame_form'  >
-                    <input name='name' data-aos="fade-right" type="text" placeholder={t("contact.form.name")} required/>
-					<input name='email' data-aos="fade-right" type="email" placeholder={t("contact.form.email")} required />
-					<input name='phone' data-aos="fade-right" type="number" placeholder={t("contact.form.phone")}  required/>
-					<textarea name='message' data-aos="fade-right"  id="" cols="30" rows="12" placeholder={t("contact.form.message")}required></textarea>
-					<div className='Contactame_btn'>
-						<button type="submit"  >{t("contact.form.send")}   <i className='bx bx-navigation'></i></button>
-					</div>
-				</form>
-			</div>
+      <header className='contact__header'>
+        <h2 className='contact__title' id='contact-title'>
+          <svg className='contact__title-icon' viewBox='0 0 24 24' aria-hidden='true'>
+            <path d='M3 14v-2a9 9 0 0 1 18 0v2' />
+            <path d='M21 15v2a3 3 0 0 1-3 3h-3' />
+            <rect x='2' y='14' width='4' height='6' rx='1.5' />
+            <rect x='18' y='14' width='4' height='6' rx='1.5' />
+          </svg>
+          <span>{t('contact.title')}</span>
+          <span className='contact__title-accent'>{t('contact.text')}</span>
+        </h2>
 
-		</section>
-	)
+        <p className='contact__description'>{t('contact.description')}</p>
+
+        <p className='contact__status'>
+          <span className='contact__status-dot' aria-hidden='true'></span>
+          {t('contact.availability')}
+        </p>
+      </header>
+
+      <div className='contact__card'>
+
+        {illustration && (
+          <figure className='contact__media'>
+            <img
+              className='contact__image'
+              src={illustration}
+              alt=''
+              loading='lazy'
+              draggable='false'
+            />
+          </figure>
+        )}
+
+        <form className='contact__form' ref={form} onSubmit={sendEmail}>
+          <div className='contact__field'>
+            <input
+              className='contact__input'
+              type='text'
+              id='contact-name'
+              name='user_name'
+              placeholder=' '
+              autoComplete='name'
+              required
+            />
+            <label className='contact__label' htmlFor='contact-name'>{t('contact.form.name')}</label>
+          </div>
+
+          <div className='contact__field'>
+            <input
+              className='contact__input'
+              type='email'
+              id='contact-email'
+              name='user_email'
+              placeholder=' '
+              autoComplete='email'
+              required
+            />
+            <label className='contact__label' htmlFor='contact-email'>{t('contact.form.email')}</label>
+          </div>
+
+          <div className='contact__field'>
+            <input
+              className='contact__input'
+              type='tel'
+              id='contact-phone'
+              name='user_phone'
+              placeholder=' '
+              autoComplete='tel'
+            />
+            <label className='contact__label' htmlFor='contact-phone'>{t('contact.form.phone')}</label>
+          </div>
+
+          <div className='contact__field'>
+            <textarea
+              className='contact__input contact__input--textarea'
+              id='contact-message'
+              name='message'
+              placeholder=' '
+              rows='5'
+              required
+            ></textarea>
+            <label className='contact__label' htmlFor='contact-message'>{t('contact.form.message')}</label>
+          </div>
+
+          <button
+            className={`contact__submit${isSending ? ' contact__submit--sending' : ''}`}
+            type='submit'
+            disabled={isSending}
+            aria-busy={isSending}
+          >
+            <span className='contact__submit-text'>
+              {isSending ? t('contact.form.sending') : t('contact.form.send')}
+            </span>
+            <svg className='contact__submit-icon' viewBox='0 0 24 24' aria-hidden='true'>
+              <path d='M22 2 11 13' />
+              <path d='M22 2 15 22l-4-9-9-4 20-7Z' />
+            </svg>
+            <span className='contact__submit-spinner' aria-hidden='true'></span>
+          </button>
+        </form>
+
+      </div>
+    </section>
+  )
 }
 
 export default Contact
