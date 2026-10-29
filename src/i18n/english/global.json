@@ -205,6 +205,61 @@
   }
 },
 
+  "about": {
+    "focus_label": "Focus:",
+    "focus": "Backend and databases",
+    "degree_label": "Education:",
+    "degree": "Software Analysis & Development Technologist — SENA",
+    "years": "3 years",
+    "services_title": "What I do",
+    "services_kicker": "Services",
+    "services": [
+      {
+        "title": "APIs & Backend",
+        "text": "I design and build secure, scalable REST APIs with Node.js, Express, TypeScript and FastAPI."
+      },
+      {
+        "title": "Databases",
+        "text": "Modeling, querying and optimization in PostgreSQL, MySQL, SQLite and MongoDB."
+      },
+      {
+        "title": "Web applications",
+        "text": "Fast, responsive interfaces with React, Redux and Tailwind, connected to your services."
+      },
+      {
+        "title": "Automation & DevOps",
+        "text": "Containers with Docker, workflows with n8n and integrations with external services and AI."
+      }
+    ]
+  },
+
+  "stats": {
+    "years": "Years of experience",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "tech": "Technologies",
+    "marquee": "Technologies I work with"
+  },
+
+  "ui": {
+    "back": "Back",
+    "back_home": "Back to home",
+    "all": "All",
+    "view": "View certificate",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "no_diplomas": "There are no diplomas for this institution yet.",
+    "career": "Degree diploma",
+    "courses": "Complementary courses",
+    "certificates": "certificates",
+    "app": "Live App",
+    "code": "Code",
+    "top": "Back to top",
+    "soon": "Coming soon",
+    "open": "Open in new tab"
+  },
+
   "footer": {
     "name": "Yeison | Portfolio",
     "message": "Thank you for visiting my website. I hope you enjoyed it and feel free to contact me.",

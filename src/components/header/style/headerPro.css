@@ -1,0 +1,267 @@
+/* ==========================================================
+   HEADER PROFESIONAL
+   ========================================================== */
+
+/* Controles (idioma + tema) integrados en el header */
+.Header_nav-tools {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.Header_nav {
+  gap: .7em;
+}
+
+.Header_nav-toggle {
+  display: grid;
+  place-items: center;
+  width: 1.15em;
+  height: 1.15em;
+  font-size: 2.3em;
+  border-radius: .3em;
+  border: 1px solid var(--Border-soft);
+  background: color-mix(in srgb, var(--Five-color) 45%, transparent);
+  transition: border-color .3s ease, color .3s ease;
+}
+
+.Header_nav-toggle > i {
+  font-size: .8em;
+}
+
+.Header_nav-toggle:hover {
+  border-color: color-mix(in srgb, var(--First-color) 50%, transparent);
+}
+
+@media (max-width: 420px) {
+  .Header_div {
+    padding-left: 1em;
+    padding-right: 1em;
+    gap: .6em;
+  }
+
+  .Lang_globe {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+  .Header_nav-toggle {
+    display: none;
+  }
+
+  .Header_div {
+    gap: 1.5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  .Header_nav {
+    gap: 1.4em;
+  }
+
+  .Header_nav-tools {
+    position: static;
+    order: 2;
+    flex-direction: row;
+    margin-top: 0;
+    gap: .6em;
+    padding-left: 1.4em;
+    border-left: 1px solid var(--Border-soft);
+  }
+
+  /* Menú dentro de una píldora de vidrio */
+  .Header_nav-list {
+    order: 1;
+    width: auto;
+    gap: .2em;
+    padding: .35em;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--Five-color) 35%, transparent);
+    border: 1px solid var(--Border-soft);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .Header_nav-item > a {
+    padding: .5em .9em;
+    white-space: nowrap;
+    border-radius: 999px;
+    transition: color .3s ease, background-color .35s ease, box-shadow .35s ease;
+  }
+
+  .Header_nav-item > a::after {
+    display: none;
+  }
+
+  .Header_nav-item > a:hover {
+    color: var(--Third-color);
+    background-color: color-mix(in srgb, var(--First-color) 12%, transparent);
+  }
+
+  .Header_active > a,
+  .Header_active > a:hover {
+    color: var(--Text-fijo);
+    background: var(--Gradient);
+    box-shadow: 0 8px 20px -10px var(--First-color);
+  }
+
+  .Header_nav-list--away .Header_active > a {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Header_div {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .Header_nav-item > a {
+    padding: .5em 1.1em;
+  }
+}
+
+/* Portátiles pequeños: versión compacta para que todo quepa en una línea */
+@media (min-width: 1050px) and (max-width: 1279px) {
+  .Header_div {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    gap: 1em;
+  }
+
+  .Header_nav {
+    gap: .8em;
+  }
+
+  .Header_nav-item > a {
+    padding: .5em .55em;
+  }
+
+  .Header_nav-tools {
+    padding-left: .8em;
+  }
+
+  .Lang_globe {
+    display: none;
+  }
+}
+
+/* ==========================================================
+   CONTROLES DEL HEADER UNIFICADOS
+   Idioma, tema y menú comparten altura, fondo, borde y forma.
+   ========================================================== */
+.Header_div {
+  --ctl-h: 38px;
+  --ctl-bg: color-mix(in srgb, var(--Five-color) 55%, transparent);
+  --ctl-border: color-mix(in srgb, var(--Third-color) 14%, transparent);
+}
+
+.Header_div .Lang_switch,
+.Header_div .Theme_switch,
+.Header_div .Header_nav-toggle {
+  height: var(--ctl-h);
+  border-radius: 999px;
+  border: 1px solid var(--ctl-border);
+  background: var(--ctl-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 6px 16px -10px rgba(0, 0, 0, .6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.Header_div .Lang_switch:hover,
+.Header_div .Theme_switch:hover,
+.Header_div .Header_nav-toggle:hover {
+  border-color: color-mix(in srgb, var(--First-color) 60%, transparent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 0 18px -6px var(--First-color);
+}
+
+/* Idioma */
+.Header_div .Lang_switch {
+  padding: 3px;
+  padding-left: 10px;
+}
+
+.Header_div .Lang_switch > button {
+  width: 32px;
+  font-size: 12px;
+}
+
+.Header_div .Lang_pill {
+  top: 3px;
+  bottom: 3px;
+  right: calc(3px + 32px);
+  width: 32px;
+}
+
+/* Tema: misma pista que los demás; la perilla trae el color */
+.Header_div .Theme_switch {
+  width: 66px;
+  padding: 0 9px;
+}
+
+.Header_div .Theme_switch.is-light {
+  background: linear-gradient(135deg, color-mix(in srgb, #7dd3fc 70%, transparent), color-mix(in srgb, #fde68a 70%, transparent));
+}
+
+.Header_div .Theme_knob {
+  top: 3px;
+  left: 3px;
+  width: calc(var(--ctl-h) - 8px);
+  height: calc(var(--ctl-h) - 8px);
+  background: var(--Gradient);
+  color: var(--Text-fijo);
+  box-shadow: 0 4px 12px -4px var(--First-color);
+}
+
+.Header_div .Theme_switch.is-light .Theme_knob {
+  transform: translateX(calc(66px - var(--ctl-h)));
+  background: linear-gradient(135deg, #f59e0b, #facc15);
+  color: #ffffff;
+}
+
+.Header_div .Theme_track-icon {
+  font-size: 13px;
+  opacity: .75;
+}
+
+/* Menú (solo móvil/tablet): círculo del mismo alto */
+.Header_div .Header_nav-toggle {
+  width: var(--ctl-h);
+  font-size: 16px;
+  color: var(--Third-color);
+}
+
+.Header_div .Header_nav-toggle > i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.Header_div .Header_nav-toggle > i:not(.bx) {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .Header_div {
+    --ctl-h: 36px;
+  }
+
+  .Header_div .Lang_switch {
+    padding-left: 3px;
+  }
+
+  .Header_div .Theme_switch {
+    width: 62px;
+  }
+
+  .Header_div .Theme_switch.is-light .Theme_knob {
+    transform: translateX(calc(62px - var(--ctl-h)));
+  }
+}
+
+@media (min-width: 1050px) {
+  .Header_div .Header_nav-toggle {
+    display: none;
+  }
+}

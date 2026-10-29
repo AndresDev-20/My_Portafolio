@@ -205,6 +205,61 @@
   }
 },
 
+  "about": {
+    "focus_label": "Enfoque:",
+    "focus": "Backend y bases de datos",
+    "degree_label": "Formación:",
+    "degree": "Tecnólogo en ADSO — SENA",
+    "years": "3 años",
+    "services_title": "Lo que hago",
+    "services_kicker": "Servicios",
+    "services": [
+      {
+        "title": "APIs y Backend",
+        "text": "Diseño y construyo APIs REST seguras y escalables con Node.js, Express, TypeScript y FastAPI."
+      },
+      {
+        "title": "Bases de datos",
+        "text": "Modelado, consultas y optimización en PostgreSQL, MySQL, SQLite y MongoDB."
+      },
+      {
+        "title": "Aplicaciones web",
+        "text": "Interfaces rápidas y responsivas con React, Redux y Tailwind, conectadas a tus servicios."
+      },
+      {
+        "title": "Automatización y DevOps",
+        "text": "Contenedores con Docker, flujos con n8n e integraciones con servicios externos e IA."
+      }
+    ]
+  },
+
+  "stats": {
+    "years": "Años de experiencia",
+    "projects": "Proyectos",
+    "certificates": "Certificados",
+    "tech": "Tecnologías",
+    "marquee": "Tecnologías con las que trabajo"
+  },
+
+  "ui": {
+    "back": "Volver",
+    "back_home": "Volver al inicio",
+    "all": "Todos",
+    "view": "Ver certificado",
+    "close": "Cerrar",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "no_diplomas": "Aún no hay diplomados para esta institución.",
+    "career": "Título de la carrera",
+    "courses": "Cursos complementarios",
+    "certificates": "certificados",
+    "app": "Ver App",
+    "code": "Código",
+    "top": "Volver arriba",
+    "soon": "Próximamente",
+    "open": "Abrir en pestaña nueva"
+  },
+
   "footer": {
     "name": "Yeison | Portafolio",
     "message": "Gracias por visitar mi sitio web. Espero que te haya gustado y puedas contactarme.",

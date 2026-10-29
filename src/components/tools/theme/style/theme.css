@@ -1,38 +1,76 @@
-.Theme {
-  background: transparent;
-  color: var(--Fourt-color);
-  border: none;
-  border-radius: 50%;
-  font-size: 1.3em;
+/* Interruptor de tema claro / oscuro */
+.Theme_switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4em;
+  height: 2.3em;
+  padding: 0 .55em;
+  border-radius: 999px;
+  border: 1px solid var(--Border-soft);
+  background: linear-gradient(135deg, #0b1437, #1e1b4b);
   cursor: pointer;
-  margin-top: 0.2em;
+  overflow: hidden;
+  transition: background .5s ease, border-color .3s ease, box-shadow .3s ease;
 }
 
-@media (min-width: 1050px) {
-  .Theme {
-    background: transparent;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.3em;
-    background-color: var(--Second-color);
-    border: 0.1px solid var(--First-color);
-    padding: 0.1em;
-    width: 1.9em;
-    height: 1.9em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 200ms ease transform;
-  }
+.Theme_switch:hover {
+  border-color: color-mix(in srgb, var(--First-color) 50%, transparent);
+  box-shadow: 0 0 18px -6px var(--First-color);
+}
 
-  .Theme > h2 {
-    font-size: 1.35em;
-    margin-top: 3px;
-  }
+.Theme_switch.is-light {
+  background: linear-gradient(135deg, #7dd3fc, #fde68a);
+}
 
-  .Theme:hover {
-    color: rgb(173, 134, 5);
+.Theme_track-icon {
+  font-size: .85em;
+  transition: opacity .3s ease;
+}
+
+.Theme_track-icon--moon {
+  color: #c7d2fe;
+}
+
+.Theme_track-icon--sun {
+  color: #facc15;
+}
+
+/* La perilla se desliza encima del ícono contrario */
+.Theme_knob {
+  position: absolute;
+  top: .2em;
+  left: .2em;
+  width: calc(2.3em - .4em - 2px);
+  height: calc(2.3em - .4em - 2px);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8fafc;
+  color: #1e1b4b;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .35);
+  transition: transform .5s cubic-bezier(.65, 0, .2, 1.3), background .4s ease, color .4s ease;
+}
+
+.Theme_switch.is-light .Theme_knob {
+  transform: translateX(calc(4em - 2.3em));
+  background: #ffffff;
+  color: #f59e0b;
+}
+
+.Theme_knob > i {
+  font-size: 1em;
+  animation: knobSpin .5s var(--Ease-out);
+}
+
+@keyframes knobSpin {
+  from {
+    opacity: 0;
+    transform: rotate(-120deg) scale(.4);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }

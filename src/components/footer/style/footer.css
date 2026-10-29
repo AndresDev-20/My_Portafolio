@@ -123,3 +123,114 @@ hr {
 		margin-bottom: 2em;
 	}
 }
+
+/* ==========================================================
+   MEJORAS (sin cambiar tamaños)
+   ========================================================== */
+.App_footer {
+	position: relative;
+	overflow: hidden;
+}
+
+/* Línea de luz superior */
+.App_footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 10%;
+	right: 10%;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, var(--First-color), var(--Accent-2), transparent);
+	opacity: .8;
+}
+
+.Footer_div1 > h1,
+.Footer_div2 > h1,
+.Footer_div3 > h1 {
+	position: relative;
+	padding-bottom: .35em;
+}
+
+.Footer_div1 > h1::after,
+.Footer_div2 > h1::after,
+.Footer_div3 > h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 2em;
+	height: 3px;
+	border-radius: 3px;
+	background: var(--Gradient);
+}
+
+.Footer_quote {
+	font-style: italic;
+	opacity: .85;
+	border-left: 2px solid var(--First-color);
+	padding-left: .8em;
+}
+
+.Footer_div2 > ul > a > li {
+	display: inline-flex;
+	align-items: center;
+	gap: .3em;
+	transition: color .25s ease, transform .3s var(--Ease-out);
+}
+
+.Footer_div2 > ul > a > li > i {
+	transition: background-color .25s ease, color .25s ease;
+}
+
+.Footer_div2 > ul > a:hover > li {
+	transform: translateX(5px);
+}
+
+.Footer_div2 > ul > a:hover > li > i {
+	background-color: var(--First-color);
+	color: var(--Text-fijo);
+}
+
+.Footer_div3_ul > li > a {
+	color: inherit;
+	transition: color .25s ease;
+}
+
+.Footer_div3_ul > li > a:hover {
+	color: var(--First-color);
+}
+
+.Footer_div3_ul1 > a > li {
+	transition: transform .35s var(--Ease-out), box-shadow .35s ease, background-color .35s ease;
+}
+
+.Footer_div3_ul1 > a > li > i {
+	transition: color .35s ease;
+}
+
+.Footer_div3_ul1 > a:hover > li {
+	transform: translateY(-4px) rotate(-6deg);
+	background-color: var(--First-color);
+	box-shadow: 0 10px 20px -8px var(--First-color);
+}
+
+.Footer_div3_ul1 > a:hover > li > i {
+	color: var(--Text-fijo);
+}
+
+/* En móvil los enlaces rápidos van en dos columnas */
+@media (max-width: 699px) {
+	.Footer_one {
+		padding: 0 .4em;
+	}
+
+	.Footer_div1 {
+		max-width: none;
+	}
+
+	.Footer_div2 > ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: .5em 1em;
+	}
+}

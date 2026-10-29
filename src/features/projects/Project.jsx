@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Images } from "../../assets/images";
 import "./style/project.css";
 
@@ -54,28 +54,80 @@ const PROJECTS = [
   },
 ];
 
+const FILTERS = ["all", "Backend", "Frontend"];
+
 const Project = ({ t }) => {
+  const [filter, setFilter] = useState("all");
+  const [pill, setPill] = useState({ left: 0, width: 0 });
+  const tabsRef = useRef(null);
+
+  // Mueve la "píldora" de color debajo del filtro activo
+  useLayoutEffect(() => {
+    const place = () => {
+      const active = tabsRef.current?.querySelector(".Projects_filter--active");
+      if (active) setPill({ left: active.offsetLeft, width: active.offsetWidth });
+    };
+    place();
+    window.addEventListener("resize", place);
+    return () => window.removeEventListener("resize", place);
+  }, [filter, t]);
+
+  const visible =
+    filter === "all" ? PROJECTS : PROJECTS.filter((project) => project.type === filter);
+
+  const countOf = (type) =>
+    type === "all" ? PROJECTS.length : PROJECTS.filter((project) => project.type === type).length;
+
   return (
     <section className="Projects" id="Projects">
       <br />
       <br />
       <br />
       <br />
-      <h1 className="Projects_title">
+      <h1 className="Projects_title Section_title Reveal">
         <span>
           <i className="bx bxs-folder folder"></i>
         </span>{" "}
         {t("projects.title")} <span className="pro">{t("projects.text")}</span>
       </h1>
-      <div className="Projects_todos">
-        {PROJECTS.map((project) => {
+
+      <div className="Projects_filters Reveal" role="tablist" ref={tabsRef}>
+        <span
+          className="Projects_filter-pill"
+          style={{ transform: `translateX(${pill.left}px)`, width: pill.width }}
+          aria-hidden="true"
+        ></span>
+        {FILTERS.map((type) => (
+          <button
+            key={type}
+            type="button"
+            role="tab"
+            aria-selected={filter === type}
+            className={`Projects_filter ${filter === type ? "Projects_filter--active" : ""}`}
+            onClick={() => setFilter(type)}
+            data-ripple
+          >
+            {type === "all" ? t("ui.all") : type}
+            <span className="Projects_filter-count">{countOf(type)}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="Projects_todos" key={filter}>
+        {visible.map((project, index) => {
           const key = `projects.projects.Project${project.id}`;
           const name = t(`${key}.name`);
 
           return (
-            <div className="Projects_Project" data-aos="fade-right" key={project.id}>
+            <div
+              className="Projects_Project"
+              data-spotlight
+              data-tilt="6"
+              key={project.id}
+              style={{ "--i": index }}
+            >
               <figure className="Project_image">
-                <img src={project.image} alt={name} />
+                <img src={project.image} alt={name} loading="lazy" />
                 <span
                   className={`Project_type Project_type--${project.type.toLowerCase()}`}
                 >
@@ -95,15 +147,15 @@ const Project = ({ t }) => {
                 <div className="Project_open">
                   {project.app && (
                     <span>
-                      <Link to={project.app}>
+                      <a href={project.app} target="_blank" rel="noopener noreferrer">
                         <i className="openGite bx bx-link"></i> App
-                      </Link>
+                      </a>
                     </span>
                   )}
                   <span>
-                    <Link to={project.code}>
+                    <a href={project.code} target="_blank" rel="noopener noreferrer">
                       <i className="openGite bx bxl-github"></i> Code
-                    </Link>
+                    </a>
                   </span>
                 </div>
               </div>

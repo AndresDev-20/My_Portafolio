@@ -1,4 +1,5 @@
 import { Images } from "../../assets/images";
+import TechMarquee from "./TechMarquee";
 import "./style/skill.css";
 
 const Skill = ({ t }) => {
@@ -7,18 +8,19 @@ const Skill = ({ t }) => {
       <br />
       <br />
       <br />
-      <h1 className="Skills_title">
+      <h1 className="Skills_title Section_title Reveal">
         <i className='bx bx-laptop laptop'></i> 
         {" "}
         {t("skills.title")} <span className="Habiliti">{t("skills.text")}</span>{" "}
       </h1>
+      <TechMarquee t={t} />
       <article className="Skills_skills">
-        <div className="Skills_skill" data-aos="fade-right">
+        <div className="Skills_skill" data-aos="fade-up" data-spotlight>
           <h1 className="Skills_icon">
             <i className="bx bx-clipboard"></i>
           </h1>
           <h1 className="Skill_profetion-title">{t("skills.setion1")}</h1>
-          <div className="Skills_container">
+          <div className="Skills_container Reveal-stagger">
             <div>
               <i className="bx bxl-javascript"></i>
               <h1>JavaScript</h1>
@@ -68,12 +70,12 @@ const Skill = ({ t }) => {
           </div>
         </div>
 
-        <div className="Skills_skill" data-aos="fade-right">
+        <div className="Skills_skill" data-aos="fade-up" data-spotlight>
           <h1 className="Skills_icon">
             <i className="bx bx-code-alt"></i>
           </h1>
           <h1 className="Skill_profetion-title">{t("skills.setion2")}</h1>
-          <div className="Skills_container">
+          <div className="Skills_container Reveal-stagger">
             <div>
               <i className="bx bxl-html5"></i>
               <h1>Html</h1>
@@ -106,12 +108,12 @@ const Skill = ({ t }) => {
           </div>
         </div>
 
-        <div className="Skills_skill" data-aos="fade-right">
+        <div className="Skills_skill" data-aos="fade-up" data-spotlight>
           <h1 className="Skills_icon">
             <i className="bx bx-desktop"></i>
           </h1>
           <h1 className="Skill_profetion-title">{t("skills.setion3")}</h1>
-          <div className="Skills_container">
+          <div className="Skills_container Reveal-stagger">
             <div>
               <img src={Images.Claude} alt="" />
               <h1>Claude</h1>

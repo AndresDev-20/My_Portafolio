@@ -1,18 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Scrollspy from "react-scrollspy";
 import "./style/header.css";
+import "./style/headerPro.css";
 import Theme from "../tools/theme/Theme";
 import Translate from "../tools/translate/Translate";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+const SECTIONS = [
+  { id: "Start", key: "home", icon: "bx-home-alt-2" },
+  { id: "About", key: "about", icon: "bx-user" },
+  { id: "Skills", key: "skills", icon: "bx-code-alt" },
+  { id: "Education", key: "education", icon: "bx-book-open" },
+  { id: "Experience", key: "experience", icon: "bx-briefcase" },
+  { id: "Projects", key: "projects", icon: "bx-folder" },
+  { id: "Contact", key: "contact", icon: "bx-envelope" },
+];
 
 const Header = ({t, particles}) => {
   const [open, setOpen] = useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Bloquea el scroll del fondo mientras el menú móvil está abierto
+  useEffect(() => {
+    document.body.style.overflow = open ? "" : "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  // Cierra el menú con la tecla Escape
+  useEffect(() => {
+    const onKey = (e) => e.key === "Escape" && setOpen(true);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const scrollTo = (e, id) => {
     e.preventDefault();
-    setTimeout(() => {
     setOpen(true);
-  }, 1000); 
+
+    // Si estamos en otra ruta, volvemos al inicio y Home hace el scroll
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+      return;
+    }
+
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
@@ -21,7 +54,11 @@ const Header = ({t, particles}) => {
 
   return (
     <div className="Header_div">
-      <h1 className="Header_logo"><Link href="#home" onClick={(e) => scrollTo(e, "Start")}>{"<A.dev/>"}</Link></h1>
+      <h1 className="Header_logo">
+        <Link to="/" onClick={(e) => scrollTo(e, "Start")} aria-label="Andres.dev">
+          {"<A.dev/>"}
+        </Link>
+      </h1>
 
       <nav className="Header_nav">
         <div className="Header_nav-tools">
@@ -32,63 +69,44 @@ const Header = ({t, particles}) => {
           <i
             onClick={() => setOpen(false)}
             className={open ? "bx bx-menu" : "Clear"}
+            role="button"
+            aria-label="Menu"
           ></i>
           <i
             onClick={() => setOpen(true)}
             className={open ? "Clear" : "bx bx-x"}
+            role="button"
+            aria-label="Close"
           ></i>
         </div>
 
+        <div
+          className={`Header_overlay ${open ? "" : "open"}`}
+          onClick={() => setOpen(true)}
+          aria-hidden="true"
+        ></div>
+
         {/* 🔥 Scrollspy: resalta el item activo */}
         <Scrollspy
-          items={[
-            "Start",
-            "About",
-            "Skills",
-            "Education",
-            "Experience",
-            "Projects",
-            "Contact",
-          ]}
+          items={SECTIONS.map((s) => s.id)}
           currentClassName="Header_active"
-          className={`Header_nav-list ${open ? "" : "open"}`}
+          className={`Header_nav-list ${open ? "" : "open"} ${
+            location.pathname === "/" ? "" : "Header_nav-list--away"
+          }`}
           offset={-100}
         >
-          <li className="Header_nav-item">
-            <Link href="#home" onClick={(e) => scrollTo(e, "Start")}>
-              {t("Header.home")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#about" onClick={(e) => scrollTo(e, "About")}>
-              {t("Header.about")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#skills" onClick={(e) => scrollTo(e, "Skills")}>
-              {t("Header.skills")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#education" onClick={(e) => scrollTo(e, "Education")}>
-              {t("Header.education")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#experience" onClick={(e) => scrollTo(e, "Experience")}>
-              {t("Header.experience")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#projects" onClick={(e) => scrollTo(e, "Projects")}>
-              {t("Header.projects")}
-            </Link>
-          </li>
-          <li className="Header_nav-item">
-            <Link href="#contact" onClick={(e) => scrollTo(e, "Contact")}>
-              {t("Header.contact")}
-            </Link>
-          </li>
+          {SECTIONS.map((section, index) => (
+            <li
+              className="Header_nav-item"
+              key={section.id}
+              style={{ "--i": index }}
+            >
+              <a href={`#${section.id}`} onClick={(e) => scrollTo(e, section.id)}>
+                <i className={`Header_nav-icon bx ${section.icon}`}></i>
+                {t(`Header.${section.key}`)}
+              </a>
+            </li>
+          ))}
         </Scrollspy>
       </nav>
     </div>

@@ -158,3 +158,117 @@
   font-size: 17px;
 }
 }
+
+/* ==========================================================
+   MEJORAS (sin cambiar tamaños)
+   ========================================================== */
+.bxs-brie {
+  color: var(--First-color);
+}
+
+/* Línea de tiempo con degradado */
+.Experience_contain {
+  border-left-color: transparent;
+  background-color: transparent;
+}
+
+.Experience_contain::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, var(--First-color), var(--Accent-3), color-mix(in srgb, var(--Accent-2) 30%, transparent));
+}
+
+.icon {
+  z-index: 1;
+  color: var(--Text-fijo);
+  background: var(--Gradient);
+  box-shadow: 0 0 0 4px var(--Second-color), 0 0 0 6px color-mix(in srgb, var(--First-color) 40%, transparent);
+}
+
+.Experience_works:first-child .icon {
+  animation: expPulse 2.2s ease-out infinite;
+}
+
+.Experience_work {
+  width: 100%;
+  padding: 1.2em 1.3em;
+  border-radius: .9em;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--Five-color) 30%, var(--Second-color)), var(--Second-color));
+  border: 1px solid var(--Border-soft);
+  box-shadow: 0 18px 40px -28px var(--Shadow);
+}
+
+.Experience_contain .Experience_work[data-aos] {
+  transition-property: opacity, transform, translate, box-shadow, border-color;
+}
+
+.Experience_work:hover {
+  border-color: color-mix(in srgb, var(--First-color) 50%, transparent);
+  box-shadow: 0 24px 50px -28px var(--First-color);
+}
+
+.Experience_work .icon {
+  margin-left: calc(-46.6px - 1px);
+}
+
+.Experience_work > span {
+  display: inline-block;
+  margin-top: .2em;
+  padding: .3em .9em;
+  border: 1px solid color-mix(in srgb, var(--First-color) 40%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--First-color) 10%, transparent);
+}
+
+.Logros > li::marker {
+  color: var(--First-color);
+}
+
+@keyframes expPulse {
+  0% {
+    box-shadow: 0 0 0 4px var(--Second-color), 0 0 0 6px color-mix(in srgb, var(--First-color) 60%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 4px var(--Second-color), 0 0 0 16px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 4px var(--Second-color), 0 0 0 6px transparent;
+  }
+}
+
+/* La línea de fondo queda tenue y encima se dibuja el progreso */
+.Experience_contain::before {
+  opacity: .2;
+}
+
+.Experience_contain::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, var(--First-color), var(--Accent-2), var(--Accent-3));
+  box-shadow: 0 0 12px var(--First-color);
+  transform: scaleY(var(--progress, 0));
+  transform-origin: top;
+  transition: transform .15s linear;
+}
+
+.Experience_contain::after {
+  z-index: 0;
+}
+
+.Experience_work {
+  z-index: 1;
+}
+
+.Experience {
+  overflow-x: clip;
+}

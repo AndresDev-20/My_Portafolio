@@ -1,0 +1,217 @@
+/* ==========================================================
+   Efectos de movimiento globales (ver MotionEffects.jsx)
+   ========================================================== */
+
+/* ---------- Aparición al hacer scroll ---------- */
+.Reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .8s ease, transform .9s var(--Ease-out);
+  transition-delay: var(--delay, 0s);
+}
+
+.Reveal--left { transform: translateX(-40px); }
+.Reveal--right { transform: translateX(40px); }
+.Reveal--zoom { transform: scale(.88); }
+.Reveal--blur { transform: translateY(18px); filter: blur(10px); transition-property: opacity, transform, filter; }
+
+.Reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Hijos en cascada */
+/* :where() deja la especificidad en 0 para no pisar los hover de cada hijo */
+:where(.Reveal-stagger:not(.is-visible)) > * {
+  opacity: 0;
+  transform: translateY(18px) scale(.94);
+}
+
+:where(.Reveal-stagger.is-visible) > * {
+  animation: staggerIn .65s var(--Ease-out) backwards;
+  animation-delay: calc(var(--i, 0) * 55ms);
+}
+
+@keyframes staggerIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Luz que sigue al mouse ---------- */
+[data-spotlight] {
+  position: relative;
+  isolation: isolate;
+}
+
+[data-spotlight]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(22em circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--First-color) 18%, transparent), transparent 45%);
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+[data-spotlight]:hover::after {
+  opacity: 1;
+}
+
+/* ---------- Inclinación 3D ---------- */
+[data-tilt] {
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform .35s var(--Ease-out);
+  will-change: transform;
+}
+
+/* Tarjetas que aparecen con .Reveal y además se inclinan */
+[data-tilt].Reveal.is-visible {
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: opacity .8s ease, transform .5s var(--Ease-out), translate .45s var(--Ease-out), box-shadow .45s ease;
+}
+
+/* ---------- Magnético ---------- */
+[data-magnetic] {
+  transition: translate .35s var(--Ease-out);
+}
+
+/* ---------- Onda al hacer clic ---------- */
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+}
+
+.Ripple_wave {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, .45), rgba(255, 255, 255, 0) 60%);
+  transform: scale(0);
+  animation: rippleOut .7s ease-out forwards;
+}
+
+@keyframes rippleOut {
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* ---------- Títulos de sección ---------- */
+.Section_title {
+  position: relative;
+  padding-bottom: .35em;
+}
+
+.Section_title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -.15em;
+  width: 2.4em;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--Gradient);
+  background-size: 200% 100%;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform .9s var(--Ease-out) .25s;
+  animation: titleBar 3s linear infinite;
+}
+
+.Section_title.is-visible::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.Section_title i {
+  display: inline-block;
+}
+
+.Section_title.is-visible i {
+  animation: iconPop .9s var(--Ease-out) .15s both, iconFloat 4s ease-in-out 1.2s infinite;
+}
+
+@keyframes titleBar {
+  to { background-position: 200% 0; }
+}
+
+@keyframes iconPop {
+  0% { transform: scale(0) rotate(-120deg); }
+  60% { transform: scale(1.25) rotate(10deg); }
+  100% { transform: none; }
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ---------- Transición entre rutas ---------- */
+.Route_curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100000000;
+  pointer-events: none;
+  background: var(--Gradient);
+  transform: translateX(-101%);
+  animation: curtainSweep .9s cubic-bezier(.77, 0, .18, 1) forwards;
+}
+
+.Route_curtain::after {
+  content: "<A.dev/>";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--Text-fijo);
+  font-size: 2em;
+  letter-spacing: .05em;
+}
+
+.Page_enter {
+  animation: pageIn .7s ease .35s backwards;
+}
+
+@keyframes curtainSweep {
+  0% { transform: translateX(-101%); }
+  45%, 55% { transform: translateX(0); }
+  100% { transform: translateX(101%); }
+}
+
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ---------- Fondo con auroras en movimiento ---------- */
+body::before {
+  animation: auroraMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes auroraMove {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-3%, 2%, 0) scale(1.08); }
+  100% { transform: translate3d(2%, -2%, 0) scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Reveal,
+  :where(.Reveal-stagger) > * {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .Route_curtain {
+    display: none;
+  }
+}

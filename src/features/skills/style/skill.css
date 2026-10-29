@@ -259,3 +259,168 @@
       height: 100vh;
     }
 }
+
+/* ==========================================================
+   MEJORAS (sin cambiar tamaños)
+   ========================================================== */
+.laptop {
+  color: var(--First-color);
+}
+
+.Skills_skill {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--Border-soft);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--Five-color) 30%, var(--Second-color)), var(--Second-color));
+  box-shadow: 0 18px 40px -26px var(--Shadow), 0 0 0 1px color-mix(in srgb, var(--First-color) 8%, transparent);
+}
+
+/* Línea de luz superior de cada tarjeta */
+.Skills_skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: var(--Gradient);
+  opacity: .6;
+  transition: left .5s var(--Ease-out), right .5s var(--Ease-out), opacity .5s ease;
+}
+
+.Skills_skills .Skills_skill[data-aos] {
+  transition-property: opacity, transform, translate, box-shadow, border-color;
+}
+
+.Skills_skill:hover {
+  translate: 0 -6px;
+  border-color: color-mix(in srgb, var(--First-color) 55%, transparent);
+  box-shadow: 0 26px 50px -26px var(--First-color);
+}
+
+.Skills_skill:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.Skills_icon > i {
+  display: inline-block;
+  filter: drop-shadow(0 8px 16px color-mix(in srgb, var(--First-color) 50%, transparent));
+  transition: transform .5s var(--Ease-out);
+}
+
+.Skills_skill:hover .Skills_icon > i {
+  transform: scale(1.08) rotate(-6deg);
+}
+
+.Skills_container > div {
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: translate .3s var(--Ease-out), background-color .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.Skills_container > div > i,
+.Skills_container > div > img {
+  transition: transform .35s var(--Ease-out), filter .35s ease;
+}
+
+.Skills_container > div:hover {
+  translate: 0 -4px;
+  background-color: color-mix(in srgb, var(--First-color) 8%, transparent);
+  border-color: color-mix(in srgb, var(--First-color) 35%, transparent);
+  box-shadow: 0 10px 22px -14px var(--First-color);
+}
+
+.Skills_container > div:hover > i,
+.Skills_container > div:hover > img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .25));
+}
+
+.Skills_container > div:hover > h1 {
+  color: var(--Third-color);
+}
+
+/* ---------- Cinta infinita de tecnologías ---------- */
+.Marquee {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+  width: 100%;
+  max-width: 70em;
+  margin: 0 auto 2.5em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.Marquee_row {
+  display: flex;
+  overflow: hidden;
+}
+
+.Marquee_track {
+  display: flex;
+  flex-shrink: 0;
+  gap: .8em;
+  padding: .2em 0;
+  animation: marqueeScroll 38s linear infinite;
+}
+
+.Marquee_row--reverse .Marquee_track {
+  animation-direction: reverse;
+  animation-duration: 44s;
+}
+
+.Marquee:hover .Marquee_track {
+  animation-play-state: paused;
+}
+
+.Marquee_item {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  flex-shrink: 0;
+  padding: .5em 1em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--Five-color) 35%, transparent);
+  border: 1px solid var(--Border-soft);
+  transition: border-color .3s ease, background-color .3s ease, translate .3s var(--Ease-out);
+}
+
+.Marquee_item:hover {
+  translate: 0 -2px;
+  border-color: color-mix(in srgb, var(--First-color) 60%, transparent);
+  background: color-mix(in srgb, var(--First-color) 12%, transparent);
+}
+
+.Marquee_item > i {
+  font-size: 1.6em;
+}
+
+.Marquee_item > img {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+
+.Marquee_item > span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Third-color);
+  white-space: nowrap;
+}
+
+/* gap incluido para que el bucle encaje sin saltos */
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - .4em)); }
+}
+
+@media (min-width: 1400px) {
+  .Skills {
+    height: auto;
+    min-height: 100vh;
+  }
+}

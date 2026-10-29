@@ -146,3 +146,173 @@
    border-radius: 0.2em;
  }
 }
+
+
+/* ==========================================================
+   MEJORAS (sin cambiar tamaños)
+   ========================================================== */
+.Header_logo > a {
+  display: inline-block;
+  background: var(--Gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform .35s var(--Ease-out), filter .35s ease;
+}
+
+.Header_logo > a:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--First-color) 60%, transparent));
+}
+
+.Header_nav-toggle > i {
+  transition: transform .3s var(--Ease-out), color .3s ease;
+}
+
+.Header_nav-toggle > i:active {
+  transform: scale(.9);
+}
+
+/* Fondo oscuro detrás del menú móvil */
+.Header_overlay {
+  position: fixed;
+  inset: 0;
+  top: 74px;
+  height: 100vh;
+  background: rgba(2, 6, 23, .45);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+  z-index: 9999;
+}
+
+.Header_overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Header_nav-list {
+  align-items: stretch;
+  gap: .6em;
+  background-color: color-mix(in srgb, var(--Second-color) 94%, transparent);
+  border-right: 1px solid var(--Border-soft);
+  transition: left .4s var(--Ease-out);
+}
+
+.Header_nav-item > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .7em;
+  padding: .75em 1em;
+  border-radius: .6em;
+  transition: color .25s ease, background-color .25s ease, transform .25s ease;
+}
+
+.Header_nav-icon {
+  font-size: 1.25em;
+  color: var(--First-color);
+}
+
+.Header_nav-item > a:hover,
+.Header_active > a {
+  border-bottom: none;
+  background-color: color-mix(in srgb, var(--First-color) 12%, transparent);
+}
+
+.Header_nav-item > a:hover {
+  transform: translateX(4px);
+}
+
+.Header_active > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22%;
+  bottom: 22%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--Gradient);
+}
+
+/* Los ítems entran en cascada al abrir el menú */
+.Header_nav-list .Header_nav-item {
+  opacity: 0;
+  transform: translateX(-12px);
+  transition: opacity .3s ease, transform .35s var(--Ease-out);
+}
+
+.Header_nav-list.open .Header_nav-item {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(var(--i) * 45ms + 80ms);
+}
+
+@media (min-width: 1050px) {
+  .Header_overlay,
+  .Header_nav-icon {
+    display: none;
+  }
+
+  .Header_nav-list {
+    align-items: center;
+    gap: 2.2em;
+    border-right: none;
+    background-color: transparent;
+  }
+
+  .Header_nav-list .Header_nav-item {
+    opacity: 1;
+    transform: none;
+  }
+
+  .Header_nav-item > a {
+    display: inline-block;
+    padding: .2em 0;
+    border-radius: 0;
+  }
+
+  .Header_nav-item > a:hover,
+  .Header_active > a {
+    background-color: transparent;
+    border-bottom: none;
+    transform: none;
+  }
+
+  /* Subrayado animado que crece desde el centro */
+  .Header_nav-item > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--Gradient);
+    transform: scaleX(0);
+    transition: transform .35s var(--Ease-out);
+  }
+
+  .Header_nav-item > a:hover::after,
+  .Header_active > a::after {
+    transform: scaleX(1);
+  }
+
+  .Header_active > a::before {
+    display: none;
+  }
+}
+
+/* Fuera del inicio ninguna sección queda marcada como activa */
+.Header_nav-list--away .Header_active > a {
+  color: var(--Third-color);
+  background-color: transparent;
+}
+
+.Header_nav-list--away .Header_active > a::before,
+.Header_nav-list--away .Header_active > a:not(:hover)::after {
+  transform: scaleX(0);
+  opacity: 0;
+}

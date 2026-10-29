@@ -69,8 +69,8 @@ export const Contact = ({ t }) => {
   return (
     <section className='contact' id='Contact' aria-labelledby='contact-title'>
 
-      <header className='contact__header'>
-        <h2 className='contact__title' id='contact-title'>
+      <header className='contact__header Reveal'>
+        <h2 className='contact__title Section_title Reveal' id='contact-title'>
           <svg className='contact__title-icon' viewBox='0 0 24 24' aria-hidden='true'>
             <path d='M3 14v-2a9 9 0 0 1 18 0v2' />
             <path d='M21 15v2a3 3 0 0 1-3 3h-3' />
@@ -103,7 +103,7 @@ export const Contact = ({ t }) => {
           </figure>
         )}
 
-        <form className='contact__form' onSubmit={sendEmail}>
+        <form className='contact__form Reveal-stagger' onSubmit={sendEmail}>
 
           {/* Honeypot anti-spam (oculto para personas) */}
           <input
@@ -168,6 +168,7 @@ export const Contact = ({ t }) => {
           <button
             className={`contact__submit${isSending ? ' contact__submit--sending' : ''}`}
             type='submit'
+            data-ripple
             disabled={isSending}
             aria-busy={isSending}
           >

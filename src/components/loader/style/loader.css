@@ -1,123 +1,144 @@
 .container__spinner {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: var(--Second-color);
-	z-index: 999999;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    backdrop-filter: blur(4px);
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Second-color);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: loaderFade .4s ease;
+}
+
+/* Halo de fondo */
+.container__spinner::before {
+  content: "";
+  position: absolute;
+  width: 28em;
+  height: 28em;
+  border-radius: 50%;
+  background: var(--Gradient);
+  filter: blur(90px);
+  opacity: .22;
+  animation: loaderBreath 2.4s ease-in-out infinite alternate;
+}
+
+.Loader_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1em;
+}
+
+/* Tres órbitas girando alrededor del logo */
+.Loader_orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11em;
+  height: 11em;
+  margin: -6.2em 0 0 -5.5em;
+  pointer-events: none;
+}
+
+.Loader_orbit > span {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--First-color);
+  border-left-color: color-mix(in srgb, var(--Accent-2) 60%, transparent);
+  animation: loaderSpin 1.4s linear infinite;
+}
+
+.Loader_orbit > span:nth-child(2) {
+  inset: 1em;
+  border-top-color: var(--Accent-3);
+  border-left-color: transparent;
+  border-right-color: color-mix(in srgb, var(--Accent-3) 50%, transparent);
+  animation-duration: 1.1s;
+  animation-direction: reverse;
+}
+
+.Loader_orbit > span:nth-child(3) {
+  inset: 2em;
+  border-top-color: var(--Accent-2);
+  border-left-color: transparent;
+  animation-duration: .8s;
+}
+
+.Loader_logo {
+  display: flex;
+  font-size: 1.5em;
+  color: var(--First-color);
+  letter-spacing: .02em;
+}
+
+.Loader_logo > span {
+  display: inline-block;
+  animation: loaderLetter 1.6s ease infinite;
+  animation-delay: calc(var(--i) * 80ms);
+}
+
+.Loader_bar {
+  width: 9em;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--Third-color) 12%, transparent);
+}
+
+.Loader_bar > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--Gradient);
+  transform-origin: left;
+  animation: loaderBar 2s cubic-bezier(.65, 0, .35, 1) forwards;
+}
+
+.Loader_text {
+  color: var(--Fourt-color);
+  font-size: .8em;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  animation: loaderBlink 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes loaderBreath {
+  from { transform: scale(.85); }
+  to { transform: scale(1.1); }
+}
+
+@keyframes loaderSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes loaderLetter {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    color: var(--First-color);
   }
-
-  .container__spinner-Diplosmas {
-	position: fixed;
-	width: 100%;
-	max-width:23em;
-	height: 100%;
-	max-height: 18em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  30% {
+    transform: translateY(-10px);
+    color: var(--Accent-2);
   }
-  
-  .container__spinner span {
-	position: fixed;
-	color: var(--Third-color);
-	font-size: 1.2em;
-	text-align: center;
-	margin-left: .4em;
-	margin-top: .5em;
-  }
-  
-  .atom-spinner,
-  .atom-spinner * {
-	box-sizing: border-box;
-  }
-  
-  .atom-spinner {
-	height: 80px;
-	width: 80px;
-	overflow: hidden;
-  }
-  
-  .atom-spinner .spinner-inner {
-	position: relative;
-	display: block;
-	height: 100%;
-	width: 100%;
-  }
-  
-  .atom-spinner .spinner-circle {
-	display: block;
-	position: absolute;
-	color: var(--Third-color);
-	font-size: calc(60px * 0.24);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  }
-  
-  .atom-spinner .spinner-line {
-	position: absolute;
-	width: 100%;
-	height: 100%;  
-border-radius: 50%;
-animation-duration: 1s;
-border-left-width: calc(60px / 25);
-border-top-width: calc(60px / 25);
-border-left-color: var(--Third-color);
-border-left-style: solid;
-border-top-style: solid;
-border-top-color: transparent;
 }
 
-.atom-spinner .spinner-line:nth-child(1) {
-animation: atom-spinner-animation-1 1s linear infinite;
-transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
+@keyframes loaderBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
-.atom-spinner .spinner-line:nth-child(2) {
-animation: atom-spinner-animation-2 1s linear infinite;
-transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
-}
-
-.atom-spinner .spinner-line:nth-child(3) {
-animation: atom-spinner-animation-3 1s linear infinite;
-transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
-}
-
-@media (min-width: 800px) {
-	.container__spinner-Diplosmas {
-		position: fixed;
-		width: 100%;
-		max-width:43em;
-		margin-top: 4em;
-		height: 100%;
-		max-height: 29em;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	  }
-	
-}
-
-@keyframes atom-spinner-animation-1 {
-100% {
-  transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
-}
-}
-
-@keyframes atom-spinner-animation-2 {
-100% {
-  transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
-}
-}
-
-@keyframes atom-spinner-animation-3 {
-100% {
-  transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
-}
+@keyframes loaderBlink {
+  0%, 100% { opacity: .4; }
+  50% { opacity: 1; }
 }

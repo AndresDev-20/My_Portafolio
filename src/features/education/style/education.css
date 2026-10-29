@@ -113,3 +113,127 @@ display: none;
 		min-height: 100vh;
 	}
 }
+
+/* ==========================================================
+   MEJORAS (sin cambiar tamaños)
+   ========================================================== */
+.Education_study {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(135deg, color-mix(in srgb, var(--Five-color) 30%, var(--Second-color)), var(--Second-color));
+	border-color: var(--Border-soft);
+	box-shadow: 0 18px 40px -26px var(--Shadow), 0 0 0 1px color-mix(in srgb, var(--First-color) 8%, transparent);
+}
+
+/* AOS controla "transform", por eso el levantado usa "translate" */
+.edu .Education_study[data-aos] {
+	transition-property: opacity, transform, translate, box-shadow, border-color;
+	transition-duration: .45s;
+}
+
+/* Barra de color a la izquierda que aparece al pasar el mouse */
+.Education_study::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background: var(--Gradient);
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform .5s var(--Ease-out);
+	z-index: 1;
+}
+
+.Education_study:hover {
+	translate: 0 -4px;
+	border-color: color-mix(in srgb, var(--First-color) 60%, transparent);
+	box-shadow: 0 24px 50px -26px var(--First-color);
+}
+
+.Education_study:hover::before {
+	transform: scaleY(1);
+}
+
+.Education_image {
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.Education_image > img {
+	transition: transform .7s var(--Ease-out);
+}
+
+.Education_study:hover .Education_image > img {
+	transform: scale(1.05);
+}
+
+.Education_dates {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .4em;
+}
+
+.Education_dates > i {
+	color: var(--First-color);
+}
+
+.Education_status {
+	font-style: normal;
+	font-size: 12px;
+	font-weight: 500;
+	padding: .2em .7em;
+	border-radius: 999px;
+	color: var(--First-color);
+	background: color-mix(in srgb, var(--First-color) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--First-color) 35%, transparent);
+}
+
+.Education_info > div > button {
+	display: inline-flex;
+	align-items: center;
+	gap: .3em;
+	background: var(--Gradient);
+	background-size: 160% 100%;
+	box-shadow: 0 8px 20px -10px var(--First-color);
+	transition: background-position .5s ease, transform .3s var(--Ease-out), box-shadow .3s ease;
+}
+
+.Education_info > div > button > i {
+	font-size: 1.2em;
+	transition: transform .3s var(--Ease-out);
+}
+
+.Education_info > div > button:hover {
+	background-position: 100% 0;
+	transform: translateY(-2px);
+	box-shadow: 0 12px 24px -10px var(--First-color);
+}
+
+.Education_info > div > button:hover > .bx-right-arrow-alt {
+	transform: translateX(4px);
+}
+
+.Education_info > div > .Education_btn--disabled,
+.Education_info > div > .Education_btn--disabled:hover {
+	cursor: not-allowed;
+	color: var(--Fourt-color);
+	background: color-mix(in srgb, var(--Five-color) 70%, transparent);
+	box-shadow: none;
+	transform: none;
+}
+
+@media (min-width: 800px) {
+	.Education_info {
+		flex: 1;
+	}
+}
+
+@media (max-width: 799px) {
+	.Education {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}

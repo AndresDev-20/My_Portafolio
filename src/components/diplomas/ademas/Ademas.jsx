@@ -1,127 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import { Images } from "../../../assets/images";
-import LoaderDiplomas from "../../loader/LoaderDiplomas";
-import "./style/ademas.css";
+import DiplomaGallery from "../DiplomaGallery";
 
-const Ademas = ({ Academlos, setAcademlos, t }) => {
-  const [selectedDiploma, setSelectedDiploma] = useState(null);
-  const [Image, setImage] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
-
-  const VolverHome = () => {
-    navigate("/", { state: { scrollTo: "Education" } });
+const Ademas = ({ t }) => {
+  const institution = {
+    logo: Images.Ademas,
+    name: t("education.institutions.ademass.name"),
+    institution: t("education.institutions.ademass.institution"),
+    dates: t("education.institutions.ademass.dates"),
   };
 
-  const OpenDiploma = (Value) => {
-    setLoading(false);
-    switch (Value) {
-      case 1:
-        setSelectedDiploma(Images.Ademas_html);
-        break;
-      case 2:
-        setSelectedDiploma(Images.Ademas_css);
-        break;
-      case 3:
-        setSelectedDiploma(Images.Ademas_js);
-        break;
-      case 4:
-        setSelectedDiploma(Images.Ademas_ts);
-        break;
-      case 5:
-        setSelectedDiploma(Images.Ademas_py);
-        break;
-      default:
-        break;
-    }
-    setImage(true);
+  const sections = [
+    {
+      title: t("ui.career"),
+      featured: true,
+      items: [{ title: t("education.diploma"), image: null }],
+    },
+    {
+      title: t("education.title_curso2"),
+      items: [
+        { title: "Html5", image: Images.Ademas_html },
+        { title: "Css3", image: Images.Ademas_css },
+        { title: "JavaScript", image: Images.Ademas_js },
+        { title: "TypeScript", image: Images.Ademas_ts },
+        { title: "Python", image: Images.Ademas_py },
+      ],
+    },
+  ];
 
-    setTimeout(() => {
-      setLoading(true);
-    }, 550);
-  };
-
-  const CloseDimploma = () => {
-    setImage(false);
-    setDiploma();
-  };
-
-  return (
-    <div className="Diplomados" id='Education'>
-      <div className="Diplomados_exit">
-        <h1 onClick={VolverHome}>Volver</h1>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <div className="Diplomados__carrer-diploma">
-        <div className={Academlos ? "Clear_Diploma" : "DiplomasAdemass"}>
-          <div>
-            <h1 className="Diplomados__title">{t("education.diploma")}</h1>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>{t("education.not_available")}</p>
-          </div>
-        </div>
-      </div>
-
-      <br />
-      <hr />
-      <br />
-      <div className="Diplomados__complementarios">
-        <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas1"}>
-          <div>
-            <h1 className="Diplomados__title" >Html5</h1>
-            <button onClick={() => OpenDiploma(1)}>{t("education.ver")}</button>
-          </div>
-        </div>
-        <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas2"}>
-          <div>
-            <h1 className="Diplomados__title">Css3</h1>
-            <button onClick={() => OpenDiploma(2)}>{t("education.ver")}</button>
-          </div>
-        </div>
-        <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas3"}>
-          <div>
-            <h1 className="Diplomados__title">JavaScript</h1>
-            <button onClick={() => OpenDiploma(3)}>{t("education.ver")}</button>
-          </div>
-        </div>
-        <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas4"}>
-          <div>
-            <h1 className="Diplomados__title">TypeScript</h1>
-            <button onClick={() => OpenDiploma(4)}>{t("education.ver")}</button>
-          </div>
-        </div>
-        <div className={Academlos ? "Clear_Diploma" : "DiplomaAdemas5"}>
-          <div>
-            <h1 className="Diplomados__title">Python</h1>
-            <button onClick={() => OpenDiploma(5)}>{t("education.ver")}</button>
-          </div>
-        </div>
-      </div>
-
-      <div className={Image ? "Diploma_Image" : "Image_Clear"}>
-        <div className="Diplomado__exit">
-          <i onClick={CloseDimploma} className="bx bx-x"></i>
-        </div>
-        {!loading ? (
-            <LoaderDiplomas />
-        ) : (
-          <img src={selectedDiploma} alt="Diploma" />
-        )}
-      </div>
-    </div>
-  );
+  return <DiplomaGallery t={t} institution={institution} sections={sections} />;
 };
 
 export default Ademas;

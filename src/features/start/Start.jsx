@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Images } from "../../assets/images";
 import CV from '../../assets/documents/Cv-AndresDev.pdf';
+import HeroCircuit from "./HeroCircuit";
 import "./style/start.css";
+import "./style/heroVisual.css";
 
 const Start = ({ t }) => {
   const [text, setText] = useState("");
@@ -50,6 +51,7 @@ const Start = ({ t }) => {
 }, [text, isDeleting, pause]);
 
   const handleWhatsapp = (e) => {
+    e.preventDefault();
     e.stopPropagation();
     const message = encodeURIComponent("Hola Yeison, quisiera hablar contigo sobre un empleo de desarrollador.");
     window.open(`https://wa.me/573227222010?text=${message}`, "_blank");
@@ -70,7 +72,7 @@ const Start = ({ t }) => {
   };
 
   return (
-    <section className="Start" data-aos="fade-right" id="Start">
+    <section className="Start" id="Start">
       {showAlert && (
         <div className="Start_alert">
           ✈️ {t("welcome.downloading", "Descargando CV...")}
@@ -79,8 +81,27 @@ const Start = ({ t }) => {
 
       <article className="Start_container-one">
         <div className="Start_welcome">
+          <p className="Start_badge">
+            <span className="Start_badge-dot" aria-hidden="true"></span>
+            {t("contact.availability")}
+          </p>
           <h1>
-            <span className="Start_name">{t("welcome.name")}</span>{" "}
+            <span className="Start_name" aria-label={t("welcome.name")}>
+              {t("welcome.name").split(" ").map((word, w, words) => {
+                // índice global de la letra para escalonar la animación
+                const offset = words.slice(0, w).join("").length;
+                return (
+                  <span className="Start_word" key={w} aria-hidden="true">
+                    {word.split("").map((char, index) => (
+                      <span className="Start_letter" style={{ "--i": offset + index }} key={index}>
+                        {char}
+                      </span>
+                    ))}
+                    {w < words.length - 1 && " "}
+                  </span>
+                );
+              })}
+            </span>{" "}
             <span className="Start_firtsname">{t("welcome.surname")}</span>
           </h1>
           <h2>
@@ -88,42 +109,66 @@ const Start = ({ t }) => {
             <span className="typing-cursor"></span>
           </h2>
           <p>{t("welcome.intro")}</p>
+          <ul className="Start_stack" aria-label="Stack">
+            {["Node.js", "TypeScript", "Express", "SQL", "Docker"].map((tech, index) => (
+              <li key={tech} style={{ "--i": index }}>{tech}</li>
+            ))}
+          </ul>
         </div>
 
         <div className="Start_buttons">
           <button
             onClick={() => document.querySelector("#Contact")?.scrollIntoView({ behavior: "smooth" })}
             className="Start_btn1"
+            data-magnetic
+            data-ripple
           >
-            {t("welcome.contact")}
+            <i className="bx bx-send"></i> {t("welcome.contact")}
           </button>
           <button
             onClick={() => document.querySelector("#Projects")?.scrollIntoView({ behavior: "smooth" })}
             className="Start_btn2"
+            data-magnetic
+            data-ripple
           >
-            {t("welcome.projects")}
+            <i className="bx bx-folder-open"></i> {t("welcome.projects")}
           </button>
-          <button className="Start_btn3" onClick={handleDownloadCV}>
-            {t("welcome.cv")}
+          <button className="Start_btn3" onClick={handleDownloadCV} data-magnetic data-ripple>
+            <i className="bx bx-download"></i> {t("welcome.cv")}
           </button>
         </div>
 
         <ul className="Start_urls">
-          <Link to="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/" className="lik">
+          <a href="https://www.linkedin.com/in/yeison-andres-marroqu%C3%ADn-bernal-008138266/" target="_blank" rel="noopener noreferrer" className="lik" data-magnetic aria-label="LinkedIn" title="LinkedIn">
             <li><i className="bx bxl-linkedin-square"></i></li>
-          </Link>
-          <Link to="https://github.com/AndresDev-20" className="lik">
+          </a>
+          <a href="https://github.com/AndresDev-20" target="_blank" rel="noopener noreferrer" className="lik" data-magnetic aria-label="GitHub" title="GitHub">
             <li><i className="bx bxl-github"></i></li>
-          </Link>
-          <Link onClick={handleWhatsapp} className="lik">
+          </a>
+          <a href="https://wa.me/573227222010" onClick={handleWhatsapp} className="lik" data-magnetic aria-label="WhatsApp" title="WhatsApp">
             <li><i className="bx bxl-whatsapp-square"></i></li>
-          </Link>
+          </a>
         </ul>
       </article>
 
       <article className="Start_container-two">
-        <figure>
-          <img src={Images.MyPhoto} alt="My photo" />
+        <figure className="Start_photo" data-tilt="10">
+          <HeroCircuit />
+          <span className="Start_disc" aria-hidden="true"></span>
+          <img
+            className="Start_cutout Start_cutout--round"
+            src={Images.MyPhoto}
+            alt={`${t("welcome.name")} ${t("welcome.surname")}`}
+          />
+          <span className="Start_chip Start_chip--one" aria-hidden="true">
+            <i className="bx bxl-nodejs"></i>
+          </span>
+          <span className="Start_chip Start_chip--two" aria-hidden="true">
+            <i className="bx bxl-typescript"></i>
+          </span>
+          <span className="Start_chip Start_chip--three" aria-hidden="true">
+            <i className="bx bx-data"></i>
+          </span>
         </figure>
       </article>
     </section>

@@ -11,14 +11,25 @@
     margin-top: -0.3em;
 }
 
+.App_header {
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
 .Header_scrolled {
   width: 100%;
-  background-color: var(--Second-color);
+  background-color: color-mix(in srgb, var(--Second-color) 78%, transparent);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-bottom-color: var(--Border-soft);
   position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px var(--Shadow);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 30px -18px var(--Shadow);
+}
+
+.App_main {
+  min-height: 100vh;
 }
 
 .App_footer {

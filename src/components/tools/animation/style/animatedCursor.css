@@ -1,40 +1,59 @@
-.trail-dot,
-.main-cursor {
+.main-cursor,
+.cursor-ring {
   position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: var(--First-color);
-  border-radius: 50%;
-  transition: transform 0.05s ease-out;;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%);
   z-index: 10000000000;
+  opacity: 0;
+  transition: opacity .3s ease;
 }
 
-.trail-dot {
-  opacity: 0.6;
-  filter: blur(1px);
-  box-shadow: 0 1 10px var(--First-color);
-  animation: fadeOut 0.3s forwards;
+body.Cursor_on .main-cursor,
+body.Cursor_on .cursor-ring {
+  opacity: 1;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-}
-
+/* Punto: sigue al mouse exactamente */
 .main-cursor {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
   background-color: var(--First-color);
-  filter: blur(1px);
-  box-shadow:  0 0 10px var(--First-color),
-    0 0 10px var(--First-color),
-    0 0 20px var(--First-color),
-    0 0 4px var(--First-color);
-  transition: transform 0.05s ease-out;
+  box-shadow: 0 0 10px var(--First-color), 0 0 20px var(--First-color);
+}
+
+/* Anillo: lo sigue con suavidad y crece sobre elementos interactivos */
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+}
+
+.cursor-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--First-color) 70%, transparent);
+  transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), background-color .35s ease, border-color .35s ease;
+}
+
+.cursor-ring.is-hover::before {
+  transform: scale(1.7);
+  background-color: color-mix(in srgb, var(--First-color) 12%, transparent);
+  border-color: var(--Accent-2);
+}
+
+.cursor-ring.is-down::before {
+  transform: scale(.75);
+}
+
+/* En pantallas táctiles no hay cursor que seguir */
+@media (hover: none), (pointer: coarse) {
+  .main-cursor,
+  .cursor-ring {
+    display: none;
+  }
 }

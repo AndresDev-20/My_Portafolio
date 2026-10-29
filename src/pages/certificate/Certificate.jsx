@@ -1,17 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import Education from "../../features/education/Education";
+import BackButton from "../../components/back/BackButton";
 import "./style/certificate.css";
 
 function Certificate({ t }) {
-  const navigate = useNavigate();
-  const VolverHome = () => {
-    navigate("/", { state: { scrollTo: "Start" } });
-  };
   return (
     <section className="Certificates">
-      <div className="Certificate_volver">
-        <h1 onClick={VolverHome}>Volver</h1>
-      </div>
+      <BackButton t={t} section="Education" />
       <Education t={t} />
     </section>
   );

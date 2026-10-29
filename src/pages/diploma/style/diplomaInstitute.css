@@ -1,0 +1,17 @@
+.Diploma_empty {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: .5em;
+	padding: 1em;
+	text-align: center;
+	color: var(--Third-color);
+}
+
+.Diploma_empty > i {
+	font-size: 4em;
+	color: var(--First-color);
+	opacity: .8;
+}
